@@ -92,9 +92,9 @@ BEGIN
             VALUE "CompanyName", "com.aimessoft" "\0"
             VALUE "FileDescription", "SoraNoUta" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "soranouta_app" "\0"
+            VALUE "InternalName", "SoraNoUta" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.aimessoft. All rights reserved." "\0"
-            VALUE "OriginalFilename", "soranouta_app.exe" "\0"
+            VALUE "OriginalFilename", "SoraNoUta.exe" "\0"
             VALUE "ProductName", "SoraNoUta" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
