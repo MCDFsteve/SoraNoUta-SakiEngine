@@ -1,0 +1,157 @@
+name: Windows Build
+
+on:
+  workflow_call:
+    inputs:
+      flutter_version:
+        required: false
+        type: string
+        default: '3.35.1'
+      working_directory:
+        required: false
+        type: string
+        default: '.'
+      architecture:
+        required: false
+        type: string
+        default: 'x64'
+        description: 'Target architecture: x64 or arm64'
+    outputs:
+      version:
+        description: "App version from pubspec.yaml"
+        value: ${{ jobs.build-windows.outputs.version }}
+      artifact_name:
+        description: "Generated artifact name"
+        value: ${{ jobs.build-windows.outputs.artifact_name }}
+
+jobs:
+  build-windows:
+    name: Build Windows App
+    runs-on: windows-2022
+    outputs:
+      version: ${{ steps.get_version.outputs.version }}
+      artifact_name: ${{ steps.build.outputs.artifact_name }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Get app version
+        id: get_version
+        working-directory: ${{ inputs.working_directory }}
+        shell: bash
+        run: |
+          version=$(grep '^version:' pubspec.yaml | cut -d ' ' -f 2 | cut -d '+' -f 1)
+          echo "version=$version" >> $GITHUB_OUTPUT
+          echo "Detected version: $version"
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.12.0
+        with:
+          flutter-version: ${{ inputs.flutter_version }}
+          channel: 'stable'
+          cache: true
+      
+      - name: Flutter Pub Get
+        working-directory: ${{ inputs.working_directory }}
+        shell: bash
+        run: |
+          git config --global core.longpaths true
+          flutter pub get
+      
+      - name: Pre-build diagnostics
+        shell: bash
+        run: |
+          echo "🔍 构建前诊断..."
+          flutter doctor -v
+          flutter pub outdated || true
+
+          APP_DIR="${{ inputs.working_directory }}"
+          if [ -z "$APP_DIR" ]; then
+            APP_DIR="."
+          fi
+
+          echo "📁 项目目录: $APP_DIR"
+          ls -la "$APP_DIR" | head -40
+
+          # 清理可能的缓存问题
+          cd "$APP_DIR"
+          flutter clean
+          flutter pub get
+      
+      - name: Build Windows App with retry
+        shell: bash
+        run: |
+          echo "🔨 使用build.sh构建Windows应用"
+          chmod +x build.sh
+
+          APP_DIR="${{ inputs.working_directory }}"
+          if [ -z "$APP_DIR" ]; then
+            APP_DIR="."
+          fi
+
+          # 第一次尝试
+          if ! ./build.sh windows; then
+            echo "⚠️ 第一次构建失败，清理后重试..."
+
+            pushd "$APP_DIR" > /dev/null
+            flutter clean
+            rm -rf build/windows || true
+            flutter pub get
+            popd > /dev/null
+
+            # 第二次尝试
+            ./build.sh windows
+          fi
+      
+      - name: Package Windows App
+        id: build
+        shell: pwsh
+        run: |
+          $workDir = '${{ inputs.working_directory }}'
+          if ([string]::IsNullOrWhiteSpace($workDir)) { $workDir = '.' }
+          $repoName = ($env:GITHUB_REPOSITORY -split '/')[1]
+
+          $arch = "${{ inputs.architecture }}"
+          $version = (Get-Content (Join-Path $workDir 'pubspec.yaml') | Select-String '^version:' | ForEach-Object { ($_ -split ' ')[1] } | ForEach-Object { ($_ -split '\+')[0] })
+          if ([string]::IsNullOrWhiteSpace($version)) { $version = '1.0.0' }
+
+          $defaultGameFile = Join-Path (Get-Location) 'default_game.txt'
+          if (Test-Path $defaultGameFile) {
+            $gameName = (Get-Content $defaultGameFile | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne '' } | Select-Object -First 1)
+          }
+          if ([string]::IsNullOrWhiteSpace($gameName)) { $gameName = $repoName }
+
+          $buildRoot = Join-Path $workDir 'build\windows'
+          
+          if ($arch -eq "arm64") {
+            $DestDir = Join-Path $buildRoot "${gameName}-${version}-Windows-arm64"
+            $SrcDir = Join-Path $buildRoot 'arm64\runner\Release'
+            $ZipName = "${gameName}-${version}-Windows-arm64.zip"
+          } else {
+            $DestDir = Join-Path $buildRoot "${gameName}-${version}-Windows-x64"
+            $SrcDir = Join-Path $buildRoot 'x64\runner\Release'
+            $ZipName = "${gameName}-${version}-Windows-x64.zip"
+          }
+          
+          # 创建目标目录
+          New-Item -Path $DestDir -ItemType Directory -Force
+          
+          # 复制应用程序文件
+          Copy-Item -Path "$SrcDir\*" -Destination $DestDir -Recurse -Force
+
+          # 创建ZIP档案
+          Compress-Archive -Path $DestDir -DestinationPath (Join-Path $buildRoot $ZipName) -Force
+          
+          echo "artifact_name=$ZipName" >> $env:GITHUB_OUTPUT
+          Write-Output "✅ 构建完成: $ZipName"
+      
+      - name: Upload Windows App
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-Windows
+          path: ${{ inputs.working_directory }}/build/windows/*.zip
+          retention-days: 90

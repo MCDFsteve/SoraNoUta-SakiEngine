@@ -1,0 +1,148 @@
+name: macOS Build
+
+on:
+  workflow_call:
+    inputs:
+      flutter_version:
+        required: false
+        type: string
+        default: '3.35.1'
+      working_directory:
+        required: false
+        type: string
+        default: '.'
+      create_dmg:
+        required: false
+        type: boolean
+        default: true
+    outputs:
+      version:
+        description: "App version from pubspec.yaml"
+        value: ${{ jobs.build-macos.outputs.version }}
+      artifact_name:
+        description: "Generated artifact name"
+        value: ${{ jobs.build-macos.outputs.artifact_name }}
+
+jobs:
+  build-macos:
+    name: Build macOS App
+    runs-on: macos-13
+    outputs:
+      version: ${{ steps.get_version.outputs.version }}
+      artifact_name: ${{ steps.build.outputs.artifact_name }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Get app version
+        id: get_version
+        working-directory: ${{ inputs.working_directory }}
+        shell: bash
+        run: |
+          version=$(grep '^version:' pubspec.yaml | cut -d ' ' -f 2 | cut -d '+' -f 1)
+          echo "version=$version" >> $GITHUB_OUTPUT
+          echo "Detected version: $version"
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.12.0
+        with:
+          flutter-version: ${{ inputs.flutter_version }}
+          channel: 'stable'
+          cache: true
+      
+      - name: Cache CocoaPods
+        uses: actions/cache@v4
+        with:
+          key: macos-pods-${{ hashFiles(format('{0}/macos/Podfile.lock', inputs.working_directory)) }}
+          path: ${{ inputs.working_directory }}/macos/Pods
+          restore-keys: |
+            macos-pods-
+      
+      - name: Flutter Pub Get
+        working-directory: ${{ inputs.working_directory }}
+        run: |
+          git config --global core.longpaths true
+          flutter pub get
+      
+      - name: Build macOS App
+        run: |
+          echo "🔨 使用build.sh构建macOS应用"
+          chmod +x build.sh
+          ./build.sh macos
+      
+      - name: Create DMG or ZIP
+        id: build
+        run: |
+          APP_DIR="${{ inputs.working_directory }}"
+          if [ -z "$APP_DIR" ]; then
+            APP_DIR="."
+          fi
+          REPO_ROOT=$(git rev-parse --show-toplevel)
+          GAME_NAME=$(cat "$REPO_ROOT/default_game.txt" 2>/dev/null | tr -d '\n\r' | xargs || true)
+
+          # 如果读取失败，使用仓库名
+          if [ -z "$GAME_NAME" ]; then
+            GAME_NAME="${GITHUB_REPOSITORY##*/}"
+            echo "⚠️  无法读取 default_game.txt，使用仓库名: $GAME_NAME"
+          fi
+
+          version=$(grep '^version:' "$APP_DIR/pubspec.yaml" 2>/dev/null | cut -d ' ' -f 2 | cut -d '+' -f 1)
+
+          # 如果读取失败，使用默认版本
+          if [ -z "$version" ]; then
+            version="1.0.0"
+            echo "⚠️  无法读取版本号，使用默认版本: $version"
+          fi
+
+          cd "$APP_DIR/build/macos/Build/Products/Release"
+
+          APP_NAME="$GAME_NAME.app"
+
+          echo "🔍 构建信息:"
+          echo "   当前路径: $(pwd)"
+          echo "   游戏名称: $GAME_NAME"
+          echo "   应用名称: $APP_NAME"
+
+          # 检查 .app 文件是否存在
+          if [ ! -d "$APP_NAME" ]; then
+            echo "❌ 错误: 未找到应用 '$APP_NAME'。"
+            echo "当前目录内容:"
+            ls -la
+            exit 1
+          fi
+
+          echo "   版本号: $version"
+
+          if [ "${{ inputs.create_dmg }}" = "true" ]; then
+            # 创建DMG
+            mkdir -p dmg-contents
+            cp -R "$APP_NAME" dmg-contents/
+            artifact_name="${GAME_NAME}-${version}-macOS-arm64.dmg"
+            if [ -f "$artifact_name" ]; then
+              echo "⚠️ 检测到已存在的DMG，删除以避免Resource busy: $artifact_name"
+              rm -f "$artifact_name"
+            fi
+            hdiutil create -srcfolder dmg-contents -volname "$GAME_NAME" -format UDZO "$artifact_name"
+            echo "✅ 创建DMG: $artifact_name"
+          else
+            # 创建ZIP
+            artifact_name="${GAME_NAME}-${version}-macOS-arm64.zip"
+            zip -r "$artifact_name" "$APP_NAME"
+            echo "✅ 创建ZIP: $artifact_name"
+          fi
+          
+          echo "artifact_name=$artifact_name" >> $GITHUB_OUTPUT
+          echo "✅ 构建完成: $artifact_name"
+      
+      - name: Upload macOS App
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-macOS
+          path: |
+            ${{ inputs.working_directory }}/build/macos/Build/Products/Release/*.dmg
+            ${{ inputs.working_directory }}/build/macos/Build/Products/Release/*.zip
+          retention-days: 90

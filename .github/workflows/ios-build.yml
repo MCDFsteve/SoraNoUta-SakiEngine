@@ -1,0 +1,125 @@
+name: iOS Build
+
+on:
+  workflow_call:
+    inputs:
+      flutter_version:
+        required: false
+        type: string
+        default: '3.35.1'
+      working_directory:
+        required: false
+        type: string
+        default: '.'
+      enable_codesign:
+        required: false
+        type: boolean
+        default: false
+    outputs:
+      version:
+        description: "App version from pubspec.yaml"
+        value: ${{ jobs.build-ios.outputs.version }}
+      artifact_name:
+        description: "Generated artifact name"
+        value: ${{ jobs.build-ios.outputs.artifact_name }}
+
+jobs:
+  build-ios:
+    name: Build iOS IPA
+    runs-on: macos-13
+    outputs:
+      version: ${{ steps.get_version.outputs.version }}
+      artifact_name: ${{ steps.build.outputs.artifact_name }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Get app version
+        id: get_version
+        working-directory: ${{ inputs.working_directory }}
+        shell: bash
+        run: |
+          version=$(grep '^version:' pubspec.yaml | cut -d ' ' -f 2 | cut -d '+' -f 1)
+          echo "version=$version" >> $GITHUB_OUTPUT
+          echo "Detected version: $version"
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.12.0
+        with:
+          flutter-version: ${{ inputs.flutter_version }}
+          channel: 'stable'
+          cache: true
+      
+      - name: Cache CocoaPods
+        uses: actions/cache@v4
+        with:
+          key: ios-pods-${{ hashFiles(format('{0}/ios/Podfile.lock', inputs.working_directory)) }}
+          path: ${{ inputs.working_directory }}/ios/Pods
+          restore-keys: |
+            ios-pods-
+      
+      - name: Flutter Pub Get
+        working-directory: ${{ inputs.working_directory }}
+        run: |
+          git config --global core.longpaths true
+          flutter pub get
+      
+      - name: Resolve Xcode dependencies
+        working-directory: ${{ inputs.working_directory }}
+        run: xcodebuild -resolvePackageDependencies -workspace ios/Runner.xcworkspace -scheme Runner -configuration Release
+      
+      - name: Update CocoaPods
+        working-directory: ${{ inputs.working_directory }}
+        run: |
+          cd ios
+          pod update
+          cd ..
+      
+      - name: Build iOS App
+        run: |
+          echo "🔨 使用build.sh构建iOS应用"
+          chmod +x build.sh  
+          ./build.sh ios
+      
+      - name: Create IPA
+        id: build
+        run: |
+          APP_DIR="${{ inputs.working_directory }}"
+          if [ -z "$APP_DIR" ]; then
+            APP_DIR="."
+          fi
+          REPO_ROOT=$(git rev-parse --show-toplevel)
+          GAME_NAME=$(cat "$REPO_ROOT/default_game.txt" 2>/dev/null | tr -d '\n\r' | xargs || true)
+          if [ -z "$GAME_NAME" ]; then
+            GAME_NAME="${GITHUB_REPOSITORY##*/}"
+          fi
+          version=$(grep '^version:' "$APP_DIR/pubspec.yaml" | cut -d ' ' -f 2 | cut -d '+' -f 1)
+
+          # 检查thin-payload.sh是否存在并执行
+          if [ -f "thin-payload.sh" ]; then
+            echo "🔧 执行thin-payload优化"
+            chmod +x thin-payload.sh
+            sh thin-payload.sh "$APP_DIR"/build/ios/iphoneos/*.app
+          fi
+
+          # 创建IPA
+          cd "$APP_DIR/build"
+          mkdir -p Payload
+          mv ios/iphoneos/*.app Payload/
+          artifact_name="${GAME_NAME}-${version}-iOS-arm64.ipa"
+
+          zip -9 "$artifact_name" -r Payload
+
+          echo "artifact_name=$artifact_name" >> $GITHUB_OUTPUT
+          echo "✅ 构建完成: $artifact_name"
+      
+      - name: Upload iOS IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-iOS
+          path: ${{ inputs.working_directory }}/build/*.ipa
+          retention-days: 90

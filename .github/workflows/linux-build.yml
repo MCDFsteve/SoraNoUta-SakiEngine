@@ -1,0 +1,260 @@
+name: Linux Build
+
+on:
+  workflow_call:
+    inputs:
+      flutter_version:
+        required: false
+        type: string
+        default: '3.35.1'
+      working_directory:
+        required: false
+        type: string
+        default: '.'
+      architecture:
+        required: false
+        type: string
+        default: 'amd64'
+        description: 'Target architecture: amd64 or arm64'
+    outputs:
+      version:
+        description: "App version from pubspec.yaml"
+        value: ${{ jobs.build-linux.outputs.version }}
+      artifact_name:
+        description: "Generated artifact name"
+        value: ${{ jobs.build-linux.outputs.artifact_name }}
+
+jobs:
+  build-linux:
+    name: Build Linux App
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.get_version.outputs.version }}
+      artifact_name: ${{ steps.build.outputs.artifact_name }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Get app version
+        id: get_version
+        working-directory: ${{ inputs.working_directory }}
+        shell: bash
+        run: |
+          version=$(grep '^version:' pubspec.yaml | cut -d ' ' -f 2 | cut -d '+' -f 1)
+          echo "version=$version" >> $GITHUB_OUTPUT
+          echo "Detected version: $version"
+      
+      - name: Install Linux dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y \
+            mpv libmpv-dev \
+            pkg-config \
+            clang cmake \
+            libgtk-3-dev \
+            ninja-build \
+            libasound2-dev \
+            libass-dev \
+            zip \
+            libkeybinder-3.0-dev \
+            libgstreamer1.0-dev \
+            libgstreamer-plugins-base1.0-dev \
+            gstreamer1.0-plugins-base \
+            gstreamer1.0-plugins-good \
+            gstreamer1.0-plugins-bad \
+            gstreamer1.0-libav
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.12.0
+        with:
+          flutter-version: ${{ inputs.flutter_version }}
+          channel: 'stable'
+          cache: true
+      
+      - name: Enable Linux desktop
+        working-directory: ${{ inputs.working_directory }}
+        run: |
+          flutter config --enable-linux-desktop
+      
+      - name: Flutter Pub Get
+        working-directory: ${{ inputs.working_directory }}
+        run: |
+          git config --global core.longpaths true
+          flutter pub get
+      
+      - name: Build Linux App
+        run: |
+          echo "🔨 开始构建Linux应用"
+          chmod +x build.sh
+          APP_DIR="${{ inputs.working_directory }}"
+          if [ -z "$APP_DIR" ]; then
+            APP_DIR="."
+          fi
+
+          # 显示构建前的环境信息
+          echo "Flutter 版本:"
+          flutter --version
+
+          echo ""
+          echo "运行 build.sh..."
+          set -x  # 显示执行的命令
+          ./build.sh linux || {
+            echo "❌ build.sh 执行失败，退出码: $?"
+            echo "尝试直接在项目目录构建..."
+            cd "$APP_DIR"
+            flutter build linux --release -v
+          }
+          set +x
+
+      - name: Verify Build Output
+        run: |
+          APP_DIR="${{ inputs.working_directory }}"
+          if [ -z "$APP_DIR" ]; then
+            APP_DIR="."
+          fi
+
+          echo "🔍 验证构建输出..."
+          echo "📁 完整构建目录树:"
+          find "$APP_DIR/build" -type f -name "*.so" -o -type f -executable -o -type d -name "bundle" | head -50
+
+          echo ""
+          echo "📦 检查可能的 bundle 位置:"
+
+          # 检查多个可能的位置
+          possible_locations=(
+            "$APP_DIR/build/linux/x64/release/bundle"
+            "$APP_DIR/build/linux/release/bundle"
+            "$APP_DIR/build/linux/bundle"
+          )
+
+          bundle_found=false
+          for location in "${possible_locations[@]}"; do
+            if [ -d "$location" ]; then
+              echo "✅ 找到 bundle 在: $location"
+              ls -lah "$location/"
+              bundle_found=true
+              break
+            fi
+          done
+
+          if [ "$bundle_found" = false ]; then
+            echo "❌ 在所有预期位置都未找到 bundle 目录"
+            echo "build 完整内容:"
+            ls -laR "$APP_DIR/build/" | head -100
+          fi
+
+      - name: Package Linux App
+        id: build
+        run: |
+          APP_DIR="${{ inputs.working_directory }}"
+          if [ -z "$APP_DIR" ]; then
+            APP_DIR="."
+          fi
+          REPO_ROOT=$(git rev-parse --show-toplevel)
+          GAME_NAME=$(cat "$REPO_ROOT/default_game.txt" 2>/dev/null | tr -d '\n\r' | xargs || true)
+
+          # 如果读取失败，使用仓库名
+          if [ -z "$GAME_NAME" ]; then
+            GAME_NAME="${GITHUB_REPOSITORY##*/}"
+            echo "⚠️  无法读取 default_game.txt，使用仓库名: $GAME_NAME"
+          fi
+
+          # 从项目目录读取版本号
+          version=$(grep '^version:' "$APP_DIR/pubspec.yaml" 2>/dev/null | cut -d ' ' -f 2 | cut -d '+' -f 1)
+
+          # 如果读取失败，使用默认版本
+          if [ -z "$version" ]; then
+            version="1.0.0"
+            echo "⚠️  无法读取版本号，使用默认版本: $version"
+          fi
+
+          arch="${{ inputs.architecture }}"
+          artifact_name="${GAME_NAME}-${version}-Linux-${arch}.zip"
+
+          echo "🔍 构建信息:"
+          echo "   游戏名称: $GAME_NAME"
+          echo "   版本号: $version"
+          echo "   架构: $arch"
+          echo "   输出文件: $artifact_name"
+
+          # 查找 bundle 目录
+          echo ""
+          echo "🔎 搜索 bundle 目录..."
+          bundle_dir=$(find "$APP_DIR/build/linux" -type d -name "bundle" | head -1)
+
+          if [ -z "$bundle_dir" ]; then
+            echo "❌ 错误: 未找到 bundle 目录"
+            echo "build/linux 内容:"
+            ls -laR "$APP_DIR/build/linux/"
+            exit 1
+          fi
+
+          echo "✅ 找到 bundle 目录: $bundle_dir"
+          echo ""
+          echo "📦 bundle 目录内容:"
+          ls -lah "$bundle_dir/"
+
+          # 检查 bundle 目录是否为空
+          if [ ! "$(ls -A $bundle_dir/)" ]; then
+            echo "❌ 错误: bundle 目录是空的！"
+            exit 1
+          fi
+
+          # 检查是否存在可执行文件
+          exe_count=$(find "$bundle_dir" -type f -executable | wc -l)
+          echo "找到 $exe_count 个可执行文件"
+
+          # 创建临时目录用于打包
+          PACKAGE_PARENT="$APP_DIR/build/linux"
+          PACKAGE_BASENAME="${GAME_NAME}-${version}-Linux-${arch}"
+          PACKAGE_DIR="$PACKAGE_PARENT/$PACKAGE_BASENAME"
+          mkdir -p "$PACKAGE_DIR"
+
+          # 复制bundle目录的所有内容到打包目录
+          echo ""
+          echo "📋 正在复制文件到打包目录..."
+          cp -r "$bundle_dir"/* "$PACKAGE_DIR/"
+
+          # 验证复制结果
+          echo "打包目录内容:"
+          ls -lah "$PACKAGE_DIR/"
+
+          # 创建ZIP档案
+          echo ""
+          echo "🗜️  正在创建ZIP文件..."
+          artifact_name="${GAME_NAME}-${version}-Linux-${arch}.zip"
+          artifact_path="$PACKAGE_PARENT/$artifact_name"
+          rm -f "$artifact_path"
+          (
+            cd "$PACKAGE_PARENT"
+            zip -r "$artifact_name" "$PACKAGE_BASENAME"
+          )
+
+          # 验证ZIP文件
+          if [ ! -f "$artifact_path" ]; then
+            echo "❌ 错误: ZIP文件创建失败"
+            exit 1
+          fi
+
+          zip_size=$(du -h "$artifact_path" | cut -f1)
+          echo "✅ ZIP创建成功: $artifact_name (大小: $zip_size)"
+
+          # 显示ZIP内容用于验证
+          echo ""
+          echo "📋 ZIP文件内容预览:"
+          unzip -l "$artifact_path" | head -30
+
+          echo ""
+          echo "artifact_name=$artifact_name" >> $GITHUB_OUTPUT
+          echo "✅ 打包完成: $artifact_name"
+      
+      - name: Upload Linux App
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-Linux-${{ inputs.architecture }}
+          path: ${{ inputs.working_directory }}/build/linux/*.zip
+          retention-days: 90

@@ -1,0 +1,216 @@
+name: CI / Build / Release
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  detect-build-request:
+    name: Detect Build Request
+    runs-on: ubuntu-latest
+    outputs:
+      should_build: ${{ steps.detect.outputs.should_build }}
+    steps:
+      - name: Detect [build] flag
+        id: detect
+        shell: bash
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: |
+          set -euo pipefail
+
+          echo "📝 提交信息: $COMMIT_MESSAGE"
+          if [[ "$COMMIT_MESSAGE" == *"[build]"* ]]; then
+            echo "should_build=true" >> "$GITHUB_OUTPUT"
+            echo "✅ 检测到 [build]，将执行全平台构建"
+          else
+            echo "should_build=false" >> "$GITHUB_OUTPUT"
+            echo "⏭️ 未检测到 [build]，跳过构建发布"
+          fi
+
+  detect-game-repo:
+    name: Detect Game Project Repo
+    needs: [detect-build-request]
+    if: needs.detect-build-request.outputs.should_build == 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.detect.outputs.should_run }}
+      game_name: ${{ steps.detect.outputs.game_name }}
+      working_directory: ${{ steps.detect.outputs.working_directory }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect repo mode
+        id: detect
+        shell: bash
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: |
+          set -euo pipefail
+
+          WORK_DIR="."
+          if [[ -f "$WORK_DIR/pubspec.yaml" && -d "$WORK_DIR/Assets" ]]; then
+            GAME_NAME=$(cat "$WORK_DIR/default_game.txt" 2>/dev/null | tr -d '\r\n' | xargs || true)
+            if [[ -z "$GAME_NAME" ]]; then
+              GAME_NAME="$REPO_NAME"
+            fi
+
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "game_name=$GAME_NAME" >> "$GITHUB_OUTPUT"
+            echo "working_directory=$WORK_DIR" >> "$GITHUB_OUTPUT"
+
+            echo "✅ 检测到独立游戏项目仓库，启用构建/发布流程"
+            echo "📁 工作目录: $WORK_DIR"
+            echo "🎯 游戏名: $GAME_NAME"
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            echo "game_name=$REPO_NAME" >> "$GITHUB_OUTPUT"
+            echo "working_directory=$WORK_DIR" >> "$GITHUB_OUTPUT"
+
+            echo "⏭️ 当前仓库不是独立游戏项目仓库，跳过构建/发布"
+            echo "   需要满足: 仓库根目录存在 pubspec.yaml 与 Assets/"
+          fi
+
+  quality:
+    name: Quality Gate
+    needs: [detect-game-repo]
+    if: needs.detect-game-repo.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.12.0
+        with:
+          flutter-version: '3.35.1'
+          channel: stable
+          cache: true
+
+      - name: Pub Get
+        working-directory: ${{ needs.detect-game-repo.outputs.working_directory }}
+        run: flutter pub get
+
+      - name: Analyze
+        working-directory: ${{ needs.detect-game-repo.outputs.working_directory }}
+        run: flutter analyze
+
+      - name: Test
+        working-directory: ${{ needs.detect-game-repo.outputs.working_directory }}
+        run: flutter test
+
+  resolve-version:
+    name: Resolve Version
+    needs: [quality, detect-game-repo]
+    if: needs.detect-game-repo.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Read version from pubspec
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+          WORK_DIR="${{ needs.detect-game-repo.outputs.working_directory }}"
+          version=$(grep '^version:' "$WORK_DIR/pubspec.yaml" | cut -d ' ' -f 2 | cut -d '+' -f 1)
+          if [[ -z "$version" ]]; then
+            echo "❌ 未能从 $WORK_DIR/pubspec.yaml 读取版本号"
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "✅ 版本号: $version"
+
+  build-android:
+    needs: [quality, detect-game-repo]
+    if: needs.detect-game-repo.outputs.should_run == 'true'
+    name: Build Android
+    uses: ./.github/workflows/android-build.yml
+    with:
+      flutter_version: '3.35.1'
+      working_directory: ${{ needs.detect-game-repo.outputs.working_directory }}
+      target_platform: android-arm64
+    secrets: inherit
+
+  build-ios:
+    needs: [quality, detect-game-repo]
+    if: needs.detect-game-repo.outputs.should_run == 'true'
+    name: Build iOS
+    uses: ./.github/workflows/ios-build.yml
+    with:
+      flutter_version: '3.35.1'
+      working_directory: ${{ needs.detect-game-repo.outputs.working_directory }}
+      enable_codesign: false
+    secrets: inherit
+
+  build-macos:
+    needs: [quality, detect-game-repo]
+    if: needs.detect-game-repo.outputs.should_run == 'true'
+    name: Build macOS
+    uses: ./.github/workflows/macos-build.yml
+    with:
+      flutter_version: '3.35.1'
+      working_directory: ${{ needs.detect-game-repo.outputs.working_directory }}
+      create_dmg: true
+    secrets: inherit
+
+  build-windows:
+    needs: [quality, detect-game-repo]
+    if: needs.detect-game-repo.outputs.should_run == 'true'
+    name: Build Windows
+    uses: ./.github/workflows/windows-build.yml
+    with:
+      flutter_version: '3.35.1'
+      working_directory: ${{ needs.detect-game-repo.outputs.working_directory }}
+      architecture: x64
+    secrets: inherit
+
+  build-linux:
+    needs: [quality, detect-game-repo]
+    if: needs.detect-game-repo.outputs.should_run == 'true'
+    name: Build Linux
+    uses: ./.github/workflows/linux-build.yml
+    with:
+      flutter_version: '3.35.1'
+      working_directory: ${{ needs.detect-game-repo.outputs.working_directory }}
+      architecture: amd64
+    secrets: inherit
+
+  publish:
+    name: Publish Release
+    needs:
+      - detect-game-repo
+      - resolve-version
+      - build-android
+      - build-ios
+      - build-macos
+      - build-windows
+      - build-linux
+    if: needs.detect-game-repo.outputs.should_run == 'true'
+    uses: ./.github/workflows/publish.yml
+    with:
+      version: ${{ needs.resolve-version.outputs.version }}
+      artifacts_pattern: /tmp/artifacts/release-Android/*.apk,/tmp/artifacts/release-iOS/*.ipa,/tmp/artifacts/release-macOS/*.dmg,/tmp/artifacts/release-macOS/*.zip,/tmp/artifacts/release-Windows/*.zip,/tmp/artifacts/release-Linux-amd64/*.zip
+    secrets: inherit
+
+  update-version:
+    name: Update Version
+    needs:
+      - detect-game-repo
+      - publish
+    if: needs.detect-game-repo.outputs.should_run == 'true' && needs.publish.result == 'success'
+    uses: ./.github/workflows/version-update.yml
+    with:
+      working_directory: ${{ needs.detect-game-repo.outputs.working_directory }}
+      version_increment: patch
+      branch: main
+    secrets: inherit
