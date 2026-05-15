@@ -210,6 +210,7 @@ l "我是有很不好的预感。需要武器来防身。"
 ////夏悠ciallo
 x pose2 ciallo "啊？武器吗？那你等一会，我回家拿柴刀。"
 ////夏悠黑化邪笑
+achievement unlock achievement2_higurashi
 x pose1 rena "在这寒蝉鸣泣之时。"
 l "现在是早晨哪来蝉。"
 nvlm

@@ -777,6 +777,7 @@ l "怎么了？"
 stop music 
 cg cgcp0_2 4
 x "[pass]你到底是谁？[/pass]"////闭嘴
+achievement unlock achievement3_cp0end
 scene bl
 movie OP
 jump cp1_001
