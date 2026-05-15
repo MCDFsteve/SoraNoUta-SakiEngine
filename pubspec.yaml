@@ -29,10 +29,31 @@ flutter:
   assets:
     - default_game.txt
     - Assets/
+    - Assets/fonts/
+    - Assets/gui/
+    - Assets/images/
+    - Assets/images/backgrounds/
+    - Assets/images/cg/
+    - Assets/images/cg/cg_cp0_1/
+    - Assets/images/cg/cg_cp0_q2/
+    - Assets/images/cg/cg_cp1_1/
+    - Assets/images/cg/cg_cp1_2/
+    - Assets/images/cg/cg_cp1_3/
+    - Assets/images/cg/cg_cp1_5/
+    - Assets/images/cg/cg_cp1_ls/
+    - Assets/images/cg/cg_dog/
+    - Assets/images/cg/cg_tree/
+    - Assets/images/characters/
+    - Assets/images/characters/story1/
+    - Assets/images/characters/story1/emoji/
+    - Assets/images/characters/story1/pose/
+    - Assets/images/items/
+    - Assets/movies/
+    - Assets/music/
+    - Assets/sound/
     - GameScript/
-    - GameScript_en/
-    - GameScript_ja/
-    - GameScript_zh-Hant/
+    - GameScript/configs/
+    - GameScript/labels/
   fonts:
     - family: SourceHanSansCN
       fonts:
@@ -45,6 +66,11 @@ flutter_launcher_icons:
   android: true
   ios: true
   image_path: "icon.png"
+  web:
+    generate: true
+    image_path: "icon.png"
+    background_color: "#ffffff"
+    theme_color: "#ffffff"
   windows:
     generate: true
     image_path: "icon.png"

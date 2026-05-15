@@ -167,6 +167,7 @@ l "或许是！"
 x pose5 happy "真羡慕啊，我以后一定要看看到底和我家的锅有什么区别！"//夏悠微笑
 jump cp0_001_menuafter2
 label cp0_001_menu4
+achievement unlock achievement1_sg
 bool steinsgate true
 l "听起来就有很高深的词汇，可能是穿越时间用的吧。"
 x think "诶？穿越时间？真羡慕啊！"//侧脸思考

@@ -60,6 +60,7 @@ class SoranoutaModule extends DefaultGameModule {
     VoidCallback? onContinueGame,
     required VoidCallback onLoadGame,
     required VoidCallback onSettings,
+    required VoidCallback onAbout,
     required VoidCallback onExit,
     required SakiEngineConfig config,
     required double scale,
@@ -84,10 +85,13 @@ class SoranoutaModule extends DefaultGameModule {
     Key? key,
     String? speaker,
     String? speakerAlias, // 新增：角色简写参数
+    String? dialogueTag,
     required String dialogue,
     DialogueProgressionManager? progressionManager,
     required bool isFastForwarding,
     required int scriptIndex, // 新增：脚本索引参数
+    VoidCallback? onToggleSettings,
+    VoidCallback? onToggleReview,
   }) {
     return SoranoUtaDialogueBox(
       key: key,
