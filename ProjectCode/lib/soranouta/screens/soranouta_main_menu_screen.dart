@@ -105,7 +105,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
     if (randomValue < 0.1) {
       _copyrightText = 'Ⓒ Copyright 950-2050 Aimes Soft';
     } else {
-      _copyrightText = 'Ⓒ Copyright 2023-2025 Aimes Soft';
+      _copyrightText = 'Ⓒ Copyright 2023-2026 Aimes Soft';
     }
   }
 
