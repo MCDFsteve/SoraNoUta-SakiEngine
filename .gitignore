@@ -1,2 +1,5 @@
 /.dart_tool
 /.saki_cache
+/build
+/linux/flutter/ephemeral
+/windows/flutter/ephemeral
