@@ -15,6 +15,8 @@ dependencies:
     path: ./ProjectCode
 
 dependency_overrides:
+  flutter_steamworks:
+    path: ../../third_party/flutter_steamworks_hotfix
   media_kit:
     path: ../../third_party/media_kit_hotfix
   media_kit_video:
@@ -40,7 +42,32 @@ flutter:
   uses-material-design: true
   assets:
     - default_game.txt
-    - .saki_cache/game.sakipak
+    - Assets/
+    - Assets/fonts/
+    - Assets/gui/
+    - Assets/images/
+    - Assets/images/backgrounds/
+    - Assets/images/cg/
+    - Assets/images/cg/cg_cp0_1/
+    - Assets/images/cg/cg_cp0_q2/
+    - Assets/images/cg/cg_cp1_1/
+    - Assets/images/cg/cg_cp1_2/
+    - Assets/images/cg/cg_cp1_3/
+    - Assets/images/cg/cg_cp1_5/
+    - Assets/images/cg/cg_cp1_ls/
+    - Assets/images/cg/cg_dog/
+    - Assets/images/cg/cg_tree/
+    - Assets/images/characters/
+    - Assets/images/characters/story1/
+    - Assets/images/characters/story1/emoji/
+    - Assets/images/characters/story1/pose/
+    - Assets/images/items/
+    - Assets/movies/
+    - Assets/music/
+    - Assets/sound/
+    - GameScript/
+    - GameScript/configs/
+    - GameScript/labels/
   fonts:
     - family: SourceHanSansCN
       fonts:
