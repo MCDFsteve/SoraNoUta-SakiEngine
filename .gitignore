@@ -3,3 +3,12 @@
 /build
 /linux/flutter/ephemeral
 /windows/flutter/ephemeral
+.flutter-plugins-dependencies
+android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+android/local.properties
+/ios/Flutter/ephemeral
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/Generated.xcconfig
+ios/Runner/GeneratedPluginRegistrant.h
+ios/Runner/GeneratedPluginRegistrant.m
+/macos/Flutter/ephemeral
