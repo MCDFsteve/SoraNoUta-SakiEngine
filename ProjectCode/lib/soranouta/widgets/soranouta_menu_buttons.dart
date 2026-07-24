@@ -16,7 +16,8 @@ class SoranoutaMenuButtons {
   /// Web端和移动端不显示退出按钮
   static bool _shouldShowExitButton() {
     if (kIsWeb) return false; // Web端不显示
-    if (!kIsWeb && (Platform.isIOS || Platform.isAndroid)) return false; // 移动端不显示
+    if (!kIsWeb && (Platform.isIOS || Platform.isAndroid))
+      return false; // 移动端不显示
     return true; // 桌面端显示
   }
 
@@ -24,6 +25,7 @@ class SoranoutaMenuButtons {
     required VoidCallback onNewGame,
     VoidCallback? onContinueGame, // 新增：继续游戏回调（可选）
     required VoidCallback onLoadGame,
+    required VoidCallback onAppreciation,
     required VoidCallback onSettings,
     required VoidCallback onExit,
     required SakiEngineConfig config,
@@ -57,6 +59,11 @@ class SoranoutaMenuButtons {
       SoranoutaTextButton(
         text: localization.t('menu.loadGame'),
         onPressed: onLoadGame,
+        scale: scale,
+      ),
+      SoranoutaTextButton(
+        text: _appreciationLabel(localization.currentLanguage),
+        onPressed: onAppreciation,
         scale: scale,
       ),
       SoranoutaTextButton(
@@ -126,7 +133,8 @@ class SoranoutaMenuButtons {
               index: 0, // 竖线最先出现
               child: Container(
                 width: 3 * scale,
-                height: (buttons.length * 80 + (buttons.length - 1) * 20) * scale,
+                height:
+                    (buttons.length * 80 + (buttons.length - 1) * 20) * scale,
                 color: lineColor,
               ),
             ),
@@ -154,11 +162,14 @@ class SoranoutaMenuButtons {
     buttonTexts.addAll([
       localization.t('menu.newGame'),
       localization.t('menu.loadGame'),
+      _appreciationLabel(localization.currentLanguage),
       localization.t('menu.settings'),
       if (_shouldShowExitButton()) localization.t('menu.exit'),
     ]);
     final isDarkMode = SettingsManager().currentDarkMode;
-    final shadowColor = isDarkMode ? Colors.white.withOpacity(0.9) : Colors.black.withOpacity(0.9);
+    final shadowColor = isDarkMode
+        ? Colors.white.withOpacity(0.9)
+        : Colors.black.withOpacity(0.9);
 
     final shadowContent = ImageFiltered(
       imageFilter: ui.ImageFilter.blur(sigmaX: 8.0, sigmaY: 8.0),
@@ -204,7 +215,9 @@ class SoranoutaMenuButtons {
             right: 0,
             child: Container(
               width: 3 * scale,
-              height: (buttonTexts.length * 80 + (buttonTexts.length - 1) * 20) * scale,
+              height:
+                  (buttonTexts.length * 80 + (buttonTexts.length - 1) * 20) *
+                  scale,
               color: shadowColor,
             ),
           ),
@@ -243,6 +256,19 @@ class SoranoutaMenuButtons {
       right: 0.05,
     );
   }
+
+  static String _appreciationLabel(SupportedLanguage language) {
+    switch (language) {
+      case SupportedLanguage.zhHans:
+        return '鉴赏';
+      case SupportedLanguage.zhHant:
+        return '鑑賞';
+      case SupportedLanguage.en:
+        return 'Gallery';
+      case SupportedLanguage.ja:
+        return '鑑賞';
+    }
+  }
 }
 
 /// 淡入动画包装器
@@ -251,10 +277,7 @@ class _AnimatedFadeIn extends StatefulWidget {
   final Widget child;
   final bool startAnimation;
 
-  const _AnimatedFadeIn({
-    required this.child,
-    required this.startAnimation,
-  });
+  const _AnimatedFadeIn({required this.child, required this.startAnimation});
 
   @override
   State<_AnimatedFadeIn> createState() => _AnimatedFadeInState();
@@ -299,9 +322,6 @@ class _AnimatedFadeInState extends State<_AnimatedFadeIn>
 
   @override
   Widget build(BuildContext context) {
-    return FadeTransition(
-      opacity: _animation,
-      child: widget.child,
-    );
+    return FadeTransition(opacity: _animation, child: widget.child);
   }
 }

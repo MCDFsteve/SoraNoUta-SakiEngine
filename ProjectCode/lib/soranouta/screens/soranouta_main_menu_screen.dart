@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:sakiengine/src/config/saki_engine_config.dart';
 import 'package:sakiengine/src/screens/save_load_screen.dart';
@@ -19,6 +20,7 @@ import 'package:sakiengine/src/game/story_flowchart_analyzer.dart';
 import 'dart:math';
 import 'dart:ui' as ui;
 import 'package:sakiengine/src/localization/localization_manager.dart';
+import 'soranouta_appreciation_screen.dart';
 
 /// SoraNoUta 项目的自定义主菜单屏幕
 /// 使用模块化标题组件 + 专用按钮
@@ -47,6 +49,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
   bool _showLoadOverlay = false;
   bool _showDebugPanel = false;
   bool _showSettings = false;
+  bool _showAppreciation = false;
   bool _showFlowchart = false; // 新增：流程图覆盖层状态
   bool _isDarkModeButtonHovered = false;
   bool _isFlowchartButtonHovered = false; // 新增：流程图按钮悬停状态
@@ -139,6 +142,11 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
     }
   }
 
+  void _closeAppreciation() {
+    setState(() => _showAppreciation = false);
+    unawaited(_startBackgroundMusic());
+  }
+
   Future<void> _showExitConfirmation(BuildContext context) async {
     await ExitConfirmationDialog.showExitConfirmationAndDestroy(context);
   }
@@ -211,17 +219,20 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
                 config: config,
                 scale: menuScale,
                 screenSize: screenSize,
-                onContinueGame:
-                    _hasQuickSave ? _handleContinueGame : null, // 新增：传递继续游戏回调
+                onContinueGame: _hasQuickSave
+                    ? _handleContinueGame
+                    : null, // 新增：传递继续游戏回调
                 startAnimation: _startMenuAnimation, // 与按钮动画同步
               ),
 
               // SoraNoUta 专用按钮，参与卷帘动画
               SoranoutaMenuButtons.createButtonsWidget(
                 onNewGame: widget.onNewGame,
-                onContinueGame:
-                    _hasQuickSave ? _handleContinueGame : null, // 新增：传递继续游戏回调
+                onContinueGame: _hasQuickSave
+                    ? _handleContinueGame
+                    : null, // 新增：传递继续游戏回调
                 onLoadGame: () => setState(() => _showLoadOverlay = true),
+                onAppreciation: () => setState(() => _showAppreciation = true),
                 onSettings: () => setState(() => _showSettings = true),
                 onExit: () => _showExitConfirmation(context),
                 config: config,
@@ -279,14 +290,14 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
                       duration: const Duration(milliseconds: 400),
                       transitionBuilder:
                           (Widget child, Animation<double> animation) {
-                        return RotationTransition(
-                          turns: animation,
-                          child: FadeTransition(
-                            opacity: animation,
-                            child: child,
-                          ),
-                        );
-                      },
+                            return RotationTransition(
+                              turns: animation,
+                              child: FadeTransition(
+                                opacity: animation,
+                                child: child,
+                              ),
+                            );
+                          },
                       child: Icon(
                         isDarkMode ? Icons.dark_mode : Icons.light_mode,
                         key: ValueKey(isDarkMode ? 'dark' : 'light'),
@@ -338,22 +349,22 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
                         duration: const Duration(milliseconds: 400),
                         transitionBuilder:
                             (Widget child, Animation<double> animation) {
-                          return RotationTransition(
-                            turns: animation,
-                            child: FadeTransition(
-                              opacity: animation,
-                              child: child,
-                            ),
-                          );
-                        },
+                              return RotationTransition(
+                                turns: animation,
+                                child: FadeTransition(
+                                  opacity: animation,
+                                  child: child,
+                                ),
+                              );
+                            },
                         child: Icon(
                           isDarkMode ? Icons.dark_mode : Icons.light_mode,
                           key: ValueKey(isDarkMode ? 'dark' : 'light'),
                           size: 48 * textScale,
                           color: _isDarkModeButtonHovered
-                            ? (isDarkMode ? Colors.white : Colors.black)
-                            : (isDarkMode ? Colors.black : Colors.white),
-                      ),
+                              ? (isDarkMode ? Colors.white : Colors.black)
+                              : (isDarkMode ? Colors.black : Colors.white),
+                        ),
                       ),
                     ),
                   ),
@@ -447,6 +458,9 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
                     setState(() => _showFlowchart = false);
                   },
                 ),
+
+              if (_showAppreciation)
+                SoranoutaAppreciationScreen(onClose: _closeAppreciation),
 
               if (_showDebugPanel)
                 DebugPanelDialog(
