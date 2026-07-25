@@ -60,4 +60,4 @@ cp2right: scale=1.3 xcenter=0.8 ycenter=0.7 anchor=center
 cp2big: scale=1.7 xcenter=0.5 ycenter=0.85 anchor=center
 
 // 第二章物件特写的最终停靠位置。
-cp2item: scale=1.2 xcenter=0.5 ycenter=0.42 anchor=center
+cp2item: scale=0.5 xcenter=0.5 ycenter=0.42 anchor=center

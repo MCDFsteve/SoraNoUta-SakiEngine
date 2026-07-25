@@ -169,7 +169,7 @@ nvlm
 endnvlm
 // <renpy-performance source=cp2_014.rpy:135>
 scene home-asa with diss
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 play music gogo
 // </renpy-performance>
 xcp2 "嗯。总之先想想办法吧..."
@@ -199,7 +199,7 @@ scene home-asa with fade
 // </renpy-performance>
 "......"
 // <renpy-performance source=cp2_014.rpy:152>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "也就是说，萧可并不是第一次出现意外事故了？"
 // 夏悠侧脸思考
@@ -231,7 +231,7 @@ xcp2 ciallo "我知道你有神奇的能力对吧...你自己也知道的.....�
 // 夏悠ciallo
 l "嗯嗯，虽然我不知道你是怎么看出来的......"
 // <renpy-performance source=cp2_014.rpy:170>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "萧可有途径知道这些吗？"
 // 夏悠侧脸思考
@@ -254,7 +254,7 @@ xcp2 "为什么看你日记的时候没阻止啊，可恶，连我都没看过�
 // 对话框震动 夏悠赌气
 // <renpy-performance source=cp2_014.rpy:186>
 scene home-asa with fade
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 "......"
 xcp2 "这......也就是说，萧可大概知道你的能力了......不.....肯定知道了..."
@@ -277,7 +277,7 @@ xcp2 "额......这个不算！！" shake_13
 xcp2 tameiki2 "算了，我也有察觉到。"
 // 夏悠闭眼叹气
 // <renpy-performance source=cp2_014.rpy:200>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "为什么她会给你送一个手机？"
 // 夏悠侧脸思考
@@ -290,7 +290,7 @@ show xcp2 pose1 tameiki2 at cp2center
 xcp2 "唉......你真是......算了......"
 // 夏悠闭眼叹气
 // <renpy-performance source=cp2_014.rpy:206>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "继续思考吧......"
 // 夏悠侧脸思考

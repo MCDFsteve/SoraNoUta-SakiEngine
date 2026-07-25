@@ -32,7 +32,7 @@ play sound haneru
 // </renpy-performance>
 xcp2 "诶？林澄？"
 // <renpy-performance source=cp2_012.rpy:32>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "怎么？"
 // 夏悠侧脸思考
@@ -46,7 +46,7 @@ nvlm
 endnvlm
 // <renpy-performance source=cp2_012.rpy:44>
 play sound kakeru
-show xcp2 pose5 kowa at cp2center an cp2tremble repeat 4
+show xcp2 pose6 kowa at cp2center an cp2tremble repeat 4
 // </renpy-performance>
 xcp2 "诶？" shake_2
 // 对话框震动 夏悠害怕 抱手 角色震动
@@ -68,7 +68,7 @@ nvlm
 "不管夏悠是否相信，也不管夏悠如何询问我为什么，我都得先说出来这个事情。"
 endnvlm
 // <renpy-performance source=cp2_012.rpy:62>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "那我们该怎么做？"
 // 夏悠侧颜思考
@@ -121,7 +121,7 @@ l "今天早上七点多的时候，萧可会给我发手机信息，告诉我�
 l "这个时间点正常情况我们已经到校门口了。"
 l "假设她发消息的时候正在去市里的路上的公交车。"
 // <renpy-performance source=cp2_012.rpy:95>
-show xcp2 pose5 think2 at cp2center
+show xcp2 pose1 think2 at cp2center
 // </renpy-performance>
 xcp2 "为什么不是坐的她爸爸的车呢？"
 // 夏悠侧脸思考

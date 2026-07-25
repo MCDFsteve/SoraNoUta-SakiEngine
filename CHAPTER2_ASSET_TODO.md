@@ -4,12 +4,15 @@
 
 - 夏悠第二章立绘 `xiayo2`
   - `pose1`—`pose4`：分别组合 `arm1`—`arm4`。
-  - `pose5`：按原作图层坐标组合 `arm5 + arm6`。
+  - `pose5`：`arm5 + arm6` 拼接存在明显错位，已从剧本、鉴赏和导入流程停用。
   - `pose6`：组合 `arm7`。
   - `pose7`—`pose15`：第二章便服完整姿势。
   - 表情及 `kuraikaop`、`shyp`、`nani` 组合差分已转为原生可切换资源。
+  - 原目录中的 `kirakira.png` 是混入 `pose3` 的第一章整头差分；运行时的
+    `kirakira` 已映射为同套新版立绘的 `star.png`，不再覆盖第二章头部。
   - Ren'Py 的 `pose4` 侧身身体属于第一章废案，不导入、不注册独立资源；
-    原稿中的“侧脸思考”镜头改用第二章正式的 `pose5 + think/think2`。
+    原稿中的“侧脸思考”镜头改用稳定的 `pose1 + think/think2`；
+    原稿 `arm5 + kowa` 的害怕动作改用双手收在胸前的 `pose6 + kowa`。
 - 萧可立绘 `shioke`
   - `pose1`—`pose3`：`body1` 分别组合 `arm1`—`arm3`。
   - `pose4`：`body3 + arm1`（偏头姿势）。

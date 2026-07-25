@@ -174,7 +174,7 @@ l "好耳熟的话，总感觉在哪里听过。"
 "可能涉及到我所不知道的生物学方面的东西了。"
 // <renpy-performance source=cp2_001.rpy:166>
 hide tonboitem
-show xcp2 pose5 think at cp2center with diss
+show xcp2 pose1 think at cp2center with diss
 // </renpy-performance>
 xcp2 "那蜻蜓怎么处理呢？"
 xcp2 think2 "用线拴起来吧！"
@@ -242,7 +242,7 @@ nvlm
 "但是没什么关系。估计是中午打瞌睡的时候睡昏了。"
 endnvlm
 // <renpy-performance source=cp2_001.rpy:235>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "emmmmm"
 xcp2 "那个时候的我是在干什么呢......"

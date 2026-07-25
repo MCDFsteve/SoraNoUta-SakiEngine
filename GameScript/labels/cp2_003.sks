@@ -16,7 +16,7 @@ nan "你旁边的是？"
 "毕竟我和夏悠不是一个年级。"
 "虽然整个学校六个年级，一个年级只有一个班。"
 // <renpy-performance source=cp2_003.rpy:19>
-show xcp2 pose5 think at cp2left2 with diss
+show xcp2 pose1 think at cp2left2 with diss
 // </renpy-performance>
 xcp2 "萧......萧可......唔......这是你同学吗？"
 "夏悠似乎提前认识过她。"
@@ -183,7 +183,7 @@ nvlm
 "老板接过刮刮卡，从收银台里掏出一张皱皱的五元纸币。"
 endnvlm
 // <renpy-performance source=cp2_003.rpy:172>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "嗯。"
 xcp2 think2 "老板可以兑换成五张一块的吗？"

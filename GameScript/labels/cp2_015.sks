@@ -20,7 +20,7 @@ l "是萧可说的，她家的小猫一直没有新的猫碗......"
 l "她妈也不愿意买一个新的，所以她就希望我......"
 l "希望我......祈祷她妈妈给她买一个猫碗......"
 // <renpy-performance source=cp2_015.rpy:16>
-show xcp2 pose5 think2 at cp2center
+show xcp2 pose1 think2 at cp2center
 // </renpy-performance>
 xcp2 "那你祈祷了吗？"
 // 夏悠侧脸思考 看过来
@@ -44,7 +44,7 @@ xcp2 "但是啊林澄！！她是在第二天去学校的时候就带上了小�
 l "嗯嗯....."
 l "但是还感谢我了呢.....真的有了猫碗......"
 // <renpy-performance source=cp2_015.rpy:29>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "会有人在很早的时候出去买猫碗吗？"
 // 夏悠侧脸思考
@@ -100,7 +100,7 @@ l "开玩笑吧......我什么时候拥有......拥有这么厉害的超能力�
 l "所以你的意思是.....萧可家的猫碗其实是......是我无中生有出来的？"
 xcp2 "对！恐怕萧可也是第一时间猜测到了这一点。"
 // <renpy-performance source=cp2_015.rpy:63>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "她为了确保你的回到过去的能力能使用，所以才提前验证了一下无中生有的能力......"
 // 夏悠侧脸思考
@@ -116,7 +116,7 @@ show xcp2 pose1 tameiki2 at cp2center
 xcp2 "是因为她发现没达到自己希望达到的事情吧......"
 // 夏悠闭眼叹气
 // <renpy-performance source=cp2_015.rpy:72>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "值得拿自己的生命做赌注的事情......"
 // 夏悠侧脸思考
@@ -197,7 +197,7 @@ play sound chin
 // </renpy-performance>
 l "姆......Q！！姆Q！！姆Q！！"
 // <renpy-performance source=cp2_015.rpy:137>
-show xcp2 pose5 kowa at cp2center an cp2jump
+show xcp2 pose6 kowa at cp2center an cp2jump
 play sound haneru
 // </renpy-performance>
 xcp2 "虽然之前也很恶心，现在终于要放弃做人了吗？"

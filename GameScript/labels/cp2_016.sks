@@ -217,7 +217,7 @@ xcp2 "林澄......林澄？你怎么了？"
 l "我......我失败了......"
 // <renpy-performance source=cp2_016.rpy:161>
 hide xcp2
-show xcp2 pose5 think at cp2right2
+show xcp2 pose1 think at cp2right2
 // </renpy-performance>
 xcp2 "什么失败了？计划吗......."
 // 夏悠侧脸思考
@@ -255,7 +255,7 @@ endnvlm
 // <renpy-performance source=cp2_016.rpy:188>
 scene shiokegate with diss
 show xk pose1 emm2 at cp2left2
-show xcp2 pose5 think at cp2right2
+show xcp2 pose1 think at cp2right2
 // </renpy-performance>
 xcp2 think2 "是不是因为需要回溯到的时间太模糊了？"
 // 眼睛看过来
@@ -293,7 +293,7 @@ nvlm
 "但是我知道，那不是请求式的下跪，而是无力的摊跪在地上。"
 endnvlm
 // <renpy-performance source=cp2_016.rpy:211>
-show xcp2 pose5 think at cp2right2
+show xcp2 pose1 think at cp2right2
 // </renpy-performance>
 xcp2 "所以即便尝试回溯到一个确切的时间，也依旧不行吗？这是为什么？"
 // 夏悠侧脸思考
@@ -387,7 +387,7 @@ l "不管我想着什么入睡，又不管我想着回到具体哪个时间点..
 l "我都只能回到这个片段........."
 l "仿佛我需要回去的那段时间，有一堵无形的墙，阻挡着我的继续前进......"
 // <renpy-performance source=cp2_016.rpy:277>
-show xcp2 pose5 think at cp2right2
+show xcp2 pose1 think at cp2right2
 // </renpy-performance>
 xcp2 "难道是.......你可以回去的时间，有距离限制？"
 // 夏悠侧脸思考

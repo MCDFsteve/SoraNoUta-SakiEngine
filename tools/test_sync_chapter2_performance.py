@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from tools.sync_chapter2_performance import rebuild_nvlm_blocks
+from tools.sync_chapter2_performance import rebuild_nvlm_blocks, translate_xiayo
 
 
 class RebuildNvlmBlocksTest(unittest.TestCase):
@@ -92,6 +92,28 @@ xp "分支后"
                 "endnvlm",
             ],
         )
+
+
+class TranslateXiayoTest(unittest.TestCase):
+    def test_retired_pose5_is_never_emitted(self) -> None:
+        cases = (
+            (
+                ["pose4", "think"],
+                "show xcp2 pose1 think at cp2center",
+            ),
+            (
+                ["pose3", "naku", "to", "think"],
+                "show xcp2 pose1 think at cp2center with diss",
+            ),
+            (
+                ["pose3", "arm5", "kowa"],
+                "show xcp2 pose6 kowa at cp2center",
+            ),
+        )
+
+        for tokens, expected in cases:
+            with self.subTest(tokens=tokens):
+                self.assertEqual(translate_xiayo(tokens, "pose", []), expected)
 
 
 if __name__ == "__main__":

@@ -154,7 +154,7 @@ xcp2 "作为交换吗？"
 l "嗯......作为交换......"
 "我希望夏悠开口说出的那个人是我。"
 // <renpy-performance source=cp2_006.rpy:148>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "我啊～我喜欢的人，很高大，很雄伟。"
 xcp2 think2 "然后，很聪明，懂很多东西，还经常帮我忙。"

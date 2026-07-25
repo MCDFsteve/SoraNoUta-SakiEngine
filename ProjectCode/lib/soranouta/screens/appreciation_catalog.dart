@@ -140,7 +140,6 @@ const appreciationCharacters = <AppreciationCharacter>[
       'pose2',
       'pose3',
       'pose4',
-      'pose5',
       'pose6',
       'pose7',
       'pose8',

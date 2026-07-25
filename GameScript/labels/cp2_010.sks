@@ -70,7 +70,7 @@ nvlm
 "我将那天萧可拜托我的内容全部告诉给了夏悠。"
 endnvlm
 // <renpy-performance source=cp2_010.rpy:59>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "原来是这样。但是萧可却在今天迟到了。"
 // 夏悠思考
@@ -97,7 +97,7 @@ nvlm
 endnvlm
 // <renpy-performance source=cp2_010.rpy:82>
 scene schoolgate
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "是萧可发过来的吗？"
 l "嗯。她说她和她妈妈去医院了，今天来不了。"
@@ -311,7 +311,7 @@ play sound pekori
 // </renpy-performance>
 xcp2 "嗯嗯不是..."
 // <renpy-performance source=cp2_010.rpy:265>
-show xcp2 pose5 think at cp2right
+show xcp2 pose1 think at cp2right
 // </renpy-performance>
 xcp2 "只是在想，这一切或许都会被覆盖掉吧..."
 // 夏悠侧脸思考

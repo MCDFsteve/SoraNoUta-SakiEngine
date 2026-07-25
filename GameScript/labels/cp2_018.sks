@@ -136,7 +136,7 @@ xk "啊？？！" shake_4
 xcp2 what "怎么了？"
 // 夏悠疑惑
 // <renpy-performance source=cp2_018.rpy:119>
-show xcp2 pose5 think at cp2right2
+show xcp2 pose1 think at cp2right2
 play sound pin
 // </renpy-performance>
 xcp2 "我想我大概知道了......"

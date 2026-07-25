@@ -15,7 +15,7 @@ xcp2 pose3 doyagao "哼。毕竟我对你也是足够了解了。"
 l "那怎么可能。"
 l "只有我自己才最了解我自己。"
 // <renpy-performance source=cp2_005.rpy:18>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "嗯......"
 xcp2 think2 "真的？"
@@ -235,7 +235,7 @@ show xcp2 pose4 smile2 at cp2center
 xcp2 "嗯～真是幸运～"
 "夏悠也合上了书，站起身来看向我。"
 // <renpy-performance source=cp2_005.rpy:232>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "那个......"
 xcp2 think2 "你愿意......以后也能亲眼看到这般风景吗？"

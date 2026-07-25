@@ -102,7 +102,7 @@ OVERLAY_RESTORES = {
     ],
     ("cp2_010.rpy", 79): [
         "scene schoolgate",
-        "show xcp2 pose5 think at cp2center",
+        "show xcp2 pose1 think at cp2center",
     ],
     ("cp2_012.rpy", 170): [
         "scene shiokehome",
@@ -924,7 +924,7 @@ def translate_xiayo(tokens: list[str], transform: str | None, atl: list[str]) ->
     if joined.startswith("think to pose3"):
         return f"show xcp2 pose2 doyagao{tail}"
     if "naku to think" in joined:
-        return f"show xcp2 pose5 think{tail} with diss"
+        return f"show xcp2 pose1 think{tail} with diss"
     if "pose3 eye" in joined:
         return f"show xcp2 pose1 tameiki2{tail} with diss"
 
@@ -935,9 +935,10 @@ def translate_xiayo(tokens: list[str], transform: str | None, atl: list[str]) ->
         )
         if expression == "think1":
             expression = "think"
-        # Ren'Py pose4 is an abandoned Chapter 1 side-body draft. Re-stage its
-        # thinking beat with the official Chapter 2 arm5+arm6 forehead pose.
-        return f"show xcp2 pose5 {expression}{tail}"
+        # Ren'Py pose4 is an abandoned Chapter 1 side-body draft. The attempted
+        # Chapter 2 arm5+arm6 replacement has visible seams, so keep the
+        # expression and use the stable neutral body instead.
+        return f"show xcp2 pose1 {expression}{tail}"
 
     body2 = "body2" in tokens
     arm_match = next(
@@ -948,7 +949,10 @@ def translate_xiayo(tokens: list[str], transform: str | None, atl: list[str]) ->
     if body2:
         pose_number = 12 if arm_number == 4 else 11
     else:
-        pose_number = min(arm_number, 6)
+        # pose5 (arm5+arm6) is retired because its assembled arms do not align.
+        # arm5's only story use is the frightened, hands-raised beat, for which
+        # pose6 (arm7) preserves the intended silhouette.
+        pose_number = 6 if arm_number >= 5 else arm_number
 
     base = next((token for token in tokens if token in XIAYO_BASE_EXPRESSIONS), "happy")
     plugins = [token for token in tokens if token in XIAYO_PLUGINS]

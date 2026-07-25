@@ -14,8 +14,9 @@
   演出节点和 NVL 边界都可以由
   `tools/sync_chapter2_performance.py` 确定性重建。
 - 原稿中的 `xiayo pose4` 属于第一章废案侧身立绘，不导入第二章；
-  对应的思考演出统一改用第二章正式 `xiayo2 pose5`（`arm5 + arm6`）
-  搭配 `think` / `think2` 表情。
+  对应的思考演出统一改用稳定的 `xiayo2 pose1` 搭配
+  `think` / `think2` 表情。拼接错位的 `pose5` 已停用；原稿
+  `arm5 + kowa` 的害怕动作改用 `xiayo2 pose6 + kowa`。
 
 ## 分文件接入结果
 

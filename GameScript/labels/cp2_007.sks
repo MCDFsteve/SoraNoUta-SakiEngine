@@ -229,7 +229,7 @@ xcp2 "哼！不说就算了！我才不稀罕呢！！" shake_16
 xk eye "后面告诉你...但是现在...不行。" shake_18
 // 萧可眯眼
 // <renpy-performance source=cp2_007.rpy:173>
-show xcp2 pose5 think at cp2center
+show xcp2 pose1 think at cp2center
 // </renpy-performance>
 xcp2 "嗯，好。"
 // 夏悠侧身思考

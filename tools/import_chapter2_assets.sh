@@ -167,7 +167,7 @@ compose_multiply() {
 # 夏悠（第二章）：body 作为 pose 底层，arm 作为 pose-foreground。
 # 这样表情仍由 SakiEngine 原生切换，手部也能正确覆盖在脸部上方。
 encode_webp "$xiayo_source/body.png" "$temporary_dir/xiayo2-body.webp"
-for pose_number in 1 2 3 4 5 6; do
+for pose_number in 1 2 3 4 6; do
   cp "$temporary_dir/xiayo2-body.webp" \
     "$character_pose_dir/xiayo2-pose${pose_number}.webp"
 done
@@ -178,15 +178,7 @@ for arm_number in 1 2 3 4; do
     "$character_pose_dir/xiayo2-pose${arm_number}-foreground.webp"
 done
 
-xiayo_arm56="$temporary_dir/xiayo-arm5-arm6.png"
-magick \
-  -size 1080x1920 xc:none \
-  "$xiayo_source/arm5.png" -compose over -composite \
-  "$xiayo_source/arm6.png" -compose over -composite \
-  "$xiayo_arm56"
-encode_webp \
-  "$xiayo_arm56" \
-  "$character_pose_dir/xiayo2-pose5-foreground.webp"
+# arm5 + arm6 拼接后的手臂与身体存在明显错位，pose5 已停用。
 encode_webp \
   "$xiayo_source/arm7.png" \
   "$character_pose_dir/xiayo2-pose6-foreground.webp"
@@ -215,8 +207,15 @@ for expression_file in "$xiayo_source"/*.png; do
   case "$expression_name" in
     body|arm[0-9]*) continue ;;
   esac
+  expression_source="$expression_file"
+  if [[ "$expression_name" == "kirakira" ]]; then
+    # pose3/kirakira.png 是目录中残留的第一章整头差分，会把第二章脸和
+    # 发型一起覆盖掉。pose3/star.png 才是同一套新版立绘中语义一致的
+    # “闪闪发光的眼睛 + 开心张嘴”，保留 kirakira 资源名供剧本调用。
+    expression_source="$xiayo_source/star.png"
+  fi
   encode_webp \
-    "$expression_file" \
+    "$expression_source" \
     "$character_expression_dir/xiayo2-$expression_name.webp"
 done
 
