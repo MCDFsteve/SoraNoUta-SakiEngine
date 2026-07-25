@@ -42,7 +42,6 @@ ease 0.2 ycenter-0
 ease 0.2 ycenter+0.08
 ease 0.1 ycenter-0.16
 ease 0.1 ycenter+1.0
-pause
 
 
 backjump
@@ -103,7 +102,7 @@ ease 0.3 ycenter-0.05 scale+0.15
 ease 0.15 ycenter-0
 ease 0.15 ycenter-0.05 scale+0
 ease 0.15 ycenter-0
-ease 0.3 
+ease 0.3 ycenter+0
 fadein
 linear 0.5 alpha+1.0
 
@@ -156,3 +155,142 @@ attack_syozen
 xcenter-0
 ease 0.5 xcenter+0.25
 ease 0.5 xcenter-0
+
+// ---------------------------------------------------------------------------
+// 第二章 Ren'Py 演出迁移预设。
+// 所有数值均为相对 cp2* 舞台位的偏移，不直接照搬 Ren'Py 绝对坐标。
+
+cp2jump
+ease 0.10 ycenter-0.05
+ease 0.20 ycenter+0
+
+cp2jump2
+ease 0.10 ycenter-0.05
+ease 0.20 ycenter+0
+ease 0.10 ycenter-0.05
+ease 0.20 ycenter+0
+
+// Ren'Py poose：0.2 秒放大后轻微上下回弹，并保持放大状态。
+cp2enlarge_bounce
+linear 0.20 ycenter+0.05 scale+0.40
+linear 0.10 ycenter+0.07 scale+0.40
+linear 0.10 ycenter+0.03 scale+0.40
+linear 0.10 ycenter+0.05 scale+0.40
+
+// Ren'Py bigjump：两段快速放大上弹。
+cp2bigjump
+ease 0.05 ycenter+0.10
+ease 0.05 ycenter+0.15 scale+0.40
+
+// Ren'Py ajump4：从画面下方冲入后连续回弹。
+cp2spring_in
+ycenter+0.90
+ease 0.10 ycenter+0.05
+ease 0.10 ycenter-0.05
+ease 0.075 ycenter+0.05
+ease 0.075 ycenter-0.05
+ease 0.10 ycenter+0
+
+cp2hshake
+linear 0.10 xcenter-0.008
+linear 0.10 xcenter+0.008
+linear 0.10 xcenter-0.008
+linear 0.10 xcenter+0.008
+linear 0.10 xcenter+0
+
+cp2vshake
+linear 0.10 ycenter-0.014
+linear 0.10 ycenter+0.014
+linear 0.10 ycenter-0.014
+linear 0.10 ycenter+0.014
+linear 0.10 ycenter+0
+
+cp2tremble
+ease 0.07 ycenter-0.01
+ease 0.10 ycenter+0
+
+cp2nod
+ease 0.30 ycenter+0.03
+ease 0.30 ycenter+0.01
+ease 0.30 ycenter+0.03
+ease 0.30 ycenter+0
+
+cp2enter_right
+xcenter+0.10
+ease 0.30 xcenter+0
+
+cp2enter_right2
+xcenter+0.20
+ease 0.30 xcenter+0
+
+cp2enter_left
+xcenter-0.10
+ease 0.30 xcenter+0
+
+cp2enter_left2
+xcenter-0.20
+ease 0.30 xcenter+0
+
+cp2from_center_to_left
+xcenter+0.30
+ease 0.25 xcenter+0
+
+cp2from_center_to_left2
+xcenter+0.20
+ease 0.25 xcenter+0
+
+cp2from_center_to_right
+xcenter-0.30
+ease 0.25 xcenter+0
+
+cp2from_center_to_right2
+xcenter-0.20
+ease 0.25 xcenter+0
+
+cp2from_left_to_center
+xcenter-0.30
+ease 0.25 xcenter+0
+
+cp2from_left2_to_center
+xcenter-0.20
+ease 0.25 xcenter+0
+
+cp2from_right_to_center
+xcenter+0.30
+ease 0.25 xcenter+0
+
+cp2from_right2_to_center
+xcenter+0.20
+ease 0.25 xcenter+0
+
+cp2item_in
+ycenter+1.08
+ease 0.10 ycenter-0.05
+ease 0.10 ycenter+0.05
+ease 0.10 ycenter+0
+
+cp2rise
+ycenter+0.85
+ease 0.30 ycenter+0.05
+ease 0.30 ycenter-0.05
+ease 0.30 ycenter+0
+
+cp2fall
+ease 0.25 ycenter+0.15 alpha-1.0
+
+cp2grow
+ease 0.10 ycenter+0.20 scale+0.25
+ease 0.10 ycenter+0.10 scale+0.45
+ease 0.10 ycenter+0.15 scale+0.40
+
+cp2shrink
+scale+0.40
+ycenter+0.15
+ease 0.10 ycenter-0.02 scale+0.38
+ease 0.10 ycenter+0.02 scale+0.08
+ease 0.10 ycenter+0 scale+0
+
+cp2sky_pan
+scale+0.20
+ycenter+0.10
+ease 7.0 ycenter-0.10

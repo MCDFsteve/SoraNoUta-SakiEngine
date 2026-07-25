@@ -12,10 +12,14 @@ l : "林澄" : narrator
 x : "夏悠" : xiayo1 at xiayo1pose
 x2 : "夏悠" : xiayo1 at xiayo1pose
 xcp2 : "夏悠" : xiayo2 at xiayo2pose
+xcp2strong : "夏悠" : xiayo2 at xiayo2pose
 x2nan : "夏悠" : narrator
 ls : "刘守真" : syozen1 at xiayo1pose
 lsnan : "刘守真" : narrator
 lg : "李宫娜" : gonna1 at xiayo1pose
+// 第二章画师素材挂点：当前资源为透明层，交付后覆盖 gonna2/syozen2 即可。
+lgcp2 : "李宫娜" : gonna2 at cp2center slot:lg
+lscp2 : "刘守真" : syozen2 at cp2center slot:ls
 xnan : "夏悠" : narrator
 sensei : "老师" : narrator
 iru : "狗" : narrator
@@ -39,6 +43,13 @@ phone : "手机" : narrator
 xpc : "林澄" : narrator
 xpxk : "萧可" : narrator
 xklc : "林澄&萧可" : narrator
+// 第二章物件特写；显示名为空，只作为 show/hide 可视资源使用。
+bookitem : "" : book at cp2item
+moneyitem : "" : money at cp2item
+paperitem : "" : paper at cp2item
+paper2item : "" : paper2 at cp2item
+teaitem : "" : tea at cp2item
+tonboitem : "" : tonbo at cp2item
 // 添加你的角色定义：
 // 格式: 角色别名 : "角色显示名称" : 角色资源ID
 // 示例: alice : "爱丽丝" : alice at pose

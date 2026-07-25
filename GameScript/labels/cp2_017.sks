@@ -1,5 +1,8 @@
 //label// SoraNoUta Chapter 2 cp2_017
 label cp2_017
+// <renpy-performance source=cp2_017.rpy:3>
+show xk pose1 unhappy at cp2left2
+// </renpy-performance>
 xk "林澄......你可以...带着我一起回去吗。"
 // 萧可睁眼
 l "你的意思是？你也一起回到三个月以前？"
@@ -7,17 +10,27 @@ l "但是我.....不知道能不能......"
 xk eye "拜托了..."
 // 萧可眯眼
 l "我知道了......"
+// <renpy-performance source=cp2_017.rpy:10>
+stop music
+// </renpy-performance>
 nvlm
 "........"
 "我闭上了双眼，只是想的东西变了。"
 "需要回去的时间变为了三个月以前，而且这一次，要带着萧可一起回去。"
 endnvlm
+// <renpy-performance source=cp2_017.rpy:16>
+scene bl
+play sound bird loop
+// </renpy-performance>
 nvlm
 "......."
 "我睁开了双眼。"
 "啊！！？？"
 "这次是久违的在家中醒来。"
 endnvlm
+// <renpy-performance source=cp2_017.rpy:23>
+scene sky
+// </renpy-performance>
 nvlm
 "......."
 "时间也是三个月以前......"
@@ -25,6 +38,10 @@ nvlm
 "窗外的阳光透过窗帘洒在地板上，照出了一片温暖的光斑。"
 "只是一切都还那么安静，似乎在等待着什么。"
 "我得去找萧可！！！"
+// <renpy-performance source=cp2_017.rpy:31>
+play sound kakeru
+play sound hasiru
+// </renpy-performance>
 "我快速穿好衣物以后，就出门狂奔了起来。"
 "只是为了确认具体情况。"
 "即便是几公里距离的山路。"
@@ -48,37 +65,59 @@ nvlm
 "我停下了脚步。大口大口叹气着，驻足着，望着。"
 "熟悉的身影也停下来脚步，驻足着，望着。"
 endnvlm
-nvlm
-l "萧.......萧可！！？？？"
+// <renpy-performance source=cp2_017.rpy:55>
+play music futari
+// </renpy-performance>
+l "萧.......萧可！！？？？" shake_15
 // 对话框震动
 "在我喊出这个名字的一瞬间，那个熟悉的身影留下了眼泪。"
 "不断地流下眼泪，直到不断地滴在地面上。"
+// <renpy-performance source=cp2_017.rpy:59>
+cg shincg10 2
+// </renpy-performance>
 xk "林澄..........谢谢....."
+// 原 shincg10 1 号对峙差分已改为文字与对白停顿演出。
 // cg 萧可流泪
 xk "我真的......真的回到了三个月以前了......"
 l "是吗......居然真的可以......"
 "我更加摸不着我所具有的能力的本质了。"
+// <renpy-performance source=cp2_017.rpy:64>
+cg shincg10 3
+// </renpy-performance>
 xk "夏悠...呢？"
 // cg 萧可擦眼泪
 l ".......毕竟没带着她一起回来...虽然我提出过这个，干脆三个人都回去吧......"
 l "但是她婉拒了，她说。"
 "“有什么需要这样做的理由呢？因为不管在哪个时间点的我，都会一直等待你......都会一直对你提供帮助。”"
 xk "是吗..."
-// cg 互相眺望
 xk "这次计划如果成功了...我一定要好好感谢她......"
+// <renpy-performance source=cp2_017.rpy:72>
+cg shincg10 3
+// </renpy-performance>
 xk "她为我做了这么多事，感觉只是感谢都算不上是褒奖,而变成了贬低了...诚意太低了..."
 // cg 萧可擦眼泪
 "......"
 l "那萧可，你的妈妈呢？"
 xk "嗯...活过来了...现在就在家里。"
-// cg 互相眺望
 l "但是你也知道的，继续往前的话，你的妈妈依旧会因为乳腺癌去世。"
 l "被发现的时间越早，治愈的可能性就越大......"
 l "所以我们需要，不断继续回到过去，直到到达所能触及的极限。"
+// <renpy-performance source=cp2_017.rpy:81>
+stop sound
+// </renpy-performance>
 xk "嗯。"
 // cg 萧可擦眼泪
+// <renpy-performance source=cp2_017.rpy:85>
+scene sky with diss
+stop music
+// </renpy-performance>
+nvlm
 "......"
 "我和萧可分别了，各自重新回到了家。"
+// <renpy-performance source=cp2_017.rpy:90>
+play music sukuu
+scene sky-yoru
+// </renpy-performance>
 "我又重新闭上了双眼，这次依旧是三个月。"
 endnvlm
 nvlm
@@ -110,7 +149,6 @@ nvlm
 "......."
 "......."
 endnvlm
-nvlm
 xk "十二个月了......"
 xk "整整一年的距离了......"
 l "你回去以后的时间都在干什么？"
@@ -128,34 +166,51 @@ xk "但是就算没有这个能力..."
 xk "干脆把每一天都当成对方的生命的最后一天去做..."
 xk "干脆把每一天都当成自己生命的最后一天去做..."
 xk "因为或许真的是最后一天......"
+// <renpy-performance source=cp2_017.rpy:139>
+cg shincg10 2
+// </renpy-performance>
 xk "我会因为友善地陪它走完了余生的最后一段时光而感到庆幸，而不是等到永远不能见面以后，再开始后悔，才开始抱怨。"
 xk "后悔自己为什么不早点和它搞好关系，抱怨自己为什么错过了和它的最后一次见面......"
 xk "真的......真的是这样......"
 xk "一开始就把每一天当作余生的最后一天去过，那哪还有什么遗憾......"
 xk "毕竟谁知道自己最后一天是什么时候。包括我的同学，我的老师，夏悠......."
-endnvlm
-if persistent.cp2_important_switch:
-jump cp2_017_1
-else:
-jump cp2_017_2
+jump cp2_017_1 if cp2_important_switch true
+jump cp2_017_2 if cp2_important_switch false
 label cp2_017_1
 xk "还有你......林澄......"
 xk "林澄......你对夏悠，是一种什么样的情感？"
 xk "也对......她是你的表妹......"
 xk "你知道...我对夏悠是什么情感吗？"
+// <renpy-performance source=cp2_017.rpy:156>
+cg shincg10 3
+// </renpy-performance>
 xk "我第一次见到她的时候，就一见钟情了。"
+// <renpy-performance source=cp2_017.rpy:158>
+cg shincg10 2
+// </renpy-performance>
 xk "想着得到她，谁让她太可爱了？"
 // cg 萧可哭泣
 xk "不过我现在变了，变得不再相信一见钟情了。"
 xk "不存在什么一见钟情，一见钟情只是自己只顾着看脸去了。"
+// <renpy-performance source=cp2_017.rpy:162>
+cg shincg10 3
+// </renpy-performance>
 xk "因为我......遇到了比一见钟情的那个对象，更能打动我内心的那个人......"
 // cg 萧可擦眼泪
 xk "那个人就是......"
+// <renpy-performance source=cp2_017.rpy:165>
+cg shincg10 4
+// </renpy-performance>
 xk "你...林澄。"
 // cg 萧可手指着林澄
 xk "林澄...我喜欢你。"
 xk "你......愿意接受我的心意吗？"
-l "啊！！！？？？？"
+// <renpy-performance source=cp2_017.rpy:170>
+play sound poko
+cg shincg10 4
+shake duration 0.45 intensity 10 target background
+// </renpy-performance>
+l "啊！！！？？？？" shake_8
 // 对话框震动
 l "这种时候.....说.....说什么呢......"
 nvlm
@@ -163,7 +218,9 @@ nvlm
 "虽然嘴上这么说着，但是我此刻早已面色潮红了吧。"
 "毕竟这是我有生以来的第一次，第一次被女生所表白。"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_017.rpy:180>
+play sound poko
+// </renpy-performance>
 xk "所以你......你愿意和我交往吗？"
 l "我......你不是总说我很笨吗？"
 l "居然会看上我......"
@@ -178,6 +235,9 @@ xk "我已经绝对不会再做出之前那种事了......"
 xk "毕竟值得我珍惜的人，以及珍惜我的人......在这个世界上不止一个......"
 l "但是...是早恋吧......"
 xk "难道你想等到成年以后再恋爱？"
+// <renpy-performance source=cp2_017.rpy:196>
+cg shincg10 3
+// </renpy-performance>
 xk "但是那样...万一我或者你.....没活到成年怎么办？"
 xk "这跟你跟我说的理念，背道而驰了......"
 xk "想做的事情，就应该在想做的时候去做......不是吗？"
@@ -187,40 +247,51 @@ xk "为什么要把原计划拿来给做想做的东西的时间，青春，都�
 xk "而且恋爱就是可以和其他事情共存......"
 xk "林澄...你怎么想？"
 xk "回答吧...就算拒绝了，我也不会再让你变回草履虫了。"
-endnvlm
 menu
 "接受告白" cp2_Xako_end
 "拒绝告白" cp2_017_Next
 endmenu
 label cp2_Xako_end
+// <renpy-performance source=cp2_017.rpy:214>
+play music futari
+// </renpy-performance>
 l "我....."
 l "是啊......想做的事情，那就在想做的时候去做......"
 l "与其花时间去后悔，不如在后悔之前完成它。"
 l "我也很感动，原来我自己也是有价值的，也是能被其他人所关注到的存在......"
-nvlm
 "虽然我心里喜欢的一直是夏悠，但是在我明确表白之后，她表示了拒绝的行为。"
 "总是痴情于她，对我和她都是一种不负责任的态度吧。"
 "既然已经追逐不到第一次的爱情了，那不如接受别人第一次的爱情。"
 l "我.......我答应你！！答应很你交往！！"
+// <renpy-performance source=cp2_017.rpy:223>
+cg shincg10 2
+// </renpy-performance>
 xk "嗯....."
 // cg 萧可流泪
 "萧可留下了泪水。"
 xk "真是......真是太好了......"
+// <renpy-performance source=cp2_017.rpy:227>
+cg shincg10 4
+// </renpy-performance>
 xk "批准你...变成人类了。"
 // cg 萧可手指着
 xk "你不许忘，我也不会忘。"
 xk "即便这个时间，这个地点，可能会被改变。"
 xk "但是这份心意，这份情感，已经被我永远记在心中了，你也要一样。"
-l "我会的！！"
+l "我会的！！" shake_6
 // 对话框震动
 xk "那我们就从现在开始...成为彼此的支撑。"
 l "我会尽力陪伴你，无论未来发生什么，无论时间如何变迁，我都会在你身边。"
 xk ".........."
-// cg 萧可微笑
+// 原 shincg10 5 号微笑差分已改为对白停顿后转入黄昏收束。
 xk "那今天...就陪我看一次太阳日落。"
-l "嗯！！"
+l "嗯！！" shake_3
 // 对话框震动
 l "直到太阳下山......"
+// <renpy-performance source=cp2_017.rpy:242>
+cg shincg11 1 with diss
+// </renpy-performance>
+nvlm
 "......"
 "萧可倚靠在我身旁，一起坐在一块巨石旁边。"
 "看着太阳渐渐西去。看着夕阳的光辉渐渐打在我们两个人的身上。"
@@ -231,6 +302,9 @@ xk "林澄......"
 xk "如果今日即是极限，你会陪我，以及我的妈妈......走到最后吗？"
 l "绝对会的！"
 l "绝对！！"
+// <renpy-performance source=cp2_017.rpy:254>
+scene bl
+// </renpy-performance>
 "......"
 "......"
 "我和萧可分别以后，我重新闭上了双眼。祈祷着再一次的回到三个月以前。回到总计的，十五个月以前......"
@@ -239,28 +313,44 @@ nvlm
 "......"
 "当我再次睁开双眼的时候，却发现自己又站在了萧可家门口。"
 endnvlm
-nvlm
-l "啊？？！"
+// <renpy-performance source=cp2_017.rpy:268>
+scene shiokehome
+show xk pose1 emm at cp2left2 an cp2jump
+play sound haneru
+show xcp2 pose3 unhappy at cp2right2
+// </renpy-performance>
+l "啊？？！" shake_4
 // 对话框震动
-xk "啊？？！"
+xk "啊？？！" shake_4
 // 对话框震动
-x what "怎么了？"
+xcp2 what "怎么了？"
 // 夏悠疑惑
-x "我想我大概知道了......"
+// <renpy-performance source=cp2_017.rpy:273>
+show xcp2 pose5 think at cp2right2
+play sound pin
+// </renpy-performance>
+xcp2 "我想我大概知道了......"
 // 夏悠侧脸思考
-x think2 "碰到所能触及的极限了吗？"
+xcp2 think2 "碰到所能触及的极限了吗？"
 // 眼睛看过来
 l "或许是的。"
 l "没想到真真切切的是我能所触及到的极限，真真切切的是刚好一年的距离。"
-l "萧可！再回去一次吧！！回到一年前！！"
+l "萧可！再回去一次吧！！回到一年前！！" shake_18
 // 对话框震动
 xk happy "嗯......"
 // 萧可闭眼微笑
 xk "夏悠......你也来吗？"
-x smile2 "嗯嗯......有什么需要这样做的理由呢？因为不管在哪个时间点的我，都会一直等待你......都会一直对你提供帮助。"
+// <renpy-performance source=cp2_017.rpy:281>
+play sound pekori
+// </renpy-performance>
+xcp2 smile2 "嗯嗯......有什么需要这样做的理由呢？因为不管在哪个时间点的我，都会一直等待你......都会一直对你提供帮助。"
 // 夏悠闭眼微笑
-x "即便你们再也不会回到此刻的时间点，那我也会在你们所存在的那根时间线，一直存在。"
+xcp2 "即便你们再也不会回到此刻的时间点，那我也会在你们所存在的那根时间线，一直存在。"
 l "[size=0.8]夏悠...这几年来，谢谢了...虽然你拒绝了我，但是我还是会把你当朋友的......[/size]"
+// <renpy-performance source=cp2_017.rpy:286>
+scene bl with diss
+// </renpy-performance>
+nvlm
 "......"
 "我和萧可回到了一年前。"
 endnvlm
@@ -280,14 +370,18 @@ nvlm
 "......"
 l "手术结果怎么样？成功了？"
 xk "嗯...很成功......医生说我妈妈的病已经康复了，再休息几个星期就真的都结束了。"
-x "是吗？真的太好了！虽然这真的很巧合吧......巧合的体检就能查出还处于早期的症状......"
+xcp2 "是吗？真的太好了！虽然这真的很巧合吧......巧合的体检就能查出还处于早期的症状......"
 endnvlm
-nvlm
 "......"
+nvlm
 xk "九个月过去了......林澄......我妈妈已经康复好几个月了......现在已经完全看不出哪里有问题了......"
 l "真是......真是太好了......"
 l "上次我们在这里一起看夕阳，也是九个月以前呢......"
 endnvlm
+// <renpy-performance source=cp2_017.rpy:311>
+stop music
+play sound kazekage loop
+// </renpy-performance>
 nvlm
 "......"
 xk "为什么......为什么会这样？"
@@ -303,5 +397,3 @@ nvlm
 xk "为什么又是这样？医生说是突然猝死？"
 endnvlm
 jump cp2_018
-label cp2_017_2
-label cp2_018

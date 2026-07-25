@@ -1,12 +1,18 @@
 //label// SoraNoUta Chapter 2 cp2_018
 label cp2_018
+nvlm
 xk "明明在这一年间，我们都尽可能不漏掉任何地方了......我妈妈却还是......"
 l "不要放弃！萧可！再来一次！！再次回到一年前！！"
 xk "嗯...我不会轻易放弃，不管是为了哪个我珍爱的人......"
+endnvlm
 nvlm
 "......"
 xk "怎么还是........果然我妈妈的死......不管怎么样都会变成既定的事实吗？"
 l "不要放弃！！"
+// <renpy-performance source=cp2_018.rpy:11>
+stop sound
+play music asanimukau
+// </renpy-performance>
 xk "林澄......如果我的妈妈永远都会在今天死去，那你愿意......永远永远陪我一起......度过这一年的时间吗？"
 l "你在说什么傻话啊......我不是已经陪你一起，度过了不知道多少次的一年时间了吗？"
 xk "如果我妈妈的死，是发展的必然结果的话......."
@@ -35,6 +41,9 @@ l "不过在巨大的幸福感面前，已经显得微不足道了......"
 l "我爱你......"
 xk "我也爱你........"
 endnvlm
+// <renpy-performance source=cp2_018.rpy:41>
+cg shincg11 1
+// </renpy-performance>
 nvlm
 "时光的流逝如同那渐行渐远的夕阳，温柔却又无情。"
 "可是，在这段属于我们的小小时光里，一切都是那么的美好。"
@@ -46,11 +55,16 @@ xklc "我们的存在痕迹，只会存在于此处，时间的夹缝，一年�
 xklc "这就足够了！"
 "这.......就足够了.............."
 ".............."
-"萧可线 End"
-pause 10
 endnvlm
+// <renpy-performance source=cp2_018.rpy:53>
+play sound kane
+// </renpy-performance>
+"萧可线 End"
+// <renpy-performance source=cp2_018.rpy:56>
+pause 10
+// </renpy-performance>
 jump after_story_shioke
-nvlm
+label cp2_017_Next
 "我......"
 "怎么回事？这是我此生第一次被别人所告白......似乎激动到我的眼泪都流了下来。"
 "但是.....但是我的心已经有了别的归宿......"
@@ -82,7 +96,6 @@ xk "已经无所谓了...反正这段告白也会变得不存在......"
 "我只能用最简朴的语句去接受这番话。"
 l "嗯！但是你的心意，我知晓了。"
 l "我不会忘记这段聊天。"
-endnvlm
 jump cp2_017_2
 label cp2_017_2
 xk "还有你也是......"
@@ -98,6 +111,9 @@ l "绝对不会让这种事情再次发生了......"
 l "来吧......准备再次回溯吧......."
 xk "嗯。"
 // cg 萧可眺望
+// <renpy-performance source=cp2_018.rpy:101>
+scene bl with diss
+// </renpy-performance>
 nvlm
 "......"
 "......"
@@ -107,27 +123,41 @@ nvlm
 "......"
 "当我再次睁开双眼的时候，却发现自己又站在了萧可家门口。"
 endnvlm
-nvlm
-l "啊？？！"
+// <renpy-performance source=cp2_018.rpy:114>
+scene shiokehome with diss
+show xk pose1 emm at cp2left2 an cp2jump
+play sound haneru
+show xcp2 pose3 unhappy at cp2right2
+// </renpy-performance>
+l "啊？？！" shake_4
 // 对话框震动
-xk "啊？？！"
+xk "啊？？！" shake_4
 // 对话框震动
-x what "怎么了？"
+xcp2 what "怎么了？"
 // 夏悠疑惑
-x "我想我大概知道了......"
+// <renpy-performance source=cp2_018.rpy:119>
+show xcp2 pose5 think at cp2right2
+play sound pin
+// </renpy-performance>
+xcp2 "我想我大概知道了......"
 // 夏悠侧脸思考
-x think2 "碰到所能触及的极限了吗？"
+xcp2 think2 "碰到所能触及的极限了吗？"
 // 眼睛看过来
 l "或许是的。"
 l "没想到真真切切的是我能所触及到的极限，真真切切的是刚好一年的距离。"
-l "萧可！再回去一次吧！！回到一年前！！"
+l "萧可！再回去一次吧！！回到一年前！！" shake_18
 // 对话框震动
 xk "嗯......"
 xk "夏悠......你也来吗？"
-x smile2 "嗯嗯......有什么需要这样做的理由呢？因为不管在哪个时间点的我，都会一直等待你......都会一直对你提供帮助。"
+// <renpy-performance source=cp2_018.rpy:127>
+play sound poko
+// </renpy-performance>
+xcp2 smile2 "嗯嗯......有什么需要这样做的理由呢？因为不管在哪个时间点的我，都会一直等待你......都会一直对你提供帮助。"
 // 夏悠闭眼微笑
-x "即便你们再也不会回到此刻的时间点，那我也会在你们所存在的那根时间线，一直存在。"
-endnvlm
+xcp2 "即便你们再也不会回到此刻的时间点，那我也会在你们所存在的那根时间线，一直存在。"
+// <renpy-performance source=cp2_018.rpy:132>
+scene bl with diss
+// </renpy-performance>
 nvlm
 "......"
 "我和萧可回到了一年前。"
@@ -156,14 +186,18 @@ endnvlm
 nvlm
 "......."
 l "啊！"
-"我再次睁开双眼之时，发现自己站在萧可家的门口。"
 endnvlm
-nvlm
+"我再次睁开双眼之时，发现自己站在萧可家的门口。"
+// <renpy-performance source=cp2_018.rpy:162>
+scene shiokehome with diss
+show xk pose1 emm at cp2left2
+show xcp2 pose1 ochikomu at cp2right2
+// </renpy-performance>
 l "成......成功了吗？"
-x "......."
+xcp2 "......."
 xk "林澄..............."
 xk "失败了...吧......."
-xk kuraikao2 "失败了...啊！！"
+xk kuraikao2 "失败了...啊！！" shake_9
 // 对话框震动 萧可痛苦
 xk "明明我妈妈几个月以前就做完了手术，并且已经完全康复了......."
 xk "但是就在午夜的时候......和上次的一样的时间......"
@@ -186,9 +220,11 @@ xk naku "知道省零花钱给她买发髻了......知道自己去摘草莓以�
 xk "这一年间，我确实是成长了......"
 xk "但是我依旧不愿意面对......面对这个事实......"
 xk "所以你可以...再次满足我的心愿吗？"
-l "我...我知道了！"
+l "我...我知道了！" shake_9
 // 对话框震动
-endnvlm
+// <renpy-performance source=cp2_018.rpy:189>
+scene bl with diss
+// </renpy-performance>
 nvlm
 "......"
 "我又一次闭上了双眼。"
@@ -200,10 +236,17 @@ nvlm
 "再次睁开双眼，意料之中的，回到了萧可家门口。"
 "似乎变成了固定存档点一般的存在。"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_018.rpy:202>
+scene shiokehome with diss
+show xk pose1 emm at cp2left2
+show xcp2 pose1 ochikomu at cp2right2
+// </renpy-performance>
 l "现在呢？萧可？"
 xk "不行......"
 xk "还是一样......"
+// <renpy-performance source=cp2_018.rpy:206>
+show xk pose1 unhappy at cp2left2 an cp2tremble repeat 4
+// </renpy-performance>
 xk "......再让我试一次。"
 // 萧可睁眼 萧可颤抖
 l "但是已经尝试过两年了吧......你花费了六百多天的时间在这个上面了......"
@@ -211,9 +254,13 @@ l "也对，对你来说，这六百多天实际上是很幸福的吧......"
 xk "嗯......不过这次我确认了，即便没有任何意外因素，我的妈妈也依旧会因为突然的心脏骤停而去世。"
 xk "就感觉是设定好的...寿命就只有这么多......"
 xk "不过我还会再次尝试，即便事实可能不会改变...但是同样的，事实也有可能改变。"
-l "我知道了！"
+l "我知道了！" shake_5
 // 对话框震动
 "心情变得更加沉重，但是也只能试了。"
+// <renpy-performance source=cp2_018.rpy:216>
+scene bl with diss
+// </renpy-performance>
+nvlm
 "......"
 "我又一次闭上了双眼。"
 endnvlm
@@ -221,10 +268,14 @@ nvlm
 "......"
 "再次睁开双眼。"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_018.rpy:226>
+scene shiokehome with diss
+show xk pose1 emm at cp2left2
+show xcp2 pose1 ochikomu at cp2right2
+// </renpy-performance>
 l "怎么样了，萧可？"
 xk ".............."
-x happy "已经够了......"
+xcp2 happy "已经够了......"
 // 萧可闭眼微笑
 xk "嗯......"
 xk "对我来说已经足够了。"
@@ -245,13 +296,20 @@ xk "但是这以后...我会重新和你们一起去上学的。"
 xk unhappy "如果你们担心的话，那就约定...我绝对会回去上学。"
 // 萧可睁眼
 xk "拉勾...上吊..."
-x ".......嗯呢！"
+// <renpy-performance source=cp2_018.rpy:247>
+show xcp2 pose1 happy2 at cp2right2 an cp2jump
+play sound haneru
+// </renpy-performance>
+xcp2 ".......嗯呢！"
 // 夏悠闭眼微笑 跳起来
-x "一百年不许变！！！"
+xcp2 "一百年不许变！！！" shake_9
 // 对话框震动
-l "好！一百年不许变！！我们一定会等你的！！"
+l "好！一百年不许变！！我们一定会等你的！！" shake_20
 // 对话框震动
-endnvlm
+// <renpy-performance source=cp2_018.rpy:254>
+scene bl with diss
+stop music
+// </renpy-performance>
 nvlm
 "......"
 "那天的我和夏悠，最后还是去学校上学了。"
@@ -263,11 +321,14 @@ nvlm
 "但是对萧可来说，则是切切实实重新来过了三年的时间，多了三年陪伴自己妈妈的时间。"
 "心中的疑惑依旧很多，但是这些疑惑，早晚有一天会解开吧！"
 endnvlm
+// <renpy-performance source=cp2_018.rpy:265>
+play sound kazekage loop
+// </renpy-performance>
 nvlm
 "......"
 "......"
 nan "萧可出现了生命反应！！！"
-x "终于......萧可......"
+xcp2 "终于......萧可......"
 xk "嗯......我这是在哪？"
 xk "嗯......我......诶？"
 xk "为什么我......一直在流泪？"
@@ -277,8 +338,12 @@ nvlm
 "......"
 "......"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_018.rpy:280>
+stop sound
+scene class with diss
+// </renpy-performance>
 l "嗯？"
+nvlm
 "完蛋了，上午最后一节课睡过头了。"
 "时隔许久以后，再一次梦到了奇怪的东西。"
 "但是我已经懒得去思考和理解梦境的内容了。"
@@ -288,4 +353,3 @@ nvlm
 "......"
 endnvlm
 jump cp2_019
-label cp2_019

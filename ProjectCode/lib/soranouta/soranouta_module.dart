@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:sakiengine/src/core/game_module.dart';
 import 'package:sakiengine/src/config/saki_engine_config.dart';
+import 'package:sakiengine/src/game/game_manager.dart';
 import 'package:sakiengine/src/utils/binary_serializer.dart';
 import 'package:sakiengine/src/utils/dialogue_progression_manager.dart';
 import 'package:sakiengine/src/utils/music_manager.dart';
 import 'package:sakiengine/src/widgets/common/configurable_menu_button.dart';
+import 'chapter_progress.dart';
 import 'widgets/soranouta_menu_buttons.dart';
 import 'widgets/soranouta_dialogue_box.dart';
 import 'screens/soranouta_startup_flow.dart';
@@ -13,7 +15,6 @@ import 'screens/soranouta_startup_flow.dart';
 /// SoraNoUta 项目的自定义模块
 /// 这个示例展示了如何为特定项目创建自定义模块
 class SoranoutaModule extends DefaultGameModule {
-  
   @override
   Widget createMainMenuScreen({
     required VoidCallback onNewGame,
@@ -45,13 +46,44 @@ class SoranoutaModule extends DefaultGameModule {
   bool get enableDebugFeatures => true; // SoraNoUta 启用调试功能
 
   @override
+  String get initialScript => SoranoutaChapterProgress.initialScriptName;
+
+  @override
+  String? quickSaveNamespaceForScript(String currentScript) {
+    final chapter = SoranoutaChapterProgress.chapterForScript(currentScript);
+    return SoranoutaChapterProgress.quickSaveNamespaceForChapter(chapter);
+  }
+
+  @override
   Future<String> getAppTitle() async {
     return 'SoraNoUta';
   }
 
   @override
   Future<void> initialize() async {
+    await SoranoutaChapterProgress.initialize();
     await MusicManager().initialize();
+  }
+
+  @override
+  Future<ScriptApiExecutionResult> handleScriptApiCall({
+    required String apiName,
+    required Map<String, String> params,
+    required GameState gameState,
+    required int scriptIndex,
+  }) async {
+    if (apiName.trim().toLowerCase() == 'soranouta.chapter.complete' &&
+        params['id']?.trim() == '1') {
+      await SoranoutaChapterProgress.completeChapter1();
+      return ScriptApiExecutionResult.handled();
+    }
+
+    return super.handleScriptApiCall(
+      apiName: apiName,
+      params: params,
+      gameState: gameState,
+      scriptIndex: scriptIndex,
+    );
   }
 
   @override
@@ -97,6 +129,7 @@ class SoranoutaModule extends DefaultGameModule {
       key: key,
       speaker: speaker,
       speakerAlias: speakerAlias, // 传递角色简写
+      dialogueTag: dialogueTag,
       dialogue: dialogue,
       progressionManager: progressionManager,
       isFastForwarding: isFastForwarding,
@@ -114,7 +147,9 @@ class SoranoutaModule extends DefaultGameModule {
     }
     return speakerAlias != 'l' &&
         speakerAlias != 'ls' &&
+        speakerAlias != 'lscp2' &&
         speakerAlias != 'x2' &&
+        speakerAlias != 'xcp2strong' &&
         speakerAlias != 'x2nan' &&
         speaker != '刘守真' &&
         speaker != '林澄' &&

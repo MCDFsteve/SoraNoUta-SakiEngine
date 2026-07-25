@@ -1,48 +1,92 @@
 //label// SoraNoUta Chapter 2 cp2_003
 label cp2_003
 l "走吧！"
-x "嗯。"
+xcp2 "嗯。"
+// <renpy-performance source=cp2_003.rpy:9>
+show xcp2 pose1 ciallo at cp2left2 an cp2from_center_to_left2
+show xk pose1 unhappy at cp2right2 an cp2enter_right2
+// </renpy-performance>
 nan "林澄...早......"
-nvlm
 "有人在跟我打招呼。"
+// <renpy-performance source=cp2_003.rpy:13>
+show xk pose1 emm at cp2right2
+// </renpy-performance>
 nan "你旁边的是？"
 "她是第一次见到我和夏悠同行。"
 "毕竟我和夏悠不是一个年级。"
 "虽然整个学校六个年级，一个年级只有一个班。"
-x "萧......萧可......唔......这是你同学吗？"
+// <renpy-performance source=cp2_003.rpy:19>
+show xcp2 pose5 think at cp2left2 with diss
+// </renpy-performance>
+xcp2 "萧......萧可......唔......这是你同学吗？"
 "夏悠似乎提前认识过她。"
+// <renpy-performance source=cp2_003.rpy:23>
+show xk pose1 unhappy at cp2right2
+// </renpy-performance>
 nan "正确，我是萧可。"
 xk "要说关系...或许是你旁边这位草履虫的主人...又或者换个说法。"
 xk emm "同班同学。"
-l "谁是草履虫啊喂！！"
+// <renpy-performance source=cp2_003.rpy:28>
+play sound chin
+// </renpy-performance>
+l "谁是草履虫啊喂！！" shake_9
 xk unhappy "草履虫永远不会承认自己是草履虫。"
-l "那是因为草履虫根本不会说话吧！！"
+// <renpy-performance source=cp2_003.rpy:32>
+play sound syokku
+// </renpy-performance>
+l "那是因为草履虫根本不会说话吧！！" shake_16
 // 对话框震动
-xk body2 happy "我的介绍结束了，你呢？"
+xk pose1 happy "我的介绍结束了，你呢？"
 xk "如果你在一分钟内不说话，那我会默认你是被草履虫拐卖的无辜幼女了。"
 l "跟草履虫过不去了是吧......"
-x "我......是林澄的表妹，比他低一个年级，因为住得近所以就结伴上下学了。"
+// <renpy-performance source=cp2_003.rpy:39>
+show xcp2 pose2 doyagao at cp2left2
+// </renpy-performance>
+xcp2 "我......是林澄的表妹，比他低一个年级，因为住得近所以就结伴上下学了。"
 "不愧是夏悠，直接说是我的亲戚就不会被别人乱猜关系了。"
+// <renpy-performance source=cp2_003.rpy:43>
+show xk pose1 happy2 at cp2right2
+// </renpy-performance>
 xk "表妹吗？有个这么可爱的表妹，你破例从草履虫进化为毛毛虫了。"
-l "为什么微生物会进化为昆虫啊！？"
+l "为什么微生物会进化为昆虫啊！？" shake_15
 // 对话框震动
 l "该说我是感谢你吗，从草履虫到毛毛虫这么大的生物学进步......"
-x "啊哈哈哈哪有哪有......"
+// <renpy-performance source=cp2_003.rpy:48>
+show xcp2 pose1 smile3 at cp2left2
+// </renpy-performance>
+xcp2 "啊哈哈哈哪有哪有......"
 l "确实很可爱就是了......"
 "我后悔说出这句话了，因为说完以后我就感觉我脸颊发热。"
 "幸好我及时用手捂住了脸。"
 "......"
-endnvlm
+// <renpy-performance source=cp2_003.rpy:60>
+scene store with fade
+play music goodday
+// </renpy-performance>
 nvlm
 "......"
 "三个人到了小卖部门口。"
-l "我想去买点刮刮乐了。"
-x "但是......好吧。"
-x "我跟你一起买。"
-xk "我不赌博，走了。"
-pause 0.5
-pause 0.5
 endnvlm
+// <renpy-performance source=cp2_003.rpy:67>
+show xcp2 pose1 smile at cp2right2
+show xk pose1 unhappy at cp2left2 with diss
+// </renpy-performance>
+l "我想去买点刮刮乐了。"
+// <renpy-performance source=cp2_003.rpy:70>
+show xcp2 pose1 tameiki2 at cp2right2 with diss
+// </renpy-performance>
+xcp2 "但是......好吧。"
+// <renpy-performance source=cp2_003.rpy:73>
+show xcp2 pose1 ciallo at cp2right2
+// </renpy-performance>
+xcp2 "我跟你一起买。"
+xk "我不赌博，走了。"
+// <renpy-performance source=cp2_003.rpy:83>
+hide xk
+pause 0.5
+show xcp2 pose1 ciallo at cp2center an cp2from_right2_to_center
+pause 0.5
+// </renpy-performance>
 nvlm
 "萧可似乎对这个不感兴趣，但是对我的诱惑还是非常大的。"
 "五毛一刮，奖品有玩具，卡片。"
@@ -50,115 +94,175 @@ nvlm
 "十倍的倍率。"
 "但是我妈只给了我两块的生活费。"
 "嗯......但是我卖茶叶赚了五块。"
+endnvlm
+// <renpy-performance source=cp2_003.rpy:92>
+scene store with fade
+// </renpy-performance>
 "我经历了艰苦的思想斗争以后，决定买一块钱的。"
 "换到了两张刮刮卡。"
 "我哈了哈气，准备开奖。"
-endnvlm
 menu
 "先开左边的" cp2_003_1
 "先开右边的" cp2_003_2
 endmenu
 label cp2_003_1
-nvlm
 "我刮开了左边的刮刮卡。"
+// <renpy-performance source=cp2_003.rpy:103>
+show paperitem at cp2item an cp2item_in
+// </renpy-performance>
 l "啊！谢谢惠顾。"
 l "唔......"
 "我赶紧刮开右边的这张。"
-endnvlm
 jump cp2_003_1_2
 label cp2_003_2
-nvlm
 "我刮开了右边的刮刮卡。"
+// <renpy-performance source=cp2_003.rpy:110>
+show paperitem at cp2item an cp2item_in
+// </renpy-performance>
 l "啊！谢谢惠顾。"
 l "唔......"
 "我赶紧刮开左边的这张。"
-endnvlm
 jump cp2_003_1_2
 label cp2_003_1_2
-nvlm
 "一样是谢谢惠顾。"
 "好，生活费-1元。"
+// <renpy-performance source=cp2_003.rpy:120>
+hide paperitem
+show xcp2 pose1 tameiki2 at cp2center
+// </renpy-performance>
 l "啊！下次不赌了。我戒赌了。"
 l "夏悠你呢？"
 "夏悠也买了一块钱的份的刮刮卡。"
-x ciallo "哈哈，让我看一下。"
+xcp2 ciallo "哈哈，让我看一下。"
+// <renpy-performance source=cp2_003.rpy:127>
+show xcp2 pose3 wakuwaku3 at cp2center an cp2vshake
+// </renpy-performance>
 "夏悠刮开了第一张刮刮卡。"
-x smilenaka1 "哈哈，什么都没有。"
+xcp2 smilenaka1 "哈哈，什么都没有。"
 l "为什么你没刮到奖也这么开心啊？"
-x smile "哈哈有吗？"
+xcp2 smile "哈哈有吗？"
+// <renpy-performance source=cp2_003.rpy:136>
+show xcp2 pose1 smilenaka1 at cp2center an cp2vshake
+play sound pekori
+// </renpy-performance>
 "夏悠又刮开了第二张。"
 "夏悠的动作停了下来。"
 l "是什么是什么？"
 "我焦急地等待着夏悠的开奖。"
-x unhappy kuraikaop "嗯......"
+xcp2 unhappy-kuraikaop "嗯......"
 "夏悠淡定地将刮刮卡翻转过来，举给我看。"
-x "你看！"
+// <renpy-performance source=cp2_003.rpy:147>
+show xcp2 pose1 smilenaka1 at cp2center an cp2jump
+play sound haneru
+show paper2item at cp2item an cp2item_in
+// </renpy-performance>
+xcp2 "你看！" shake_3
 // 对话框震动
 "上面赫赫写着："
-"特等奖！！！！！"
+"特等奖！！！！！" shake_8
 // 对话框震动
-l "哇哇哇哇哇哇！！！！"
+l "哇哇哇哇哇哇！！！！" shake_10
 // 对话框震动
-x "嘿嘿！我运气真好。"
-x ciallo "今天放学有更多零食钱了林澄！"
+// <renpy-performance source=cp2_003.rpy:155>
+hide paper2item
+show xcp2 pose3 smilenaka1 at cp2center an cp2jump2
+play sound haneru
+// </renpy-performance>
+xcp2 "嘿嘿！我运气真好。"
+xcp2 ciallo "今天放学有更多零食钱了林澄！"
 l "会给我分吗？"
-x smilenaka1 "当然了。"
-x "老板你看！特等奖，我要兑奖！"
+xcp2 smilenaka1 "当然了。"
+// <renpy-performance source=cp2_003.rpy:163>
+show xcp2 pose2 happy at cp2center
+// </renpy-performance>
+xcp2 "老板你看！特等奖，我要兑奖！" shake_14
 // 对话框震动
 lb "啊？我看看......"
 lb "真的是特等奖，那给你兑奖吧！"
-endnvlm
 nvlm
 "老板接过刮刮卡，从收银台里掏出一张皱皱的五元纸币。"
-x "嗯。"
-x think2 "老板可以兑换成五张一块的吗？"
 endnvlm
+// <renpy-performance source=cp2_003.rpy:172>
+show xcp2 pose5 think at cp2center
+// </renpy-performance>
+xcp2 "嗯。"
+xcp2 think2 "老板可以兑换成五张一块的吗？"
 nvlm
 "老板重新接过纸币，过了一会儿拿出来五张一块的。"
-x "谢谢老板。"
+endnvlm
+// <renpy-performance source=cp2_003.rpy:181>
+show xcp2 pose3 smilenaka1 at cp2center an cp2jump2
+play sound haneru
+// </renpy-performance>
+xcp2 "谢谢老板。"
 // 夏悠微笑闭眼 跳一跳
+// <renpy-performance source=cp2_003.rpy:189>
+show xcp2 pose3 smile at cp2center an cp2grow
 pause 0.5
+show xcp2 pose3 smile at cp2center an cp2shrink
 pause 0.5
-x "给你！"
+// </renpy-performance>
+xcp2 "给你！" shake_3
 // 对话框震动
 l "啊？"
+// <renpy-performance source=cp2_003.rpy:192>
+show moneyitem at cp2item an cp2item_in
+// </renpy-performance>
 "夏悠掏出一张一块的纸币递给我。"
 // 纸币特写
 l "这是为什么？"
-x "哼！这是你陪我玩刮刮乐的工资！快拿去吧，不然我后悔了。"
+// <renpy-performance source=cp2_003.rpy:198>
+hide moneyitem
+show xcp2 pose3 doyagao at cp2center an cp2jump2
+play sound haneru
+// </renpy-performance>
+xcp2 "哼！这是你陪我玩刮刮乐的工资！快拿去吧，不然我后悔了。"
 l "真的吗？谢谢！"
 "虽然不清楚为什么，明明说要玩刮刮乐的不是我吗，怎么变成了我陪她玩刮刮乐。"
 "不过都无所谓了，我是一想不讲客套话的，来者不拒的。"
 l "谢谢谢谢......"
-endnvlm
+// <renpy-performance source=cp2_003.rpy:207>
+scene sky with fade
+// </renpy-performance>
 nvlm
 "出小卖部以后我不断答谢着夏悠。"
 "夏悠则是满脸心情舒畅的感觉。"
-x "嘿嘿我是赌神......"
-x "[size=0.8]并且赌的不止刮刮乐......[/size]"
+xcp2 "嘿嘿我是赌神......"
+xcp2 "[size=0.8]并且赌的不止刮刮乐......[/size]"
 "夏悠似乎念叨着什么，但是声音轻到听不清内容。"
 "窗外的小鸟在耳边鸣叫。"
 endnvlm
+// <renpy-performance source=cp2_003.rpy:219>
+scene class with diss
+play music kaiwa
+// </renpy-performance>
 nvlm
 "走进校园以后，下次和夏悠见面基本上只能等到中午了。"
 "不太对，为什么我在计算着和夏悠见面的时间，明明每天放学以后肯定都能见到。"
 "感觉我对夏悠产生了一种奇怪的感情。"
 "但是我自己在内心里都不敢去直面这种感情。"
 "还是算了，我努力让自己不去想这些。用看书让自己转移注意力。"
+endnvlm
 "我拉开课桌，打算看点东西。"
 "......"
+// <renpy-performance source=cp2_003.rpy:229>
+show xk pose4 empty at cp2center
+// </renpy-performance>
 xk "林澄你跟我回家的路线好像是一样的！"
 l "对啊，一直是吧，为什么今天突然问这个，我们又不一起回家。"
-endnvlm
 nvlm
 "在课间的时候萧可过来找我对话了。"
 "但是总感觉她感兴趣的目标并不是我啊。"
 "萧可确实和我是同一个回家路线。都是同一座山。"
 "区别是我家在半山腰，她家在山脚。"
+endnvlm
+// <renpy-performance source=cp2_003.rpy:239>
+show xk pose1 eye at cp2center
+// </renpy-performance>
 xk "一起回家。"
 l "......"
 "突然开口提这个是干什么啊！认识两年了，现在才想起来可以一起回家吗？"
-l "行！"
+l "行！" shake_2
 // 对话框震动
 "不过算了，放学后顺路的人越多，玩伴就越多。"
 "代价就是回家的时间大概会更长。"
@@ -167,10 +271,10 @@ xk unhappy "还有问题，很重要。"
 xk "你的表妹，会跟你一起回家吗。"
 l "如果不是一起回家呢？"
 xk eye2 "撤回请求，不是。"
-l "你刚刚说撤回请求了对吧！"
+l "你刚刚说撤回请求了对吧！" shake_12
 // 对话框震动
 xk unhappy "没有。"
-l "绝对有说！"
+l "绝对有说！" shake_5
 // 对话框震动
 l "不过事实是，只要没出现意料之外的情况，那我跟她就是一起回家的。"
 xk "一直一起上下学吗？"
@@ -182,7 +286,9 @@ l "不过我不太清楚青梅竹马的定义。"
 xk unhappy "优势在我...毕竟天使和毛毛虫放一起，人们都会选择天使。"
 l "居然继承了毛毛虫的设定嘛......而且还认为自己是天使，是有多自大啊喂......"
 xk "总之就是这样，约好了。"
-endnvlm
+// <renpy-performance source=cp2_003.rpy:274>
+hide xk
+// </renpy-performance>
 nvlm
 "萧可回到了自己的座位。"
 "说是回到了自己的座位，实际上她所做的事情，仅仅是将自己的坐姿调转回去罢了。"
@@ -195,8 +301,16 @@ nvlm
 "不过今天我相当于没有玩刮刮乐。"
 "因为早上出门的时候是两块，现在还是两块。"
 "不过这得多亏了夏悠。"
-pause 3.0
 endnvlm
+// <renpy-performance source=cp2_003.rpy:298>
+scene sky with diss
+scene sky-yuu
+play sound rin2
+stop music
+pause 3.0
+scene class with diss
+play music futari
+// </renpy-performance>
 nvlm
 "......"
 // 音乐 yuugure
@@ -220,21 +334,38 @@ nvlm
 "日记的内容：这是什么奇怪的RPG游戏啊！╮(￣▽￣\"\")╭"
 "嗯......内容有点太少了。"
 "不过算了，有每天的记录就行了。"
+endnvlm
+// <renpy-performance source=cp2_003.rpy:321>
+show xk pose1 unhappy at cp2center an cp2rise
+// </renpy-performance>
 xk "在写...什么......"
-l "啊！！！！！"
+// <renpy-performance source=cp2_003.rpy:323>
+play sound bikkuri
+// </renpy-performance>
+l "啊！！！！！" shake_6
 // 对话框震动
 "萧可突然就回头了，还正好看到我处于平摊状态，铺在课桌上的日记本。"
 xk eye "嗯？"
+// <renpy-performance source=cp2_003.rpy:329>
+show xk pose4 empty at cp2center
+// </renpy-performance>
 xk "在写谁的名字然后心脏麻痹？"
 "完全听不懂她在说什么。"
 "而且我身后也没有爱吃苹果的死神好吧！"
 "没救了这家伙，得赶紧想想办法。"
+// <renpy-performance source=cp2_003.rpy:339>
+show xk pose1 unhappy at cp2center an cp2grow
 pause 0.5
+show xk pose1 unhappy at cp2center an cp2shrink
+// </renpy-performance>
 "还没等我来得及做出下一步行动，萧可的魔爪就已经伸向了我的日记本。然后。"
 "抽了过去。"
 l "啊......完蛋了......"
 l "拜托了，不要看......"
 xk eye "作案证据......"
+// <renpy-performance source=cp2_003.rpy:347>
+hide xk
+// </renpy-performance>
 "我知道是徒劳无功的。"
 "萧可总是喜欢在没东西碰的时候转过来拿我的东西把玩。"
 "还有一个原因是拿归拿，玩完以后都会老老实实给我放回来。"
@@ -246,6 +377,9 @@ xk eye "作案证据......"
 "虽然99%%内容是流水账一样的东西。"
 "但是......"
 "在我做思想斗争的期间，萧可似乎已经玩够了，将日记本还了回来。"
+// <renpy-performance source=cp2_003.rpy:361>
+show xk pose1 unhappy at cp2center with diss
+// </renpy-performance>
 xk "原来是日记，并不是作案证据，多有得罪。"
 l "所以你认为我做了什么案......"
 xk "不过，批准你从毛毛虫升级为青蛙，毕竟写日记是需要耐力的活动，我坚持不下来。"
@@ -257,6 +391,4 @@ l "下次别看了。"
 "画了一个线条构成的面部表情，眼睛一闭一睁吐着舌头。"
 "像是那些怪盗留下的记号一样。"
 "“你的日记内容，我收下了。”"
-endnvlm
 jump cp2_004
-label cp2_004

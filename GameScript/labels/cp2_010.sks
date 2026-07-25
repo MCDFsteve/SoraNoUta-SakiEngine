@@ -1,53 +1,84 @@
 //label// SoraNoUta Chapter 2 cp2_010
 label cp2_010
+// <renpy-performance source=cp2_010.rpy:9>
+scene bl with fade
+stop music
+play sound kazekage loop
+// </renpy-performance>
 nvlm
 "......"
 "......"
 "之后的几天，都没见到萧可来上课了。"
 "老师说她请假了，周五就会来了。"
 endnvlm
+// <renpy-performance source=cp2_010.rpy:16>
+stop sound
+// </renpy-performance>
 nvlm
 "......"
 "......"
-l "哇呜呜呜～"
 endnvlm
+// <renpy-performance source=cp2_010.rpy:22>
+play music goodday
+play sound bird loop
+scene schoolgate with diss
+// </renpy-performance>
+l "哇呜呜呜～"
 nvlm
 "距离我拿到手机已经过去一个星期了。"
 "这几天晚上都没怎么睡好。"
 "因为一直在偷偷玩游戏。"
 "好不容易建起了抵御僵尸的高墙。"
 endnvlm
-nvlm
-x "今天怎么没看到萧可啊？"
+// <renpy-performance source=cp2_010.rpy:32>
+show xcp2 pose1 what at cp2center
+// </renpy-performance>
+xcp2 "今天怎么没看到萧可啊？"
 // 夏悠疑惑
+nvlm
 "今天从她家门口路过的时候，也没看到。"
 "明明她确实是说今天会回学校的。"
 "大概是手里的事情忙完了。"
 "虽然没有几次是看到了的，毕竟坐的车，说不准就在房子里。"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_010.rpy:41>
+play sound keitai
+// </renpy-performance>
 phone "叮叮～"
 l "啊？"
-x wakuwaku "什么声音？"
+// <renpy-performance source=cp2_010.rpy:44>
+play sound pin
+// </renpy-performance>
+xcp2 wakuwaku "什么声音？"
 // 夏悠好奇
-x happy2 kuraikaop "林------------澄------------！！"
+xcp2 happy2-kuraikaop "林------------澄------------！！"
 // 夏悠努力忍住不生气，字缓缓出来
-x unhappy "你------------！是不是把手机带到学校了！"
+// <renpy-performance source=cp2_010.rpy:47>
+play sound moeru
+// </renpy-performance>
+xcp2 unhappy "你------------！是不是把手机带到学校了！" shake_26
 // 夏悠生气 对话框震动
-l "嘘！小点声！"
+l "嘘！小点声！" shake_6
 // 对话框震动
 "这里可是校门口，可不能被保安或者其他学生听到了。"
-x hen "想在上课的时候玩吗？"
+xcp2 hen "想在上课的时候玩吗？"
 // 夏悠赌气
 l "不是不是！虽然也想。"
 l "是萧可让我今天把手机带过来。"
 l "要从几天前说起了。"
+nvlm
 "我将那天萧可拜托我的内容全部告诉给了夏悠。"
 endnvlm
-nvlm
-x "原来是这样。但是萧可却在今天迟到了。"
+// <renpy-performance source=cp2_010.rpy:59>
+show xcp2 pose5 think at cp2center
+// </renpy-performance>
+xcp2 "原来是这样。但是萧可却在今天迟到了。"
 // 夏悠思考
 l "对了，刚刚手机收到的消息。"
+// <renpy-performance source=cp2_010.rpy:63>
+scene sky
+// </renpy-performance>
+nvlm
 "我走到校门外很远的一处地方，背靠着墙，打开了手机。"
 "是萧可发来的消息。"
 xk "抱歉，今天我有点难受，和我妈去医院了。"
@@ -64,27 +95,48 @@ nvlm
 "没有得到回复。"
 "只能先去上课了。我把手机调节成了震动模式。"
 endnvlm
-nvlm
-x "是萧可发过来的吗？"
+// <renpy-performance source=cp2_010.rpy:82>
+scene schoolgate
+show xcp2 pose5 think at cp2center
+// </renpy-performance>
+xcp2 "是萧可发过来的吗？"
 l "嗯。她说她和她妈妈去医院了，今天来不了。"
-x think2 "原来是这种理由啊......"
+// <renpy-performance source=cp2_010.rpy:86>
+play sound pin
+// </renpy-performance>
+xcp2 think2 "原来是这种理由啊......"
 l "怎么了？你发现了什么问题吗？"
-x "不，没有，走吧，要上课了。"
+// <renpy-performance source=cp2_010.rpy:89>
+show xcp2 pose4 happy2 at cp2center an cp2vshake
+// </renpy-performance>
+xcp2 "不，没有，走吧，要上课了。"
 // 夏悠闭眼微笑 手背在身后 跳两下
 l "嗯。"
+// <renpy-performance source=cp2_010.rpy:95>
+stop sound
+scene class with fade
+// </renpy-performance>
+nvlm
 "......座位前面空荡荡的，总觉得有一种说不出的寂寞。"
 "......"
 endnvlm
-nvlm
-ccy "别发呆了！来玩丢沙包，林澄！！"
+// <renpy-performance source=cp2_010.rpy:101>
+show ccy pose3 smile at cp2center
+// </renpy-performance>
+ccy "别发呆了！来玩丢沙包，林澄！！" shake_15
 // 对话框震动
 "是陈雏莺。"
+// <renpy-performance source=cp2_010.rpy:105>
+show ccy pose1 tameiki at cp2center
+// </renpy-performance>
 ccy "你不会在想着萧可的事情吧？"
 // 陈雏莺无奈的叹气 手交叉
-ccy miru "算了，怎么都无所谓咯...快来玩！！"
+ccy miru "算了，怎么都无所谓咯...快来玩！！" shake_18
 // 对话框震动 睁眼看着
 "毕竟是和我玩的好的为数不多的同班同学，当然答应了。"
-endnvlm
+// <renpy-performance source=cp2_010.rpy:111>
+scene sky
+// </renpy-performance>
 nvlm
 "......"
 "一起玩了丢沙包。"
@@ -93,6 +145,9 @@ nvlm
 "互相把沙包扔来扔去。"
 "要不是周围都是高大的梧桐树的阴影，大概我会热虚脱吧......"
 endnvlm
+// <renpy-performance source=cp2_010.rpy:120>
+scene class
+// </renpy-performance>
 nvlm
 "......"
 "实际上我还是无法投入全身心去进行游戏，因为我一直在等待着萧可的回复。"
@@ -100,25 +155,35 @@ nvlm
 "未回复......"
 "......怎么会......"
 endnvlm
-nvlm
-nan "喂！林澄！有可爱学妹找你啊！"
+nan "喂！林澄！有可爱学妹找你啊！" shake_0
 // 对话框震动
 "？"
 "同班同学在叫我，我看向教室门口。"
 "门外是夏悠。"
+// <renpy-performance source=cp2_010.rpy:136>
+scene classdoor with diss
+show xcp2 pose4 tameiki2 at cp2center
+// </renpy-performance>
+nvlm
 "......"
 endnvlm
-nvlm
 l "怎么了？"
-x tameiki "没啥......只是我也放心不下萧可..."
-x ciallo "总之......你不要忘了她哦......"
+xcp2 tameiki "没啥......只是我也放心不下萧可..."
+xcp2 ciallo "总之......你不要忘了她哦......"
 // 夏悠ciallo
 l "不会的，毕竟一起玩了这么久了......"
+// <renpy-performance source=cp2_010.rpy:147>
+scene class with diss
+// </renpy-performance>
+nvlm
 "......"
 "啊！！？"
 "一回教室，发现班上好几个同学都在等着我。"
 nan "你小子，什么时候认识的？"
 nan2 "闷声发大财啊......"
+// <renpy-performance source=cp2_010.rpy:153>
+stop music
+// </renpy-performance>
 l "是表妹啦！！表妹！！"
 "确实很有效果，都纷纷闭嘴了。"
 endnvlm
@@ -134,11 +199,18 @@ nvlm
 "......要不要现在开始拍照片呢？"
 "隐隐产生了这种想法。"
 endnvlm
+// <renpy-performance source=cp2_010.rpy:172>
+scene bl
+play sound kazekage loop
+// </renpy-performance>
 nvlm
 "......"
 "......"
 "......"
 endnvlm
+// <renpy-performance source=cp2_010.rpy:178>
+cg shincg6 1
+// </renpy-performance>
 nvlm
 "一位少女，站在十字路口的中央..."
 "纵使车辆不断穿梭，她仍不为所动..."
@@ -148,6 +220,10 @@ nvlm
 "少女闭上了双眼......"
 "你是否希望让我，一直存在于此处？"
 endnvlm
+// <renpy-performance source=cp2_010.rpy:191>
+stop sound
+scene bl
+// </renpy-performance>
 nvlm
 "......"
 "......"
@@ -155,14 +231,22 @@ nvlm
 "呼......"
 "好奇怪的梦。"
 endnvlm
+// <renpy-performance source=cp2_010.rpy:199>
+scene class
+// </renpy-performance>
 nvlm
 "午休期间不小心睡着了。"
 "虽然午休本来就应该好好睡午觉，但是我平时从来不睡的。"
 "...和我以前做过的梦都不太一样。"
 endnvlm
+// <renpy-performance source=cp2_010.rpy:212>
+scene sky with diss
+pause 2.0
+play music yuugure
+scene sky-yuu with diss
+pause 2.0
+// </renpy-performance>
 nvlm
-pause 2.0
-pause 2.0
 "......"
 "到了放学的时间。"
 "萧可依旧没有回复我。"
@@ -170,84 +254,161 @@ pause 2.0
 "我这样想着，在校门口等待着夏悠。"
 "当然依旧是隔老远慢慢的看着校门口。"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_010.rpy:222>
+scene schoolgate-yuu with diss
+// </renpy-performance>
 "....过了一会，夏悠出来了。"
 "同行的还有...李宫娜和刘守真？毕竟她们三个是同一班的。"
 "她们两个和我们并不是同一个回家路线，基本刚出校门不久就会分开。"
-x "林澄，你还好吗？"
-lg "哟，好久不见啊林澄！"
-ls "好久不见..."
+// <renpy-performance source=cp2_010.rpy:227>
+show xcp2 pose4 unhappy at cp2left
+// </renpy-performance>
+xcp2 "林澄，你还好吗？"
+// <renpy-performance source=cp2_010.rpy:231>
+show lgcp2 pose2 satoko at cp2center an cp2spring_in
+play sound haneru
+// </renpy-performance>
+lgcp2 "哟，好久不见啊林澄！"
+// <renpy-performance source=cp2_010.rpy:233>
+show lscp2 pose2 magao at cp2right an cp2enter_right
+// </renpy-performance>
+lscp2 "好久不见..."
 // 刘守真从右边出来 严肃
 l "等会去看看萧可吧..."
-x think "......"
+xcp2 think "......"
 // 夏悠沉思
-x smile "......嗯..."
+xcp2 smile "......嗯..."
 // 夏悠微笑
+nvlm
 "真是的...我都在胡思乱想什么啊..."
 "只是萧可不回消息而已，我居然自己脑补了各种意外事故。"
 "估计等我告诉萧可以后她就要嘲笑我了。"
 endnvlm
+// <renpy-performance source=cp2_010.rpy:244>
+scene sky-yuu
+// </renpy-performance>
 nvlm
 "......"
 "我们四人顺着河边的小道走着。"
 "夕阳的光辉在河面的倒影中微微闪烁。"
 endnvlm
-nvlm
-lg "感觉你们两个都不太开心的样子啊？是吵架了吗？"
-ls "有吗？没看出...啊！宫娜你干什么？"
-x "嗯嗯不是..."
-x "只是在想，这一切或许都会被覆盖掉吧..."
+// <renpy-performance source=cp2_010.rpy:254>
+scene hasi-yuu with diss
+show lgcp2 pose1 what at cp2left
+show lscp2 pose1 neutral at cp2center
+show xcp2 pose1 think at cp2right
+// </renpy-performance>
+lgcp2 "感觉你们两个都不太开心的样子啊？是吵架了吗？"
+// <renpy-performance source=cp2_010.rpy:258>
+show lgcp2 pose2 angry2 at cp2center an cp2from_left_to_center
+show lscp2 pose2 odoroki at cp2center
+// </renpy-performance>
+lscp2 "有吗？没看出...啊！宫娜你干什么？"
+// <renpy-performance source=cp2_010.rpy:263>
+show lgcp2 pose2 angry2 at cp2left an cp2from_center_to_left
+show xcp2 pose1 smile at cp2right an cp2nod
+play sound pekori
+// </renpy-performance>
+xcp2 "嗯嗯不是..."
+// <renpy-performance source=cp2_010.rpy:265>
+show xcp2 pose5 think at cp2right
+// </renpy-performance>
+xcp2 "只是在想，这一切或许都会被覆盖掉吧..."
 // 夏悠侧脸思考
-ls think "申请中译中......"
+// <renpy-performance source=cp2_010.rpy:268>
+hide lscp2
+show lscp2 pose2 think at cp2center
+// </renpy-performance>
+lscp2 think "申请中译中......"
 // 刘守真疑惑
-lg think "这是不是像那种“我的世界一片灰暗，我处理不好”的感觉？"
+lgcp2 think "这是不是像那种“我的世界一片灰暗，我处理不好”的感觉？"
 // 李宫娜思考
-ls "我都说过了，你把游戏滤镜关掉就不灰了...啊！你干什么？"
+// <renpy-performance source=cp2_010.rpy:272>
+show lscp2 pose2 odoroki at cp2center
+show lgcp2 pose2 angry2 at cp2center an cp2from_left_to_center
+// </renpy-performance>
+lscp2 "我都说过了，你把游戏滤镜关掉就不灰了...啊！你干什么？"
 // 刘守真在中间 从开心到害怕 李宫娜从左边移过去掐刘守真
-x "或许呢..."
+// <renpy-performance source=cp2_010.rpy:275>
+show lgcp2 pose2 angry2 at cp2left an cp2from_center_to_left
+show xcp2 pose4 smile at cp2right
+// </renpy-performance>
+xcp2 "或许呢..."
 // 夏悠闭眼微笑 手背在身后
-x "总之下周见，宫娜，守真。"
-lg tameiki "好吧好吧......下个星期我一定要看到你人哦！！"
+xcp2 "总之下周见，宫娜，守真。"
+lgcp2 tameiki "好吧好吧......下个星期我一定要看到你人哦！！" shake_25
 // 对话框震动 李宫娜叹气
-x ciallo "必须的..."
+xcp2 ciallo "必须的..."
 // 夏悠ciallo
-lg hen "走啦走啦守真......"
+lgcp2 hen "走啦走啦守真......"
 // 李宫娜赌气
+// <renpy-performance source=cp2_010.rpy:286>
+hide lscp2
+hide lgcp2
+hide xcp2
+show xcp2 pose4 smile at cp2center
+// </renpy-performance>
+nvlm
 "......"
 "感觉夏悠似乎比我知道更多萧可的事情。"
 "是私下交流过了吗？"
 endnvlm
-nvlm
-x happy2 "林澄......接下来你大概会很艰苦呢..."
+xcp2 happy2 "林澄......接下来你大概会很艰苦呢..."
 // 夏悠闭眼微笑 手背在身后
 l "这是什么意思？"
-x "嗯嗯...没事.......快走吧......"
+// <renpy-performance source=cp2_010.rpy:296>
+show xcp2 pose1 smile2 at cp2center an cp2nod
+play sound pekori
+// </renpy-performance>
+xcp2 "嗯嗯...没事.......快走吧......"
+// <renpy-performance source=cp2_010.rpy:299>
+scene sky-yuu
+// </renpy-performance>
+nvlm
 "......"
 "一路和夏悠的话寥寥无几。"
 "直到走到了萧可家门口的道路。"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_010.rpy:306>
+scene shiokehome-yuu
+// </renpy-performance>
 l "去看看吧......"
-x "嗯......"
+// <renpy-performance source=cp2_010.rpy:310>
+show xcp2 pose4 happy at cp2center an cp2nod
+play sound pekori
+// </renpy-performance>
+xcp2 "嗯......"
+// <renpy-performance source=cp2_010.rpy:317>
+scene shiokegate17 with diss
+stop music
 pause 2.0
+play music hadaka
+// </renpy-performance>
+nvlm
 "......"
 "到了家门口，却发现门是紧闭着的。"
 endnvlm
-nvlm
 l "不在家？门是锁着的。"
+// <renpy-performance source=cp2_010.rpy:329>
+scene shiokehome-yuu with diss
 pause 1.5
+scene shiokegate17 with diss
 pause 1.5
+// </renpy-performance>
 "我四周张望了一下，也是没看到人。"
 "不仅萧可不在家，萧可的母亲，还有父亲都是。"
-x "或许是有事出去了吧......"
+// <renpy-performance source=cp2_010.rpy:334>
+hide xcp2
+show xcp2 pose1 tameiki2 at cp2center
+// </renpy-performance>
+xcp2 "或许是有事出去了吧......"
+nvlm
 "我再次掏出手机看了看。"
 "电量已经快见底了，萧可依旧没回任何消息。"
 endnvlm
-nvlm
 l "现在怎么办？"
 l "只能先回去了吧..."
-x smile "嗯。"
-endnvlm
+xcp2 smile "嗯。"
 menu
 "回去" cp2_010_1
 "不回去" cp2_010_2
@@ -257,29 +418,34 @@ nvlm
 "手机也快没电了，回去充一下吧。"
 "......"
 endnvlm
-nvlm
-endnvlm
 jump cp2_010_1a2
 label cp2_010_2
 l "还是再等一等吧..."
 l "万一等会就回来了呢？"
-x "嗯..."
+// <renpy-performance source=cp2_010.rpy:362>
+show xcp2 pose1 smile at cp2center an cp2nod
+play sound pekori
+// </renpy-performance>
+xcp2 "嗯..."
 nvlm
 "......"
 "我和夏悠坐在萧可家的门口。等待了大约半小时。"
 "这期间我和夏悠都不知道该干什么，坐立不安。"
+// <renpy-performance source=cp2_010.rpy:368>
+play sound cat
+// </renpy-performance>
 nan "喵～"
 "？？？"
 "萧可家的小猫从房檐上窜了下来。"
-x "哇～"
+xcp2 "哇～"
 "我没记错的话，这只猫叫小花。"
 "即便萧可一开始欺骗我说，它叫 狗 薛定谔 德川家康 待定。"
-x "喵呜喵呜～"
-x "诶嘿..."
+xcp2 "喵呜喵呜～"
+xcp2 "诶嘿..."
 "夏悠玩起小猫咪了......"
 l "萧可家的猫都在家，家里却没人么？"
-x "嗯......或许是她们出门不带小猫一起吧..."
-x "大概是容易走丢..."
+xcp2 "嗯......或许是她们出门不带小猫一起吧..."
+xcp2 "大概是容易走丢..."
 endnvlm
 nvlm
 "也对。"
@@ -287,6 +453,9 @@ nvlm
 endnvlm
 jump cp2_010_1a2
 label cp2_010_1a2
+// <renpy-performance source=cp2_010.rpy:391>
+scene sky-yuu with fade
+// </renpy-performance>
 nvlm
 "天越来越黑了。依旧没人回来。"
 "我和夏悠只能回家。"
@@ -294,6 +463,9 @@ nvlm
 "当然也有可能是我家没有网络信号，导致回了消息但是收不到。"
 "明天去信号好的地方看看吧。"
 endnvlm
+// <renpy-performance source=cp2_010.rpy:403>
+scene sky-yoru with diss
+// </renpy-performance>
 nvlm
 "我这样想着，缓缓入睡......"
 "......"
@@ -303,7 +475,4 @@ nvlm
 "睡不着。还是手机玩太多了吗？"
 "......"
 endnvlm
-nvlm
-endnvlm
 jump cp2_011
-label cp2_011

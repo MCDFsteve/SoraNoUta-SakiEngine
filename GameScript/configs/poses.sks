@@ -48,3 +48,16 @@ ijinposeright: scale=1.3 ycenter=0.7 xcenter=0.75 anchor=center
 chenpose: scale=1.3 ycenter=0.7 anchor=auto
 chenposeleft: scale=1.3 ycenter=0.7 xcenter=0.25 anchor=center
 chenposeright: scale=1.3 ycenter=0.7 xcenter=0.75 anchor=center
+
+// 第二章固定舞台位。对应 Ren'Py pose / poseleft(2) / poseright(2)，
+// 避免 anchor=auto 在角色进退场时带动其他角色漂移。
+cp2center: scale=1.3 xcenter=0.5 ycenter=0.7 anchor=center
+cp2left: scale=1.3 xcenter=0.2 ycenter=0.7 anchor=center
+cp2left2: scale=1.3 xcenter=0.3 ycenter=0.7 anchor=center
+cp2midright: scale=1.3 xcenter=0.6 ycenter=0.7 anchor=center
+cp2right2: scale=1.3 xcenter=0.7 ycenter=0.7 anchor=center
+cp2right: scale=1.3 xcenter=0.8 ycenter=0.7 anchor=center
+cp2big: scale=1.7 xcenter=0.5 ycenter=0.85 anchor=center
+
+// 第二章物件特写的最终停靠位置。
+cp2item: scale=1.2 xcenter=0.5 ycenter=0.42 anchor=center

@@ -12,6 +12,8 @@ import 'package:sakiengine/src/widgets/common/exit_confirmation_dialog.dart';
 import 'package:sakiengine/src/widgets/settings_screen.dart';
 import 'package:sakiengine/src/widgets/common/game_title_widget.dart';
 import 'package:sakiengine/src/widgets/common/game_background_widget.dart';
+import '../chapter_progress.dart';
+import '../widgets/soranouta_chapter_selector.dart';
 import '../widgets/soranouta_menu_buttons.dart';
 import '../widgets/firefly_animation.dart';
 import 'package:sakiengine/src/game/save_load_manager.dart';
@@ -55,6 +57,8 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
   bool _isFlowchartButtonHovered = false; // 新增：流程图按钮悬停状态
   bool _startMenuAnimation = false; // 控制菜单动画开始
   bool _hasQuickSave = false; // 新增：标记是否有快速存档
+  bool _chapter2Unlocked = false;
+  int _selectedChapter = 1;
   late String _copyrightText;
   late final LocalizationManager _localizationManager;
   final _uiSoundManager = UISoundManager(); // 新增：UI音效管理器
@@ -65,7 +69,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
     _localizationManager = LocalizationManager();
     _localizationManager.addListener(_handleLocalizationChanged);
     _generateCopyrightText();
-    _checkQuickSave();
+    _loadChapterState();
 
     // 延迟播放音乐和启动动画，确保页面已显示
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -80,25 +84,102 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
     }
   }
 
-  // 新增：检查快速存档是否存在
-  Future<void> _checkQuickSave() async {
+  Future<SaveSlot?> _loadQuickSaveForChapter(int chapter) async {
+    final saveLoadManager = SaveLoadManager();
+    final namespacedSave = await saveLoadManager.loadQuickSave(
+      namespace: SoranoutaChapterProgress.quickSaveNamespaceForChapter(chapter),
+    );
+    if (namespacedSave != null) {
+      return namespacedSave;
+    }
+
+    // 兼容升级前唯一的全局快速存档，但只允许它出现在所属章节。
+    final legacySave = await saveLoadManager.loadQuickSave();
+    if (legacySave != null &&
+        SoranoutaChapterProgress.scriptBelongsToChapter(
+          legacySave.currentScript,
+          chapter,
+        )) {
+      return legacySave;
+    }
+    return null;
+  }
+
+  Future<void> _refreshContinueState(int chapter) async {
     try {
-      final hasQuickSave = await SaveLoadManager().hasQuickSave();
-      if (mounted) {
+      final quickSave = await _loadQuickSaveForChapter(chapter);
+      if (mounted && _selectedChapter == chapter) {
         setState(() {
-          _hasQuickSave = hasQuickSave;
+          _hasQuickSave = quickSave != null;
         });
       }
-    } catch (e) {
-      // 忽略错误
+    } catch (_) {
+      if (mounted && _selectedChapter == chapter) {
+        setState(() => _hasQuickSave = false);
+      }
     }
   }
 
-  // 新增：处理继续游戏（快速读档）
-  void _handleContinueGame() {
-    if (widget.onContinueGame != null) {
-      widget.onContinueGame!();
+  Future<void> _handleContinueGame() async {
+    final chapter = _selectedChapter;
+    final quickSave = await _loadQuickSaveForChapter(chapter);
+    if (!mounted || _selectedChapter != chapter) {
+      return;
     }
+    if (quickSave == null) {
+      await _refreshContinueState(chapter);
+      return;
+    }
+    widget.onLoadGameWithSave?.call(quickSave);
+  }
+
+  Future<void> _loadChapterState() async {
+    await SoranoutaChapterProgress.initialize();
+    if (!mounted) {
+      return;
+    }
+    setState(() {
+      _chapter2Unlocked = SoranoutaChapterProgress.isChapter2Unlocked;
+      _selectedChapter = SoranoutaChapterProgress.selectedChapter;
+      _hasQuickSave = false;
+    });
+    await _refreshContinueState(_selectedChapter);
+  }
+
+  Future<void> _handleChapterSelected(int chapter) async {
+    final previousChapter = _selectedChapter;
+    setState(() {
+      _selectedChapter = chapter;
+      _hasQuickSave = false;
+    });
+
+    final selected = await SoranoutaChapterProgress.selectChapter(chapter);
+    if (!mounted) {
+      return;
+    }
+    if (!selected) {
+      setState(() => _selectedChapter = previousChapter);
+      await _refreshContinueState(previousChapter);
+      return;
+    }
+    await _refreshContinueState(chapter);
+  }
+
+  Future<void> _handleNewGame() async {
+    final selected = await SoranoutaChapterProgress.selectChapter(
+      _selectedChapter,
+    );
+    if (!mounted) {
+      return;
+    }
+    if (!selected) {
+      setState(() => _selectedChapter = 1);
+      await SoranoutaChapterProgress.selectChapter(1);
+      if (!mounted) {
+        return;
+      }
+    }
+    widget.onNewGame();
   }
 
   void _generateCopyrightText() {
@@ -170,6 +251,35 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
     return assetName;
   }
 
+  Widget _buildMainMenuBackground(SakiEngineConfig config) {
+    final showChapter2 = _selectedChapter == 2 && _chapter2Unlocked;
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 650),
+      switchInCurve: Curves.easeOutCubic,
+      switchOutCurve: Curves.easeInCubic,
+      layoutBuilder: (currentChild, previousChildren) {
+        return Stack(
+          fit: StackFit.expand,
+          children: <Widget>[
+            ...previousChildren,
+            if (currentChild != null) currentChild,
+          ],
+        );
+      },
+      child: showChapter2
+          ? GameBackgroundWidget.withCustomBackground(
+              key: const ValueKey('chapter2-main-menu-background'),
+              config: config,
+              backgroundName: 'main2',
+            )
+          : GameBackgroundWidget.withCustomBackground(
+              key: const ValueKey('chapter1-main-menu-background'),
+              config: config,
+              backgroundName: 'main',
+            ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final config = SakiEngineConfig();
@@ -191,13 +301,9 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
           body: Stack(
             fit: StackFit.expand,
             children: [
-              // 模块化背景组件 - soranouta 直接控制背景
-              GameBackgroundWidget.withCustomBackground(
-                config: config,
-                backgroundName: 'main', // soranouta 直接传递 'main'
-              ),
+              _buildMainMenuBackground(config),
 
-              // 萤火虫动画层 - 在背景之上，其他UI之下
+              // 两个章节共用第一章主菜单的萤火虫绘制层
               const Positioned.fill(
                 child: FireflyAnimation(
                   fireflyCount: 8, // 减少数量：苍蝇变萤火虫
@@ -214,6 +320,18 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
                 textScale: menuScale, // 使用菜单缩放系数而不是文本缩放系数
               ),
 
+              Positioned(
+                top: screenSize.height * 0.08,
+                left: screenSize.width * 0.04,
+                child: SoranoutaChapterSelector(
+                  selectedChapter: _selectedChapter,
+                  chapter2Unlocked: _chapter2Unlocked,
+                  onChapterSelected: _handleChapterSelected,
+                  scale: menuScale,
+                  startAnimation: _startMenuAnimation,
+                ),
+              ),
+
               // 按钮区域的白色模糊阴影层 - 使用淡入动画
               SoranoutaMenuButtons.createShadowWidget(
                 config: config,
@@ -227,7 +345,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
 
               // SoraNoUta 专用按钮，参与卷帘动画
               SoranoutaMenuButtons.createButtonsWidget(
-                onNewGame: widget.onNewGame,
+                onNewGame: _handleNewGame,
                 onContinueGame: _hasQuickSave
                     ? _handleContinueGame
                     : null, // 新增：传递继续游戏回调

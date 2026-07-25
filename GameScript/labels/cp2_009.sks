@@ -7,18 +7,24 @@ l "是......是吗？好吧，我想多了。"
 xk "...手机里还插的有我的电话卡...不过送你了。"
 xk eye "...但是话费充值...收取30%%手续费。"
 // #萧可眯眼
-l "30%%！！？"
+// <renpy-performance source=cp2_009.rpy:8>
+play sound bikkuri
+// </renpy-performance>
+l "30%%！！？" shake_6
 // #对话框震动
 l "好黑......"
 xk "打折...也不是不行。"
 xk unhappy "你表妹来找我充值，可以只收0%%手续费。"
 // 萧可睁眼
-l "这也减的太多了吧！！不对！！这是只对我一个人收对吧！！"
+// <renpy-performance source=cp2_009.rpy:13>
+play sound dokan
+// </renpy-performance>
+l "这也减的太多了吧！！不对！！这是只对我一个人收对吧！！" shake_27
 // #对话框震动
 xk eye "对了..."
 // #萧可眯眼
 xk unhappy "我...还是想成为漫画家。"
-l "嗯～加油啊！Fight！！"
+l "嗯～加油啊！Fight！！" shake_13
 // 对话框震动
 xk emm "不过...你会祝我走到这个目标么......"
 // #萧可皱眉
@@ -28,19 +34,37 @@ xk eye "嗯...谢谢你的祝福，允许你升级为金色鲈鱼了。"
 // #萧可眯眼
 l "听起来终于我变得值钱了吗......"
 xk "还不够...几天后的星期五，你把手机带到学校。"
+// <renpy-performance source=cp2_009.rpy:24>
+play sound poko
+// </renpy-performance>
 xk unhappy "给你多装一点游戏......"
 // 萧可睁眼
+// <renpy-performance source=cp2_009.rpy:26>
+scene class
+shake duration 0.45 intensity 10 target background
+// </renpy-performance>
 l "真的吗？星期五吗？好！"
+// <renpy-performance source=cp2_009.rpy:31>
+scene class with fade
+stop music
+// </renpy-performance>
 nvlm
 "......原来急救电话的通话记录只是乌龙而已嘛..."
 "这算报假警吗？"
 "没有胆量去验证......"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_009.rpy:38>
+scene class with fade
+// </renpy-performance>
 "......"
 "上午的课都上完了，到了吃完午饭的时间。"
 "该玩什么呢？"
+// <renpy-performance source=cp2_009.rpy:44>
+play music chen
+show ccy pose1 smile at cp2center
+// </renpy-performance>
 nan "今天也玩抓人游戏吗？"
+nvlm
 "是陈雏莺。"
 "我升学进这个学校以后班级里认识的第一个朋友。"
 "有什么办法，我不太敢主动找其他人搭话。"
@@ -50,8 +74,11 @@ nan "今天也玩抓人游戏吗？"
 "这两个也都是因为主动搭话。"
 "所以为什么玩的好的都是女孩子..."
 endnvlm
-nvlm
 l "嗯.....来吧！"
+// <renpy-performance source=cp2_009.rpy:59>
+scene sky
+// </renpy-performance>
+nvlm
 "原计划去班级的图书角借本书看的。"
 "但是既然有更好玩的东西，那还是去玩吧。"
 "学的时候就要好好玩，玩的时候呢，要痛痛快快的玩。"
@@ -66,50 +93,75 @@ nvlm
 "不过一路上还是有很多障碍的，阶梯，灌木丛还有围栏。"
 "玩起来还是很刺激的。"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_009.rpy:75>
+scene ground with diss
+// </renpy-performance>
 "......"
-ccy "呼呼来吧！"
+// <renpy-performance source=cp2_009.rpy:78>
+show ccy pose2 wakuwaku at cp2center
+// </renpy-performance>
+ccy "呼呼来吧！" shake_5
 // 对话框震动
+nvlm
 "我们去到了学校后的空地，这里是例行的集合场所。"
 "得通过石头剪刀布决定谁先负责抓人了。"
 endnvlm
-nvlm
-ccy "石头------剪刀------布！"
+// <renpy-performance source=cp2_009.rpy:86>
+show ccy pose2 moeru at cp2center an cp2jump
+play sound haneru
+// </renpy-performance>
+ccy "石头------剪刀------布！" shake_18
 // 对话框震动 陈雏莺震动一下 燃起来了
-l "石头------剪刀------布！"
+l "石头------剪刀------布！" shake_18
 // 对话框震动
-endnvlm
 jump cp2_009_change
-nvlm
 "我决定出："
-endnvlm
 menu
 "石头" cp2_009_1
 "剪刀" cp2_009_2
 "布" cp2_009_3
 endmenu
 label cp2_009_1
-nvlm
 "我决定出石头。"
 "陈雏莺则出的是："
 "布！！"
-l "啊！我又输了！"
+// <renpy-performance source=cp2_009.rpy:103>
+play sound syobon
+// </renpy-performance>
+l "啊！我又输了！" shake_7
 // 对话框震动
+// <renpy-performance source=cp2_009.rpy:106>
+show ccy pose3 youki at cp2center
+// </renpy-performance>
 ccy "嘿嘿...三秒之后见咯..."
+// <renpy-performance source=cp2_009.rpy:114>
+show ccy pose3 smile at cp2center an cp2jump
 pause 0.1
-endnvlm
+hide ccy
+play sound hasiru
+play sound kakeru
+// </renpy-performance>
 nvlm
 "三秒后，陈雏莺就顺着一个方向跑开了。"
 endnvlm
-nvlm
 l "可恶。"
+// <renpy-performance source=cp2_009.rpy:120>
+scene sky
+// </renpy-performance>
+nvlm
 "我摆出预备的姿势，然后猛吸一口气。"
+// <renpy-performance source=cp2_009.rpy:122>
+play sound hasiru
+// </renpy-performance>
 "瞬吸一口气，然后开始了冲锋。"
 "我慢慢加速，直到加速到我能跑到的极限速度。"
 "逐渐贴近陈雏莺的后背了。"
 endnvlm
 nvlm
 "啊！！"
+// <renpy-performance source=cp2_009.rpy:129>
+play sound kakeru
+// </renpy-performance>
 "她一个急转弯，翻过了旁边的围栏。"
 "我只好进行紧急减速。"
 "我对翻越围栏的动作还不太熟练，只敢小心翼翼的。"
@@ -125,51 +177,80 @@ nvlm
 "算了，我慢慢追吧，拖到上课以后大不了承认这把我输了。"
 "虽然我每次当捉人的人的时候，都没赢过。"
 endnvlm
+// <renpy-performance source=cp2_009.rpy:146>
+stop music
+// </renpy-performance>
 nvlm
 "......"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_009.rpy:150>
+play sound rin2
+// </renpy-performance>
 nan "叮动铛咚～"
 "上课了。"
+nvlm
 l "我输了。"
 ccy "好！我现在的战绩是15比1了。"
 l "你确定不是在拿我刷分吗？"
 "怪不得每次很积极的来找我玩这个游戏。"
 endnvlm
+// <renpy-performance source=cp2_009.rpy:160>
+scene class with diss
+// </renpy-performance>
 nvlm
 "......"
 "回到了教室。"
 endnvlm
 jump cp2_009_1a2
 label cp2_009_2
-nvlm
 "我决定出剪刀。"
 "陈雏莺则出的是："
 "布！"
-l "我赢啦！"
+// <renpy-performance source=cp2_009.rpy:169>
+show ccy pose2 odoroki at cp2center an cp2jump
+// </renpy-performance>
+l "我赢啦！" shake_4
 // 对话框震动
-l "哇！你看那边，有飞机！"
+l "哇！你看那边，有飞机！" shake_11
 // 对话框震动
+// <renpy-performance source=cp2_009.rpy:175>
+show ccy pose1 nani at cp2center
 pause 0.1
+hide ccy
+play sound poko
+// </renpy-performance>
 ccy "啊？哪里哪里？"
 // 陈雏莺好奇地 隐出
-endnvlm
+// <renpy-performance source=cp2_009.rpy:181>
+scene sky with diss
+play sound kakeru
+play sound hasiru
+// </renpy-performance>
 nvlm
 "我趁机跑开。"
 "以我可以跑出来的最高速度。"
 ccy "飞机在哪啊...喂！你骗我！！"
 l "这就是现实！"
+// <renpy-performance source=cp2_009.rpy:186>
+play sound hasiru
+// </renpy-performance>
 "陈雏莺也起步开始追我了。"
 "我很清楚我跑的没陈雏莺快，所以就只能使用绕弯大法了。"
 "我慢慢下楼梯，右转进了桥洞。"
 "但是也不会懈怠，马上又提快了我的速度。"
+// <renpy-performance source=cp2_009.rpy:191>
+play sound kakeru
+// </renpy-performance>
 "也顾不得陈雏莺追到哪了，我跑到头以后又一个左转，进了教学楼一楼。"
 "跑到半路的楼梯口以后又爬上楼。"
 "最后回到了教室。"
 "我在座位上坐了十几秒后，陈雏莺终于满头大汗地进了门。"
 ccy "捉......捉到你了..."
-nan "叮咚铛咚~"
 endnvlm
+// <renpy-performance source=cp2_009.rpy:198>
+play sound rin2
+// </renpy-performance>
+nan "叮咚铛咚~"
 nvlm
 "陈雏莺即将碰到我衣服的一瞬间，上课铃响了。"
 ccy "啊！我的战绩！！"
@@ -177,25 +258,39 @@ ccy "变成15比2了。"
 "等着吧，我会慢慢追上去的。"
 "但是这一次用了这个计谋，下一次肯定不会生效了，陈雏莺估计会提前堵我了，该怎么破局呢？"
 endnvlm
+// <renpy-performance source=cp2_009.rpy:210>
+stop music
+scene class
+// </renpy-performance>
 nvlm
 "......"
 endnvlm
 jump cp2_009_1a2
 label cp2_009_3
 label cp2_009_1a2
-nvlm
 "我决定出布。"
 "陈雏莺则出的是："
 "布！"
-ccy "啊！平局了！不行不行！再来一次！"
+// <renpy-performance source=cp2_009.rpy:219>
+show ccy pose1 tameiki at cp2center an cp2vshake
+play sound pekori
+// </renpy-performance>
+ccy "啊！平局了！不行不行！再来一次！" shake_16
 // 对话框震动
 "没办法了，再来一次。"
-endnvlm
+// <renpy-performance source=cp2_009.rpy:222>
+show ccy pose2 moeru at cp2center
+// </renpy-performance>
 jump cp2_009_change
 label cp2_009_change
-nvlm
+// <renpy-performance source=cp2_009.rpy:227>
+play music yasumijikan
+// </renpy-performance>
 "午休时间。"
 "萧可转过身来了。"
+// <renpy-performance source=cp2_009.rpy:230>
+show xk pose1 eye at cp2center
+// </renpy-performance>
 xk "........."
 // 萧可眯眼
 xk unhappy ".....嗯......下午我不一起走了。"
@@ -213,89 +308,173 @@ xk eye "嗯........."
 xk unhappy "去亲戚家。"
 // 萧可睁眼
 l "嗯...好。"
-endnvlm
 nvlm
 "既然萧可要去亲戚家了，那今天放学后又会变成只有我和夏悠了啊...不过话说刘守真和李宫娜不是跟夏悠一个班的吗？"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_009.rpy:258>
+stop music
+scene sky with diss
 pause 3.0
+play music yuugure
+scene sky-yuu with diss
 pause 2.0
+scene schoolgate-yuu with diss
+// </renpy-performance>
+nvlm
 "......"
 "放学了。"
 "我将萧可托我带的话告诉给了夏悠。"
 endnvlm
-nvlm
-x "那好吧。"
-x "又变成两个人的队伍了。"
-lg satoko "哇哦～只有两个人..."
+// <renpy-performance source=cp2_009.rpy:265>
+show xcp2 pose1 tameiki2 at cp2center
+// </renpy-performance>
+xcp2 "那好吧。"
+xcp2 "又变成两个人的队伍了。"
+// <renpy-performance source=cp2_009.rpy:270>
+show lgcp2 pose2 neutral at cp2left an cp2enter_left
+show xcp2 pose1 tameiki at cp2right an cp2from_center_to_right
+// </renpy-performance>
+lgcp2 satoko "哇哦～只有两个人..."
 // 李宫娜satoko
 "刘守真和李宫娜也在。"
 "实话实说，真是士别三日刮目相看，尤其是李宫娜。"
-ls magao "林澄，我有点事情想跟你说。"
+// <renpy-performance source=cp2_009.rpy:277>
+show xcp2 pose1 happy at cp2right
+show lgcp2 pose2 happy at cp2center an cp2from_left_to_center
+show lscp2 pose2 neutral at cp2left an cp2enter_left
+// </renpy-performance>
+lscp2 magao "林澄，我有点事情想跟你说。"
 // 刘守真严肃
 l "什么事？在这里说做不到吗？"
-ls sabishii "嗯......只能和你说，不能让她们听到。"
+lscp2 sabishii "嗯......只能和你说，不能让她们听到。"
 // 刘守真脸红
-lg "喂喂！我们已经听到了好不好！"
+// <renpy-performance source=cp2_009.rpy:282>
+show lgcp2 pose1 odoroki at cp2center an cp2vshake
+play sound poko
+// </renpy-performance>
+lgcp2 "喂喂！我们已经听到了好不好！" shake_14
 // 对话框震动 李宫娜豆豆眼 跳两下
-lg "哦哦我懂了......一定是少儿不宜的内容..."
+// <renpy-performance source=cp2_009.rpy:284>
+show lgcp2 pose1 satoko at cp2center an cp2tremble repeat 4
+// </renpy-performance>
+lgcp2 "哦哦我懂了......一定是少儿不宜的内容..."
 // 李宫娜satoko 上下抽动
-lg "好吧好吧......夏悠我们两个先走吧～"
-x "啊...那等会河边汇合咯～"
+// <renpy-performance source=cp2_009.rpy:286>
+show lgcp2 pose1 happy at cp2center
+// </renpy-performance>
+lgcp2 "好吧好吧......夏悠我们两个先走吧～"
+// <renpy-performance source=cp2_009.rpy:288>
+show xcp2 pose3 ciallo at cp2right
+// </renpy-performance>
+xcp2 "啊...那等会河边汇合咯～"
 // 夏悠ciallo 叉腰
 "指的是必经之路的那座桥的河边。"
 l "好吧。"
+// <renpy-performance source=cp2_009.rpy:295>
+scene schoolgate-yuu with diss
+show lscp2 pose2 neutral at cp2center
+// </renpy-performance>
+nvlm
 "......"
 "夏悠和李宫娜先走了。"
 endnvlm
-nvlm
 l "嗯？"
-ls magao "你班上那个萧可。"
-ls "总之你多加注意。"
+lscp2 magao "你班上那个萧可。"
+lscp2 "总之你多加注意。"
 l "嗯？难道你对她..."
-l "唉，我会帮你的！"
+l "唉，我会帮你的！" shake_8
 // 对话框震动
-ls "别闹，我又不是你！"
+// <renpy-performance source=cp2_009.rpy:307>
+show lscp2 pose2 konoyarou at cp2center an cp2vshake with diss
+play sound moeru
+// </renpy-performance>
+lscp2 "别闹，我又不是你！" shake_9
 // 对话框震动 刘守真生气 跳两下
 l "对不起开玩笑。"
 l "还有我看起来是这种人吗..."
-ls magao "还有一件事就是。"
+lscp2 magao "还有一件事就是。"
 // 刘守真严肃
-ls "不如说一直以来就是。"
-ls "一直感觉你的身体...真的是属于你的吗？"
+lscp2 "不如说一直以来就是。"
+// <renpy-performance source=cp2_009.rpy:313>
+stop music
+// </renpy-performance>
+lscp2 "一直感觉你的身体...真的是属于你的吗？"
+// <renpy-performance source=cp2_009.rpy:317>
+scene bl
+play sound kazekage loop
+// </renpy-performance>
+nvlm
 "......"
 "......"
 "......"
 nan2 "真没想到居然一直都有察觉。"
 nan2 "该说这是意料之内的事情吗？"
 endnvlm
+// <renpy-performance source=cp2_009.rpy:325>
+stop sound
+// </renpy-performance>
 nvlm
 "......"
 "......"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_009.rpy:331>
+scene sky-yuu with diss
+play music hatake
+// </renpy-performance>
 "天色渐晚，我和夏悠一起走在回家的路上。"
 "夏悠则拿着那本借来的书，在一直翻阅着。"
 "搞不懂刘守真的话。"
+// <renpy-performance source=cp2_009.rpy:336>
+cg shincg5 1
+// </renpy-performance>
 l "一边走路一边看书真的安全吗？"
-x "诶？但是这里是人迹罕至的道路，很久都看不到一辆车吧..."
-x "不如说，你明明有手机玩，却不拿出来打游戏，才是暴殄天物呢～"
+// <renpy-performance source=cp2_009.rpy:339>
+cg shincg5 2
+// </renpy-performance>
+xcp2 "诶？但是这里是人迹罕至的道路，很久都看不到一辆车吧..."
+// <renpy-performance source=cp2_009.rpy:342>
+cg shincg5 3
+// </renpy-performance>
+xcp2 "不如说，你明明有手机玩，却不拿出来打游戏，才是暴殄天物呢～"
 l "因为我没带......带了也不敢玩，不能被任何大人发现。"
 l "这本《宇宙的十万个为什么》里，还有什么内容啊？"
 l "哦不对，你不许说，我又不想被剧透了。"
-x "嗯～我是不会给你剧透冥王星被开除行星籍的原因是什么的。"
+// <renpy-performance source=cp2_009.rpy:349>
+cg shincg5 4
+play sound poko
+// </renpy-performance>
+xcp2 "嗯～我是不会给你剧透冥王星被开除行星籍的原因是什么的。"
+// <renpy-performance source=cp2_009.rpy:351>
+play sound dokan
+// </renpy-performance>
 l "冥王星被开除行星籍了？"
-x "对不起...我以后不会给你剧透木星有多少颗卫星了..."
+// <renpy-performance source=cp2_009.rpy:354>
+cg shincg5 5
+// </renpy-performance>
+xcp2 "对不起...我以后不会给你剧透木星有多少颗卫星了..."
+// <renpy-performance source=cp2_009.rpy:356>
+play sound syobon
+// </renpy-performance>
 l "原来木星还有卫星的么..."
-x ".....啊哈哈...来聊点别的吧哈哈..."
-x "今天天气真好呢～"
+// <renpy-performance source=cp2_009.rpy:359>
+cg shincg5 6
+// </renpy-performance>
+xcp2 ".....啊哈哈...来聊点别的吧哈哈..."
+// <renpy-performance source=cp2_009.rpy:362>
+cg shincg5 4
+// </renpy-performance>
+xcp2 "今天天气真好呢～"
 l "你应该在阴天说这句话的。"
-x "啊？为什么？"
+// <renpy-performance source=cp2_009.rpy:366>
+cg shincg5 2
+// </renpy-performance>
+xcp2 "啊？为什么？"
 l "这样比较有节目效果。"
-x "唉......"
-x "真是搞不懂你呢..."
-x "不管是小时候还是......"
-x "一直是让人很难捉摸......"
-endnvlm
+// <renpy-performance source=cp2_009.rpy:370>
+cg shincg5 3
+// </renpy-performance>
+xcp2 "唉......"
+xcp2 "真是搞不懂你呢..."
+xcp2 "不管是小时候还是......"
+xcp2 "一直是让人很难捉摸......"
 jump cp2_010
-label cp2_010

@@ -1,10 +1,18 @@
 //label// SoraNoUta Chapter 2 cp2_001
 label cp2_001
+// <renpy-performance source=cp2_001.rpy:9>
+play music yasumijikan
+scene sky with diss
+play sound ike loop
+// </renpy-performance>
 nvlm
 "烈日悬在空中，刺人的阳光打在我的脸上。"
 "我抬头望向这片天。"
 "已经临近正午时分了，等会就该吃饭了。"
 "我这样想着，又低下了头。"
+// <renpy-performance source=cp2_001.rpy:14>
+play sound mizu
+// </renpy-performance>
 "看向我的泡在水塘里的腿。"
 "又看向我旁边的夏悠。"
 "一脸悠哉悠哉的表情啊～"
@@ -16,34 +24,60 @@ nvlm
 "我现在是六年级。夏悠则是五年级。"
 "第一次和别人处于同一个班级内上课，但是却只剩一年时间了。"
 endnvlm
-nvlm
-x "额......"
+// <renpy-performance source=cp2_001.rpy:29>
+scene bl
+cg cg_cp2_pond 1 with fade
+// </renpy-performance>
+xcp2 "额......"
+// <renpy-performance source=cp2_001.rpy:35>
+cg cg_cp2_pond 2 with diss
+shake duration 0.45 intensity 10 target background
+// </renpy-performance>
 "夏悠刚刚好像打了个寒颤。"
 "像是睡觉的时候刚被吵醒的样子。"
+// <renpy-performance source=cp2_001.rpy:40>
+cg cg_cp2_pond 3
+// </renpy-performance>
 l "怎么了？"
-x "嗯......"
-x "好怀念的感觉～"
+xcp2 "嗯......"
+// <renpy-performance source=cp2_001.rpy:44>
+cg cg_cp2_pond 4
+// </renpy-performance>
+xcp2 "好怀念的感觉～"
 "这样么......"
 "明明还是第一次邀请她吧..."
+nvlm
 "今天是周末。和她约好了来我奶奶家玩。"
 "这旁边有一块很浅但是很凉快的池塘。"
 "池塘里可以捉到蝌蚪，青蛙。还有飞在上面的蜻蜓。"
 "听说有的地方，蜻蜓不叫蜻蜓，叫做龙蝇。"
 "计划玩一整个白天。"
 endnvlm
-nvlm
 l "啊～确实舒服。"
+// <renpy-performance source=cp2_001.rpy:57>
+play sound mizu
+// </renpy-performance>
 "我和夏悠都坐在池塘边上，将腿伸进池塘内浸泡着。"
+// <renpy-performance source=cp2_001.rpy:61>
+scene ike with diss
+// </renpy-performance>
 "阳光穿过池塘四周高大的树木的叶子，打出一深一浅的阴影的斑驳在我和夏悠的身上。"
 "在今天上午已经抓了很多小蝌蚪了。"
 "池塘里抓不到鱼，所以把小蝌蚪当鱼来养。"
+// <renpy-performance source=cp2_001.rpy:67>
+cg cg_cp2_pond 4 with diss
+// </renpy-performance>
 l "好多蜻蜓啊！在池塘旁边飞。"
-x "诶～什么时候开始抓小蜻蜓？"
-l "走吧！就现在。"
+xcp2 "诶～什么时候开始抓小蜻蜓？"
+l "走吧！就现在。" shake_0
 // 对话框震动
 l "你先继续泡，我回去一下。"
-x "啊？拿抓蜻蜓的工具吗？"
+xcp2 "啊？拿抓蜻蜓的工具吗？"
 l "嗯。"
+// <renpy-performance source=cp2_001.rpy:76>
+scene sky with diss
+// </renpy-performance>
+nvlm
 "......"
 "我跑到了奶奶家。拿起了靠在墙上的竹扫把。"
 "这个就是我抓蜻蜓的秘密武器了。"
@@ -51,15 +85,27 @@ l "嗯。"
 "蜻蜓可以这样抓，蝉不行。"
 "我拖起竹扫把，继续往池塘赶去。"
 endnvlm
-nvlm
-l "久等了！"
+l "久等了！" shake_0
 // 对话框震动
+// <renpy-performance source=cp2_001.rpy:91>
+scene bl
+cg cg_cp2_pond 3 with fade
+// </renpy-performance>
 "我看向夏悠。她依旧在池塘旁边泡着脚。"
-x "啊哈！这个就是秘密武器吗？"
-l "你先看我操作！"
+// <renpy-performance source=cp2_001.rpy:97>
+play sound mizu
+play sound haneru
+cg cg_cp2_pond 1
+// </renpy-performance>
+xcp2 "啊哈！这个就是秘密武器吗？"
+l "你先看我操作！" shake_0
 // 对话框震动
-x "嗯。"
+xcp2 "嗯。"
 // cg 夏悠微笑
+// <renpy-performance source=cp2_001.rpy:103>
+scene sky with diss
+// </renpy-performance>
+nvlm
 "我缓缓将扫把举起来。这对现在的我来说还是很吃力的。"
 "一只蜻蜓正趴在池塘旁边崖壁上。"
 "我沿着池塘边缘慢慢移动靠近。"
@@ -67,59 +113,93 @@ l "呼～"
 "我慢慢呼吸，生怕声音太大把蜻蜓吓走了。"
 "等我走到刚好差不多扫把可以盖住蜻蜓的位置的时候。"
 "我猛地挥出扫把。"
+// <renpy-performance source=cp2_001.rpy:111>
+play sound utsu
+// </renpy-performance>
 nan "扑噔！！"
 "呼！成功了。"
 "蜻蜓有逃跑的意思，但是很遗憾并没有成功逃出去。"
 endnvlm
-nvlm
-l "抓到了！抓到了！"
+// <renpy-performance source=cp2_001.rpy:119>
+scene ike with diss
+// </renpy-performance>
+l "抓到了！抓到了！" shake_0
 // 对话框震动
-x "啊！我看看！"
+xcp2 "啊！我看看！" shake_0
 // 对话框震动
+// <renpy-performance source=cp2_001.rpy:123>
+show xcp2 pose1 kirakira at cp2center an cp2jump2
+play sound haneru
+// </renpy-performance>
 "夏悠高兴的腿从池塘里抽出来，穿上凉鞋就跑了过来。"
-l "小心脚下啊！别打滑了！"
+l "小心脚下啊！别打滑了！" shake_0
 // 对话框震动
-x wakuwaku "来了来了！"
+xcp2 wakuwaku "来了来了！" shake_0
 // 对话框震动
-x "在哪在哪？"
+// <renpy-performance source=cp2_001.rpy:129>
+show xcp2 pose1 kirakira at cp2center an cp2jump
+play sound haneru
+// </renpy-performance>
+xcp2 "在哪在哪？"
 l "你看扫把的竹枝下面，被压住的。"
 l "我很轻的，你帮我把它抓出来。"
 l "慢慢捏住它的翅膀。"
+// <renpy-performance source=cp2_001.rpy:136>
+scene sky with diss
+// </renpy-performance>
+nvlm
 "..."
 endnvlm
-nvlm
-x "诶呀！抓到了！"
+// <renpy-performance source=cp2_001.rpy:145>
+scene ike with diss
+hide xcp2
+show xcp2 pose1 odoroki at cp2center an cp2tremble repeat 4 with diss
+// </renpy-performance>
+xcp2 "诶呀！抓到了！" shake_0
 // 对话框震动
-x doyagao "林澄你看！"
+xcp2 doyagao "林澄你看！"
 // 对话框震动
+// <renpy-performance source=cp2_001.rpy:150>
+show tonboitem at cp2item an cp2item_in
+// </renpy-performance>
 "夏悠举起她的右手，手里捏着蜻蜓的翅膀。"
 "蜻蜓就像被提住耳朵的兔子一样老实。"
 "为什么比喻句也要用兔子......"
-x "真好看啊！"
-x "不管是背上的纹路还是网状透明，被阳光打出彩色反射的翅膀。"
-x "大自然所创作的，璀璨的艺术品。"
+xcp2 "真好看啊！"
+xcp2 "不管是背上的纹路还是网状透明，被阳光打出彩色反射的翅膀。"
+xcp2 "大自然所创作的，璀璨的艺术品。"
 l "好耳熟的话，总感觉在哪里听过。"
 "也对。"
 "蜻蜓和蝉为什么翅膀的纹理和质感看起来这么像呢？"
 "可能涉及到我所不知道的生物学方面的东西了。"
-x "那蜻蜓怎么处理呢？"
-x think2 "用线拴起来吧！"
-l "啊！别！"
+// <renpy-performance source=cp2_001.rpy:166>
+hide tonboitem
+show xcp2 pose5 think at cp2center with diss
+// </renpy-performance>
+xcp2 "那蜻蜓怎么处理呢？"
+xcp2 think2 "用线拴起来吧！"
+l "啊！别！" shake_0
 // 对话框震动
-x "为啥啊？"
+// <renpy-performance source=cp2_001.rpy:172>
+show xcp2 pose1 odoroki at cp2center
+// </renpy-performance>
+xcp2 "为啥啊？"
 l "拴在脖子上的话很容易变成“已经没什么好怕的了”状态。"
 qt "会赢哦。"
 qt "已经没什么好怕了。"
 l "拴在尾部的话很容易把尾巴扯掉。"
-x tameiki2 "啊？那怎么办啊？还有，什么是“已经没什么好怕的了”状态啊？"
+xcp2 tameiki2 "啊？那怎么办啊？还有，什么是“已经没什么好怕的了”状态啊？"
 l "啊？我不知道。对哦，为什么我会存在这种想法。"
 l "反正就是，那个，是。"
 l "容易让蜻蜓受伤或者死掉。"
-x tameiki "啊？好吧。"
+xcp2 tameiki "啊？好吧。"
 l "可以关在房间里玩。"
 l "但是玩够了，要放生哦！"
 l "我在外面晒一会太阳。"
-endnvlm
+// <renpy-performance source=cp2_001.rpy:192>
+stop sound
+scene sky with diss
+// </renpy-performance>
 nvlm
 "....."
 "我坐在房门外沿的门槛上。看向院子下面的竹林。"
@@ -127,20 +207,31 @@ nvlm
 "前几天刚下完雨，现在又是三月份。"
 "该到收春笋的季节了。"
 endnvlm
+// <renpy-performance source=cp2_001.rpy:202>
+scene sky with diss
+stop music
+// </renpy-performance>
 nvlm
 "........."
 "等到奶奶做好了饭以后，我就叫夏悠出来了。"
 "她虽然看得出来很舍不得，但还是遵守约定，把蜻蜓放回了天空。"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_001.rpy:215>
+scene sky with diss
 pause 2.0
+play music hatake
+scene sky-yuu an cp2sky_pan with diss
 pause 1.0
+// </renpy-performance>
+nvlm
 "......"
 "到了下午的时间。"
 endnvlm
-nvlm
+// <renpy-performance source=cp2_001.rpy:224>
+scene hayasi with diss
+show xcp2 pose3 happy at cp2center with diss
+// </renpy-performance>
 l "那，下午该进行什么活动呢？"
-endnvlm
 nvlm
 "我尝试询问她。"
 "毕竟整个上午都是她在陪我在玩。"
@@ -149,39 +240,63 @@ nvlm
 "哈哈哈哈怎么可能，哪有人约会是去抓小蝌蚪小蜻蜓的。"
 "不过我似乎有点想不起早上的具体细节了。"
 "但是没什么关系。估计是中午打瞌睡的时候睡昏了。"
-x "emmmmm"
-x "那个时候的我是在干什么呢......"
-l "啥？"
-x "咳咳！"
-// 对话框震动
-x body1 arm3 smile "我想到现在该干啥了！"
-// 对话框震动
-x moeru "该赚零花钱了。"
 endnvlm
+// <renpy-performance source=cp2_001.rpy:235>
+show xcp2 pose5 think at cp2center
+// </renpy-performance>
+xcp2 "emmmmm"
+xcp2 "那个时候的我是在干什么呢......"
+l "啥？"
+// <renpy-performance source=cp2_001.rpy:241>
+show xcp2 pose1 tameiki2 at cp2center an cp2jump2
+play sound haneru
+// </renpy-performance>
+xcp2 "咳咳！"
+// 对话框震动
+xcp2 pose3 smile "我想到现在该干啥了！" shake_3
+// 对话框震动
+// 原分镜：静止一拍后，夏悠燃起来并连续跳两下。
+pause 1.0
+show xcp2 pose3 moeru at cp2center an cp2jump2
+// <renpy-performance source=cp2_001.rpy:246>
+play sound moeru
+// </renpy-performance>
+xcp2 moeru "该赚零花钱了。"
 nvlm
 "夏悠说的赚零花钱，是指采茶。"
 "现在去采点茶叶，到天快黑的时候会有专门收茶叶的人路过。"
 "把茶叶给他就能得到零花钱。"
 "累是累，但是有钱拿。"
 endnvlm
+l "好！" shake_2
+// 对话框震动
+l "赚很多零花钱然后买零食吃！" shake_8
+// 对话框震动
+// <renpy-performance source=cp2_001.rpy:260>
+scene sky-yuu with fade
+// </renpy-performance>
 nvlm
-l "好！"
-// 对话框震动
-l "赚很多零花钱然后买零食吃！"
-// 对话框震动
 "......"
 "我回家拿了两个塑料袋，一个给我，一个给夏悠。"
 "然后来到了我家下面的农田。"
 "种的有很多茶树。"
 "货真价实的摇钱树啊。"
-x "林澄。"
+endnvlm
+// <renpy-performance source=cp2_001.rpy:270>
+scene hayasi with diss
+show xcp2 pose3 unhappy at cp2center with diss
+// </renpy-performance>
+xcp2 "林澄。"
 l "怎么了啊？"
-x "来比赛吧！"
+// <renpy-performance source=cp2_001.rpy:275>
+show xcp2 pose3 moeru at cp2center an cp2jump
+play sound moeru
+// </renpy-performance>
+xcp2 "来比赛吧！" shake_3
 // 对话框震动
-x "采茶比赛！看谁最后卖的更多！"
+xcp2 "采茶比赛！看谁最后卖的更多！" shake_11
 // 对话框震动
 l "啊！我肯定采不过你。"
-endnvlm
 nvlm
 "我这么说是有事实依据的。"
 "夏悠留的指甲比我的要长。对采茶来说，这就是属性加成了。"
@@ -191,30 +306,46 @@ nvlm
 "有点后悔了。"
 "指甲修完以后不仅采茶会更慢，而且挠痒的时候也很难受。"
 endnvlm
-nvlm
-l "唉，来吧！我跟你比！"
+l "唉，来吧！我跟你比！" shake_6
 // 对话框震动
 "再三考虑以后，还是决定答应夏悠的请求。"
-x arm2 kirakira "好哦！"
+xcp2 pose2 kirakira "好哦！" shake_1
 // 对话框震动
 "大不了我手臂的速度快一点就行了。"
 "来弥补我采集工具（指甲）的不足。"
-endnvlm
+// <renpy-performance source=cp2_001.rpy:297>
+scene sky-yuu with fade
+// </renpy-performance>
 nvlm
 "为了公平起见，我和夏悠分别站在一块田的左边和右边的茶树边上。"
 "茶树都是一棵棵种植并且延伸到田下方的。"
 "也就是，我和夏悠所采集的茶树的距离和数量是几乎一致的，路线也几乎一致。"
 "减少了由于走向茶树而花费的时间造成的差距。"
-x "好啦好啦！"
+endnvlm
+// <renpy-performance source=cp2_001.rpy:306>
+scene hayasi with fade
+show xcp2 pose3 wakuwaku at cp2center an cp2tremble repeat 4 with diss
+// </renpy-performance>
+xcp2 "好啦好啦！" shake_3
 // 对话框震动
-x doyagao "我已经摩拳擦掌咯！快快！"
+xcp2 doyagao "我已经摩拳擦掌咯！快快！" shake_6
 // 对话框震动
-x moeru "三！二！一！开始！"
+// <renpy-performance source=cp2_001.rpy:311>
+play sound chin
+// </renpy-performance>
+xcp2 moeru "三！二！一！开始！" shake_5
 // 对话框震动
-l "诶！！"
+// <renpy-performance source=cp2_001.rpy:314>
+hide xcp2
+play sound bikkuri
+// </renpy-performance>
+l "诶！！" shake_3
 // 对话框震动
 l "可恶，居然趁我发呆的时候自己喊开始了。"
-endnvlm
+// <renpy-performance source=cp2_001.rpy:321>
+scene sky-yuu with fade
+play sound hanomasatsu loop
+// </renpy-performance>
 nvlm
 "没有办法，我也得赶紧跟着夏悠的脚步，开始一点点采茶。"
 "用手指甲将每一根茶枝的最尖部分的嫩芽割下来，然后装进塑料袋子里。"
@@ -222,4 +353,3 @@ nvlm
 "一直重复着切下割下茶枝的嫩芽。"
 endnvlm
 jump cp2_002
-label cp2_002

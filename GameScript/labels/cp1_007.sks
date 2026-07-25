@@ -626,6 +626,7 @@ l"这么梦幻的景色，都怀疑自己是在做梦了......"
 x2 "如果真是在做梦呢？"
 endnvln
 achievement unlock achievement4_cp1end
+api soranouta.chapter.complete id=1
 stop sound
 stop music
 stop sound

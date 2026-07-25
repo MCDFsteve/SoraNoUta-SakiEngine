@@ -1,23 +1,38 @@
 //label// SoraNoUta Chapter 2 cp2_019
 label cp2_019
+// <renpy-performance source=cp2_019.rpy:5>
+scene class with diss
+// </renpy-performance>
 nvlm
 "心满意足地吃完了午饭，我惬意地坐在自己的座位上。"
 "看着窗外透进来的阳光，温暖的光芒洒在我的身上。"
 endnvlm
-nvlm
 l "真希望这样的日子能一直持续下去。"
+nvlm
 "萧可正坐在我前面，正在画着什么。"
 endnvlm
+// <renpy-performance source=cp2_019.rpy:14>
+play music asanimukau
+// </renpy-performance>
 nvlm
 "......"
+// <renpy-performance source=cp2_019.rpy:16>
+play sound jyajyan
+// </renpy-performance>
 xk "你看。"
 "萧可似乎画完了，转了身过来，把画的东西拿给我看。"
 "画上的是一个小女孩，披着围巾，穿着外套和长靴，独自一人站在积雪的街道。"
 l "这画得真不错！这个小女孩好像在期待什么呢。"
 xk "我想表达那种...孤独却又充满希望的感觉。"
 xk "不过故事本身，我则是想讲述一个被班级孤立，被父母家暴的女孩。"
+// <renpy-performance source=cp2_019.rpy:23>
+play sound dokan
+// </renpy-performance>
 l "啊！？"
 l "那这女孩也太惨了吧......"
+// <renpy-performance source=cp2_019.rpy:26>
+play sound pekori
+// </renpy-performance>
 xk "不止于此......"
 xk "即使这样，她内心依旧保持着冷静和崇高，不会放弃对生的希望，而是一直向往着自己的未来，自己的明天。"
 l "这真是个感人的故事......那这个女孩最后怎么样了？"
@@ -58,7 +73,7 @@ nvlm
 "......"
 "......"
 "第二章 完"
-achievement unlock achievement5_cp2end
 endnvlm
+achievement unlock achievement5_cp2end
 jump cp3_001
 // ====================

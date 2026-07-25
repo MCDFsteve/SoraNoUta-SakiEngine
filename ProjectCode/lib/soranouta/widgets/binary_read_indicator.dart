@@ -24,8 +24,9 @@ class BinaryReadIndicator extends StatelessWidget {
   /// 将字符串转换为二进制符号表示
   String _convertToBinarySymbols(String text) {
     final bytes = utf8.encode(text);
-    final binaryString =
-        bytes.map((byte) => byte.toRadixString(2).padLeft(8, '0')).join();
+    final binaryString = bytes
+        .map((byte) => byte.toRadixString(2).padLeft(8, '0'))
+        .join();
 
     return binaryString.replaceAll('1', '-').replaceAll('0', r'\');
   }
@@ -33,13 +34,16 @@ class BinaryReadIndicator extends StatelessWidget {
   /// 根据说话人简称确定显示内容
   String _getDisplayText() {
     // 直接使用传入的简写，如果没有则默认为ai
-    final alias = speakerAlias ?? 'unknown';    // 特殊处理：旁白角色不显示
+    final alias = speakerAlias ?? 'unknown'; // 特殊处理：旁白角色不显示
     if (alias == 'nr' || alias == 'n' || alias == 'unknown') {
       return _convertToBinarySymbols('system');
     }
 
     // l (林澄) 显示 admin 转换后的符号
-    if (alias == 'ls' || alias == 'x2') {
+    if (alias == 'ls' ||
+        alias == 'lscp2' ||
+        alias == 'x2' ||
+        alias == 'xcp2strong') {
       return _convertToBinarySymbols('admin');
     }
     if (alias == 'l') {

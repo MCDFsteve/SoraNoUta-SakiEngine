@@ -14,6 +14,7 @@ import 'binary_read_indicator.dart';
 class SoranoUtaDialogueBox extends StatefulWidget {
   final String? speaker;
   final String? speakerAlias; // 新增：角色简写
+  final String? dialogueTag;
   final String dialogue;
   final DialogueProgressionManager? progressionManager;
   final bool isFastForwarding; // 新增：快进状态
@@ -23,6 +24,7 @@ class SoranoUtaDialogueBox extends StatefulWidget {
     super.key,
     this.speaker,
     this.speakerAlias, // 新增：可选的角色简写参数
+    this.dialogueTag,
     required this.dialogue,
     this.progressionManager,
     this.isFastForwarding = false, // 新增：默认不快进
@@ -56,7 +58,7 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
   // 等待键入字符闪烁动画控制器
   late AnimationController _blinkController;
   late Animation<double> _blinkAnimation;
-  
+
   // 用于获取对话框位置的GlobalKey
   final GlobalKey _dialogueKey = GlobalKey();
 
@@ -94,13 +96,9 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
       vsync: this,
     );
 
-    _textFadeAnimation = Tween<double>(
-      begin: 0.0,
-      end: 1.0,
-    ).animate(CurvedAnimation(
-      parent: _textFadeController,
-      curve: Curves.easeInOut,
-    ));
+    _textFadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(parent: _textFadeController, curve: Curves.easeInOut),
+    );
 
     // 初始化说话人擦除动画
     _speakerWipeController = AnimationController(
@@ -108,13 +106,12 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
       vsync: this,
     );
 
-    _speakerWipeAnimation = Tween<double>(
-      begin: 0.0,
-      end: 1.0,
-    ).animate(CurvedAnimation(
-      parent: _speakerWipeController,
-      curve: Curves.easeOutQuart,
-    ));
+    _speakerWipeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(
+        parent: _speakerWipeController,
+        curve: Curves.easeOutQuart,
+      ),
+    );
 
     // 启动说话人动画
 
@@ -141,14 +138,14 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
     WidgetsBinding.instance.addPostFrameCallback((_) {
       // 设置打字机的快进模式
       _typewriterController.setFastForwardMode(widget.isFastForwarding);
-      
+
       // 快进模式下跳过淡入动画
       if (widget.isFastForwarding) {
         _textFadeController.value = 1.0; // 直接设为完成状态
       } else {
         _textFadeController.forward();
       }
-      
+
       if (widget.speaker != null &&
           widget.speaker!.isNotEmpty &&
           _enableSpeakerAnimation) {
@@ -201,14 +198,15 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
     }
 
     // 如果对话内容或脚本索引发生变化，重新检查已读状态并开始文本淡入和打字机动画
-    if (widget.dialogue != oldWidget.dialogue || widget.scriptIndex != oldWidget.scriptIndex) {
+    if (widget.dialogue != oldWidget.dialogue ||
+        widget.scriptIndex != oldWidget.scriptIndex) {
       // 重新检查已读状态
       _isRead = ReadTextTracker.instance.isRead(
         widget.speaker,
         widget.dialogue,
         widget.scriptIndex,
       );
-      
+
       // 快进模式下跳过淡入动画
       if (widget.isFastForwarding) {
         _textFadeController.value = 1.0; // 直接设为完成状态
@@ -216,7 +214,7 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
         _textFadeController.reset();
         _textFadeController.forward();
       }
-      
+
       if (_enableTypewriter) {
         _typewriterController.startTyping(widget.dialogue);
       }
@@ -224,37 +222,38 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
   }
 
   Widget _buildReadStatusTag() {
-    final RenderBox? renderBox = _dialogueKey.currentContext?.findRenderObject() as RenderBox?;
+    final RenderBox? renderBox =
+        _dialogueKey.currentContext?.findRenderObject() as RenderBox?;
     if (renderBox == null) {
       return const SizedBox.shrink();
     }
-    
+
     final position = renderBox.localToGlobal(Offset.zero);
     final uiScale = context.scaleFor(ComponentType.ui);
     final textScale = context.scaleFor(ComponentType.text);
-    
+
     // 计算旋转后的标签尺寸以正确对齐中心点
     final labelWidth = 36.0 * uiScale + 18.0 * 2 * uiScale;
     final labelHeight = 14.0 * textScale + 4.0 * 2 * uiScale;
-    
+
     final diagonal = (labelWidth + labelHeight) / 2;
     final centerOffsetX = diagonal * 0.5;
     final centerOffsetY = diagonal * 0.3;
-    
+
     final finalLeft = position.dx - centerOffsetX;
     final finalTop = position.dy - centerOffsetY;
-    
+
     // 转换为相对于Stack的坐标
     final stackPosition = context.findRenderObject() as RenderBox?;
     if (stackPosition == null) return const SizedBox.shrink();
-    
+
     final stackGlobalPosition = stackPosition.localToGlobal(Offset.zero);
     final relativeLeft = finalLeft - stackGlobalPosition.dx;
     final relativeTop = finalTop - stackGlobalPosition.dy;
-    
+
     return Positioned(
-      left: relativeLeft+ 20*uiScale,
-      top: relativeTop + 20*uiScale,
+      left: relativeLeft + 20 * uiScale,
+      top: relativeTop + 20 * uiScale,
       child: ReadStatusIndicator(
         isRead: _isRead,
         uiScale: uiScale,
@@ -309,15 +308,25 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
       color: SettingsManager().currentDarkMode ? Colors.black : Colors.white,
       letterSpacing: 0.5,
       fontFamily: 'ChillJinshuSongPro_Soft',
-      backgroundColor: SettingsManager().currentDarkMode ? Colors.white : Colors.black,
+      backgroundColor: SettingsManager().currentDarkMode
+          ? Colors.white
+          : Colors.black,
       height: 1.1,
     );
+
+    final shakeMatch = RegExp(
+      r'^shake_(\d+)$',
+    ).firstMatch(widget.dialogueTag ?? '');
+    final shakeCharacterIndex = shakeMatch == null
+        ? null
+        : int.tryParse(shakeMatch.group(1)!);
 
     return Container(
       child: DialogueShakeEffect(
         dialogue: widget.dialogue,
         displayedText: _typewriterController.displayedText, // 传递当前显示的文本
-        enabled: true,
+        enabled: shakeCharacterIndex != null,
+        triggerCharacterIndex: shakeCharacterIndex,
         intensity: 4.0 * uiScale,
         duration: const Duration(milliseconds: 600),
         child: Stack(
@@ -325,53 +334,53 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
           children: [
             // 主对话框内容
             SoranoutaDialogueContent(
-            speaker: widget.speaker,
-            speakerAlias: widget.speakerAlias, // 新增：传递角色简写
-            dialogue: widget.dialogue,
-            dialogueStyle: dialogueStyle,
-            screenSize: screenSize,
-            uiScale: uiScale,
-            textScale: textScale,
-            isHovered: _isHovered,
-            isDialogueComplete: _isDialogueComplete,
-            dialogOpacity: _dialogOpacity,
-            onTap: _handleTap,
-            onHoverChanged: (hovered) => setState(() => _isHovered = hovered),
-            config: config,
-            enableTypewriter: _enableTypewriter,
-            typewriterController: _typewriterController,
-            textFadeAnimation: _textFadeAnimation,
-            blinkAnimation: _blinkAnimation,
-            isRead: _isRead,
-            readStatusOverlay: null,
-            dialogueKey: _dialogueKey, // 传递key
-          ),
-          
-          // 说话人显示组件
-          SoranoutaSpeakerWidget(
-            speaker: widget.speaker,
-            speakerStyle: speakerStyle,
-            screenWidth: screenSize.width,
-            screenHeight: screenSize.height,
-            uiScale: uiScale,
-            speakerXPos: config.dialogueSpeakerXPos,
-            speakerYPos: config.dialogueSpeakerYPos,
-            enableAnimation: _enableSpeakerAnimation,
-            wipeAnimation: _speakerWipeAnimation,
-          ),
-          
-          // 已读标签 - 使用坐标计算
-          if (_isRead) _buildReadStatusTag(),
-          
-          // 二进制已读指示器 - 左下角
-          BinaryReadIndicator(
-            speaker: widget.speaker,
-            speakerAlias: widget.speakerAlias, // 传入角色简写
-            uiScale: uiScale,
-            textScale: textScale,
-            positioned: true,
-          ),
-        ],
+              speaker: widget.speaker,
+              speakerAlias: widget.speakerAlias, // 新增：传递角色简写
+              dialogue: widget.dialogue,
+              dialogueStyle: dialogueStyle,
+              screenSize: screenSize,
+              uiScale: uiScale,
+              textScale: textScale,
+              isHovered: _isHovered,
+              isDialogueComplete: _isDialogueComplete,
+              dialogOpacity: _dialogOpacity,
+              onTap: _handleTap,
+              onHoverChanged: (hovered) => setState(() => _isHovered = hovered),
+              config: config,
+              enableTypewriter: _enableTypewriter,
+              typewriterController: _typewriterController,
+              textFadeAnimation: _textFadeAnimation,
+              blinkAnimation: _blinkAnimation,
+              isRead: _isRead,
+              readStatusOverlay: null,
+              dialogueKey: _dialogueKey, // 传递key
+            ),
+
+            // 说话人显示组件
+            SoranoutaSpeakerWidget(
+              speaker: widget.speaker,
+              speakerStyle: speakerStyle,
+              screenWidth: screenSize.width,
+              screenHeight: screenSize.height,
+              uiScale: uiScale,
+              speakerXPos: config.dialogueSpeakerXPos,
+              speakerYPos: config.dialogueSpeakerYPos,
+              enableAnimation: _enableSpeakerAnimation,
+              wipeAnimation: _speakerWipeAnimation,
+            ),
+
+            // 已读标签 - 使用坐标计算
+            if (_isRead) _buildReadStatusTag(),
+
+            // 二进制已读指示器 - 左下角
+            BinaryReadIndicator(
+              speaker: widget.speaker,
+              speakerAlias: widget.speakerAlias, // 传入角色简写
+              uiScale: uiScale,
+              textScale: textScale,
+              positioned: true,
+            ),
+          ],
         ),
       ),
     );

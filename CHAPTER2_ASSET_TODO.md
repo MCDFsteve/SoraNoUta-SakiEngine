@@ -1,67 +1,57 @@
-# Chapter 2 演出缺失素材记录
+# 第二章素材接入记录
 
-- `Assets/images/backgrounds/chapter2.webp`
-  - 用途：章节标题场景 `scene [chapter2,title:top=0.0 left=0.0 zoom=0.3]`
-  - 需求：与既有 `chapter0.webp` / `chapter1.webp` 风格一致的标题底图。
-- `Assets/images/cg/cg_cp2_pond-*.webp`
-  - 用途：`cp2_001.sks` 中的池塘 CG 序列（序号 1/2/3）。
-  - 需求：描绘夏悠与林澄在池塘边戏水、表情变化的三张 CG（含震动/特写效果）。
-- `Assets/images/characters/story1/pose/xiayo2-*.webp`
-  - 用途：第二章角色 `xcp2`（夏悠新制服）全套pose，与 `xiayo1` 系列相同的表情组合。
-  - 需求：提供基础站姿及情绪素材，锚点同 `xiayo1pose`。
-- `Assets/images/characters/story1/pose/shioke-*.webp`
-  - 用途：角色 `xk`（萧可）立绘，需支持常规/侧面/表情变体。
-  - 需求：与 `xiayo` 系列风格一致，提供左/右位图版本。
-- `Assets/images/backgrounds/store.webp`
-  - 用途：小卖部门口/内部场景（`scene store`）。
-  - 需求：日间版本即可，后续可根据剧情扩展黄昏夜晚版本。
-- `Assets/images/backgrounds/schoolgate-yuu.webp`
-  - 用途：放学时的校门夕景（`scene schoolgate yuu`）。
-  - 需求：与既有校园背景一致的绘制风格，需配合夕阳调色。
-- `Assets/images/backgrounds/shiokehome-yuu.webp`
-  - 用途：萧可家门口夕景（`scene shiokehome yuu`）。
-  - 需求：提供院落+房屋外观，便于后续日夜变化扩展。
-- `Assets/images/backgrounds/oka-yuu.webp`
-  - 用途：山坡顶平地景（`scene oka yuu`）。
-  - 需求：需要山坡草地+远景夕阳版本，可扩展日间。
-- `Assets/images/backgrounds/lab.webp`
-  - 用途：未来实验室闪回（`scene lab`）。
-  - 需求：科幻室内场景，建议带屏幕灯光。
-- `Assets/images/backgrounds/road-yuu.webp`
-  - 用途：回家路段（`scene road yuu`）。
-  - 需求：山路+护栏夕景，用于情绪场景。
-- `Assets/images/cg/cgmoto-*.webp`
-  - 用途：摩托车载人 CG（`cg cgmoto`）。
-  - 需求：至少含静止与速度变化两帧。
-- `Assets/images/cg/shincg3-*.webp`
-  - 用途：萧可举猫 CG 序列。
-  - 需求：按剧本提供表情帧。
-- `Assets/images/cg/shincg4-*.webp`
-  - 用途：萧可画稿 CG 序列。
-  - 需求：需覆盖 9 帧表情/动作。
-- `Assets/images/characters/story1/pose/chen-*.webp`
-  - 用途：陈雏莺立绘（`ccy`），需含常用动作与情绪。
-- `Assets/images/cg/cgmoto-*.webp`
-  - 用途：摩托车乘坐 CG（`cg cgmoto`），需静止与疾驰帧。
-- `Assets/images/cg/shincg4-*.webp`
-  - 用途：萧可画稿 CG 序列（至少 9 帧）。
-- `Assets/images/cg/shincg5-*.webp`
-  - 用途：黄昏散步 CG 序列。
-- `Assets/images/backgrounds/classdoor.webp`
-  - 用途：教室门口场景（`scene classdoor`）。
-- `Assets/images/cg/shincg6-*.webp`
-  - 用途：十字路口梦境 CG。
-- `Assets/images/backgrounds/stone-asa.webp`
-  - 用途：石头场景日间版（`scene stone asa`）。
-- `Assets/images/cg/shincg7-*.webp`
-  - 用途：萧可家门口对话 CG 序列。
-- `Assets/images/cg/cg_shiokehomeinfire-*.webp`
-  - 用途：萧可之家爆炸 CG（`cg_shiokehomeinfire`）。
-- `Assets/images/cg/shincg8-*.webp`
-  - 用途：火灾前门单人 CG。
-- `Assets/images/backgrounds/shiokegate17.webp`
-  - 用途：萧可家门口远景（`scene shiokegate17`）。
-- `Assets/images/cg/shincg11-*.webp`
-  - 用途：夕阳共视 CG。
-- `Assets/images/cg/shincg10-*.webp`
-  - 用途：时间回溯对话 CG 序列。
+## 已接入本项目
+
+- 夏悠第二章立绘 `xiayo2`
+  - `pose1`—`pose4`：分别组合 `arm1`—`arm4`。
+  - `pose5`：按原作图层坐标组合 `arm5 + arm6`。
+  - `pose6`：组合 `arm7`。
+  - `pose7`—`pose15`：第二章便服完整姿势。
+  - 表情及 `kuraikaop`、`shyp`、`nani` 组合差分已转为原生可切换资源。
+  - Ren'Py 的 `pose4` 侧身身体属于第一章废案，不导入、不注册独立资源；
+    原稿中的“侧脸思考”镜头改用第二章正式的 `pose5 + think/think2`。
+- 萧可立绘 `shioke`
+  - `pose1`—`pose3`：`body1` 分别组合 `arm1`—`arm3`。
+  - `pose4`：`body3 + arm1`（偏头姿势）。
+  - 表情差分已接入。
+- 陈雏莺立绘 `chen`
+  - 四个姿势及所提供的表情差分已接入；草图未作为成品资源导入。
+  - 新素材包未包含但第二章会调用的 `nani` 疑惑差分，已从 Ren'Py
+    成品资源按原坐标补入。
+- 山路旅人立绘 `ijin`
+  - `pose1`、`pose2` 已从 Ren'Py 成品资源接入。
+- 第二章 CG
+  - `cg_cp2_pond`：1—4。
+  - `cgmoto`：1—2。
+  - `shincg3`：1—4。
+  - `shincg4`：1—11。
+  - `shincg5`：1—6。
+  - `shincg6`：1。
+  - `shincg7`：1—12。
+  - `shincg9`：1—4。
+  - `shincg9_embrace`：1。
+  - `shincg10`：2—4（新演出保留的有效差分；原 1、5 不再使用）。
+  - `shincg11`：1。
+- 火灾烟雾动画
+  - Ren'Py 的 21.6 秒 VP9 亮度遮罩已转换为带真实透明通道的循环动态
+    WebP：`Assets/movies/smoke.webp`。
+  - 输出采用 960×540、16fps；保留完整运动周期，并针对全屏柔焦烟雾控制
+    包体和解码负担。
+
+## 仍缺少源素材
+
+- 章节标题底图：`Assets/images/backgrounds/chapter2.webp`。
+- 李宫娜第二章立绘：当前以 `gonna2` 全透明图层保留分镜挂点。
+- 刘守真第二章立绘：当前以 `syozen2` 全透明图层保留分镜挂点。
+
+李宫娜与刘守真的透明图层只用于提前写好站位、表情和动画，不会显示成
+第一章造型或近似替代画。正式素材按同名 `pose` / `emoji` 路径覆盖后，
+第二章脚本无需再次改写。章节标题仍未使用近似图或可见占位图。
+
+## 已确定删减或改编
+
+- 成年后的咖啡馆 CG `shincg1`、`shincg2` 因工期取消。
+- `cp2_002.sks` 与 `cp2_006.sks` 对应段落改用黑场和咖啡馆环境音演出，不再列为缺失素材。
+- 萧可家爆炸 CG `cg_shiokehomeinfire` 与火灾前门单人 CG `shincg8` 已改为文字、节奏和场景切换演出，不再列为缺失素材。
+- 火灾段落仍保留 Ren'Py 原有动态烟雾覆盖层；它不是被取消 CG 的替代静帧。
+- `shincg10` 原 1、5 差分已从分镜中移除；相应的重逢与微笑段落改用对白停顿和转场收束，不再列为缺失素材。
