@@ -15,6 +15,15 @@ import 'screens/soranouta_startup_flow.dart';
 /// SoraNoUta 项目的自定义模块
 /// 这个示例展示了如何为特定项目创建自定义模块
 class SoranoutaModule extends DefaultGameModule {
+  static const CharacterLighting _sunsetCharacterLighting = CharacterLighting(
+    multiplyColor: Color(0xFFC56F3D),
+    strength: 0.42,
+  );
+  static const CharacterLighting _nightCharacterLighting = CharacterLighting(
+    multiplyColor: Color(0xFF2F4778),
+    strength: 0.58,
+  );
+
   @override
   Widget createMainMenuScreen({
     required VoidCallback onNewGame,
@@ -44,6 +53,21 @@ class SoranoutaModule extends DefaultGameModule {
 
   @override
   bool get enableDebugFeatures => true; // SoraNoUta 启用调试功能
+
+  @override
+  CharacterLighting? resolveCharacterLighting(GameState gameState) {
+    final sceneName = gameState.background?.trim().toLowerCase();
+    if (sceneName == null || sceneName.isEmpty) {
+      return null;
+    }
+    if (sceneName.contains('yoru')) {
+      return _nightCharacterLighting;
+    }
+    if (sceneName.contains('yuu') || sceneName.contains('17')) {
+      return _sunsetCharacterLighting;
+    }
+    return null;
+  }
 
   @override
   String get initialScript => SoranoutaChapterProgress.initialScriptName;

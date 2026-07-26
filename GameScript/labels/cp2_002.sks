@@ -241,7 +241,7 @@ l "这是什么......意思？"
 xcp2 ciallo2 "嗯......没事......你就当是我的中二病发言吧哈哈哈哈哈......"
 xcp2 "啊哈哈哈........."
 xcp2 smilenaka1 "嗯......"
-// 成年后的咖啡馆 CG 已删减；以黑场和环境音保留梦境中的对话。
+// 成年后的咖啡馆 CG 已删减；整段改为黑场 NVL，以音乐和环境音承载梦境中的对话。
 // <renpy-performance source=cp2_002.rpy:225>
 scene bl with fade
 stop music
@@ -259,6 +259,7 @@ endnvlm
 // <renpy-performance source=cp2_002.rpy:236>
 play sound mise loop
 // </renpy-performance>
+nvlm
 "我和夏悠坐在一座咖啡馆内，一边喝着咖啡一边进行着沟通。"
 xcp2 "是吗......."
 nan2 "哦对了。"
@@ -271,6 +272,7 @@ xcp2 "不过真怀念那段时光啊......"
 xcp2 "一不小心，十几年时间就被偷走了......"
 xcp2 "那段悠哉悠哉的时光，再也回不去了......"
 nan2 "是啊......"
+endnvlm
 // <renpy-performance source=cp2_002.rpy:263>
 stop sound
 scene bl with fade

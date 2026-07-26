@@ -114,14 +114,17 @@ ease 0.05 xcenter+0.02
 ease 0.05 xcenter-0.02
 ease 0.05 xcenter+0.02
 ease 0.05 xcenter-0.02
+ease 0.05 xcenter+0
 
 shake2
 ease 0.05 xcenter+0.005
 ease 0.05 xcenter-0.005
+ease 0.05 xcenter+0
 //左右颤抖
 bounce
 ease 0.15 ycenter-0.08
 ease 0.15 ycenter+0.08
+ease 0.15 ycenter+0
 
 ukeru
 ease 0.15 ycenter-0.01
@@ -177,7 +180,7 @@ linear 0.10 ycenter+0.07 scale+0.40
 linear 0.10 ycenter+0.03 scale+0.40
 linear 0.10 ycenter+0.05 scale+0.40
 
-// Ren'Py bigjump：两段快速放大上弹。
+// Ren'Py bigjump：两段快速放大上弹，并停留在放大状态。
 cp2bigjump
 ease 0.05 ycenter+0.10
 ease 0.05 ycenter+0.15 scale+0.40
