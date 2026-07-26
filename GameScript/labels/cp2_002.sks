@@ -256,9 +256,6 @@ nvlm
 nan2 "现在不行。"
 nan2 "我觉得还是继续按照原计划比较好。"
 endnvlm
-// <renpy-performance source=cp2_002.rpy:236>
-play sound mise loop
-// </renpy-performance>
 nvlm
 "我和夏悠坐在一座咖啡馆内，一边喝着咖啡一边进行着沟通。"
 xcp2 "是吗......."
