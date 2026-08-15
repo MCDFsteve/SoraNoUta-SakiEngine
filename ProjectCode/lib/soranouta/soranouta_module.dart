@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:sakiengine/src/core/game_module.dart';
+import 'package:sakiengine/src/core/script_canvas.dart';
 import 'package:sakiengine/src/config/saki_engine_config.dart';
 import 'package:sakiengine/src/game/game_manager.dart';
 import 'package:sakiengine/src/utils/binary_serializer.dart';
@@ -10,6 +11,7 @@ import 'package:sakiengine/src/widgets/common/configurable_menu_button.dart';
 import 'chapter_progress.dart';
 import 'widgets/soranouta_menu_buttons.dart';
 import 'widgets/soranouta_dialogue_box.dart';
+import 'widgets/resonance_opening_canvas.dart';
 import 'screens/soranouta_startup_flow.dart';
 
 /// SoraNoUta 项目的自定义模块
@@ -67,6 +69,22 @@ class SoranoutaModule extends DefaultGameModule {
       return _sunsetCharacterLighting;
     }
     return null;
+  }
+
+  @override
+  ScriptCanvasDefinition? resolveScriptCanvas({
+    required String canvasId,
+    required GameState gameState,
+    required int scriptIndex,
+  }) {
+    if (canvasId.trim().toLowerCase() == resonanceOpeningCanvasId) {
+      return resonanceOpeningCanvas;
+    }
+    return super.resolveScriptCanvas(
+      canvasId: canvasId,
+      gameState: gameState,
+      scriptIndex: scriptIndex,
+    );
   }
 
   @override

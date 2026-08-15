@@ -1,7 +1,7 @@
 //label// SoraNoUta 主标签脚本文件
 label start
 scene bl
-movie start repeat 8
+api canvas.play id=soranouta.magnetic_wait duration=9.6 wait=true clear=true
 // 背景设置为白天天空
 scene bl with diss
 play sound kazekage loop

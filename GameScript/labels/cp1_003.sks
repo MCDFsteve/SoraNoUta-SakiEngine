@@ -21,6 +21,7 @@ l "就算是夕阳也很好看呢！"
 "我感慨道。"
 ////夏悠微笑立绘（从现在开始 立绘需要带夕阳层）
 play sound pekori
+voice cp1/xiayo_046.m4a
 x smile an jump "嗯嗯，我早就知道了。"////夏悠立绘微微上下颤动，类似点头的效果
 l "正所谓宇宙的真理，也就是如此吧。"
 voice cp1/xiayo_047.m4a
@@ -93,6 +94,7 @@ l "而且只要抓快一点，就应该可以在天黑之前赶回家。"
 l "怎么样？"
 voice cp1/xiayo_065.m4a
 x smile "好！"////夏悠smile
+voice cp1/xiayo_066.m4a
 x ciallo "那，明天！"////夏悠ciallo
 l "嗯！"////对话框震动
 l "明天下午放学以后！"////对话框震动
@@ -382,7 +384,7 @@ l "这么重要的事情，我怎么可能忘呢？"
 voice cp1/xiayo_080.m4a
 x pose1 ochikomu "重要的事情......吗？"////夏悠ochikomu
 voice cp1/xiayo_081.m4a
-x pose5 smilenaka1 "嗯。太好了。"
+x pose5 smilenaka1 "嘿嘿～嗯。太好啦。"
 ////音乐换成日常
 l "你昨天问过你爸妈了吗？"
 l "他们怎么说？"
@@ -396,9 +398,9 @@ l "咳咳，练习！"////对话框震动
 voice cp1/xiayo_084.m4a
 x pose5 smile "真好啊，你家旁边就有树林。"////夏悠smile
 voice cp1/xiayo_085.m4a
-x pose1 tameiki2 "我家旁边都是农田，想去抓蝉光赶路就得好几分钟。"////夏悠tameiki2
+x pose1 tameiki2 "我家旁边是农田，想去抓蝉光赶路就得好几分钟。"////夏悠tameiki2
 voice cp1/xiayo_086.m4a
-x tameiki "不如在回家的路上顺便抓点。"////夏悠tameiki
+x tameiki "不如在回家的路上随便抓点。"////夏悠tameiki
 l "很漂亮吧！蝉！"
 voice cp1/xiayo_087.m4a
 x ochikomu "啊？嗯！"////夏悠立绘从ochikomu经过1秒切为smile
@@ -588,7 +590,7 @@ ls pose2 naruhodo "我来扮演手机营业厅的工作人员吧，在我这里�
 l "不行了这些人，得赶紧想想办法才行。"
 l "行吧。"
 voice cp1/xiayo_113.m4a
-x ciallo "好，那李宫娜和林澄扮演我的儿子和女儿，至于刘守真，你扮演工作人员。"////夏悠ciallo
+x ciallo "好，那李宫娜和林澄扮演我的儿子女儿，至于刘守真，你扮演工作人员。"////夏悠ciallo
 voice cp1/xiayo_114.m4a
 x pose2 moeru "[size=1.3]3！[/size]2！1！[size=1.3]开始！[/size]"////夏悠 kirakira
 "为什么像在片场拍戏一样。"
@@ -699,7 +701,7 @@ nvlm
 endnvlm
 l "哼！我才不叫！"////对话框震动
 voice cp1/xiayo_124.m4a
-x unhappy "你这是干什么？"////夏悠生气
+x unhappy "你这是干什么啊？"////夏悠生气
 voice cp1/xiayo_125.m4a
 x pose2 kuraikao "坏孩子！"////对话框震动
 l "哼！我叛逆期到了！"////对话框震动

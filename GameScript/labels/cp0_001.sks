@@ -183,7 +183,9 @@ label cp0_001_menu4
 achievement unlock achievement1_sg
 bool steinsgate true
 l "听起来就有很高深的词汇，可能是穿越时间用的吧。"
+voice cp0/xiayo_019.m4a
 x think "诶？穿越时间？真羡慕啊！"//侧脸思考
+voice cp0/xiayo_020.m4a
 x "我决定了，我以后长大了一定要买最好最好的微波炉，然后再穿越时间到这个时间。"//很高兴的抖了一下，双手摆出期待的动作
 jump cp0_001_menuafter2
 label cp0_001_menuafter2
