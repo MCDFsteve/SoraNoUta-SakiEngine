@@ -110,7 +110,7 @@ show xiayo1 pose1 happy at xiayo1pose an jump
 play sound haneru
 play music heroine
 voice cp0/xiayo_001.m4a
-nan "早上好啊林澄！"
+nan "早上好呀林澄！"
 "等待一会以后，夏悠上来了，没有其他看起来像夏悠的人了。"
 l "早上好。"
 voice cp0/xiayo_002.m4a

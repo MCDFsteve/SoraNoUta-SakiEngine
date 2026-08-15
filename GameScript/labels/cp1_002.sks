@@ -11,7 +11,7 @@ play sound haneru
 play music goodday  
 //夏悠“o”的立绘（wakuwaku2） 从下方跳出
 voice cp1/xiayo_002.m4a
-x wakuwaku2 an topin "哦，林澄你出来了。"
+x wakuwaku2 an topin "林澄你出来了。"
 l "你在干什么？不带我一个？"
 voice cp1/xiayo_003.m4a
 x think "我刚上完厕所回来啊。"//夏悠皱眉
@@ -24,7 +24,7 @@ l "那没事了。还以为有什么新的可以玩的。"
 voice cp1/xiayo_006.m4a
 x pose1 smile an ukeru repeat 2 "嗯嗯。" //夏悠微笑 手指着
 voice cp1/xiayo_007.m4a
-x pose2 star "去玩捉迷藏去吧！"
+x pose2 star "嗯......去玩捉迷藏去吧！"
 l "好！"
 stop music
 scene grass with wipe
@@ -98,7 +98,7 @@ scene grass with wipe
 //加载树林背景
 l "所以谁是最后抓人的人？"
 voice cp1/xiayo_012.m4a
-x tameiki2 "我。"//夏悠叹气
+x tameiki2 "呃...我。"//夏悠叹气
 l "真的假的？你负责抓人？"
 jump cp1_002_xy
 label cp1_002_xy
@@ -108,10 +108,10 @@ x mesugaki2 "没错。"
 voice cp1/xiayo_014.m4a
 x "我要狠狠地抓住你们！"
 voice cp1/xiayo_015.m4a
-x tameiki "不过提前说好啊！不能离开我太远的距离，就只能在草地周围的地方躲。"
+x tameiki "不过提前说好啊！不能离开我太远的距离。"
 //夏悠叹气
 voice cp1/xiayo_016.m4a
-x tameiki2 "太远了的话我怎么可能找得到。"
+x tameiki2 "太远的话我怎么可能找得到。"
 nvlm
 "也就是说这是一场扮演越共的游戏。"
 "躲藏场所基本限制在森林了。"
@@ -170,7 +170,7 @@ show gonna1 at xiayo1pose
 "每个人身上都粘着几片枯叶。"
 l "夏悠，你抓到谁了？"
 voice cp1/xiayo_021.m4a
-x ciallo "除了你以外都抓住了。"//夏悠眼睛一闭一睁地笑着
+x ciallo "除了你以外都抓住咯。"//夏悠眼睛一闭一睁地笑着
 voice cp1/xiayo_022.m4a
 x smile "刘守真直接趴到树林的地上，拿枯叶把自己盖满了。"//夏悠微笑
 //守真黑脸 不愉快的表情

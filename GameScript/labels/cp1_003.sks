@@ -78,11 +78,11 @@ label cp1_005:
 show xiayo pose1 at ajump
 play sound haneru
 voice cp1/xiayo_062.m4a
-x wakuwaku3 "我们去抓蝉去吧！！"////夏悠wakuwaku3 跳一下
+x wakuwaku3 "我们抓蝉去吧！！"////夏悠wakuwaku3 跳一下
 l "现在吗？还在半路上，但是太阳都快落山了。"
 l "抓到蝉回去可能天黑了吧。"
 voice cp1/xiayo_063.m4a
-x tameiki "唉。"////夏悠叹气
+x tameiki "嗯......"////夏悠叹气
 l "明天怎么样？"
 l "明天。"
 voice cp1/xiayo_064.m4a
@@ -350,10 +350,10 @@ l "你怎么打哈欠了，昨晚没睡好？"
 voice cp1/xiayo_069.m4a
 x tameiki an shake2 repeat 4 "啊呜～"////夏悠tameiki
 voice cp1/xiayo_070.m4a
-x pose3 think "我认为只要是人类，被别人被动叫醒的话都会打哈欠。"////夏悠think
+x pose3 think "我以为只要是人类，被别人被动叫醒的话都会打哈欠。"////夏悠think
 l "很值得验证的结论。"
 voice cp1/xiayo_071.m4a
-x pose2 ciallo "昨天的那集你应该有看吧！"////夏悠ciallo
+x pose2 ciallo "昨天那集你应该有看吧！"////夏悠ciallo
 l "我看了。"
 l "但是，抱歉，有点记不清楚剧情了。"
 play sound haneru
@@ -377,7 +377,7 @@ x pose2 tameiki2 "今天是星期五诶！"
 voice cp1/xiayo_078.m4a
 x tameiki "还记得昨天下午的约定吧！"
 voice cp1/xiayo_079.m4a
-x hen "你如果看这个都忘了，那我就真生气了。"////夏悠气鼓鼓
+x hen "嗯...你如果看这个都忘了，那我就真生气了。"////夏悠气鼓鼓
 l "这么重要的事情，我怎么可能忘呢？"
 voice cp1/xiayo_080.m4a
 x pose1 ochikomu "重要的事情......吗？"////夏悠ochikomu
