@@ -46,6 +46,7 @@ play sound rin
 //这里重播序章结束的那个场景，但是没有bgm
 stop music
 cg cgcp0_2 4
+voice cp1/xiayo_001.m4a
 x "[pass]你到底是谁？[/pass]"////闭嘴
 scene bl
 play music think

@@ -23,56 +23,75 @@ l "就算是夕阳也很好看呢！"
 play sound pekori
 x smile an jump "嗯嗯，我早就知道了。"////夏悠立绘微微上下颤动，类似点头的效果
 l "正所谓宇宙的真理，也就是如此吧。"
+voice cp1/xiayo_047.m4a
 x pose2 akireta "又开始了。"////夏悠一脸无奈 /不开心
+voice cp1/xiayo_048.m4a
 x pose3 "扯一些让人听不懂的话。"
 l "如果让人都听懂了，那怎么显得我知识渊博。"
 l "还怎么装O。"
+voice cp1/xiayo_049.m4a
 x mesugaki an fururu "什么嘛，还以为你是真的悟出了什么大道理。"////夏悠嘲笑
 l "我这不是在练习嘛！"
+voice cp1/xiayo_050.m4a
 x pose1 think "什么练习？"////夏悠侧脸思考
 l "练习撩妹，以后将一堆听不懂的但是听起来很厉害的东西说给别人听。"
 l "对方肯定会觉得我懂得多，就跟我混了。"
 l "多好啊！"
 play sound syobon
+voice cp1/xiayo_051.m4a
 x pose3 akireta4 "你可能搞错了什么..."////夏悠 流汗 差不多得了 好恶心（akireta2）
 l "什么？"
 l "这个计划我可是计划了好久的，现在就开始未雨绸缪了。"
+voice cp1/xiayo_052.m4a
 x akireta "提前祝贺你。"////夏悠 应付的表情 差不多得了
 l "啊哈哈哈，谢谢。我会成功的。"
+voice cp1/xiayo_053.m4a
 x pose2 ciallo "提前祝贺你，收获失败的教训。"
+voice cp1/xiayo_054.m4a
 x pose4 doyagao an jump repeat 2 "毕竟失败是成功之母，年纪轻轻就收获长辈级的宝物，当然该狠狠祝贺。"////夏悠开心 手指着
+voice cp1/xiayo_055.m4a
 x pose2 tameiki "可喜可贺，可喜可贺。"////夏悠闭眼 叹气
 l "你这...算了。"
 l "我本来就是在开玩笑呢。"
 l "我怎么可能去撩妹..."
 l "至少...已经没有这个必要了。"
+voice cp1/xiayo_056.m4a
 x pose5 wakuwaku2 an shake2 repeat 4 "什么？什么？"////夏悠期待
 l "啊啊啊！不说这个了对不起！！"////对话框震动
+voice cp1/xiayo_057.m4a
 x hen an fururu repeat 2 "什么嘛！真没趣。"////夏悠气鼓鼓
 ////另一首夕阳背景 带情感色彩
 play sound semi loop  
 ////日本蝉的音效
 nan "沙沙沙沙沙沙～唔～"
+voice cp1/xiayo_058.m4a
 x wakuwaku an fururu "你听到了吗？"////夏悠侧脸思考
 l "听到什么？"
+voice cp1/xiayo_059.m4a
 x hen an jump repeat 2 "蝉啊！！"////对话框震动 夏悠赌气 立绘震动
 l "哦，是蝉啊！"
+voice cp1/xiayo_060.m4a
 x pose2 wakuwaku3 "Yes,I am！"////夏悠微笑（smile）
+voice cp1/xiayo_061.m4a
 x pose4 ciallo "对，就是蝉。"////夏悠ciallo
 label cp1_005:
 show xiayo pose1 at ajump
-play audio haneru
+play sound haneru
+voice cp1/xiayo_062.m4a
 x wakuwaku3 "我们去抓蝉去吧！！"////夏悠wakuwaku3 跳一下
 l "现在吗？还在半路上，但是太阳都快落山了。"
 l "抓到蝉回去可能天黑了吧。"
+voice cp1/xiayo_063.m4a
 x tameiki "唉。"////夏悠叹气
 l "明天怎么样？"
 l "明天。"
+voice cp1/xiayo_064.m4a
 x ochikomu "明天这个时候也快天黑了吧！"////夏悠ochikomu
 l "但是明天是星期五！"
 l "就算晚一点回去，也没什么关系。"
 l "而且只要抓快一点，就应该可以在天黑之前赶回家。"
 l "怎么样？"
+voice cp1/xiayo_065.m4a
 x smile "好！"////夏悠smile
 x ciallo "那，明天！"////夏悠ciallo
 l "嗯！"////对话框震动
@@ -84,6 +103,7 @@ scene stone yuu
 nvlm
 "......"
 endnvlm
+voice cp1/xiayo_067.m4a
 x smilenaka1 "再见啦！"////对话框震动
 l "明天见。"
 nvlm
@@ -324,51 +344,74 @@ endnvlm
 l "今天的天空依旧很晴朗呢～"
 play music heroine  
 play sound pekori
+voice cp1/xiayo_068.m4a
 x tameiki2 an topin "是啊～～哇～唔......"////夏悠tameiki2 从下往上渐变登场
 l "你怎么打哈欠了，昨晚没睡好？"
+voice cp1/xiayo_069.m4a
 x tameiki an shake2 repeat 4 "啊呜～"////夏悠tameiki
+voice cp1/xiayo_070.m4a
 x pose3 think "我认为只要是人类，被别人被动叫醒的话都会打哈欠。"////夏悠think
 l "很值得验证的结论。"
+voice cp1/xiayo_071.m4a
 x pose2 ciallo "昨天的那集你应该有看吧！"////夏悠ciallo
 l "我看了。"
 l "但是，抱歉，有点记不清楚剧情了。"
 play sound haneru
+voice cp1/xiayo_072.m4a
 x pose3 odoroki an jump "啊？"////夏悠震惊 立绘颤抖一下
+voice cp1/xiayo_073.m4a
 x pose1 ochikomu "要不你去医院看看？"////夏悠流汗
 l "不，没事，至少我还记得你。"
 play sound poko
+voice cp1/xiayo_074.m4a
 x pose3 shy1 "啊！！！？"////对话框震动 夏悠害羞脸红 立绘颤抖一下
 ////很活跃的bgm
 "夏悠突然脸红成一片。"
 "我好像不小心说了什么很奇怪的话。"
+voice cp1/xiayo_075.m4a
 x shy2 "你这是....是在..."////夏悠眼睛往左看 过1.5秒切成向右看
+voice cp1/xiayo_076.m4a
 x tameiki "算了。"////夏悠叹气
+voice cp1/xiayo_077.m4a
 x pose2 tameiki2 "今天是星期五诶！"
+voice cp1/xiayo_078.m4a
 x tameiki "还记得昨天下午的约定吧！"
+voice cp1/xiayo_079.m4a
 x hen "你如果看这个都忘了，那我就真生气了。"////夏悠气鼓鼓
 l "这么重要的事情，我怎么可能忘呢？"
+voice cp1/xiayo_080.m4a
 x pose1 ochikomu "重要的事情......吗？"////夏悠ochikomu
+voice cp1/xiayo_081.m4a
 x pose5 smilenaka1 "嗯。太好了。"
 ////音乐换成日常
 l "你昨天问过你爸妈了吗？"
 l "他们怎么说？"
 l "平时都是周末去的吧！"
+voice cp1/xiayo_082.m4a
 x pose1 think "话是这样，但是小玩不算玩。"////夏悠侧脸思考
+voice cp1/xiayo_083.m4a
 x think2 "我还是想去抓点蝉。"////眼睛看过来
 l "我每天都有在抓哦。"
 l "咳咳，练习！"////对话框震动
+voice cp1/xiayo_084.m4a
 x pose5 smile "真好啊，你家旁边就有树林。"////夏悠smile
+voice cp1/xiayo_085.m4a
 x pose1 tameiki2 "我家旁边都是农田，想去抓蝉光赶路就得好几分钟。"////夏悠tameiki2
+voice cp1/xiayo_086.m4a
 x tameiki "不如在回家的路上顺便抓点。"////夏悠tameiki
 l "很漂亮吧！蝉！"
+voice cp1/xiayo_087.m4a
 x ochikomu "啊？嗯！"////夏悠立绘从ochikomu经过1秒切为smile
 show chan2 at items an jump
 ////蝉的特写画面2 和夕阳那张角度不一样
+voice cp1/xiayo_088.m4a
 x happy "不管是背上的纹路还是网状透明，被阳光打出彩色反射的翅膀。"
+voice cp1/xiayo_089.m4a
 x "大自然所创作的，璀璨的艺术品。"
 ////////移除特写
 hide chan2  
 l "那下午准时开始抓蝉活动！"
+voice cp1/xiayo_090.m4a
 x pose2 ciallo "当然！"////对话框震动 夏悠ciallo
 l "至于现在，先去学校吧！"
 stop music
@@ -387,6 +430,7 @@ nvlm
 endnvlm
 stop sound
 ////结束nvl模式
+voice cp1/xiayo_091.m4a
 x wakuwaku2 an fururu repeat 2 "啊！"////对话框震动 夏悠惊讶 立绘震动
 ////nvl模式
 play sound donaru loop
@@ -430,17 +474,24 @@ stop sound
 scene to school
 stop music
 l "呼～安全了～"
+voice cp1/xiayo_092.m4a
 x tameiki2 "呼～安全了～"////夏悠 叹气
+voice cp1/xiayo_093.m4a
 x ciallo "多亏有你啊！"////夏悠ciallo
 play sound haneru
+voice cp1/xiayo_094.m4a
 x kowa an jump repeat 2 "不然的话我得吓两跳了。"////夏悠害怕
 l "它好像已经跑远了。继续走吧。"
 "为什么要跳两下。"
+voice cp1/xiayo_095.m4a
 x smile "嗯！"////夏悠微笑smile
+voice cp1/xiayo_096.m4a
 x think "不过真是奇怪。"////夏悠侧脸思考
+voice cp1/xiayo_097.m4a
 x think2 "明明之前这条狗一直是拴住的。"
 l "确实。"
 l "以后走这条路还是小心一点吧。"
+voice cp1/xiayo_098.m4a
 x smile "嗯。"////夏悠微笑
 "......"
 ////切到学校背景 黑场 无音乐
@@ -449,21 +500,28 @@ scene school
 play music hatake
 ////打闹的音乐
 play sound haneru
+voice cp1/xiayo_099.m4a
 x "早啊李宫娜。"////夏悠立绘从从右边划入 happy，位于右侧 ////宫娜立绘上弹，位于中心
+voice cp1/xiayo_100.m4a
 x "早啊刘守真。"////守真立绘左滑进左侧
 ls kuraikao "为什么你们名字全都是两个字，我们这边名字都是三个字的。"////守真黑脸吐槽
 play sound haneru
 lg odoroki "你发现了盲点。"////宫娜豆豆眼惊讶 立绘颤抖一下
+voice cp1/xiayo_101.m4a
 x  ciallo "如果这是设定的话，那就是作者懒得想名字了哈哈！"////夏悠流汗
 lg happy an fururu repeat 2 "哈哈哈！"////宫娜开心
 ls an fururu repeat 2 "哈哈！如果在我们这个世界之上还有一层更高阶的支配存在的话。"////守真思考
 l "只是巧合这样吧。"
 l "不然我和刘守真的发型也一样，也是作者懒得想造型了？"
+voice cp1/xiayo_102.m4a
 x pose3 akireta3 "果然林澄还是一如既往的没趣。"////夏悠黑脸嫌弃
 l "并没有，请不要这样说我。我会伤心的。"
+voice cp1/xiayo_103.m4a
 x tameiki2 "对不起。"////夏悠tameiki2
+voice cp1/xiayo_104.m4a
 x tameiki "下次不会说你这个了。"//夏悠tameiki
 l "好。"
+voice cp1/xiayo_105.m4a
 x pose2 ciallo "下次会给你个新的批判点的。"////夏悠ciallo
 l "......"
 l "行吧。"
@@ -485,10 +543,13 @@ lg happy "走吧，做饭游戏。"
 "李宫娜主动来找夏悠了。"
 l "是又开一局新的吗？"
 l "上个下课时间准备的食材怎么办？"
+voice cp1/xiayo_106.m4a
 x think "怎么会，是一天算一局的。"////夏悠think
+voice cp1/xiayo_107.m4a
 x pose4 think2 "虽然我不清楚玩过家家用局来表示合不合适。"////夏悠侧脸思考
 l "既然都是过家家了，为什么老是在做饭啊。"
 stop music
+voice cp1/xiayo_108.m4a
 x pose1 think "......"////夏悠眼睛看过来
 ls unhappy "......"
 "坏了，我可能说了一些不合适的话。"
@@ -496,6 +557,7 @@ show xiayo pose1 odoroki at ajump
 play sound haneru
 play music nandato  
 play sound pin
+voice cp1/xiayo_109.m4a
 x odoroki an jump "我怎么没考虑过这个问题？！"////对话框震动 ////夏悠豆豆眼震惊 立绘震动一下
 shake
 play sound pin
@@ -504,12 +566,14 @@ ls think "确实我们玩的是过家家，不是单纯模拟厨师的吧？"///
 l "所以除了扮演厨师以外还能玩什么？"
 lg pose3 think3 "来玩捉迷藏吧！？"////对话框震动 宫娜张开嘴思考
 l "很好，但是现在应该是过家家的时间。"
+voice cp1/xiayo_110.m4a
 x pose2 happy "来扮演爸爸妈妈吧！"//// 对话框震动 夏悠happy
 l "我......"
 nvlm
 "这在理论上是可以实现的，但是对我来说，有点难为情。"
 "明明我才十一岁，为什么我会以成年人的思维去想这些事情？"
 endnvlm
+voice cp1/xiayo_111.m4a
 x pose4 mesugaki2 "我来扮演你们的爸爸妈妈，你们三个人扮演我的儿子女儿。"////夏悠mesugaki2
 nvlm
 "对不起，我想多了。"
@@ -517,14 +581,18 @@ endnvlm
 l "爸爸妈妈不应该是两个人吗？"
 l "而且只有你一个人的话要怎么生小孩？"
 play sound haneru
+voice cp1/xiayo_112.m4a
 x pose3 kowa an shake2 repeat 2 "啊？什么生小孩？"////对话框震动 ////夏悠害怕
 lg pose1 satoko "只要找个地方假装是垃圾桶就行了吧！"
 ls pose2 naruhodo "我来扮演手机营业厅的工作人员吧，在我这里充话费兑换小孩。"////宫娜sadoko
 l "不行了这些人，得赶紧想想办法才行。"
 l "行吧。"
+voice cp1/xiayo_113.m4a
 x ciallo "好，那李宫娜和林澄扮演我的儿子和女儿，至于刘守真，你扮演工作人员。"////夏悠ciallo
+voice cp1/xiayo_114.m4a
 x pose2 moeru "[size=1.3]3！[/size]2！1！[size=1.3]开始！[/size]"////夏悠 kirakira
 "为什么像在片场拍戏一样。"
+voice cp1/xiayo_115.m4a
 x pose4 ciallo "你们先到刘守真那里去，我等会要过去充话费。"////夏悠叉腰 “哼哼哼” 自豪地闭眼
 l "好——！"////对话框震动
 play sound haneru
@@ -555,6 +623,7 @@ nvlm
 "我不觉得刘守真家里会有电脑。"
 "接着夏悠从草丛后面慢慢走了过来。"
 endnvlm
+voice cp1/xiayo_116.m4a
 x pose4 think "早上好啊老板，生意怎么样？"////夏悠从下往上进入画面，位于画面右侧，ciallo
 nvlm
 "啊？原来手机营业厅的柜台工作人员就是老板吗？"
@@ -563,7 +632,9 @@ endnvlm
 ls happy "好极了！"////守真进入画面左侧 开心
 ls magao "你这边也是来充话费的吗？"////守真收回开心的脸 变得严肃
 play sound pekori
+voice cp1/xiayo_117.m4a
 x an shake2 repeat 2 "嗯嗯。"////夏悠happy 震动 类似点头
+voice cp1/xiayo_118.m4a
 x pose5 wakuwaku "送小孩的套餐是需要多少钱？"////夏悠侧脸思考
 ls happy "100元。"////守真happy
 nvlm
@@ -571,6 +642,7 @@ nvlm
 "这真的不是什么人口贸易吗？"
 "感觉人口贸易的单价应该会比我卖的贵...."
 endnvlm
+voice cp1/xiayo_119.m4a
 x star an jump repeat 2 "我充两百块的！"////对话框震动 夏悠kirakira
 show ha2 at items an jump
 "说完，夏悠从兜里掏出两片树叶。"////树叶特写图片
@@ -593,6 +665,7 @@ endnvlm
 nvlm
 "我和李宫娜站了起来，走向了夏悠。"
 endnvlm
+voice cp1/xiayo_120.m4a
 x pose5 wakuwaku3 an shake2 repeat 2 "哇哦！好可爱的双胞胎！"////对话框震动 夏悠wakuwaku3
 nvlm
 "哪有长得完全不一样的双胞胎。"
@@ -605,6 +678,7 @@ l "接下来要怎么做？"
 lg angry2 "你出戏了林澄。"
 "果然是在演戏啊！"
 play sound haneru
+voice cp1/xiayo_121.m4a
 x pose4 doyagao an jump repeat 2 "孩子，叫我爸妈！"////对话框震动 夏悠自豪地叉腰
 nvlm
 "怎么会有这么奇怪的要求。"
@@ -614,19 +688,26 @@ endnvlm
 play sound pekori
 lg  pose3 nikoniko an fururu repeat 2 "爸妈！！"////对话框震动 宫娜立绘抖两下 很开心的样子
 play sound haneru
+voice cp1/xiayo_122.m4a
 x shy2 "啊啊啊好好好！"////对话框震动 夏悠脸红开心
 play sound poko
+voice cp1/xiayo_123.m4a
 x shy3 an shake2 repeat 4 "哈哈哈哇唔～"////夏悠陶醉般的脸红
 nvlm
 "夏悠已经满脸春光了。"
 "得在事态恶化之前想点办法。"
 endnvlm
 l "哼！我才不叫！"////对话框震动
+voice cp1/xiayo_124.m4a
 x unhappy "你这是干什么？"////夏悠生气
+voice cp1/xiayo_125.m4a
 x pose2 kuraikao "坏孩子！"////对话框震动
 l "哼！我叛逆期到了！"////对话框震动
+voice cp1/xiayo_126.m4a
 x pose3 think "这倒也是值得考虑的地方。"////夏悠侧脸思考
+voice cp1/xiayo_127.m4a
 x pose3 think2 "虽然不知道什么是叛逆期。"
+voice cp1/xiayo_128.m4a
 x pose2 think2 "那我要怎么做，你才会叫？"////眼睛转过来
 nvlm
 "不知道如何回答了。"
@@ -639,15 +720,19 @@ show chinko at items an jump
 "我指了指不远处地上掉落的松果。"////松果特写（不是金果）
 hide chinko
 ////清除特写
+voice cp1/xiayo_129.m4a
 x ochikomu "......"////夏悠ochikomu
+voice cp1/xiayo_130.m4a
 x smile "好，爸妈捡给你！"////夏悠微笑
 hide xiayo1
 "夏悠过去了。"////清理掉夏悠立绘
 lg pose2 odoroki "你认真的？"////宫娜立绘豆豆眼疑惑
 l "哼！叛逆期就是这样！"
 lg tameiki2 "生育率低的原因找到了。"////宫娜叹气
+voice cp1/xiayo_131.m4a
 x ciallo "爸妈帮你捡到松果了哟！"////对话框震动 重新放入夏悠立绘 ciallo
 "说罢将松果递到我的手里。"////夏悠放大 模拟贴近视角
+voice cp1/xiayo_132.m4a
 x pose4 an shake2 repeat 4 "快叫吧！叫吧！"////立绘缩回原位 模拟复位
 l "......"
 ////音乐停止
@@ -666,6 +751,7 @@ endnvlm
 hide waretachinko
 stop music
 play sound moeru
+voice cp1/xiayo_133.m4a
 x akireta2 "你小子！"////对话框震动 夏悠黑脸
 l "唔～"
 play music what 
@@ -683,13 +769,17 @@ l "呜呜......对不起.....对不起.....爸妈......"
 scene kichi
 ////重新加载秘密基地背景
 ////夏悠叹气
+voice cp1/xiayo_134.m4a
 x pose2 unhappy "这还差不多。"
 "我蹲到地上捡起了松果。"
 l "对不起。"
 l "但是谢谢爸妈，治好了我的叛逆期。"
 "夏悠看起来高兴了一点。"////夏悠happy
+voice cp1/xiayo_135.m4a
 x pose5 smile an fururu repeat 2 "这还差不多，真是个好孩子。"////夏悠smile
+voice cp1/xiayo_136.m4a
 x mesugaki an fururu "呜哇～"//夏悠mesugaki
+voice cp1/xiayo_137.m4a
 x mesugaki2 "唔哇哇哇～"////夏悠mesugaki2
 "夏悠哪来这么奇怪的口癖。"
 "甚至连口癖的出发时间也很奇怪。"
@@ -698,9 +788,12 @@ play sound rin
 nan "当～当～当～"
 "上课了，听到了老师拉响的铃声。"
 ////夏悠叹气
+voice cp1/xiayo_138.m4a
 x pose3 tameiki "中午再见吧！"////对话框震动
 l "中午还是玩这个吗？"
+voice cp1/xiayo_139.m4a
 x ciallo "不了，有其他活动。"////夏悠ciallo
+voice cp1/xiayo_140.m4a
 x hen "不过林澄，你是我们里面年纪最大的，每次玩游戏应该得是你带头吧～"////夏悠赌气 hen
 l "我，我尽量。"
 stop music

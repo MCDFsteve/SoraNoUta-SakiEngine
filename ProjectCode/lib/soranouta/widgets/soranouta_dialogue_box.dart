@@ -59,9 +59,6 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
   late AnimationController _blinkController;
   late Animation<double> _blinkAnimation;
 
-  // 用于获取对话框位置的GlobalKey
-  final GlobalKey _dialogueKey = GlobalKey();
-
   void _onSettingsChanged() {
     if (mounted) {
       setState(() {
@@ -221,48 +218,6 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
     }
   }
 
-  Widget _buildReadStatusTag() {
-    final RenderBox? renderBox =
-        _dialogueKey.currentContext?.findRenderObject() as RenderBox?;
-    if (renderBox == null) {
-      return const SizedBox.shrink();
-    }
-
-    final position = renderBox.localToGlobal(Offset.zero);
-    final uiScale = context.scaleFor(ComponentType.ui);
-    final textScale = context.scaleFor(ComponentType.text);
-
-    // 计算旋转后的标签尺寸以正确对齐中心点
-    final labelWidth = 36.0 * uiScale + 18.0 * 2 * uiScale;
-    final labelHeight = 14.0 * textScale + 4.0 * 2 * uiScale;
-
-    final diagonal = (labelWidth + labelHeight) / 2;
-    final centerOffsetX = diagonal * 0.5;
-    final centerOffsetY = diagonal * 0.3;
-
-    final finalLeft = position.dx - centerOffsetX;
-    final finalTop = position.dy - centerOffsetY;
-
-    // 转换为相对于Stack的坐标
-    final stackPosition = context.findRenderObject() as RenderBox?;
-    if (stackPosition == null) return const SizedBox.shrink();
-
-    final stackGlobalPosition = stackPosition.localToGlobal(Offset.zero);
-    final relativeLeft = finalLeft - stackGlobalPosition.dx;
-    final relativeTop = finalTop - stackGlobalPosition.dy;
-
-    return Positioned(
-      left: relativeLeft + 20 * uiScale,
-      top: relativeTop + 20 * uiScale,
-      child: ReadStatusIndicator(
-        isRead: _isRead,
-        uiScale: uiScale,
-        textScale: textScale,
-        positioned: false, // 不要自动定位，我们手动定位
-      ),
-    );
-  }
-
   void _onTypewriterStateChanged() {
     if (mounted) {
       setState(() {
@@ -352,8 +307,18 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
               textFadeAnimation: _textFadeAnimation,
               blinkAnimation: _blinkAnimation,
               isRead: _isRead,
-              readStatusOverlay: null,
-              dialogueKey: _dialogueKey, // 传递key
+              readStatusOverlay: _isRead
+                  ? Positioned(
+                      left: 12.0 * uiScale,
+                      top: 12.0 * uiScale,
+                      child: ReadStatusIndicator(
+                        isRead: true,
+                        uiScale: uiScale,
+                        textScale: textScale,
+                        positioned: false,
+                      ),
+                    )
+                  : null,
             ),
 
             // 说话人显示组件
@@ -368,9 +333,6 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
               enableAnimation: _enableSpeakerAnimation,
               wipeAnimation: _speakerWipeAnimation,
             ),
-
-            // 已读标签 - 使用坐标计算
-            if (_isRead) _buildReadStatusTag(),
 
             // 二进制已读指示器 - 左下角
             BinaryReadIndicator(

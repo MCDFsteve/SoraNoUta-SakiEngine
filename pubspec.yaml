@@ -79,9 +79,16 @@ flutter:
     - Assets/movies/
     - Assets/music/
     - Assets/sound/
+    - Assets/voice/
+    - Assets/voice/cp0/
+    - Assets/voice/cp1/
     - GameScript/
     - GameScript/configs/
     - GameScript/labels/
+    - GameScript/台本/
+    - GameScript/台本/第一章/
+    - GameScript/台本/第零章/
+    - .saki_cache/game.sakipak
   fonts:
     - family: SourceHanSansCN
       fonts:

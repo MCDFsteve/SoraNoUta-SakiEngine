@@ -61,13 +61,15 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
   int _selectedChapter = 1;
   late String _copyrightText;
   late final LocalizationManager _localizationManager;
+  late final VoidCallback _localizationChangedListener;
   final _uiSoundManager = UISoundManager(); // 新增：UI音效管理器
 
   @override
   void initState() {
     super.initState();
     _localizationManager = LocalizationManager();
-    _localizationManager.addListener(_handleLocalizationChanged);
+    _localizationChangedListener = _handleLocalizationChanged;
+    _localizationManager.addListener(_localizationChangedListener);
     _generateCopyrightText();
     _loadChapterState();
 
@@ -195,7 +197,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
 
   @override
   void dispose() {
-    _localizationManager.removeListener(_handleLocalizationChanged);
+    _localizationManager.removeListener(_localizationChangedListener);
     super.dispose();
   }
 

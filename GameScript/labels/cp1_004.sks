@@ -19,37 +19,48 @@ play sound haneru
 ////弹出夏悠立绘 unhappy
 "我走到夏悠旁边问到。"
 ////夏悠 ciallo
+voice cp1/xiayo_141.m4a
 x ciallo "来打枪吧！"
 l "......"
 l "！！！！！！"////对话框震动
 l "打什么？"
+voice cp1/xiayo_142.m4a
 x unhappy "打枪啊！你看这个！"////夏悠unhappy
 show edagun at items an jump
 ////树杈特写图片
 "夏悠说着，掏出了一个树杈，呈现Y字形的树杈。"
 hide edagun
 ////收掉树杈特写立绘
+voice cp1/xiayo_143.m4a
 x ciallo "这个是我的配枪。"////夏悠ciallo
 l "懂了。"
 "面壁去了。"
 l "这个咋玩？"
 ////夏悠黑脸
+voice cp1/xiayo_144.m4a
 x akireta2 "之前明明已经玩过一次了。"
 ////夏悠叹气 tameiki2
+voice cp1/xiayo_145.m4a
 x tameiki2 "我就知道我还得做解说。"
 ////夏悠tameiki
+voice cp1/xiayo_146.m4a
 x tameiki "一人一把枪，然后互相射子弹。"
 ////夏悠smile
+voice cp1/xiayo_147.m4a
 x smile "就像电视里演的那样啊！"
 l "子弹，实际上是打的空气对吧。"
 ////夏悠黑脸
+voice cp1/xiayo_148.m4a
 x akireta2 "不然呢？射出真的子弹吗？"
 l "那伤害判定怎么计算？"
 ////夏悠ciallo
+voice cp1/xiayo_149.m4a
 x ciallo "你认为你打中了，那你就打中了。"
+voice cp1/xiayo_150.m4a
 x mesugaki2 "没有爱，就看不见。"
 "这又是哪里的台词。"
 ////夏悠侧脸思考
+voice cp1/xiayo_151.m4a
 x think "没有具体的胜负规则，享受的是过程而不是结果。"
 l "好吧。"
 ////nvl模式
@@ -125,6 +136,7 @@ scene cgtree 2
 l "呼～"
 "果然还是我搞错了。"
 scene forest
+voice cp1/xiayo_152.m4a
 x pose1 ochikomu "怎么了？"
 "夏悠在远处听到了响声。"
 lg "刚刚好大的声响！发生了什么？"
@@ -136,15 +148,20 @@ stop music
 play music goodday
 l "啊哈哈哈～是我早上红薯吃多了，刚刚一次性放出来了。"
 play sound dokan
+voice cp1/xiayo_153.m4a
 x pose3 kowa "原来是生化武器。"////夏悠害怕
 play sound syobon
 lg angry2 "可以不描述这些吗"////宫娜黑脸
 lg "我刚吃完饭。"
 l "抱歉。"
+voice cp1/xiayo_154.m4a
 x pose2 dame an jump repeat 2 "既然你配枪都准备好了，那赶紧开始吧。别墨迹了。"////夏悠手指着，开心
+voice cp1/xiayo_155.m4a
 x pose5 ciallo "让你看看谁才是神枪手。"////手指着，ciallo
+voice cp1/xiayo_156.m4a
 x "这是一场公平的对决。"////手指着，
 l "要不还是算了。"
+voice cp1/xiayo_157.m4a
 x pose1 ochikomu "怎么了？"////夏悠担忧
 l "我身体突然有点不舒服。"
 ////nvl模式
@@ -156,21 +173,29 @@ endnvlm
 ////结束nvl模式
 l "就是这样，总之让我先休息一下。"
 l "你们先玩。"
+voice cp1/xiayo_158.m4a
 x tameiki2 "那好吧！"////夏悠tameiki2
+voice cp1/xiayo_159.m4a
 x ochikomu "要不你跟老师说一下，去请个假？"////夏悠ochikomu
 l "没事的，还不至于请假。"
 l "我去课桌上趴一会就好了。"
+voice cp1/xiayo_160.m4a
 x tameiki2 "好吧。"////夏悠tameiki2
 "我扭头打算回教室。"
+voice cp1/xiayo_161.m4a
 x "......"
 play sound pekori
+voice cp1/xiayo_162.m4a
 x pose2 ochikomu an shake2 repeat 4 "等等！！"////对话框震动 夏悠担忧
 l "？"
+voice cp1/xiayo_163.m4a
 x hen "我也回去。"////夏悠ochikomu
 l "为什么？"
 l "你也不舒服吗？"
 play sound poko
+voice cp1/xiayo_164.m4a
 x pose3 shy2 "不是...笨蛋..."////夏悠脸红
+voice cp1/xiayo_165.m4a
 x pose2 ochikomu "四缺一了，这个游戏就玩不下去了。"////夏悠ochikomu
 ls pose2 mendo "这游戏还有必须达到四个人才能玩的规则吗..."
 ////守真立绘先是思考，一秒以后震动一下并且变成惊讶（制作一秒时间切换两个图像的image，并且写一个1秒以后震动的动画） 

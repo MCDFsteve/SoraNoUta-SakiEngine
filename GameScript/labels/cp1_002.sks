@@ -10,14 +10,20 @@ scene school
 play sound haneru
 play music goodday  
 //夏悠“o”的立绘（wakuwaku2） 从下方跳出
+voice cp1/xiayo_002.m4a
 x wakuwaku2 an topin "哦，林澄你出来了。"
 l "你在干什么？不带我一个？"
+voice cp1/xiayo_003.m4a
 x think "我刚上完厕所回来啊。"//夏悠皱眉
+voice cp1/xiayo_004.m4a
 x pose4 think2 an fururu "啊！？你想让我带你上厕所，一起？"//夏悠思考
 play sound haneru
+voice cp1/xiayo_005.m4a
 x pose3 kowa an shake2 repeat 4 "害怕。"//对话框震动 夏悠害怕
 l "那没事了。还以为有什么新的可以玩的。"
+voice cp1/xiayo_006.m4a
 x pose1 smile an ukeru repeat 2 "嗯嗯。" //夏悠微笑 手指着
+voice cp1/xiayo_007.m4a
 x pose2 star "去玩捉迷藏去吧！"
 l "好！"
 stop music
@@ -41,9 +47,13 @@ show syozen1 at xiayo1pose
 //背景切到 树林
 //夏悠在中间 宫娜和守真在左右
 play music what  
+voice cp1/xiayo_008.m4a
 x pose2 ciallo "靠两两石头剪刀布的形式决定谁负责捉吧！"//夏悠侧脸思考
+voice cp1/xiayo_009.m4a
 x pose4 doyagao "我和李宫娜一组，林澄和刘守真一组。"
+voice cp1/xiayo_010.m4a
 x pose1 tameiki "两边输了的人再进行总决赛。"
+voice cp1/xiayo_011.m4a
 x pose2 think2 "最后的输家就负责抓人了。"//侧脸但是眼睛转过来
 nvlm
 "就这样，开始了比赛。"
@@ -87,15 +97,20 @@ scene grass with wipe
 "似乎那边也决出了结果，我起身前去查看。"
 //加载树林背景
 l "所以谁是最后抓人的人？"
+voice cp1/xiayo_012.m4a
 x tameiki2 "我。"//夏悠叹气
 l "真的假的？你负责抓人？"
 jump cp1_002_xy
 label cp1_002_xy
+voice cp1/xiayo_013.m4a
 x mesugaki2 "没错。"
 //夏悠奸笑
+voice cp1/xiayo_014.m4a
 x "我要狠狠地抓住你们！"
+voice cp1/xiayo_015.m4a
 x tameiki "不过提前说好啊！不能离开我太远的距离，就只能在草地周围的地方躲。"
 //夏悠叹气
+voice cp1/xiayo_016.m4a
 x tameiki2 "太远了的话我怎么可能找得到。"
 nvlm
 "也就是说这是一场扮演越共的游戏。"
@@ -107,6 +122,7 @@ scene bl
 nvlm
 "......"
 "夏悠背靠大树，开始了报数。"
+voice cp1/xiayo_017.m4a
 xnan "100，99，98，97，96，95，94........."
 "我们四散躲开了。"
 endnvlm
@@ -119,8 +135,11 @@ nvlm
 "我听着夏悠的报数。"
 endnvlm
 nvlm
+voice cp1/xiayo_018.m4a
 xnan "10，9，8，7，6......"
+voice cp1/xiayo_019.m4a
 xnan "5，4，3，2，1，0。"
+voice cp1/xiayo_020.m4a
 xnan "我要开始找咯！"
 "我小心地保持一动不动。"
 "连呼吸都放慢了。"
@@ -150,11 +169,15 @@ show syozen1 at xiayo1pose
 show gonna1 at xiayo1pose
 "每个人身上都粘着几片枯叶。"
 l "夏悠，你抓到谁了？"
+voice cp1/xiayo_021.m4a
 x ciallo "除了你以外都抓住了。"//夏悠眼睛一闭一睁地笑着
+voice cp1/xiayo_022.m4a
 x smile "刘守真直接趴到树林的地上，拿枯叶把自己盖满了。"//夏悠微笑
 //守真黑脸 不愉快的表情
+voice cp1/xiayo_023.m4a
 x mesugaki3 "以为躲的很严密，结果一眼就看到了哈哈。"//夏悠嘲笑 宫娜嘲笑
 ls sabishii2 "不要再说这么丢脸的事了。"//守真脸红
+voice cp1/xiayo_024.m4a
 x smile "好～好～"//夏悠叉腰微笑
 jump cp1_003
 label cp1_002_b
