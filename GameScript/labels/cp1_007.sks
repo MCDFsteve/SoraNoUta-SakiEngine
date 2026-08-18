@@ -35,6 +35,7 @@ cg cg_cp1_3 1
 cg cg_cp1_3 2
 //with dissolve
 play music heroine  
+voice cp1/xiayo_307.m4a
 x2 "你真是慢呢～林澄......"////cg里夏悠生气
 nvlm
 "夏悠带着遮阳帽，在岩石处等待着我。"
@@ -52,6 +53,7 @@ cg cg_cp1_3 3
 //with dissolve
 ////夏悠微笑
 play music skysoul  
+voice cp1/xiayo_308.m4a
 x2 "我知道的哦！"
 l "啊？！"
 nvlm
@@ -61,12 +63,15 @@ endnvlm
 cg cg_cp1_3 5
 //with dissolve
 ////微笑但是闭眼
-x2 "我知道的哦！你现在一定很高兴吧！"
+voice cp1/xiayo_309.m4a
+x2 "呃...我知道的哦！你现在一定很高兴吧！"
 ////睁眼
+voice cp1/xiayo_310.m4a
 x2 "我也是！"
 cg cg_cp1_3 2
 //with dissolve
 ////夏悠生气
+voice cp1/xiayo_311.m4a
 x2 "所以快点快点！蝉在嗷嗷待抓了！"
 nvlm
 "原来是抓蝉。"
@@ -79,9 +84,11 @@ endnvlm
 cg cg_cp1_3 4
 //with dissolve
 ////夏悠脸红 cg差分到手抓着帽檐 微笑
+voice cp1/xiayo_312.m4a
 x2 "那个......"
 ////约会的音乐
 play sound poko
+voice cp1/xiayo_313.m4a
 x2"好看吗？这个？"
 nvlm
 "夏悠手抓着帽檐，上下拉扯着。"
@@ -93,33 +100,41 @@ l "你妈的？"
 cg cg_cp1_3 6
 //with dissolve
 ////夏悠叹气
+voice cp1/xiayo_314.m4a
 x2"你......"
 l "啊对不起我没在骂你！！我只是想说，这个帽子是你妈妈的吗？"
 nvlm
 "我似乎意识到自己说错了话。连忙进行辩解。"
 endnvlm
-x2"啊！算了！毕竟你一直不会说话！"
+voice cp1/xiayo_315.m4a
+x2"啊！算了！毕竟你一直不会讲话！"
 cg cg_cp1_3 2
 //with dissolve
 ////夏悠难过
+voice cp1/xiayo_316.m4a
 x2"唉......"
 cg cg_cp1_3 4
 //with dissolve
 ////夏悠叹气
-x2"明明可以夸我的，却转话题到帽子来自哪......"
+voice cp1/xiayo_317.m4a
+x2"明明可以夸我的，却转移话题到帽子来自哪......"
 cg cg_cp1_3 2
 //with dissolve
 ////夏悠难过
+voice cp1/xiayo_318.m4a
 x2"算了......"
 cg cg_cp1_3 3
 //with dissolve
 ////夏悠眼睛转过来，露出笑容
+voice cp1/xiayo_319.m4a
 x2"那......走吧！！"
 nvlm
 "夏悠重新露出了笑容。"
 endnvlm
 stop music
+voice cp1/xiayo_320.m4a
 x2"现在还是正午，还只能抓到小蝉。"
+voice cp1/xiayo_321.m4a
 x2"不过只要一直玩到黄昏之时，就可以了哦！"
 // persistent.music_012unlock = True
 // persistent.back030 = True
@@ -138,31 +153,43 @@ nvlm
 endnvlm
 ////结束nvl模式
 ////夏悠带帽子的立绘 端庄的姿势
+voice cp1/xiayo_322.m4a
 x2 pose6 smilenaka1 "真是悦耳啊～"////闭眼陶醉的聆听 双手背在身后
+voice cp1/xiayo_323.m4a
 x2 pose6 tameiki "但是感觉白天的小蝉要比傍晚的蝉更难抓啊。" ////睁眼叹气
+voice cp1/xiayo_324.m4a
 x2 pose6 tameiki2 "大小也好，敏锐性也好，都和傍晚的蝉不一样。"////闭眼叹气
+voice cp1/xiayo_325.m4a
 x2 pose6 tameiki "更别说它爬在又细又矮的玉米杆上了。"////睁眼叹气
 l"！！！"////对话框震动
 l"我以为你很有把握的，毕竟看你这么自信。"
 play sound haneru
+voice cp1/xiayo_326.m4a
 x2 pose6 hen an jump "哼！我很自信是因为你来了啊！你不是捉蝉高手嘛..."////夏悠疑惑 立绘震动 手放下去
 l"所以我们都互相认为对方很擅长这个！！？"////对话框震动
 l"那完了..."
+voice cp1/xiayo_327.m4a
 x2 pose6 kowa "啊！！？？"////对话框震动  夏悠害怕
+voice cp1/xiayo_328.m4a
 x2 pose6 naku "所以你也拿蝉没办法吗？"////夏悠快哭出来了
+voice cp1/xiayo_329.m4a
 x2 pose6 naku2 "明明你说过你很擅长捉蝉的..."////夏悠大哭
+voice cp1/xiayo_330.m4a
 x2 pose6 naku "说蝉只要看到你来了，就乖乖地退到树根等你抓。"////夏悠快哭出来了
 l"为什么把捉蝉说的像投降仪式一样...蝉也会土下座吗......"
 l"不对，这不是重点...我确实很擅长捉蝉。"
 l"但是，仅限傍晚的蝉！！"////对话框震动
 l"因为我白天都在上学，没有时间练习啊..."
+voice cp1/xiayo_331.m4a
 x2 pose6 odoroki an shake2 repeat 4 "那完了..."////夏悠豆豆眼 
 show nande at ajump
 play sound haneru
 play sound haneru
+voice cp1/xiayo_332.m4a
 x2 pose6 odoroki an jump "那咋办？"////豆豆眼 但是感叹号 立绘震动一次
 l"唔......没办法了，只能上了..."
 l"我试试我的捉蝉技巧能不能用..."
+voice cp1/xiayo_333.m4a
 x2 pose8 smile "嗯！！"////对话框震动 微笑 手背在身后
 scene sky
 //with dissolve
@@ -207,26 +234,35 @@ scene bl timer 1.0
 scene hatake
 //with fade
 //with dissolve
+voice cp1/xiayo_334.m4a
 x2 pose6 mesugaki3 "哈哈......"////夏悠嘲笑 手指着
+voice cp1/xiayo_335.m4a
 x2 ciallo "果然捉不到呢..."////夏悠ciallo 手放下去
 l"所以你一开始就不认为我捉得到吗？"
+voice cp1/xiayo_336.m4a
 x2 think "嗯..."////夏悠think
+voice cp1/xiayo_337.m4a
 x2 pose7 ciallo "但是说不定会有奇迹呢？"////夏悠ciallo 手指着
 l"奇迹和魔法可不是免费的。"
+voice cp1/xiayo_338.m4a
 x2 pose8 tameiki2 "好啦.......所以感觉活动告吹了..."////夏悠闭眼叹气 手放下去
+voice cp1/xiayo_339.m4a
 x2 tameiki "明明是好不容易到来的，约定好的事情..."////夏悠睁眼叹气
 play sound pekori
+voice cp1/xiayo_340.m4a
 x2 ciallo an topin "抱歉！！！"////对话框震动 夏悠闭眼叹气 立绘点点头
 l"抱歉！！！"////对话框震动
 scene bl //with Dissolve(0.15)
 //with vpunch
 play sound poko
 ////非常快地插入黑屏 //with vpunch震动 撞到头的音效
+voice cp1/xiayo_341.m4a
 x2nan "啊！！"////对话框震动
 l "啊！！"////对话框震动
 ////清除黑屏
 scene hatake
 shake
+voice cp1/xiayo_342.m4a
 x2 pose6 naku "痛痛痛..."////夏悠快哭了 但是脸红
 l"痛痛痛..."
 nvlm
@@ -235,16 +271,20 @@ nvlm
 endnvlm
 l"对不起！"////对话框震动+
 play sound haneru
+voice cp1/xiayo_343.m4a
 x2 ochikomu an jump "对不起！"////对话框震动 ////立绘shy4 抖一下
 ////夏悠笑
 play sound haneru
+voice cp1/xiayo_344.m4a
 x2 dame2 an shake2 repeat 2 "啊！真是对不起！"////对话框震动 夏悠表情 >~< 抖一下
 l "奇怪的同步..."
 l"要不临时改变活动内容吧..."
 play sound haneru
 play sound haneru
+voice cp1/xiayo_345.m4a
 x2 odoroki an jump "不捉蝉了吗？"////夏悠豆豆眼感叹号 抖一下
 l"去你家看动画片？"
+voice cp1/xiayo_346.m4a
 x2 pose7 happy "这个也好！！"////对话框震动 ////夏悠开心 手指着
 stop sound
 stop music
@@ -271,16 +311,21 @@ l "那，下周见？"
 ////夏悠ciallo 手背在身后 点点头
 play sound pekori
 //with dissolve
+voice cp1/xiayo_347.m4a
 x2 pose8 ciallo an fururu repeat 2 "嗯嗯..."
 ////夏悠微笑
+voice cp1/xiayo_348.m4a
 x2 smile "虽然和想象中不一样，但是还是很开心..."
 ////夏悠从微笑切换为 闭眼 微笑着哭
+voice cp1/xiayo_349.m4a
 x2 smilenaka2 "[size=0.7]真是......太好了......[/size]"
 l"夏悠你......你为什么...哭了？"
 ////夏悠手放下去 睁开眼哭 微笑
-x2 smilenaka3 "哪有啊.......哦确实有呢......为什么呢......"
+voice cp1/xiayo_350.m4a
+x2 smilenaka3 "哪有啊.......哦确实也有呢......为什么呢......"
 ////闭眼微笑着哭 手背在身后
 play sound haneru
+voice cp1/xiayo_351.m4a
 x2 smilenaka2 an jump "都无所谓了，下周见！！哼！！"////对话框震动
 ////清理掉夏悠立绘
 hide xiayo1
@@ -363,9 +408,11 @@ nvlm
 endnvlm
 stop sound
 nvlm
+voice cp1/xiayo_352.m4a
 x2nan pose6 "嘘～"
 l"夏悠？现在不是已经夜晚了吗？"
 l"你是怎么摸过来的？"
+voice cp1/xiayo_353.m4a
 x2nan"嘘～你想不想看星星？"
 l"啊？"
 l"现在？"
@@ -373,29 +420,46 @@ l"现在？"
 endnvlm
 nvlm
 l"为什么？"
+voice cp1/xiayo_354.m4a
 x2nan"因为，我......"
-x2nan"你看啊，今晚不是很适合看星星嘛......"
+voice cp1/xiayo_355.m4a
+x2nan"你看啊，今晚是不是很适合看星星嘛......"
+voice cp1/xiayo_356.m4a
 x2nan"晴朗天气的夜空..."
-x2nan"所以......你来吗？"
+voice cp1/xiayo_357.m4a
+x2nan"所以......"
+voice cp1/xiayo_358.m4a
+x2nan "你来吗？"
+voice cp1/xiayo_358.m4a
 x2nan"虽然这是很突然的邀请...如果不来也...也没关系的！"
+voice cp1/xiayo_359.m4a
 x2nan"毕竟是我突然想看一下。"
+voice cp1/xiayo_360.m4a
 x2nan"因为我啊.....呜...没事..."
+voice cp1/xiayo_361.m4a
 x2nan"今天心情有点激动。"
+voice cp1/xiayo_362.m4a
 x2nan"所以你来吗？"
 endnvlm
 nvlm
 "......"
 "地点在哪？"
+voice cp1/xiayo_363.m4a
 x2nan"在那个地方。"
+voice cp1/xiayo_364.m4a
 x2nan"比高更高的那块地方。"
+voice cp1/xiayo_365.m4a
 x2nan"沿着路一直到顶的山顶的那块坡地。"
+voice cp1/xiayo_366.m4a
 x2nan"长满草的那块坡地。"
+voice cp1/xiayo_367.m4a
 x2nan"没有比那里更适合的场所了吧..."
 endnvlm
 nvlm
 "果然...说到看星星，我也是第一眼想到了那里..."
 "但是从这里过去，得十几分钟吧..."
 "一开始我就想问了，照明怎么办？"
+voice cp1/xiayo_368.m4a
 x2nan"不要小看人类科技啊！"
 "夏悠说着，举了举手里的手电。"
 "懂了。"
@@ -414,6 +478,7 @@ endnvlm
 // persistent.back008 = True
 scene home yoru
 //with dissolve
+voice cp1/xiayo_369.m4a
 x2 pose6 happy "走吧！"////对话框震动 夏悠手指着 ciallo
 l"嗯！"////对话框震动
 scene sky yoru
@@ -435,6 +500,7 @@ l"呼～好累～歇一会吧....."
 play sound haneru
 //with dissolve
 ////夏悠叉腰 闭眼叹气
+voice cp1/xiayo_370.m4a
 x2 pose7 ciallo an jump "加油啊！！离终点就剩五分钟的路程了。"
 scene sky yoru
 //with dissolve
@@ -456,6 +522,7 @@ l "啊！！慢点！！"////对话框震动
 scene sky yoru
 //with dissolve
 ////背景切到夜晚的天空
+voice cp1/xiayo_371.m4a
 x2nan "到了。"
 stop sound
 //nvl模式
@@ -478,35 +545,50 @@ play music yozora
 "我和夏悠悠闲地坐在松软的草地上，惬意地望着天空。"
 "夜风轻轻拂过，带来一丝凉意。"
 "天空中星光闪烁，仿佛无数颗钻石洒在深蓝色的天幕上。"
+voice cp1/xiayo_372.m4a
 x2 "真美呢......"
 l"真美呢......"
 endnvln
 nvln
 x2 "......"
+voice cp1/xiayo_373.m4a
 x2 "这个学期结束，你就要去镇上上学了吧..."
 l"......"
 l"啊？为什么？"
 x2 "......"
+voice cp1/xiayo_374.m4a
 x2 "该说真不愧是你呢..."
+voice cp1/xiayo_375.m4a
 x2 "因为我们现在的学校没有四年级啊..."
+voice cp1/xiayo_376.m4a
 x2 "想上四年级不就得去镇上的学校了..."
+voice cp1/xiayo_377.m4a
 x2 "以前你还是二年级的时候，学长跟你说过吧...你也经历过他离开这个学校的日子..."
 endnvln
 nvln
 l"那我去镇上以后，你怎么办呢？"
+voice cp1/xiayo_378.m4a
 x2 "我啊...仍然会继续留在这个学校，和李宫娜，刘守真一起。"
+voice cp1/xiayo_379.m4a
 x2 "不过没事的，很快的，记得等我一年哦..."
+voice cp1/xiayo_380.m4a
 x2 "一年以后，我也会和刘守真，李宫娜一起去镇上的小学了。"
 l"没有其他办法吗？"
 l"至少得同时去镇上学校吧..."
+voice cp1/xiayo_381.m4a
 x2 "除非你留级一年。"
 l"怎么申请留级？"
+voice cp1/xiayo_382.m4a
 x2 "......唉..."
+voice cp1/xiayo_383.m4a
 x2 "你不许留级，不然我会生气的，哼！"
+voice cp1/xiayo_384.m4a
 x2 "总之其实很快的...说不定是“唰”的一下就过去了呢..."
 endnvln
 nvln
+voice cp1/xiayo_385.m4a
 x2 "先不聊这个了。"
+voice cp1/xiayo_386.m4a
 x2 "你看那边，那一串星星，你知道是什么星座吗？"
 // persistent.cg056 = True
 cg cg_cp1_5 2
@@ -515,60 +597,85 @@ cg cg_cp1_5 2
 l"嗯......"
 l"嗯......."
 l"北.....北斗七星？"
+voice cp1/xiayo_387.m4a
 x2 "才不是！！"
+voice cp1/xiayo_388.m4a
 x2 "是射手座！"
 // persistent.cg057 = True
 cg cg_cp1_5 1
 ////手放下去
+voice cp1/xiayo_389.m4a
 x2 "你看，那颗最亮的星星，就是人马座α星，或者叫做“射手座的心脏”。"
 l"你对星星挺了解的嘛。"
 cg cg_cp1_5 2
 ////抬手
 endnvln
 nvln
+voice cp1/xiayo_390.m4a
 x2 "再看那边！！你猜那个是什么星座？"
 l"嗯......"
 l"北......北斗七星？"
+voice cp1/xiayo_391.m4a
 x2 "才不是！！"
+voice cp1/xiayo_392.m4a
 x2 "是猎户座！！"
 cg cg_cp1_5 1
 ////手放下去
+voice cp1/xiayo_393.m4a
 x2 "我说啊，你只认识北斗七星对吧！？"
 l"好厉害，你是怎么知道的？"
 x2 "......"
+voice cp1/xiayo_394.m4a
 x2 "哼！"
+voice cp1/xiayo_395.m4a
 x2 "算了..."
 endnvln
 nvln
+voice cp1/xiayo_396.m4a
 x2 "那一排排列成直线的三颗星星，就是猎户座的腰带，也叫“猎户腰带”。"
+voice cp1/xiayo_397.m4a
 x2 "而且在猎户座的右上角，还有一颗巨大的红色星星，叫做参宿四，是猎户的肩膀。"
+voice cp1/xiayo_398.m4a
 x2 "它是一个超级巨星，据说未来某天可能会爆发成超新星，到时候整个天空都会被照亮。"
 l"那岂不是很震撼？"
+voice cp1/xiayo_399.m4a
 x2 "是啊，所以我一直期待着那一天。"
+voice cp1/xiayo_400.m4a
 x2 "可惜我们不知道那会是什么时候，也许是几千年后，也许是明天。"
 endnvln
 nvln
 cg cg_cp1_5 2
 ////抬手
+voice cp1/xiayo_401.m4a
 x2 "你再猜那个是什么星座？"
 "夏悠指向北方那一片繁星闪烁的天空。"
 l"首先排除北斗七星......"
+voice cp1/xiayo_402.m4a
 x2 "才不是！！"
+voice cp1/xiayo_403.m4a
 x2 "这次的还真是北斗七星！！"
+voice cp1/xiayo_404.m4a
 x2 "终于见到真的北斗七星了，可喜可贺可喜可贺。"
 "夏悠笑了起来。"
+voice cp1/xiayo_405.m4a
 x2 "我跟你说哦...北斗七星其实是大熊座的一部分，小时候我一直以为它是个独立的星座呢。"
 l"啊？"
 l"真的假的？"
 endnvln
 nvln
 cg cg_cp1_5 1
+voice cp1/xiayo_406.m4a
 x2 "没事的，很多人到现在都还不知道这件事情的。"
+voice cp1/xiayo_407.m4a
 x2 "北斗七星，更多被提起，是因为它长得像一根细长的勺子。"
 l"嗯嗯，语文课本的课文里提到过。"
+voice cp1/xiayo_408.m4a
 x2 "找到只知道北斗七星的原因了..."
+voice cp1/xiayo_409.m4a
 x2 "不过只要看到天上有北斗七星，就会觉得心里很踏实。毕竟它总是在北方嘛，像个指路的标志一样。"
+voice cp1/xiayo_410.m4a
 x2 "无论你在哪里，只要看到北斗七星，就能知道北方在哪。"
+voice cp1/xiayo_411.m4a
 x2 "这大概也是为什么它那么受欢迎的原因吧。"
 endnvln
 nvln
@@ -576,12 +683,17 @@ cg cg_cp1_5 2
 ////抬手
 endnvln
 nvln
+voice cp1/xiayo_412.m4a
 x2 "诶，你说林澄..."
+voice cp1/xiayo_413.m4a
 x2 "星空的另一侧是什么呢？"
 l"令人深思的问题。"
 l"这是什么人格测试吗？"
+voice cp1/xiayo_414.m4a
 x2 "不是哦..."
+voice cp1/xiayo_415.m4a
 x2 "星空的另一侧，宇宙之上的部分...是什么呢？"
+voice cp1/xiayo_416.m4a
 x2 "会有神的存在吗？"
 l"如果是以前的我，大概会立马否决。"
 l"神明是什么东西啊～你说神明创造了人类，那神明又是谁创造的呢？"
@@ -592,8 +704,11 @@ l"超自然到科学很难解释的，涉足神明领域的范畴。"
 endnvln
 nvln
 cg cg_cp1_5 1
+voice cp1/xiayo_417.m4a
 x2 "..."
+voice cp1/xiayo_418.m4a
 x2 "也对...现在不知道答案的话也没关系..."
+voice cp1/xiayo_419.m4a
 x2 "总会有答案揭示的那一天的..."
 endnvln
 nvln
@@ -603,15 +718,18 @@ endnvln
 nvln
 cg cg_cp1_5 2
 ////抬手
+voice cp1/xiayo_420.m4a
 x2 "真是皎洁的月光啊～"
 "夏悠指着月亮，说到。"
 endnvln
 nvln
 l"是啊..."
 l"我说你啊！不要用手指月亮啊！耳朵会被割掉的！！"
+voice cp1/xiayo_421.m4a
 x2 "哈哈哈哈......"
 cg cg_cp1_5 1
 ////放手
+voice cp1/xiayo_422.m4a
 x2 "你说...月亮上，会住着另一个我们吗？"
 l"谁知道呢......"
 l"毕竟那还是，无人踏足过的隐秘之地......"
@@ -623,6 +741,7 @@ nvln
 "........"
 ".........."
 l"这么梦幻的景色，都怀疑自己是在做梦了......"
+voice cp1/xiayo_423.m4a
 x2 "如果真是在做梦呢？"
 endnvln
 achievement unlock achievement4_cp1end

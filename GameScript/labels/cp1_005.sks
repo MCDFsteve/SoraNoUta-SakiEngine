@@ -497,25 +497,34 @@ x pose5 odoroki an jump "啊！！"////对话框震动 夏悠惊讶
 x "这是子弹吗？"
 x wakuwaku3 "我的天。"////夏悠wakuwaku
 l "看起来应该是。我刚刚发现的。"
+voice cp1/xiayo_182.m4a
 x think "我之前怎么没注意到。"////夏悠侧脸思考
+voice cp1/xiayo_183.m4a
 x think2 "这附近不会还有更刺激的东西没被发现吧？"////夏悠侧脸 眼睛看过来
 l "可能吧。"
 l "我感觉可能某个日子有打猎的在这附近待过。这个子弹说不定是打野生动物的时候射偏了留下的。"
+voice cp1/xiayo_184.m4a
 x think "除了这种解释以外似乎也没有更多说法了。"////眼睛继续看侧边
+voice cp1/xiayo_185.m4a
 x think2 "不过国内可以用枪打猎吗？"////眼睛又侧过来
 l "这方面我不知道规矩是怎么样的，但是我之前经常看到我的邻居家的老爷爷没事就擦枪。"
 l "是那种长枪。"
 l "也经常当着我的面，打天空中飞的鸟。"
-x think2 "是上次去你家玩的时候看过的那个老爷爷吗？"////夏悠 疑惑
+voice cp1/xiayo_186.m4a
+x think2 "嗯...是上次去你家玩的时候看过的那个老爷爷吗？"////夏悠 疑惑
 l "对，就是他。"
+voice cp1/xiayo_187.m4a
 x think "你家离学校也不是很远。"////夏悠侧脸思考
+voice cp1/xiayo_188.m4a
 x think2 "会不会就是他留下的？"////夏悠眼睛看过来
 l "确实有这个可能性。我放学回家以后去问问吧。"
 l "对了，你找我干什么？"
+voice cp1/xiayo_189.m4a
 x pose2 hen "才不是看到你一下课就往外跑才跟过来呢，我只是路过这里有点事..."////夏悠赌气
 l "是吗？那你继续自己的事吧。"
 l "我也该回教室了。"
 play sound poko
+voice cp1/xiayo_190.m4a
 x pose1 tameiki2 "笨蛋..........."////夏悠脸红
 ////音乐停止 nvl模式 教室背景
 stop music
@@ -551,6 +560,7 @@ l "今天来玩什么？"
 "我走到夏悠旁边问到。"
 stop sound
 play sound moeru
+voice cp1/xiayo_191.m4a
 x moeru an topin "来打枪吧！"////对话框震动 夏悠燃起来了 立绘震动
 l "好！好久没玩这个了。"
 ////树杈特写
@@ -558,10 +568,13 @@ show edagun at items an jump
 "夏悠说着，掏出了一个树杈，呈现Y字形的树杈。"
 hide edagun
 ////收起树杈
+voice cp1/xiayo_192.m4a
 x pose4 happy "这个是我的配枪。"////夏悠开心
-x arm2 think2"大家都去找枪去了，林澄你不用找吗？"////夏悠手指着 疑惑
+voice cp1/xiayo_193.m4a
+x arm2 think2"大家都找枪去了，林澄你不用找吗？"////夏悠手指着 疑惑
 l "没有提前准备过。"
 l "稍等我一会。"
+voice cp1/xiayo_194.m4a
 x smile"行，我先晒会太阳。"////夏悠微笑
 scene forest
 ////背景切到树林
@@ -597,27 +610,36 @@ scene grass
 play sound yokokusa
 cg cgcp0_1 3
 ////夏悠躺草地CG cg1 3
+voice cp1/xiayo_195.m4a
 x "真舒服啊～"
 l "是啊！"
 l "或许啥都不玩，晒一中午太阳更合适一点。"
 cg cgcp0_2 5
+voice cp1/xiayo_196.m4a
 x "唔～！"
 "夏悠气的鼓起了脸。"////cg1_1变体 夏悠生气
+voice cp1/xiayo_197.m4a
 x "就是有你这种想法，美好的时光才被大把的浪费掉了。"
 l "李宫娜和刘守真呢？"
 cg cgcp0_1 2
+voice cp1/xiayo_198.m4a
 x "他们好像还没吃饱，找到配枪以后下坡去了。"////cg1 2
 cg cgcp0_1 1
+voice cp1/xiayo_199.m4a
 x "去坡下的小卖部买零食吃了。"//cg1 1
 cg cgcp0_1 3
+voice cp1/xiayo_200.m4a
 x "真是有钱啊～"////cg1 3
 l "是啊，我每天的生活费只够买方便面的钱。"
 cg cgcp0_2 4
+voice cp1/xiayo_201.m4a
 x "这是对你那次的惩罚吧～"////cg1_1 4
 l "这种事情我知道错了，所以别说出去了。"
 cg cgcp0_2 6
+voice cp1/xiayo_202.m4a
 x "好～没事！我一直是原谅你的。"////cg1_1变体 微笑
 l "那我也在这一起等吧～"
+voice cp1/xiayo_203.m4a
 x "嗯～"
 ////黑色背景 nvl模式 无bgm
 stop music
@@ -651,10 +673,15 @@ nvlm
 "我在一个研究所里？"
 "只是眯了一小会，就做起了白日梦吗？"
 endnvlm
+voice cp1/gonna_021.m4a
 lg satoko "林澄，夏悠！"////对话框震动
+voice cp1/xiayo_204.m4a
 x pose3 happy "啊？回来了吗？"////夏悠立绘放在左边 叉腰 开心
+voice cp1/xiayo_205.m4a
 x ciallo "麻利点。"////夏悠ciallo
+voice cp1/gonna_022.m4a
 lg happy "那肯定的。"////宫娜放到中央 开心
+voice cp1/gonna_023.m4a
 lg happy "这是你的，夏悠。"////宫娜从中间贴到左边，然后又收回 夏悠立绘变成微笑
 lg nikoniko an zoomjumpinout "这是你的，林澄！"////贴近 缩小
 show sugar at items an jump
@@ -666,17 +693,21 @@ hide sugar
 l "谢谢。"
 "更加后悔之前在路上就吃完了枣子。"
 l "抱歉。"
+voice cp1/gonna_024.m4a
 lg what "啊？你怎么老是在道歉？"////宫娜疑惑
 l "这么说我才发现了我确实是这样。"
 "将糖果放进了嘴里。"
 "又酸又甜，果然不管什么时候吃都不会觉得不好吃。"
 play sound pekori
+voice cp1/gonna_025.m4a
 lg nikoniko an jump repeat 2 "哼哼，好吃对吧！"////宫娜眯眯眼开心 点点头
 ls "好了，准备开始吧。"////守真进入右侧
+voice cp1/xiayo_206.m4a
 x think "你们两个是准备边吃边玩吗？"////夏悠疑惑，不叉腰了把手放下来
 play sound haneru
 ls odoroki "啊？这也算在违反规则的行为内吗？"////守真震惊 对话框和立绘震动
 stop music
+voice cp1/xiayo_207.m4a
 x tameiki2 "行吧！总之快开始！！"////对话框震动 夏悠闭眼叹气
 ////背景切到天空 nvl模式 音乐play
 scene sky
@@ -811,6 +842,7 @@ ls "我赢了。"
 ls eve "呼～"////守真闭眼
 l "所以你没受伤？"
 ls pose2 happy "我怎么可能受伤，我只是小演了一下，没想到你们都自己跑过来了哈哈。"////守真睁眼
+voice cp1/xiayo_208.m4a
 x think "你已经死了。"////夏悠think
 play sound haneru
 ls odoroki2 an jump "什么？"////守真惊讶 豆豆眼
@@ -829,11 +861,14 @@ nvlm
 endnvlm
 scene grass with wipe
 ls mendo an shake2 repeat 4 "5555下次不敢了，明明只是测试一下......"////守真mendo
-x unhappy "我就知道你小子会耍花招，所以什么测试？"////夏悠生气
+voice cp1/xiayo_209.m4a
+x unhappy "我就知道你小子会耍花招，所以什么测试啊？"////夏悠生气
 ls konoyarou "没事......那成绩还有效吗？"////守真konoyarou
 play sound haneru
+voice cp1/xiayo_210.m4a
 x pose3 hen an jump "作废了！"////对话框震动 夏悠手指着 赌气
 play sound haneru
+voice cp1/gonna_026.m4a
 lg odoroki an jump "夏悠，我觉得这也是游戏的一环吧。"////宫娜跳一下 立绘odoroki
 lg nikoniko "规则里似乎没有写不能使用计谋。"////宫娜satoko
 nvlm
@@ -841,8 +876,11 @@ nvlm
 "假想的，实际上拿的是空气。"
 endnvlm
 ls sabishii "对啊对啊！"////守真害羞
+voice cp1/xiayo_211.m4a
 x think "......"////夏悠think
+voice cp1/xiayo_212.m4a
 x tameiki2 "行吧！"////夏悠闭眼叹气
+voice cp1/xiayo_213.m4a
 x pose2 tameiki "今天的游戏，算刘守真赢了！"////夏悠睁眼叹气
 nvlm
 "我倒是没有意见，在真正的决斗中，对敌人仁慈本来就是我的不对。"

@@ -367,11 +367,13 @@ play sound chin
 l "找到了！"//对话框震动
 play sound haneru
 //宫娜立绘 震惊
+voice cp1/gonna_001.m4a
 lg odoroki an topin "啊？怎么抓到我的？"//对话框震动
 l "你虽然躲在树后面，但是有衣角露出来了。"
 l "今天你应该获取的教训是：伪装的要彻底。"
 "无意中模仿了刘守真。"
 //宫娜失落
+voice cp1/gonna_002.m4a
 lg tameiki "好吧......"
 //重新加载树林背景
 scene sky with wipe
@@ -413,6 +415,7 @@ scene grass with wipe
 play sound kusa
 "我和夏悠一起回到了草地。"
 stop sound
+voice cp1/gonna_003.m4a
 lg "林澄赢了，我们全军覆没了。"//宫娜立绘进入右边
 ls "下次玩捉迷藏在教室附近吧，这个树林能躲的太少了。"//守真立绘进入左边
 l "确实是这样，这把我还是赢的很轻松的。"

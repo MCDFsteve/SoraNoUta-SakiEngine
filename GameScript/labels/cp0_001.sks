@@ -362,7 +362,9 @@ hide kurokajitsu
 scene kichi
 l "这是？"
 ls odoroki "你失忆了？这些也不是新食材啊，都是用了好多次的。"
+voice cp0/gonna_001.m4a
 lg angry an jump "啊？你说的是这些果子吗？我也不知道叫什么，反正不能吃就对了。"
+voice cp0/gonna_002.m4a
 lg what "千万不要偷偷吃啊！这里最近的医院也是很远的。"
 l "[size=1.4]我看起来像很贪吃的人吗？[/size]"////对话框震动，文字变大
 ls pose2 naruhodo "不要用比喻句来阐述事实比较好..."
@@ -510,12 +512,15 @@ nvlm
 "野猪和狼不知道会从什么地方出来。"
 endnvlm
 "李宫娜和刘守真看到我们回来了，也站了起来。"
+voice cp0/gonna_003.m4a
 lg nikoniko an jump repeat 2 "大厨和她的小学徒终于来了，我都要饿死了，快上菜吧！"////李宫娜高兴地站了起来，向上过渡
 l "大厨是谁？小学徒又是谁？"
 l "你在和我们说话？"
 "怎么突然又冒出来一堆称谓，我感觉摸不着头脑。"
 "这是存在于我记忆里的事物吗？"
+voice cp0/gonna_004.m4a
 lg pose2 hen "没趣，你已经彻底像不认识我们了，失忆游戏到此为止了好不好。"////李宫娜歪着头叉腰赌气
+voice cp0/gonna_005.m4a
 lg hen2 "你昨天晚上喝了多少？"////还是赌气的样子，但是眼睛转了过来
 pause(0.2)
 voice cp0/xiayo_050.m4a
@@ -539,7 +544,9 @@ nvlm
 "而且是不是混进来很多奇怪的口癖。"
 endnvlm
 ls pose1 odoroki an jump "啊！是夏悠的S属性大爆发了！super cooker！！！"//对话框震动 刘守真立绘插了进来
+voice cp0/gonna_006.m4a
 lg oogoe an jump repeat 2 "你个笨蛋！cooker是厨具，kitchen才是厨师！！"////李宫娜大声嚷嚷的表情 对话框震动
+voice cp0/gonna_007.m4a
 lg what "而且S属性是什么。"////李宫娜疑惑
 ls pose2 eve "哦，super kitchen！！"////刘守真一脸顿悟的表情 对话框震动
 play sound bikkuri
@@ -572,7 +579,9 @@ x "当当当当当当当～当当当当当当当～"
 voice cp0/xiayo_064.m4a
 x "这是李宫娜的份，有很多草莓，因为喜欢吃甜食才是女孩子嘛。"
 cg cgq2 2
+voice cp0/gonna_008.m4a
 lg "哇哦！这么多！"
+voice cp0/gonna_009.m4a
 lg "我昨天给你分那么多糖果真的值了。"
 cg cgq2 7
 "我有点记不清了，我被分到了多少糖果呢？"
@@ -654,16 +663,20 @@ x "啊？如果你觉得这是剥削，那你起诉我啊？"
 "没想到一个过家家居然有这么多人情世故。"
 "比我玩过的很多游戏都要现实。"
 scene kichi
+voice cp0/gonna_010.m4a
 lg nikoniko an jump "我来也！！！"////对话框震动
 play sound haneru
+voice cp0/gonna_011.m4a
 lg pose3 odoroki "其实，我的职业就是检察官，虽然不知道这个职业是什么，但是应该可以受理你的起诉。"////李宫娜用手假装推眼镜
 "李宫娜站了出来，推了推眼镜。"
 "假想的，实际上推的是空气。"
+voice cp0/gonna_012.m4a
 lg pose1 common "夏悠婆婆你好，我这边接收到了了关于林澄小姐，对你的起诉状..."////一样的立绘，但是眼睛往右看
 "李宫娜手持着诉状念到。"
 "假想的，实际上拿的是空气。"
 voice cp0/xiayo_078.m4a
 x pose4 hen an fururu repeat 2 "才不是老婆婆呢！！"////李宫娜立绘左移，右边出来夏悠的叉腰生气立绘 对话框震动
+voice cp0/gonna_013.m4a
 lg pose3 oogoe an shake2 repeat 3 "[size=1.3]好！[/size]此案终结，因为起诉人当堂目中无人呵斥法官。[w=0.3][size=1.3]休庭！！！[w=0.3]威武！！！！！[/size]"////最后休庭威武的字出的很慢并且很大
 l "等等......我.......而且这算哪门子中西结合法庭啊！！"////对话框震动
 l "而且为什么我变成林澄小姐了啊！！我是男的啊喂！！"////对话框震动
@@ -674,6 +687,7 @@ nvlm
 "说实话，下课时间比我想象的要长。"
 "是因为体感时间的比较长的原因吧。"
 endnvlm
+voice cp0/gonna_014.m4a
 lg pose2 tameiki an fururu lg "啊？上课了？那只能终止对林澄的抄家仲裁了。"////李宫娜一脸失望的样子
 l "什么抄家啊喂！为什么受惩罚的反而是我啊喂！这真的不是校园霸凌吗？"////对话框震动
 scene blackboard

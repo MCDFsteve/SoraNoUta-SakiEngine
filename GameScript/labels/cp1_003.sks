@@ -508,9 +508,11 @@ voice cp1/xiayo_100.m4a
 x "早啊刘守真。"////守真立绘左滑进左侧
 ls kuraikao "为什么你们名字全都是两个字，我们这边名字都是三个字的。"////守真黑脸吐槽
 play sound haneru
+voice cp1/gonna_004.m4a
 lg odoroki "你发现了盲点。"////宫娜豆豆眼惊讶 立绘颤抖一下
 voice cp1/xiayo_101.m4a
 x  ciallo "如果这是设定的话，那就是作者懒得想名字了哈哈！"////夏悠流汗
+voice cp1/gonna_005.m4a
 lg happy an fururu repeat 2 "哈哈哈！"////宫娜开心
 ls an fururu repeat 2 "哈哈！如果在我们这个世界之上还有一层更高阶的支配存在的话。"////守真思考
 l "只是巧合这样吧。"
@@ -539,6 +541,7 @@ nvlm
 "下课了。"
 endnvlm
 ////宫娜立绘冒出来 放置在左侧 夏悠立绘则放置在中间 守真放置在右侧
+voice cp1/gonna_006.m4a
 lg happy "走吧，做饭游戏。"
 "是临近中午的课的下课时间。"
 "等会还有一节课就真正中午了。"
@@ -563,9 +566,11 @@ voice cp1/xiayo_109.m4a
 x odoroki an jump "我怎么没考虑过这个问题？！"////对话框震动 ////夏悠豆豆眼震惊 立绘震动一下
 shake
 play sound pin
+voice cp1/gonna_007.m4a
 lg odoroki "我也是！"////对话框震动 ////宫娜豆豆眼 立绘震动
 ls think "确实我们玩的是过家家，不是单纯模拟厨师的吧？"////守真思考
 l "所以除了扮演厨师以外还能玩什么？"
+voice cp1/gonna_008.m4a
 lg pose3 think3 "来玩捉迷藏吧！？"////对话框震动 宫娜张开嘴思考
 l "很好，但是现在应该是过家家的时间。"
 voice cp1/xiayo_110.m4a
@@ -585,6 +590,7 @@ l "而且只有你一个人的话要怎么生小孩？"
 play sound haneru
 voice cp1/xiayo_112.m4a
 x pose3 kowa an shake2 repeat 2 "啊？什么生小孩？"////对话框震动 ////夏悠害怕
+voice cp1/gonna_009.m4a
 lg pose1 satoko "只要找个地方假装是垃圾桶就行了吧！"
 ls pose2 naruhodo "我来扮演手机营业厅的工作人员吧，在我这里充话费兑换小孩。"////宫娜sadoko
 l "不行了这些人，得赶紧想想办法才行。"
@@ -598,6 +604,7 @@ voice cp1/xiayo_115.m4a
 x pose4 ciallo "你们先到刘守真那里去，我等会要过去充话费。"////夏悠叉腰 “哼哼哼” 自豪地闭眼
 l "好——！"////对话框震动
 play sound haneru
+voice cp1/gonna_010.m4a
 lg pose1 nikoniko "好——！"////对话框震动 宫娜立绘震动
 ////nvl模式
 nvlm
@@ -677,6 +684,7 @@ nvlm
 endnvlm
 l "接下来要怎么做？"
 ////宫娜生气
+voice cp1/gonna_011.m4a
 lg angry2 "你出戏了林澄。"
 "果然是在演戏啊！"
 play sound haneru
@@ -688,6 +696,7 @@ nvlm
 "爸妈这个词应该是复数词的吧。"
 endnvlm
 play sound pekori
+voice cp1/gonna_012.m4a
 lg  pose3 nikoniko an fururu repeat 2 "爸妈！！"////对话框震动 宫娜立绘抖两下 很开心的样子
 play sound haneru
 voice cp1/xiayo_122.m4a
@@ -728,8 +737,10 @@ voice cp1/xiayo_130.m4a
 x smile "好，爸妈捡给你！"////夏悠微笑
 hide xiayo1
 "夏悠过去了。"////清理掉夏悠立绘
+voice cp1/gonna_013.m4a
 lg pose2 odoroki "你认真的？"////宫娜立绘豆豆眼疑惑
 l "哼！叛逆期就是这样！"
+voice cp1/gonna_014.m4a
 lg tameiki2 "生育率低的原因找到了。"////宫娜叹气
 voice cp1/xiayo_131.m4a
 x ciallo "爸妈帮你捡到松果了哟！"////对话框震动 重新放入夏悠立绘 ciallo
@@ -754,7 +765,7 @@ hide waretachinko
 stop music
 play sound moeru
 voice cp1/xiayo_133.m4a
-x akireta2 "你小子！"////对话框震动 夏悠黑脸
+x akireta2 "你小子！哼！！！"////对话框震动 夏悠黑脸
 l "唔～"
 play music what 
 ////另一首欢快的音乐
@@ -778,7 +789,7 @@ l "对不起。"
 l "但是谢谢爸妈，治好了我的叛逆期。"
 "夏悠看起来高兴了一点。"////夏悠happy
 voice cp1/xiayo_135.m4a
-x pose5 smile an fururu repeat 2 "这还差不多，真是个好孩子。"////夏悠smile
+x pose5 smile an fururu repeat 2 "哼～这还差不多，真是个好孩子。"////夏悠smile
 voice cp1/xiayo_136.m4a
 x mesugaki an fururu "呜哇～"//夏悠mesugaki
 voice cp1/xiayo_137.m4a
@@ -791,7 +802,7 @@ nan "当～当～当～"
 "上课了，听到了老师拉响的铃声。"
 ////夏悠叹气
 voice cp1/xiayo_138.m4a
-x pose3 tameiki "中午再见吧！"////对话框震动
+x pose3 tameiki "嗯...中午再见吧！"////对话框震动
 l "中午还是玩这个吗？"
 voice cp1/xiayo_139.m4a
 x ciallo "不了，有其他活动。"////夏悠ciallo

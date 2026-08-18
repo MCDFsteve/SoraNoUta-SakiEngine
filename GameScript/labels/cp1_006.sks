@@ -41,6 +41,7 @@ play sound yokokusa
 play sound suzume loop
 cg cgcp0_1 1
 ////夏悠躺草地cg
+voice cp1/xiayo_214.m4a
 x "阳光真是舒服啊～"////cg1 4
 "夏悠感叹道。"
 l "确实很舒服～"
@@ -52,37 +53,50 @@ scene sky with diss
 "躺了很久很久。"
 ////hide掉show的天空
 cg cgcp0_2 1 
+voice cp1/xiayo_215.m4a
 x "那个。"////cg1_1 1
 "夏悠开口了。"
 "夏悠扭过头，似乎有想说的话题。"
 l "怎么了？"
 l "你又打算问“你到底是谁”吗？"
 cg cgcp0_2 5
+voice cp1/xiayo_216.m4a
 x "这个玩笑已经开过了！"////cg 夏悠生气
 cg cgcp0_2 4
+voice cp1/xiayo_217.m4a
 x "我想说的是。"////恢复正常 cg1_1 4
 cg cgcp0_2 3
+voice cp1/xiayo_218.m4a
 x "昨天晚上我做了一个噩梦。"//cg1_1 3
 cg cgcp0_2 1
+voice cp1/xiayo_219.m4a
 x "不过比起说是噩梦，不如说它真实的像我真实发生的事情一样。"////cg1_1 1
 l "什么噩梦？"
 "无非就是梦到床下有鬼或者窗外半夜有人看着这种东西吧。"
 cg cgcp0_2 4
+voice cp1/xiayo_220.m4a
 x "我梦到我死了。"////cg1_1 4
 l "然后呢？"
 cg cgcp0_2 5
+voice cp1/xiayo_221.m4a
 x "然后就醒了啊！"////生气
+voice cp1/xiayo_222.m4a
 x "我以为你会问为什么。"////生气
 l "为什么？"
 cg cgcp0_2 6
+voice cp1/xiayo_223.m4a
 x "这才对啊！"////笑
 cg cgcp0_2 2
+voice cp1/xiayo_224.m4a
 x "我梦到我遇到了意料之外的事情。"////cg1_1 2
 cg cgcp0_2 3
+voice cp1/xiayo_225.m4a
 x "然后我尝试去解决这个事情的时候，死了。"////cg1_1 3
 cg cgcp0_2 4
+voice cp1/xiayo_226.m4a
 x "那种痛苦的感觉实在难以形容。"////cg1_1 4
 cg cgcp0_2 2
+voice cp1/xiayo_227.m4a
 x "这就是我没睡好的原因。"////cg1_1 2
 cg cgcp0_2 4
 nvlm
@@ -99,10 +113,13 @@ endnvlm
 ////结束nvl
 l "那你记得你的梦里，那个意料之外的事情，是什么吗？"
 cg cgcp0_2 2
-x "一醒过来以后，就有点不记得了。"////cg1_1 2
+voice cp1/xiayo_228.m4a
+x "一觉醒来以后，就有点不记得了。"////cg1_1 2
 cg cgcp0_2 3
+voice cp1/xiayo_229.m4a
 x "但是隐约记得那个时候的我长大了。"////cg1_1 3
 cg cgcp0_2 
+voice cp1/xiayo_230.m4a
 x "意料之外的事情，则是在执行某个任务的时候，脑袋受到了剧烈的冲击。"////cg1_1 1
 cg cgcp0_2 4
 ////cg1_1 4
@@ -115,6 +132,7 @@ nvlm
 endnvlm
 l "现实的你不还在这吗？还活的好好的！"
 l "这就足够了。"
+voice cp1/xiayo_231.m4a
 x "是啊！我实际上还活着，这就够了。"////cg1 3
 stop sound
 stop music 
@@ -157,6 +175,7 @@ nvlm
 "得控制住自己的表情管理。"
 "不能痴笑。"
 endnvlm
+voice cp1/xiayo_232.m4a
 xnan "在看什么？"
 shake
 l "啊！！"
@@ -165,11 +184,14 @@ nvlm
 "我以光速合上书本，放回原位。"
 endnvlm
 l "咳咳，没什么。"
+voice cp1/xiayo_233.m4a
 xnan "我看看。"
 nvlm
 "夏悠从书柜里将我刚放进去的书再次抽了出来。"
 endnvlm
+voice cp1/xiayo_234.m4a
 xnan "害，这本书我看过了。"
+voice cp1/xiayo_235.m4a
 xnan "也知道里面内容是什么。"
 nvlm
 "夏悠面无表情的说到。"
@@ -177,8 +199,10 @@ nvlm
 "也可能只是我思想太变态了。"
 "那种东西，对她来说只是习以为常的内容。"
 endnvlm
+voice cp1/xiayo_236.m4a
 xnan "没想到你也好......"
 shake
+voice cp1/xiayo_237.m4a
 xnan "啊！"
 nvlm
 "我在她说出最后一个字之前抓住了她的手。"
@@ -188,38 +212,56 @@ scene school
 ////背景切到学校 结束nvl模式 搞怪的音乐
 ////夏悠生气
 play sound haneru
+voice cp1/xiayo_238.m4a
 x pose3 hen an jump repeat 4 "林澄！"////对话框震动
 nvlm
 "我不想让老师听到这些。"
 "不然好印象全没了。"
 endnvlm
 l "你要多少钱？"
+voice cp1/xiayo_239.m4a
 x pose4 what "什么钱？"////夏悠疑惑
 l "封口费。"
+voice cp1/xiayo_240.m4a
 x kowa "电视看太多了。"////夏悠害怕
+voice cp1/xiayo_241.m4a
 x tameiki2 "行！"////对话框震动 夏悠闭眼叹气
+voice cp1/xiayo_242.m4a
 x pose2 tameiki "这件事，是我们两个之间的秘密，我最好不要告诉任何人。"////夏悠睁眼叹气
+voice cp1/xiayo_243.m4a
 x ciallo "你知道我学校在哪，你也知道我在哪个班，我听清楚了。"////夏悠ciallo
 l "都学会抢答了。"
 l "那就好，我相信你。呼～"
-x smile "我说你啊......居然宁愿看书都不愿意直接来问我，呼呼呼"
-x pose4 hen "气死了气死了，回去记在小本本上......"
+voice cp1/xiayo_244.m4a
+x smile "我说你啊......居然宁愿看书都不愿意来直接问问我，呼呼呼"
+voice cp1/xiayo_245.m4a
+x pose4 hen "气死了气死了，嗯...回去记在小本本上......"
+voice cp1/xiayo_246.m4a
 x unhappy "原来我在你心中的地位是这样的吗？"
 "这种东西这么好意思开口问啊喂！"
 l "这种东西......怎么好意思开口......"
+voice cp1/xiayo_247.m4a
 x pose3 kowa "又不是什么很下流的内容，有什么不好意思开口的......"
+voice cp1/xiayo_248.m4a
 x pose2 ciallo "昆虫标本而已，我可熟的很，问我就行了。"
 "看来她就是没翻到那页而已，搞了半天原来一直在跨服聊天啊！！"
+voice cp1/xiayo_249.m4a
 x odoroki "难道不是吗？"
 play sound haneru
+voice cp1/xiayo_250.m4a
 x ciallo an jump repeat 2 "那我知道了，一定是太阳风暴对吧！"
 "为什么生物有关的书上会出现太阳风暴啊喂！！"
+voice cp1/xiayo_251.m4a
 x pose4 doyagao "你没看完吧，嘿嘿，那我就给你剧透一下《太阳的奥秘》的后面的内容了。"
 "不行了这家伙，得赶紧想想办法才行，这不是连我看的书都没搞明白嘛......"
+voice cp1/xiayo_252.m4a
 x pose2 ciallo "明年就会进入极大期的太阳风暴哦......如果你家还有卫星的话记得做好防护措施哦......"
 "是不是我吹牛过头之后的恶果，为什么她会理所当然认为我家有卫星啊！！"
+voice cp1/xiayo_253.m4a
 x pose1 tameiki "明年只要熬过去以后，就得等到十二年之后了，嗯......2025年了。"
+voice cp1/xiayo_254.m4a
 x tameiki2 "很长呢......"
+voice cp1/xiayo_255.m4a
 x smilenaka1 "希望那时候我们也依旧在一起玩。"
 l"绝对会的。"
 nvlm
@@ -242,8 +284,10 @@ show mastersword at items an jump
 l "我的大师之剑还在这里！"////对话框震动
 hide mastersword
 play sound haneru
-x pose3 happy an jump repeat 4 "我的黄昏弓也还在哈哈！"////夏悠叉腰 开心
+voice cp1/xiayo_256.m4a
+x pose3 happy an jump repeat 4 "我的黄昏弓也还在！嘻嘻！"////夏悠叉腰 开心
 l "为什么会给一个木棍取名为弓？"
+voice cp1/xiayo_257.m4a
 x hen "当然是形状看起来很像弓啊！"////对话框震动 叉腰赌气
 l "但是它是近战......算了。"
 nvlm
@@ -251,8 +295,10 @@ nvlm
 "无力吐槽这些了。"
 "重点也不是这个。"
 endnvlm
+voice cp1/gonna_027.m4a
 lg what "啊！你们这是要去干什么？"////宫娜从左边进来 疑惑
-lg kowa2 an shake2 repeat 2 "要击剑了吗？"////宫娜害怕 立绘颤抖
+voice cp1/gonna_028.m4a
+lg kowa2 an shake2 repeat 2 "要击剑吗？"////宫娜害怕 立绘颤抖
 "怎么每个人第一个想到的都是这个。"
 ls "要切磋剑法了吗？"////守真从右边进来
 ls think "一把剑和一把弓。"
@@ -267,12 +313,16 @@ nvlm
 endnvlm
 ////结束nvl模式
 ls konoyarou "真的太坏了！居然每天晚上跑几百米去你家偷鸡！"////守真愤怒 对话框震动 立绘震动
+voice cp1/gonna_029.m4a
 lg "更可恶的是每天把大便拉到马路的车辙上。"////宫娜生气 立绘震动
+voice cp1/gonna_030.m4a
 lg kowa2 "每次有车经过就会碾的大便四处飞溅。"////宫娜害怕 看人渣的眼神
+voice cp1/gonna_031.m4a
 lg pose2 kowa2 "真是太恶劣了！！"////对话框震动
 nvlm
 "当然很多东西是我编的。"
 endnvlm
+voice cp1/xiayo_258.m4a
 x odoroki "原来这条狗还作过这么多恶。"////夏悠豆豆眼问号
 "喂！连你也相信了吗？"////对话框震动
 ////三个人表情都恢复正常
@@ -290,6 +340,7 @@ scene school yuu
 l "走吧！"////对话框震动
 l "该出发了！"////对话框震动
 play sound pekori
+voice cp1/xiayo_259.m4a
 x moeru "嗯，好，我准备好了。"////夏悠点点头 燃起来了
 lg happy "加油。"////宫娜笑
 ls moeru "正义必胜！"//////对话框震动 守真燃起来了
@@ -312,6 +363,7 @@ play music keikaku
 ////夏悠立绘 think 
 l "等会背靠背行走，因为它很可能从背后突袭。"
 play sound moeru
+voice cp1/xiayo_260.m4a
 x pose3 moeru "好！"////对话框震动 夏悠 燃起来了
 "因为它上次就是从背后突袭的。"
 scene toschool yuu
@@ -323,15 +375,18 @@ nvlm
 "让他将狗重新拴好。"
 endnvlm
 l "我这边情况一切正常，你那边呢？"
+voice cp1/xiayo_261.m4a
 x think "目前没发现可疑的动静。"////夏悠立绘 think
 l "保持警惕！"////对话框震动
 play sound pekori
+voice cp1/xiayo_262.m4a
 x moedu an fururu repeat 4 "收到！"////对话框震动 夏悠燃起来了 立绘抖动
 "缓缓踱步着。"
 play sound hanomasatsu
 ////沙沙音效
 "随着坡上一阵沙沙声。"
 play sound pin
+voice cp1/xiayo_263.m4a
 x nande an jump "来了！！！"////对话框震动 夏悠kowa 带感叹号nande 立绘抖一下
 cg cgdog 6
 ////狗的q版cg 但是没有狗 但是是夕阳
@@ -347,6 +402,7 @@ cg cgdog 7
 l "小心！"////对话框震动
 cg cgdog 15
 play sound utsu
+voice cp1/xiayo_264.m4a
 x "收到！"////对话框震动
 play sound utsu
 ////cg里夏悠更新成胡乱挥舞的样子
@@ -383,23 +439,29 @@ scene otherroad yuu
 ////音乐切到yuugure 背景切到道路2黄昏 结束nvl模式
 l "呼～安全了。"
 ////夏悠闭眼叹气叉腰
+voice cp1/xiayo_265.m4a
 x body4 tameiki2 an topin "呼～安全了。"
 l "你没事吧？"
 l "有没有抓到你？"
 ////睁眼叹气 手放下去
+voice cp1/xiayo_266.m4a
 x pose2 tameiki "呼，没事。"
 ////夏悠侧脸思考
+voice cp1/xiayo_267.m4a
 x think "感觉这条狗比早上见到的要更凶一些啊！"////对话框震动
+voice cp1/xiayo_268.m4a
 x think2 "也不怕恐吓了。"////对话框震动 眼睛看过来
 l "我也发现了。"
 l "可能是一天过去了，狗饿了？"
 play sound haneru
 ////夏悠害怕 立绘抖一下
+voice cp1/xiayo_269.m4a
 x pose4 kowa an shake2 repeat 4 "那我不敢想象如果没击退狗会怎么样。"
 l "那种事不会发生了。"
 l "现在去找狗主人吧！"
 stop music 
 ////夏悠开心 叉腰
+voice cp1/xiayo_270.m4a
 x happy "嗯。"
 stop music 
 ////音乐sizuka 背景夕阳的天空 nvl模式
@@ -419,6 +481,7 @@ play music nandato
 play sound donaru
 iru"汪！汪汪！"
 "狗被拴在房门口，冲着我们凶狠地叫着。"
+voice cp1/xiayo_271.m4a
 xnan "这......"
 "怎么回事？"
 l "为什么刚才才被我们击退的狗，这么快就被拴住了。"
@@ -444,7 +507,9 @@ endnvlm
 nvlm
 "我相信我刚才和夏悠经历过的事情是真实发生的。"
 "旁边的夏悠也在思考着什么。"
+voice cp1/xiayo_272.m4a
 xnan "那个，阿姨。"
+voice cp1/xiayo_273.m4a
 xnan "您家的狗，是双胞胎吗？"
 "对哦，既然早上遇到的狗已经被拴住了，那刚刚我们遇到的那条，就不可能还是同一条狗了。"
 "那就只会存在一个可能性了。"
@@ -477,7 +542,9 @@ iru "汪.......呜......."
 endnvlm
 nvlm
 play sound dokan
-xnan "你比狗更像狗呢..."
+voice cp1/xiayo_274.m4a
+xnan "呵呵...你比狗更像狗呢..."
+voice cp1/xiayo_275.m4a
 xnan "可选的职业又多了一个。"
 play sound syokku
 l "我才不想成为任何人的狗呢..."
@@ -490,26 +557,36 @@ play music yuugure
 scene otherroad yuu
 ////背景切到夕阳的道路2 音乐yuugure 结束nvl模式
 ////夏悠思侧脸考
+voice cp1/xiayo_276.m4a
 x think "所以刚刚遇到的那条恶犬。"
 ////眼睛转过来
+voice cp1/xiayo_277.m4a
 x think2 "实际上是另一户人家的。"
 l "我们去问问吧。"
 play sound pekori
 x pose2 smile an jump repeat 2 "嗯。"////夏悠微笑 手指着 立绘点头
+voice cp1/xiayo_278.m4a
 x tameiki "只可惜约定好的捉蝉..."////夏悠睁眼叹气
 l "明天！！"////对话框震动
 play sound haneru
+voice cp1/xiayo_279.m4a
 x odoroki an jump "啊？"////夏悠豆豆眼震惊 立绘抖一下
 l "明天早上我去接你，我们去玩一整天！然后下午捉蝉！！"////对话框震动
+voice cp1/xiayo_280.m4a
 x think "嗯......那约定好了！"////夏悠先侧脸思考，0.75秒以后变成微笑
 l "我没睡过头的话..."
 play sound haneru
 shake
+voice cp1/xiayo_281.m4a
 x pose3 hen an shake2 repeat 4 "我就知道！！"////夏悠赌气 对话框震动 立绘颤抖
+voice cp1/xiayo_282.m4a
 x "你不许睡过头！"////对话框震动
+voice cp1/xiayo_283.m4a
 x think "不然我..."////夏悠think
+voice cp1/xiayo_284.m4a
 x unhappy "不然我就..."////夏悠unhappy
 play sound poko
+voice cp1/xiayo_285.m4a
 x pose2 hen "玩的时候不带你了！"////对话框震动 夏悠赌气 但是带脸红挂件
 play sound chin
 l "绝对不会！！"////对话框震动
@@ -527,34 +604,43 @@ play music omoi
 scene toschool yuu
 l "上学上了好几年了，这条路倒是几乎没有走过呢～"
 ////夏悠微笑
+voice cp1/xiayo_286.m4a
 x smile "是啊～我也记得只有几次是走小路从这条路上来过。"
 l "是为了什么呢？"
 ////夏悠流口水
 play sound harapeko
+voice cp1/xiayo_287.m4a
 x tabetaibase "我记得是因为，那条小路的两侧长着野生的猕猴桃。"
 l "哦，想起来了。"
 ////////问题：需要cg
 ////新CG 黄昏里 夏悠扭头呲牙微笑闭眼
 cg cg_cp1_2 4
+voice cp1/xiayo_288.m4a
 x"诶.....对了......"
 "夏悠突然把头扭了过来。"
+voice cp1/xiayo_289.m4a
 x "下次等猕猴桃成熟以后，再从这条路走一次吧！"////对话框震动
 l "嗯！"////对话框震动
 l "绝对会的。"
 cg cg_cp1_2 3
 ////嘴叹气
+voice cp1/xiayo_290.m4a
 x"如果...我说是如果..."
 cg cg_cp1_2 1
+voice cp1/xiayo_291.m4a
 x"你食言了的话，怎么办？"////一只眼睁开，略带失望的表情
 l "当然不会了，再来拉勾上吊一次嘛。"
 cg cg_cp1_2 3
+voice cp1/xiayo_292.m4a
 x "我相信你哦......只是我想起了那个梦.......担心会变成现实......"//眼睛重新闭上 叹气
 l "绝对不会...我会拼命阻止这种事情发生的！"////对话框震动
 "因为我现在就在做着这样的事。"
 "夏悠，你已经快度过危机了..."
 cg cg_cp1_2 2
+voice cp1/xiayo_293.m4a
 x"嗯嗯......"////恢复成扭头呲牙微笑闭眼
 cg cg_cp1_2 1
+voice cp1/xiayo_294.m4a
 x"那说好了哟！在以后的某个时候，我们再一次回到这里来吧！！"////对话框震动 夏悠一只眼睁开
 "绝对......"
 "绝对会做到......"
@@ -568,9 +654,12 @@ nvlm
 endnvlm
 play music yuugure  
 //音乐 yuugure
+voice cp1/xiayo_295.m4a
 xnan "你看，到了。"
+voice cp1/xiayo_296.m4a
 xnan "是不是这家。"
 l "门口确实有很多空心砖堆积。"
+voice cp1/xiayo_297.m4a
 xnan "啊！你看！"
 play sound donaru loop
 iru "呜～汪！"
@@ -597,8 +686,11 @@ ojisann"有啥事啊？"
 l "叔叔你好，您家的狗是不是没拴？"
 ojisann"你说我家老黄啊，这不，拴太久了这几天解了让它透透气。"
 l "您这老黄，穿皮衣吗？"
+voice cp1/xiayo_298.m4a
 xnan "您家这狗感觉有点危险啊！不拴好的话。"
-xnan "我们今天放学路上就看到它到处逛，还对着人叫。"
+voice cp1/xiayo_299.m4a
+xnan "我们今天放学路上就看到它在到处逛，还对着人叫。"
+voice cp1/xiayo_300.m4a
 xnan "看起来还很凶。"
 ojisann"啊？跑了这么远了，都跑到这附近学校去了。"
 ojisann"不过没事，它只是吓唬的，不会咬人的。"
@@ -636,6 +728,7 @@ scene stone yuu
 "我和夏悠在岩石处分别了。"
 ////音乐 dream
 play music dream  
+voice cp1/xiayo_301.m4a
 x pose2 ciallo "明天别迟到哦！"////对话框震动 手指着 ciallo
 l "当然！"////对话框震动
 ////nvl模式
@@ -660,21 +753,26 @@ nvlm
 endnvlm
 nvl
 nanshin "嗯......"
+voice cp1/xiayo_302.m4a
 nanshin "我......"
 nanshin "你终于醒过来了吗？"
+voice cp1/xiayo_303.m4a
 nanshin "我做了一个很长的梦。"
 endnvl
 nvl
 nanshin "没关系，你活过来了。"
+voice cp1/xiayo_304.m4a
 nanshin "怎么会......是因为什么......"
 nanshin "你先缓一缓，详细的事情我后面会说。"
 endnvl
 nvl
 nanshin "嗯。"
+voice cp1/xiayo_305.m4a
 nanshin "其他人呢？"
 nanshin "它们......对不起..."
 nanshin"它们现在需要你的帮助..."
 nanshin"我会都告诉你的..."
+voice cp1/xiayo_306.m4a
 nanshin "好吧。"
 nanshin "Prometheus计划。"
 endnvl

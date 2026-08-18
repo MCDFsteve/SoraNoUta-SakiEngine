@@ -55,7 +55,7 @@ x akireta2 "不然呢？射出真的子弹吗？"
 l "那伤害判定怎么计算？"
 ////夏悠ciallo
 voice cp1/xiayo_149.m4a
-x ciallo "你认为你打中了，那你就打中了。"
+x ciallo "你认为你打中了，那就打中了。"
 voice cp1/xiayo_150.m4a
 x mesugaki2 "没有爱，就看不见。"
 "这又是哪里的台词。"
@@ -139,7 +139,8 @@ scene forest
 voice cp1/xiayo_152.m4a
 x pose1 ochikomu "怎么了？"
 "夏悠在远处听到了响声。"
-lg "刚刚好大的声响！发生了什么？"
+voice cp1/gonna_015.m4a
+lg "诶？诶诶？刚刚好大的声响！发生了什么？"
 stop music
 "果然不是看错了吗？"
 "巨大声响确实存在过。"
@@ -149,15 +150,17 @@ play music goodday
 l "啊哈哈哈～是我早上红薯吃多了，刚刚一次性放出来了。"
 play sound dokan
 voice cp1/xiayo_153.m4a
-x pose3 kowa "原来是生化武器。"////夏悠害怕
+x pose3 kowa "诶嘿嘿...原来是生化武器。"////夏悠害怕
 play sound syobon
-lg angry2 "可以不描述这些吗"////宫娜黑脸
+voice cp1/gonna_016.m4a
+lg angry2 "呃...可以不描述这些吗"////宫娜黑脸
+voice cp1/gonna_017.m4a
 lg "我刚吃完饭。"
 l "抱歉。"
 voice cp1/xiayo_154.m4a
 x pose2 dame an jump repeat 2 "既然你配枪都准备好了，那赶紧开始吧。别墨迹了。"////夏悠手指着，开心
 voice cp1/xiayo_155.m4a
-x pose5 ciallo "让你看看谁才是神枪手。"////手指着，ciallo
+x pose5 ciallo "哼...让你看看谁才是神枪手。"////手指着，ciallo
 voice cp1/xiayo_156.m4a
 x "这是一场公平的对决。"////手指着，
 l "要不还是算了。"
@@ -196,12 +199,15 @@ play sound poko
 voice cp1/xiayo_164.m4a
 x pose3 shy2 "不是...笨蛋..."////夏悠脸红
 voice cp1/xiayo_165.m4a
-x pose2 ochikomu "四缺一了，这个游戏就玩不下去了。"////夏悠ochikomu
+x pose2 ochikomu "四缺一了，这个游戏玩不下去了。"////夏悠ochikomu
 ls pose2 mendo "这游戏还有必须达到四个人才能玩的规则吗..."
 ////守真立绘先是思考，一秒以后震动一下并且变成惊讶（制作一秒时间切换两个图像的image，并且写一个1秒以后震动的动画） 
 ////在这同时将宫娜立绘左移到稍微和守真立绘重叠（所以宫娜立绘要先显示这样就会被守真遮挡）
+voice cp1/gonna_018.m4a
 lg angry an shake2 repeat 2 "你可少说几句吧！"////宫娜生气
-lg satoko "今天中午就这样了吧。我继续晒太阳去。"////宫娜sadoko
+voice cp1/gonna_019.m4a
+lg satoko "今天中午就这样吧。我继续晒太阳去。"////宫娜sadoko
+voice cp1/gonna_020.m4a
 lg "明天再玩也没关系。"
 l "大家......"
 scene classroom
@@ -475,13 +481,16 @@ scene bl
 cg cg_cp1_1 naku2
 shake
 ////cg渐变到naku2
+voice cp1/xiayo_166.m4a
 x "林澄..."
 // persistent.cg023 = True
 cg cg_cp1_1 happy
 ////cg渐变到happy
+voice cp1/xiayo_167.m4a
 x "看到你...着急的一面了呢......"
 "夏悠忍着疼痛，看着我说道。"
 cg cg_cp1_1 naku
+voice cp1/xiayo_168.m4a
 x "我...啊！"////happy 0.5s以后切到naku2 ////对话框震动
 nvlm
 "我的父母和夏悠的父亲说着话。"
@@ -489,25 +498,36 @@ nvlm
 "被回家路上的烈犬咬伤了。"
 endnvlm
 cg cg_cp1_1 naku2
+voice cp1/xiayo_169.m4a
 x "抱歉啊～"////cg切到happy
+voice cp1/xiayo_170.m4a
 x "后面几天我可能去不了学校了～"
 l "对不起，果然我还是应该跟你一起回家。"
+voice cp1/xiayo_171.m4a
 x "我也学着你找了根木棍回去的..."
+voice cp1/xiayo_172.m4a
 x "但是没想到狗是从我后面钻出来的...哈哈..."
 cg cg_cp1_1 warui
+voice cp1/xiayo_173.m4a
 x "我真是太不小心了..."
 cg cg_cp1_1 naku
+voice cp1/xiayo_174.m4a
 x "我...啊！"////happy 0.5s以后切到naku2 ////对话框震动
 l "疼吗？"
 nvlm
 "我说出这句话以后马上就后悔了。"
 endnvlm
 cg cg_cp1_1 happy
+voice cp1/xiayo_175.m4a
 x "当然疼...啊..."////cg happy
 cg cg_cp1_1 naku2
+voice cp1/xiayo_176.m4a
 x "不过马上...等我去医院以后......"////cg naku2
+voice cp1/xiayo_177.m4a
 x "就好了......"
+voice cp1/xiayo_178.m4a
 x "说好的捉蝉的约定.......只能等我好了以后了......"
+voice cp1/xiayo_179.m4a
 x "抱歉......"
 nvlm
 "该抱歉的明明是我。"
@@ -515,7 +535,9 @@ nvlm
 endnvlm
 l "那个......"
 cg cg_cp1_1 happy
+voice cp1/xiayo_180.m4a
 x "我得去医院了，等我回来！"////对话框震动
+voice cp1/xiayo_181.m4a
 x "约定哦！"////对话框震动
 l "嗯......约定！！"
 stop sound
