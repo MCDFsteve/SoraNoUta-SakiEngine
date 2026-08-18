@@ -295,9 +295,9 @@ nvlm
 "无力吐槽这些了。"
 "重点也不是这个。"
 endnvlm
-voice cp1/gonna_027.m4a
-lg what "啊！你们这是要去干什么？"////宫娜从左边进来 疑惑
 voice cp1/gonna_028.m4a
+lg what "啊！你们这是要去干什么？"////宫娜从左边进来 疑惑
+voice cp1/gonna_029.m4a
 lg kowa2 an shake2 repeat 2 "要击剑吗？"////宫娜害怕 立绘颤抖
 "怎么每个人第一个想到的都是这个。"
 ls "要切磋剑法了吗？"////守真从右边进来
@@ -313,11 +313,11 @@ nvlm
 endnvlm
 ////结束nvl模式
 ls konoyarou "真的太坏了！居然每天晚上跑几百米去你家偷鸡！"////守真愤怒 对话框震动 立绘震动
-voice cp1/gonna_029.m4a
-lg "更可恶的是每天把大便拉到马路的车辙上。"////宫娜生气 立绘震动
 voice cp1/gonna_030.m4a
-lg kowa2 "每次有车经过就会碾的大便四处飞溅。"////宫娜害怕 看人渣的眼神
+lg "更可恶的是每天把大便拉到马路的车辙上。"////宫娜生气 立绘震动
 voice cp1/gonna_031.m4a
+lg kowa2 "每次有车经过就会碾的大便四处飞溅。"////宫娜害怕 看人渣的眼神
+voice cp1/gonna_032.m4a
 lg pose2 kowa2 "真是太恶劣了！！"////对话框震动
 nvlm
 "当然很多东西是我编的。"

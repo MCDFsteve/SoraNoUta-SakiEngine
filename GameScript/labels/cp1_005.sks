@@ -683,6 +683,7 @@ voice cp1/gonna_022.m4a
 lg happy "那肯定的。"////宫娜放到中央 开心
 voice cp1/gonna_023.m4a
 lg happy "这是你的，夏悠。"////宫娜从中间贴到左边，然后又收回 夏悠立绘变成微笑
+voice cp1/gonna_024.m4a
 lg nikoniko an zoomjumpinout "这是你的，林澄！"////贴近 缩小
 show sugar at items an jump
 "给我手里递了糖果。"
@@ -693,13 +694,13 @@ hide sugar
 l "谢谢。"
 "更加后悔之前在路上就吃完了枣子。"
 l "抱歉。"
-voice cp1/gonna_024.m4a
+voice cp1/gonna_025.m4a
 lg what "啊？你怎么老是在道歉？"////宫娜疑惑
 l "这么说我才发现了我确实是这样。"
 "将糖果放进了嘴里。"
 "又酸又甜，果然不管什么时候吃都不会觉得不好吃。"
 play sound pekori
-voice cp1/gonna_025.m4a
+voice cp1/gonna_026.m4a
 lg nikoniko an jump repeat 2 "哼哼，好吃对吧！"////宫娜眯眯眼开心 点点头
 ls "好了，准备开始吧。"////守真进入右侧
 voice cp1/xiayo_206.m4a
@@ -868,7 +869,7 @@ play sound haneru
 voice cp1/xiayo_210.m4a
 x pose3 hen an jump "作废了！"////对话框震动 夏悠手指着 赌气
 play sound haneru
-voice cp1/gonna_026.m4a
+voice cp1/gonna_027.m4a
 lg odoroki an jump "夏悠，我觉得这也是游戏的一环吧。"////宫娜跳一下 立绘odoroki
 lg nikoniko "规则里似乎没有写不能使用计谋。"////宫娜satoko
 nvlm

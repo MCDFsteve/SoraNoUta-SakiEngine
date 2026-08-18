@@ -430,24 +430,22 @@ voice cp1/xiayo_357.m4a
 x2nan"所以......"
 voice cp1/xiayo_358.m4a
 x2nan "你来吗？"
-voice cp1/xiayo_358.m4a
-x2nan"虽然这是很突然的邀请...如果不来也...也没关系的！"
 voice cp1/xiayo_359.m4a
-x2nan"毕竟是我突然想看一下。"
+x2nan"虽然这是很突然的邀请...如果不来也...也没关系的！"
 voice cp1/xiayo_360.m4a
-x2nan"因为我啊.....呜...没事..."
+x2nan"毕竟是我突然想看一下。"
 voice cp1/xiayo_361.m4a
-x2nan"今天心情有点激动。"
+x2nan"因为我.....呜...没事..."
 voice cp1/xiayo_362.m4a
+x2nan"今天心情有点激动。"
+voice cp1/xiayo_363.m4a
 x2nan"所以你来吗？"
 endnvlm
 nvlm
 "......"
 "地点在哪？"
-voice cp1/xiayo_363.m4a
-x2nan"在那个地方。"
 voice cp1/xiayo_364.m4a
-x2nan"比高更高的那块地方。"
+x2nan"在那个地方，比高更高的地方。"
 voice cp1/xiayo_365.m4a
 x2nan"沿着路一直到顶的山顶的那块坡地。"
 voice cp1/xiayo_366.m4a
@@ -501,7 +499,7 @@ play sound haneru
 //with dissolve
 ////夏悠叉腰 闭眼叹气
 voice cp1/xiayo_370.m4a
-x2 pose7 ciallo an jump "加油啊！！离终点就剩五分钟的路程了。"
+x2 pose7 ciallo an jump "加油啊！！离终点就剩五分钟路程了。"
 scene sky yoru
 //with dissolve
 //with vpunch
