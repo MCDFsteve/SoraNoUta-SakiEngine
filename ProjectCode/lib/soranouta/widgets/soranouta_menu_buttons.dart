@@ -26,6 +26,7 @@ class SoranoutaMenuButtons {
     VoidCallback? onContinueGame, // 新增：继续游戏回调（可选）
     required VoidCallback onLoadGame,
     required VoidCallback onAppreciation,
+    required bool showAppreciation,
     required VoidCallback onSettings,
     required VoidCallback onExit,
     required SakiEngineConfig config,
@@ -61,11 +62,12 @@ class SoranoutaMenuButtons {
         onPressed: onLoadGame,
         scale: scale,
       ),
-      SoranoutaTextButton(
-        text: _appreciationLabel(localization.currentLanguage),
-        onPressed: onAppreciation,
-        scale: scale,
-      ),
+      if (showAppreciation)
+        SoranoutaTextButton(
+          text: _appreciationLabel(localization.currentLanguage),
+          onPressed: onAppreciation,
+          scale: scale,
+        ),
       SoranoutaTextButton(
         text: localization.t('menu.settings'),
         onPressed: onSettings,
@@ -149,6 +151,7 @@ class SoranoutaMenuButtons {
     required double scale,
     required Size screenSize,
     VoidCallback? onContinueGame, // 新增：继续游戏回调（可选）
+    required bool showAppreciation,
     bool startAnimation = true, // 控制动画开始
   }) {
     final localization = LocalizationManager();
@@ -162,7 +165,7 @@ class SoranoutaMenuButtons {
     buttonTexts.addAll([
       localization.t('menu.newGame'),
       localization.t('menu.loadGame'),
-      _appreciationLabel(localization.currentLanguage),
+      if (showAppreciation) _appreciationLabel(localization.currentLanguage),
       localization.t('menu.settings'),
       if (_shouldShowExitButton()) localization.t('menu.exit'),
     ]);

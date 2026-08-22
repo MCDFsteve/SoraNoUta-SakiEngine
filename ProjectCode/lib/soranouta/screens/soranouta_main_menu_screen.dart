@@ -58,6 +58,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
   bool _isFlowchartButtonHovered = false; // 新增：流程图按钮悬停状态
   bool _startMenuAnimation = false; // 控制菜单动画开始
   bool _hasQuickSave = false; // 新增：标记是否有快速存档
+  bool _appreciationUnlocked = false;
   bool _chapter2Unlocked = false;
   int _selectedChapter = 1;
   late String _copyrightText;
@@ -142,6 +143,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
       return;
     }
     setState(() {
+      _appreciationUnlocked = SoranoutaChapterProgress.hasCompletedChapter1;
       _chapter2Unlocked = SoranoutaChapterProgress.isChapter2Unlocked;
       _selectedChapter = SoranoutaChapterProgress.selectedChapter;
       _hasQuickSave = false;
@@ -344,6 +346,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
                 onContinueGame: _hasQuickSave
                     ? _handleContinueGame
                     : null, // 新增：传递继续游戏回调
+                showAppreciation: _appreciationUnlocked,
                 startAnimation: _startMenuAnimation, // 与按钮动画同步
               ),
 
@@ -355,6 +358,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
                     : null, // 新增：传递继续游戏回调
                 onLoadGame: () => setState(() => _showLoadOverlay = true),
                 onAppreciation: () => setState(() => _showAppreciation = true),
+                showAppreciation: _appreciationUnlocked,
                 onSettings: () => setState(() => _showSettings = true),
                 onExit: () => _showExitConfirmation(context),
                 config: config,

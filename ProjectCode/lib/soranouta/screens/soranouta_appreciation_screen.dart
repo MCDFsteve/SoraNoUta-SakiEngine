@@ -51,6 +51,9 @@ class _SoranoutaAppreciationScreenState
   bool _moviePlaying = false;
   Duration _moviePosition = Duration.zero;
   int _moviePlaybackRevision = 0;
+  Timer? _movieUiHideTimer;
+
+  static const Duration _movieUiAutoHideDelay = Duration(milliseconds: 2500);
 
   @override
   void initState() {
@@ -73,6 +76,54 @@ class _SoranoutaAppreciationScreenState
         }
       }
     }
+  }
+
+  @override
+  void dispose() {
+    _movieUiHideTimer?.cancel();
+    super.dispose();
+  }
+
+  void _cancelMovieUiAutoHide() {
+    _movieUiHideTimer?.cancel();
+    _movieUiHideTimer = null;
+  }
+
+  void _scheduleMovieUiAutoHide() {
+    _cancelMovieUiAutoHide();
+    if (!_moviePlaying || _activeMovieIndex == null) {
+      return;
+    }
+    _movieUiHideTimer = Timer(_movieUiAutoHideDelay, () {
+      _movieUiHideTimer = null;
+      if (!mounted ||
+          !_moviePlaying ||
+          _activeMovieIndex == null ||
+          !_viewerUiVisible) {
+        return;
+      }
+      setState(() => _viewerUiVisible = false);
+    });
+  }
+
+  void _toggleMovieUi() {
+    final showUi = !_viewerUiVisible;
+    setState(() => _viewerUiVisible = showUi);
+    if (showUi) {
+      _scheduleMovieUiAutoHide();
+    } else {
+      _cancelMovieUiAutoHide();
+    }
+  }
+
+  void _revealMovieUi() {
+    if (_activeMovieIndex == null) {
+      return;
+    }
+    if (!_viewerUiVisible) {
+      setState(() => _viewerUiVisible = true);
+    }
+    _scheduleMovieUiAutoHide();
   }
 
   void _selectSection(_AppreciationSection section) {
@@ -148,9 +199,11 @@ class _SoranoutaAppreciationScreenState
       _moviePlaybackRevision++;
       _viewerUiVisible = true;
     });
+    _scheduleMovieUiAutoHide();
   }
 
   void _closeMovie() {
+    _cancelMovieUiAutoHide();
     setState(() {
       _activeMovieIndex = null;
       _moviePlaying = false;
@@ -165,7 +218,9 @@ class _SoranoutaAppreciationScreenState
       _moviePosition = Duration.zero;
       _moviePlaying = true;
       _moviePlaybackRevision++;
+      _viewerUiVisible = true;
     });
+    _scheduleMovieUiAutoHide();
   }
 
   void _toggleMoviePlayback() {
@@ -179,7 +234,16 @@ class _SoranoutaAppreciationScreenState
       return;
     }
     _uiSoundManager.playButtonClick();
-    setState(() => _moviePlaying = !_moviePlaying);
+    final shouldPlay = !_moviePlaying;
+    setState(() {
+      _moviePlaying = shouldPlay;
+      _viewerUiVisible = true;
+    });
+    if (shouldPlay) {
+      _scheduleMovieUiAutoHide();
+    } else {
+      _cancelMovieUiAutoHide();
+    }
   }
 
   void _updateMoviePosition(Duration position) {
@@ -878,27 +942,32 @@ class _SoranoutaAppreciationScreenState
         child: Stack(
           fit: StackFit.expand,
           children: [
-            GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: () => setState(() => _viewerUiVisible = !_viewerUiVisible),
-              onDoubleTap: _toggleMoviePlayback,
-              child: MoviePlayer(
-                key: ValueKey('${movie.id}-$_moviePlaybackRevision'),
-                movieFile: movie.movieFile,
-                autoPlay: _moviePlaying,
-                looping: false,
-                fit: BoxFit.contain,
-                onPositionChanged: _updateMoviePosition,
-                onVideoEnd: () {
-                  if (!mounted || _activeMovieIndex != index) {
-                    return;
-                  }
-                  setState(() {
-                    _moviePosition = movie.duration;
-                    _moviePlaying = false;
-                    _viewerUiVisible = true;
-                  });
-                },
+            MouseRegion(
+              onEnter: (_) => _revealMovieUi(),
+              onHover: (_) => _revealMovieUi(),
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: _toggleMovieUi,
+                onDoubleTap: _toggleMoviePlayback,
+                child: MoviePlayer(
+                  key: ValueKey('${movie.id}-$_moviePlaybackRevision'),
+                  movieFile: movie.movieFile,
+                  autoPlay: _moviePlaying,
+                  looping: false,
+                  fit: BoxFit.contain,
+                  onPositionChanged: _updateMoviePosition,
+                  onVideoEnd: () {
+                    if (!mounted || _activeMovieIndex != index) {
+                      return;
+                    }
+                    _cancelMovieUiAutoHide();
+                    setState(() {
+                      _moviePosition = movie.duration;
+                      _moviePlaying = false;
+                      _viewerUiVisible = true;
+                    });
+                  },
+                ),
               ),
             ),
             Positioned(
