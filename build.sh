@@ -281,11 +281,12 @@ flutter pub get
 
 echo -e "${YELLOW}正在预编译 .sks 脚本为 Dart...${NC}"
 mkdir -p "$GAME_SKS_CACHE_DIR"
-# Dart 3.12 on Windows refuses to run a script located inside a path
-# dependency. Keep the compiler in the game package while it executes so the
-# already-resolved package:sakiengine imports remain available on every host.
+# Dart 3.12 on Windows refuses to use `pub run` for scripts associated with a
+# path dependency. Invoke the VM with the package configuration produced above
+# so package:sakiengine resolves without going through that restricted command.
 cp -f "$ENGINE_DIR/tool/sks_compiler.dart" "$GAME_SKS_COMPILER_FILE"
-flutter pub run "$GAME_SKS_COMPILER_FILE" \
+dart --packages="$PROJECT_DIR/.dart_tool/package_config.json" \
+  "$GAME_SKS_COMPILER_FILE" \
   --game-dir "$PROJECT_DIR" \
   --output "$GAME_SKS_BUNDLE_FILE" \
   --game-name "$GAME_NAME"
