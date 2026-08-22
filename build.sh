@@ -145,6 +145,7 @@ fi
 ENGINE_COMPILED_LOADER="$ENGINE_DIR/lib/src/sks_compiler/generated/compiled_sks_bundle.g.dart"
 GAME_SKS_CACHE_DIR="$PROJECT_DIR/.saki_cache"
 GAME_SKS_BUNDLE_FILE="$GAME_SKS_CACHE_DIR/compiled_sks_bundle.g.dart"
+GAME_SKS_COMPILER_FILE="$GAME_SKS_CACHE_DIR/sks_compiler.dart"
 GAME_PUBSPEC_FILE="$PROJECT_DIR/pubspec.yaml"
 GAME_PUBSPEC_BACKUP_FILE="$GAME_SKS_CACHE_DIR/pubspec.yaml.backup"
 
@@ -280,7 +281,11 @@ flutter pub get
 
 echo -e "${YELLOW}正在预编译 .sks 脚本为 Dart...${NC}"
 mkdir -p "$GAME_SKS_CACHE_DIR"
-flutter pub run "$ENGINE_DIR/tool/sks_compiler.dart" \
+# Dart 3.12 on Windows refuses to run a script located inside a path
+# dependency. Keep the compiler in the game package while it executes so the
+# already-resolved package:sakiengine imports remain available on every host.
+cp -f "$ENGINE_DIR/tool/sks_compiler.dart" "$GAME_SKS_COMPILER_FILE"
+flutter pub run "$GAME_SKS_COMPILER_FILE" \
   --game-dir "$PROJECT_DIR" \
   --output "$GAME_SKS_BUNDLE_FILE" \
   --game-name "$GAME_NAME"
