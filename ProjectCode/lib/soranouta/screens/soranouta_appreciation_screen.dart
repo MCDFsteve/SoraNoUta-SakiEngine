@@ -376,6 +376,8 @@ class _SoranoutaAppreciationScreenState
                       resourceId: character.id,
                       pose: _characterPose,
                       expression: _characterExpression,
+                      cacheRevision:
+                          CharacterCompositeCache.instance.revision,
                       isFadingOut: false,
                       skipAnimation: false,
                       useGpuAcceleration:
@@ -527,6 +529,7 @@ class _SoranoutaAppreciationScreenState
             resourceId: cg.resourceId!,
             pose: 'pose1',
             expression: cg.variants[_activeCgVariant],
+            cacheRevision: CharacterCompositeCache.instance.revision,
             isFadingOut: false,
             skipAnimation: false,
             useGpuAcceleration: CompositeCgRenderer.isGpuAccelerationEnabled,

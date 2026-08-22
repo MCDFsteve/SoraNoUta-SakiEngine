@@ -62,6 +62,7 @@ endnvlm
 //守真的满腔热血的立绘
 hide xiayo1
 hide gonna1
+voice cp1/syozen_001.m4a
 ls moeru "我不会输的。"
 l "我也不会。"
 nvlm
@@ -85,6 +86,7 @@ play sound haneru
 jump cp1_002_true
 label cp1_002_true
 l "是我赢咯！"
+voice cp1/syozen_002.m4a
 ls unhappy "啊，可恶，输了。"//对话框震动
 scene sky
 //加载天空背景 黑场fade过渡
@@ -176,7 +178,8 @@ x smile "刘守真直接趴到树林的地上，拿枯叶把自己盖满了。"/
 //守真黑脸 不愉快的表情
 voice cp1/xiayo_023.m4a
 x mesugaki3 "以为躲的很严密，结果一眼就看到了哈哈。"//夏悠嘲笑 宫娜嘲笑
-ls sabishii2 "不要再说这么丢脸的事了。"//守真脸红
+voice cp1/syozen_003.m4a
+ls sabishii2 "哎～不要再说这么丢脸的事了。"//守真脸红
 voice cp1/xiayo_024.m4a
 x smile "好～好～"//夏悠叉腰微笑
 jump cp1_003
@@ -191,7 +194,8 @@ jump cp1_002_false
 label cp1_002_false
 "啊？输了。"
 //守真开心
-ls happy "哈哈哈，我就说嘛，我肯定会赢的。"
+voice cp1/syozen_004.m4a
+ls happy "哈哈，我就说嘛，我肯定会赢的。"
 "我不想当捉人的啊～"
 "不过还有机会可以赢。"
 scene bl
@@ -279,6 +283,7 @@ x tameiki "没办法了。我来抓人。"//夏悠叹气
 "刘守真和李宫娜看到我们已经决出了胜负，也过来了。"
 show syozen1 at xiayo1pose
 show gonna1 at xiayo1pose
+voice cp1/syozen_005.m4a
 ls "啊！是夏悠抓吗？"//夏悠立绘移动到左边 右边插进来守真
 jump cp1_002_xy
 label cp1_002_y
@@ -340,13 +345,17 @@ l "抓到了！"//对话框震动
 "我跑过去一把抓住刘守真的手臂。"
 //刘守真立绘 惊讶 立绘跳一下
 play sound haneru
+voice cp1/syozen_006.m4a
 ls odoroki an topin "啊？"
 //守真失落
+voice cp1/syozen_007.m4a
 ls ochikomu "我已经很努力的伪装自己了！"
 l "你甚至连衣服都露在外面。"
 l "也就只有和盲人玩捉迷藏的时候才有优势了。"
 //守真愤怒
+voice cp1/syozen_008.m4a
 ls konoyarou "可恶。"
+voice cp1/syozen_009.m4a
 ls "今天我应该获取的教训是：伪装的要彻底。"
 "这小子突然说什么呢。"
 //重新加载树林背景
@@ -417,6 +426,7 @@ play sound kusa
 stop sound
 voice cp1/gonna_003.m4a
 lg "林澄赢了，我们全军覆没了。"//宫娜立绘进入右边
+voice cp1/syozen_010.m4a
 ls "下次玩捉迷藏在教室附近吧，这个树林能躲的太少了。"//守真立绘进入左边
 l "确实是这样，这把我还是赢的很轻松的。"
 //上课铃声
@@ -436,8 +446,10 @@ scene grass
 show syozen1 moeru  an jump
 "我想了一会，出了布。"
 "刘守真也是出了布。"
-ls odoroki "平局？"//守真惊讶
+voice cp1/syozen_011.m4a
+ls odoroki "啊？平局？"//守真惊讶
 l "平局？"
+voice cp1/syozen_012.m4a
 ls konoyarou "再来！！"//对话框震动 守真愤怒
 l "必须的。"
 "我们重新开始了一把比赛。"

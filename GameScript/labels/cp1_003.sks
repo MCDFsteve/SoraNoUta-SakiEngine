@@ -506,14 +506,16 @@ voice cp1/xiayo_099.m4a
 x "早啊李宫娜。"////夏悠立绘从从右边划入 happy，位于右侧 ////宫娜立绘上弹，位于中心
 voice cp1/xiayo_100.m4a
 x "早啊刘守真。"////守真立绘左滑进左侧
-ls kuraikao "为什么你们名字全都是两个字，我们这边名字都是三个字的。"////守真黑脸吐槽
+voice cp1/syozen_013.m4a
+ls kuraikao "嗯...为什么你们名字全都是两个字，我们这边名字都是三个字的。"////守真黑脸吐槽
 play sound haneru
 voice cp1/gonna_004.m4a
 lg odoroki "你发现了盲点。"////宫娜豆豆眼惊讶 立绘颤抖一下
 voice cp1/xiayo_101.m4a
 x  ciallo "如果这是设定的话，那就是作者懒得想名字了哈哈！"////夏悠流汗
 voice cp1/gonna_005.m4a
-lg happy an fururu repeat 2 "哈哈哈！"////宫娜开心
+lg happy an fururu repeat 2 "嗯呵呵呵！嘿嘿嘿～"////宫娜开心
+voice cp1/syozen_014.m4a
 ls an fururu repeat 2 "哈哈！如果在我们这个世界之上还有一层更高阶的支配存在的话。"////守真思考
 l "只是巧合这样吧。"
 l "不然我和刘守真的发型也一样，也是作者懒得想造型了？"
@@ -568,7 +570,8 @@ shake
 play sound pin
 voice cp1/gonna_007.m4a
 lg odoroki "我也是！"////对话框震动 ////宫娜豆豆眼 立绘震动
-ls think "确实我们玩的是过家家，不是单纯模拟厨师的吧？"////守真思考
+voice cp1/syozen_015.m4a
+ls think "嗯...确实我们玩的是过家家，不是单纯模拟厨师的吧？"////守真思考
 l "所以除了扮演厨师以外还能玩什么？"
 voice cp1/gonna_008.m4a
 lg pose3 think3 "来玩捉迷藏吧！？"////对话框震动 宫娜张开嘴思考
@@ -592,7 +595,8 @@ voice cp1/xiayo_112.m4a
 x pose3 kowa an shake2 repeat 2 "啊？什么生小孩？"////对话框震动 ////夏悠害怕
 voice cp1/gonna_009.m4a
 lg pose1 satoko "只要找个地方假装是垃圾桶就行了吧！"
-ls pose2 naruhodo "我来扮演手机营业厅的工作人员吧，在我这里充话费兑换小孩。"////宫娜sadoko
+voice cp1/syozen_016.m4a
+ls pose2 naruhodo "哼哼...我来扮演手机营业厅的工作人员吧，在我这里充话费兑换小孩。"////宫娜sadoko
 l "不行了这些人，得赶紧想想办法才行。"
 l "行吧。"
 voice cp1/xiayo_113.m4a
@@ -638,13 +642,16 @@ nvlm
 "啊？原来手机营业厅的柜台工作人员就是老板吗？"
 "现在吐槽这个也不会有任何作用。"
 endnvlm
-ls happy "好极了！"////守真进入画面左侧 开心
-ls magao "你这边也是来充话费的吗？"////守真收回开心的脸 变得严肃
+voice cp1/syozen_017.m4a
+ls happy "好极了！嘿嘿～"////守真进入画面左侧 开心
+voice cp1/syozen_018.m4a
+ls magao "哼哼...你这边也是来充话费的吗？"////守真收回开心的脸 变得严肃
 play sound pekori
 voice cp1/xiayo_117.m4a
 x an shake2 repeat 2 "嗯嗯。"////夏悠happy 震动 类似点头
 voice cp1/xiayo_118.m4a
 x pose5 wakuwaku "送小孩的套餐是需要多少钱？"////夏悠侧脸思考
+voice cp1/syozen_019.m4a
 ls happy "100元。"////守真happy
 nvlm
 "什么白菜价？"
@@ -657,6 +664,7 @@ show ha2 at items an jump
 "说完，夏悠从兜里掏出两片树叶。"////树叶特写图片
 "看得出来是刚摘的，颜色还很鲜艳。"
 hide ha2
+voice cp1/syozen_020.m4a
 ls eve "好嘞！"////对话框震动 守真跳一下 ////收回树叶特写
 nvlm
 "这真的不是在拍戏吗？"
@@ -665,6 +673,7 @@ nvlm
 endnvlm
 play sound haneru
 shake
+voice cp1/syozen_021.m4a
 ls pose1 naruhodo "你们，出来！"////对话框震动 守真又变成了严肃
 nvlm
 "更像奴隶贸易了。"

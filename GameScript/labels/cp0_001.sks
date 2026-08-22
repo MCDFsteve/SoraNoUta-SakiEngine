@@ -361,12 +361,14 @@ scene kurokajitsu
 hide kurokajitsu
 scene kichi
 l "这是？"
-ls odoroki "你失忆了？这些也不是新食材啊，都是用了好多次的。"
+voice cp0/syozen_001.m4a
+ls odoroki "哈？你失忆了？这些也不是新食材啊，都是用了好多次的。"
 voice cp0/gonna_001.m4a
 lg angry an jump "啊？你说的是这些果子吗？我也不知道叫什么，反正不能吃就对了。"
 voice cp0/gonna_002.m4a
 lg what "千万不要偷偷吃啊！这里最近的医院也是很远的。"
 l "[size=1.4]我看起来像很贪吃的人吗？[/size]"////对话框震动，文字变大
+voice cp0/syozen_002.m4a
 ls pose2 naruhodo "不要用比喻句来阐述事实比较好..."
 l oogoe "原来我在你们心中是这种形象。"
 l "虽然一点也没错。"
@@ -513,15 +515,15 @@ nvlm
 endnvlm
 "李宫娜和刘守真看到我们回来了，也站了起来。"
 voice cp0/gonna_003.m4a
-lg nikoniko an jump repeat 2 "大厨和她的小学徒终于来了，我都要饿死了，快上菜吧！"////李宫娜高兴地站了起来，向上过渡
+lg nikoniko an jump repeat 2 "嘿嘿～大厨和她的小学徒终于来了，我都要饿死了，快上菜吧！"////李宫娜高兴地站了起来，向上过渡
 l "大厨是谁？小学徒又是谁？"
 l "你在和我们说话？"
 "怎么突然又冒出来一堆称谓，我感觉摸不着头脑。"
 "这是存在于我记忆里的事物吗？"
 voice cp0/gonna_004.m4a
-lg pose2 hen "没趣，你已经彻底像不认识我们了，失忆游戏到此为止了好不好。"////李宫娜歪着头叉腰赌气
+lg pose2 hen "哼～没趣，你已经像彻底不认识我们了，失忆游戏到此为止好不好。"////李宫娜歪着头叉腰赌气
 voice cp0/gonna_005.m4a
-lg hen2 "你昨天晚上喝了多少？"////还是赌气的样子，但是眼睛转了过来
+lg hen2 "嗯...你昨天晚上喝了多少？"////还是赌气的样子，但是眼睛转了过来
 pause(0.2)
 voice cp0/xiayo_050.m4a
 x doyagao an fururu repeat 2 "好啦好啦，小学徒林澄，让我大厨夏悠来亲自操办吧！"////李宫娜立绘移到旁边，旁边插入营业式微笑的夏悠
@@ -543,11 +545,13 @@ nvlm
 "夏悠表现的怎么像个痴汉一样了。"
 "而且是不是混进来很多奇怪的口癖。"
 endnvlm
+voice cp0/syozen_003.m4a
 ls pose1 odoroki an jump "啊！是夏悠的S属性大爆发了！super cooker！！！"//对话框震动 刘守真立绘插了进来
 voice cp0/gonna_006.m4a
 lg oogoe an jump repeat 2 "你个笨蛋！cooker是厨具，kitchen才是厨师！！"////李宫娜大声嚷嚷的表情 对话框震动
 voice cp0/gonna_007.m4a
 lg what "而且S属性是什么。"////李宫娜疑惑
+voice cp0/syozen_004.m4a
 ls pose2 eve "哦，super kitchen！！"////刘守真一脸顿悟的表情 对话框震动
 play sound bikkuri
 voice cp0/xiayo_057.m4a
@@ -580,7 +584,7 @@ voice cp0/xiayo_064.m4a
 x "这是李宫娜的份，有很多草莓，因为喜欢吃甜食才是女孩子嘛。"
 cg cgq2 2
 voice cp0/gonna_008.m4a
-lg "哇哦！这么多！"
+lg "哇哦！这么多啊！"
 voice cp0/gonna_009.m4a
 lg "我昨天给你分那么多糖果真的值了。"
 cg cgq2 7
@@ -671,7 +675,7 @@ lg pose3 odoroki "其实，我的职业就是检察官，虽然不知道这个�
 "李宫娜站了出来，推了推眼镜。"
 "假想的，实际上推的是空气。"
 voice cp0/gonna_012.m4a
-lg pose1 common "夏悠婆婆你好，我这边接收到了了关于林澄小姐，对你的起诉状..."////一样的立绘，但是眼睛往右看
+lg pose1 common "嗯嗯...夏悠婆婆你好，我这边接收到了了关于林澄小姐，对你的起诉状..."////一样的立绘，但是眼睛往右看
 "李宫娜手持着诉状念到。"
 "假想的，实际上拿的是空气。"
 voice cp0/xiayo_078.m4a
@@ -796,7 +800,8 @@ nvlm
 "这个行为我至少重复了不知道多少年,日日如此。"
 endnvlm
 nvlm
-lsnan "最近我发现那个也特别好看。"
+voice cp0/syozen_005.m4a
+lsnan "嗯...最近我发现那个也特别好看。"
 endnvlm
 nvlm
 "伴随着刘守真和李宫娜的聊天，我回到了自己的座位上，准备吃面。"

@@ -156,6 +156,7 @@ play music heroine
 ////音乐 heroine
 play sound pekori
 ////结束nvl模式 夏悠打着哈欠，疲惫的弹出来（参考cp1_006的第63行）
+voice cp1/xiayo_182.m4a
 x tameiki2 an topin "早上好... 哇～唔......"
 nvlm
 "面前的夏悠，一边打着哈欠一边以疲惫的脸庞向我打招呼。"
@@ -174,18 +175,24 @@ l"夏........"
 ////nvl模式
 ////结束nvl模式
 ////夏悠疑惑
+voice cp1/xiayo_183.m4a
 x think2 "怎么了？"
 ////依旧疑惑 但是脸贴了上来（pekori
+voice cp1/xiayo_184.m4a
 x "我脸上有东西吗？你这样盯着我看？"
 "糟了，在想东西，所以一不小心入神了。"
 l "走吧。"
 ////夏悠 想看八卦的样子 猫猫嘴 
+voice cp1/xiayo_185.m4a
 x neko an fururu repeat 2 "啊啦啦。"
+voice cp1/xiayo_186.m4a
 x pose2 neko "注意力转移之术吗？"
 ////夏悠叹气
+voice cp1/xiayo_187.m4a
 x tameiki "不过算了，你要是想看的话..."
 ////夏悠害羞
 play sound poko
+voice cp1/xiayo_188.m4a
 x pose4 shy4 "随，随便你怎么看吧..."
 "不要把我说的像痴汉一样啊！！"
 "不过该办正事了。"
@@ -194,23 +201,29 @@ l "越粗越好。"
 play music what  
 ////夏悠震惊 音乐切为what
 play sound syokku
+voice cp1/xiayo_189.m4a
 x odoroki an jump repeat 2 "啊！？"////对话框震动
+voice cp1/xiayo_190.m4a
 x "你要这个干什么？"
 ////夏悠害怕 并且立绘颤抖一下
 play sound daisyokku
+voice cp1/xiayo_191.m4a
 x pose4 powa an shake2 repeat 2 "现在帮你挂号还来得及吗？"
 play sound dokan
 l "你在说什么？我不是那个意思..."
 l "而且你是从哪里得到这种知识的"
 ////夏悠害怕 
+voice cp1/xiayo_192.m4a
 x pose3 kowa "所以你想干什么？"
 ////夏悠姿势-抱着手 立绘缩回原本大小
 l "总之先找找。"
 l "我是有很不好的预感。需要武器来防身。"
 ////夏悠ciallo
+voice cp1/xiayo_193.m4a
 x pose2 ciallo "啊？武器吗？那你等一会，我回家拿柴刀。"
 ////夏悠黑化邪笑
 achievement unlock achievement2_higurashi
+voice cp1/xiayo_194.m4a
 x pose1 rena "在这寒蝉鸣泣之时。"
 l "现在是早晨哪来蝉。"
 nvlm
@@ -220,36 +233,46 @@ endnvlm
 l "木棍，木棍就够了。"
 l "我们一人一根。"
 ////夏悠侧脸思考
+voice cp1/xiayo_195.m4a
 x pose4 think "击剑吗？"
 l "不是。"
 l "不管是哪种层面的击剑。"
 ////夏悠思考 但是眼睛转过来
+voice cp1/xiayo_196.m4a
 x think2 "原来还有其他层面的意思吗？我很好奇。"
 l "..."
 l "对不起。"
 l "拜托了，这是我的请求，等会你就大概能明白意思了。"
 l "然后，我希望准备的木棍一直带到学校，直到放学以后又带回来。"
 ////夏悠闭眼叹气 tameiki2
+voice cp1/xiayo_197.m4a
 x tameiki2 "好吧。"
 ////夏悠叹气 tameiki
+voice cp1/xiayo_198.m4a
 x tameiki "那，作为报酬。"////夏悠 ciallo
+voice cp1/xiayo_199.m4a
 x pose2 ciallo "放学以后一起去玩吧！"
 l "好啊，一起去捉蝉吧！"////对话框震动
 ////夏悠圆嘴 wakuwaku
+voice cp1/xiayo_200.m4a
 x pose5 wakuwaku "居然和我想的一样。"
 ////夏悠ciallo
+voice cp1/xiayo_201.m4a
 x ciallo "我就是打算去抓蝉。"
 l "啊。"
 l "啊哈哈哈哈。"
 l "那约定好了。"
 ////夏悠 hen
+voice cp1/xiayo_202.m4a
 x hen "当然。说谎的人要拉勾。"
 l "要上吊才对吧。"
 ////夏悠惊讶 立绘震动
 play sound haneru
+voice cp1/xiayo_203.m4a
 x wakuwaku an jump "诶？我记错了吗？"////对话框震动
 l "再磨下去，得迟到了。"
 ////夏悠 hen
+voice cp1/xiayo_204.m4a
 x pose2 hen "行行行！现在开始找！"////对话框震动
 stop music
 nvlm
@@ -291,7 +314,9 @@ endnvlm
 "夏悠似乎总算挑到一根看起来还不错的木棍，捡了起来，正打算回头。"
 l "来击剑吧夏悠！"////对话框震动
 play sound haneru
+voice cp1/xiayo_205.m4a
 x pose4 odoroki an jump "啊？"////对话框震动 夏悠震动 立绘 震惊
+voice cp1/xiayo_206.m4a
 x akireta2 "你就是饿死，死外边。"////夏悠 akireta2
 l "计划赶不上变化。"
 l "你看。"
@@ -300,25 +325,34 @@ play sound jyajyan
 l "噔～噔噔～噔噔噔～噔噔～"
 hide mastersword
 "我在夏悠的面前展示了我的巨剑。"
+voice cp1/xiayo_207.m4a
 x [wakuwaku2,1.0,think] "我去。"////夏悠 think
 l "这就是你的评价吗？"
 l "也太言简意赅了。"
+voice cp1/xiayo_208.m4a
 x [wakuwaku2,1.0,think] "确实长得很像大宝剑，没有了。"////立绘wakuwaku2 并且0.75秒以后变回think
 l "......"
 l "这种简直是棍中尤物的东西，你的反应只有这点吗？！！"////对话框震动
 l "算了，有些东西，不同类型的人之间注定存在隔阂。"
+voice cp1/xiayo_209.m4a
 x think2 "现在怎么办？"////夏悠 think2
+voice cp1/xiayo_210.m4a
 x think "我们两个都有木棍了。"////夏悠 think
+voice cp1/xiayo_211.m4a
 x pose2 kowa "真的要击剑吗？"////夏悠 害怕
 l "这个只是说着玩的，真玩击剑感觉挺危险的，或许可以打着玩玩。"
 l "你不是说过吗？享受的是过程而不是结果。"
+voice cp1/xiayo_212.m4a
 x tameiki "我没说过这句话。"////夏悠 tameiki
 "我忘了这句话她是今天才说，在今天中午。"
 l "走吧，继续去上学。"
+voice cp1/xiayo_213.m4a
 x think "你说的不好的预感。"////夏悠 think
+voice cp1/xiayo_214.m4a
 x pose3 think2 "什么不好的预感，需要用木棍？"////夏悠侧脸思考
 l "请把它作为武器，敌人会在道路上出现。"
 stop music
+voice cp1/xiayo_215.m4a
 x akireta "什么时候变成公路片了......"////夏悠 一脸嫌弃
 ////停止bgm 白天天空背景 nvl模式
 scene sky
@@ -332,13 +366,16 @@ cg cgdog 9
 ////背景切到 狗在中间的cg--下面的都是这个cg内小人的差分  但是两个人都拿的有木棍了  结束nvl模式 依旧有速度线效果
 l "小心路中间那条狗！"
 cg cgdog 1
+voice cp1/xiayo_216.m4a
 x "难道不好的预感就是它？"////对话框震动 夏悠头上出感叹号
 cg cgdog 2
 l "不愧是我的师傅，懂的真快！"////对话框震动 感叹号消掉
 cg cgdog 12
+voice cp1/xiayo_217.m4a
 x "这个设定已经过期了！"////对话框震动 ////人物叹气
 cg cgdog 16
 l "原来是一日体验卡么？" ////林澄震惊
+voice cp1/xiayo_218.m4a
 x "是三天体验卡。"////夏悠认真的样子
 cg cgdog 14
 l "......"////林澄无语
@@ -361,9 +398,12 @@ l "或许就是昨天或者今天早上的事情。"
 l "原因已经不重要了，重要的是它很危险。"
 l "所以只能使出打狗棍法了。"
 cg cgdog 1
+voice cp1/xiayo_219.m4a
 x "所以你是怎么知道这条狗挣脱了的？"////夏悠感叹号
+voice cp1/xiayo_220.m4a
 x "难道你......"
 cg cgdog 12
+voice cp1/xiayo_221.m4a
 x "昨天下午放学的时候就已经看到了一些迹象吗？"////夏悠叹气
 "我不好解释太多，只能顺着她说的了。"
 cg cgdog 16
@@ -371,9 +411,11 @@ l "对，昨天下午我就撇到绳子有点松了，我猜测马上要挣脱�
 l "所以我格外的小心谨慎。"
 cg cgdog 1
 play sound poko
+voice cp1/xiayo_222.m4a
 x "叮咚！好感度增加了。"////夏悠感叹号
 cg cgdog 14
 l "不要说的感觉我像在玩galgame一样！"////对话框震动  林澄生气嚷嚷
+voice cp1/xiayo_223.m4a
 x"什么是galgame？"
 cg cgdog 9
 "跟昨天所见到的情况出现了偏差。"////cg恢复成默认
@@ -382,15 +424,20 @@ cg cgdog 9
 cg cgdog 16
 l "一鼓作气冲出去吧！"////林澄认真
 cg cgdog 12
+voice cp1/xiayo_224.m4a
 x "虽然我......"////夏悠叹气
 cg cgdog 9
+voice cp1/xiayo_225.m4a
 x "我相信你！"////夏悠微笑
+voice cp1/xiayo_226.m4a
 x "冲吧！！"////对话框震动
 l "我一边挥舞着木棍一边发出声音恐吓着这条狗。"////cg重置成默认
 "这次的木棍明显比上次的要粗壮很多。"
 cg cgdog 4
 "夏悠这次则紧随其后效仿着我的动作。"
+voice cp1/xiayo_227.m4a
 x "啊呜！！"////对话框震动 夏悠学狗的姿势 张牙舞抓
+voice cp1/xiayo_228.m4a
 x "嗷嗷！！"////对话框震动 ////////莱欧斯
 stop sound
 "听起来不像狗，像狼了。"
@@ -402,6 +449,7 @@ scene otherroad asa
 play music asa  
 l "呼～得救了。"
 play sound haneru
+voice cp1/xiayo_229.m4a
 x tameiki2 an jump "呼～得救了。"////夏悠弹出来 tameiki2
 ////nvl模式
 nvlm
@@ -414,6 +462,7 @@ nvlm
 endnvlm
 ////结束nvl模式
 l "说好的，木棍别丢了，下午放学的时候还要用的。"
+voice cp1/xiayo_230.m4a
 x tameiki "这条狗看起来就很像会卷土重来的样子。"////夏悠tameiki
 l "嗯。总之得很小心才行。"
 ////背景切到学校 音乐school nvl模式
@@ -428,10 +477,13 @@ play sound rin
 ////结束nvl模式
 l "啊！"////对话框震动
 ////夏悠闭眼叹气
+voice cp1/xiayo_231.m4a
 x tameiki2 "果然是这样。"
 ////睁眼叹气
+voice cp1/xiayo_232.m4a
 x tameiki "今天在路上消耗的时间太多了。"
 ////夏悠笑
+voice cp1/xiayo_233.m4a
 x "不过没有迟到真是太好了。"
 nvlm
 "即便只有四个学生。"
@@ -481,6 +533,7 @@ nvlm
 endnvlm
 ////结束nvl模式
 scene forest
+voice cp1/xiayo_234.m4a
 x pose3 think "你在看什么呢？"
 l "！！"////对话框震动
 "在集中精力思考问题的时候突然来了一句话，被吓了一跳。"
@@ -491,40 +544,44 @@ nvlm
 "不过将这个情报分享给其他人也更好一点吧。"
 endnvlm
 l "夏悠你看这个树。"
+voice cp1/xiayo_235.m4a
 x think2 "怎么了..."////夏悠疑惑
 play sound haneru
+voice cp1/xiayo_236.m4a
 x pose5 odoroki an jump "啊！！"////对话框震动 夏悠惊讶
+voice cp1/xiayo_237.m4a
 x "这是子弹吗？"
+voice cp1/xiayo_238.m4a
 x wakuwaku3 "我的天。"////夏悠wakuwaku
 l "看起来应该是。我刚刚发现的。"
-voice cp1/xiayo_182.m4a
+voice cp1/xiayo_239.m4a
 x think "我之前怎么没注意到。"////夏悠侧脸思考
-voice cp1/xiayo_183.m4a
+voice cp1/xiayo_240.m4a
 x think2 "这附近不会还有更刺激的东西没被发现吧？"////夏悠侧脸 眼睛看过来
 l "可能吧。"
 l "我感觉可能某个日子有打猎的在这附近待过。这个子弹说不定是打野生动物的时候射偏了留下的。"
-voice cp1/xiayo_184.m4a
+voice cp1/xiayo_241.m4a
 x think "除了这种解释以外似乎也没有更多说法了。"////眼睛继续看侧边
-voice cp1/xiayo_185.m4a
+voice cp1/xiayo_242.m4a
 x think2 "不过国内可以用枪打猎吗？"////眼睛又侧过来
 l "这方面我不知道规矩是怎么样的，但是我之前经常看到我的邻居家的老爷爷没事就擦枪。"
 l "是那种长枪。"
 l "也经常当着我的面，打天空中飞的鸟。"
-voice cp1/xiayo_186.m4a
+voice cp1/xiayo_243.m4a
 x think2 "嗯...是上次去你家玩的时候看过的那个老爷爷吗？"////夏悠 疑惑
 l "对，就是他。"
-voice cp1/xiayo_187.m4a
+voice cp1/xiayo_244.m4a
 x think "你家离学校也不是很远。"////夏悠侧脸思考
-voice cp1/xiayo_188.m4a
+voice cp1/xiayo_245.m4a
 x think2 "会不会就是他留下的？"////夏悠眼睛看过来
 l "确实有这个可能性。我放学回家以后去问问吧。"
 l "对了，你找我干什么？"
-voice cp1/xiayo_189.m4a
+voice cp1/xiayo_246.m4a
 x pose2 hen "才不是看到你一下课就往外跑才跟过来呢，我只是路过这里有点事..."////夏悠赌气
 l "是吗？那你继续自己的事吧。"
 l "我也该回教室了。"
 play sound poko
-voice cp1/xiayo_190.m4a
+voice cp1/xiayo_247.m4a
 x pose1 tameiki2 "笨蛋..........."////夏悠脸红
 ////音乐停止 nvl模式 教室背景
 stop music
@@ -560,7 +617,7 @@ l "今天来玩什么？"
 "我走到夏悠旁边问到。"
 stop sound
 play sound moeru
-voice cp1/xiayo_191.m4a
+voice cp1/xiayo_248.m4a
 x moeru an topin "来打枪吧！"////对话框震动 夏悠燃起来了 立绘震动
 l "好！好久没玩这个了。"
 ////树杈特写
@@ -568,13 +625,13 @@ show edagun at items an jump
 "夏悠说着，掏出了一个树杈，呈现Y字形的树杈。"
 hide edagun
 ////收起树杈
-voice cp1/xiayo_192.m4a
+voice cp1/xiayo_249.m4a
 x pose4 happy "这个是我的配枪。"////夏悠开心
-voice cp1/xiayo_193.m4a
+voice cp1/xiayo_250.m4a
 x arm2 think2"大家都找枪去了，林澄你不用找吗？"////夏悠手指着 疑惑
 l "没有提前准备过。"
 l "稍等我一会。"
-voice cp1/xiayo_194.m4a
+voice cp1/xiayo_251.m4a
 x smile"行，我先晒会太阳。"////夏悠微笑
 scene forest
 ////背景切到树林
@@ -610,36 +667,36 @@ scene grass
 play sound yokokusa
 cg cgcp0_1 3
 ////夏悠躺草地CG cg1 3
-voice cp1/xiayo_195.m4a
+voice cp1/xiayo_252.m4a
 x "真舒服啊～"
 l "是啊！"
 l "或许啥都不玩，晒一中午太阳更合适一点。"
 cg cgcp0_2 5
-voice cp1/xiayo_196.m4a
+voice cp1/xiayo_253.m4a
 x "唔～！"
 "夏悠气的鼓起了脸。"////cg1_1变体 夏悠生气
-voice cp1/xiayo_197.m4a
+voice cp1/xiayo_254.m4a
 x "就是有你这种想法，美好的时光才被大把的浪费掉了。"
 l "李宫娜和刘守真呢？"
 cg cgcp0_1 2
-voice cp1/xiayo_198.m4a
+voice cp1/xiayo_255.m4a
 x "他们好像还没吃饱，找到配枪以后下坡去了。"////cg1 2
 cg cgcp0_1 1
-voice cp1/xiayo_199.m4a
+voice cp1/xiayo_256.m4a
 x "去坡下的小卖部买零食吃了。"//cg1 1
 cg cgcp0_1 3
-voice cp1/xiayo_200.m4a
+voice cp1/xiayo_257.m4a
 x "真是有钱啊～"////cg1 3
 l "是啊，我每天的生活费只够买方便面的钱。"
 cg cgcp0_2 4
-voice cp1/xiayo_201.m4a
+voice cp1/xiayo_258.m4a
 x "这是对你那次的惩罚吧～"////cg1_1 4
 l "这种事情我知道错了，所以别说出去了。"
 cg cgcp0_2 6
-voice cp1/xiayo_202.m4a
+voice cp1/xiayo_259.m4a
 x "好～没事！我一直是原谅你的。"////cg1_1变体 微笑
 l "那我也在这一起等吧～"
-voice cp1/xiayo_203.m4a
+voice cp1/xiayo_260.m4a
 x "嗯～"
 ////黑色背景 nvl模式 无bgm
 stop music
@@ -675,9 +732,9 @@ nvlm
 endnvlm
 voice cp1/gonna_021.m4a
 lg satoko "林澄，夏悠！"////对话框震动
-voice cp1/xiayo_204.m4a
+voice cp1/xiayo_261.m4a
 x pose3 happy "啊？回来了吗？"////夏悠立绘放在左边 叉腰 开心
-voice cp1/xiayo_205.m4a
+voice cp1/xiayo_262.m4a
 x ciallo "麻利点。"////夏悠ciallo
 voice cp1/gonna_022.m4a
 lg happy "那肯定的。"////宫娜放到中央 开心
@@ -702,13 +759,15 @@ l "这么说我才发现了我确实是这样。"
 play sound pekori
 voice cp1/gonna_026.m4a
 lg nikoniko an jump repeat 2 "哼哼，好吃对吧！"////宫娜眯眯眼开心 点点头
+voice cp1/syozen_023.m4a
 ls "好了，准备开始吧。"////守真进入右侧
-voice cp1/xiayo_206.m4a
+voice cp1/xiayo_263.m4a
 x think "你们两个是准备边吃边玩吗？"////夏悠疑惑，不叉腰了把手放下来
 play sound haneru
+voice cp1/syozen_024.m4a
 ls odoroki "啊？这也算在违反规则的行为内吗？"////守真震惊 对话框和立绘震动
 stop music
-voice cp1/xiayo_207.m4a
+voice cp1/xiayo_264.m4a
 x tameiki2 "行吧！总之快开始！！"////对话框震动 夏悠闭眼叹气
 ////背景切到天空 nvl模式 音乐play
 scene sky
@@ -818,20 +877,24 @@ play sound kusahasiru
 "也各自从躲藏的地点往刘守真所在的地方赶去。"
 endnvlm
 cg cg_cp1_ls 1
+voice cp1/syozen_025.m4a
 ls "啊......唔......"////刘守真痛苦捂着手臂的cg
 "刘守真痛苦的呻吟着。"
 stop sound
 "我跑到刘守真旁边，夏悠和李宫娜也快到了。"
 l "怎么了你没事吧？"
 cg cg_cp1_ls 2
+voice cp1/syozen_026.m4a
 ls "唔...我的肩......"////cg里眼睛睁大
 l "怎么了？受伤了吗？"
+voice cp1/syozen_027.m4a
 ls "唔..."////眼睛变回去
 ////音乐停止
 scene grass
 //// 背景切回草地
 stop music
 stop sound
+voice cp1/syozen_028.m4a
 lsnan "[size=1.5]砰！砰！砰！[/size]"////对话框震动
 nvlm
 "在我还没反应过来的时候，刘守真从腰间掏出枪，对着我，以及夏悠和李宫娜，连开了三枪。"
@@ -839,13 +902,17 @@ endnvlm
 play music what  
 ////音乐what
 ////刘守真从左边出现 中间夏悠 担忧的表情ochikomu 右边宫娜 担忧的表情
-ls "我赢了。"
+voice cp1/syozen_029.m4a
+ls "我赢了～嘿嘿"
+voice cp1/syozen_030.m4a
 ls eve "呼～"////守真闭眼
 l "所以你没受伤？"
+voice cp1/syozen_031.m4a
 ls pose2 happy "我怎么可能受伤，我只是小演了一下，没想到你们都自己跑过来了哈哈。"////守真睁眼
-voice cp1/xiayo_208.m4a
+voice cp1/xiayo_265.m4a
 x think "你已经死了。"////夏悠think
 play sound haneru
+voice cp1/syozen_032.m4a
 ls odoroki2 an jump "什么？"////守真惊讶 豆豆眼
 //how黑背景
 scene bl with wipe
@@ -855,33 +922,38 @@ pause(0.5)
 play sound utsu
 pause(0.5)
 play sound utsu
+voice cp1/syozen_033.m4a
 lsnan "啊！！！！！！"////对话框震动
 ////hide掉黑背景
 nvlm
 "被夏悠痛扁了一顿。"
 endnvlm
 scene grass with wipe
+voice cp1/syozen_034.m4a
 ls mendo an shake2 repeat 4 "5555下次不敢了，明明只是测试一下......"////守真mendo
-voice cp1/xiayo_209.m4a
+voice cp1/xiayo_266.m4a
 x unhappy "我就知道你小子会耍花招，所以什么测试啊？"////夏悠生气
+voice cp1/syozen_035.m4a
 ls konoyarou "没事......那成绩还有效吗？"////守真konoyarou
 play sound haneru
-voice cp1/xiayo_210.m4a
+voice cp1/xiayo_267.m4a
 x pose3 hen an jump "作废了！"////对话框震动 夏悠手指着 赌气
 play sound haneru
 voice cp1/gonna_027.m4a
 lg odoroki an jump "夏悠，我觉得这也是游戏的一环吧。"////宫娜跳一下 立绘odoroki
+voice cp1/gonna_028.m4a
 lg nikoniko "规则里似乎没有写不能使用计谋。"////宫娜satoko
 nvlm
 "李宫娜拿出规则说明的文件，展开念到。"
 "假想的，实际上拿的是空气。"
 endnvlm
+voice cp1/syozen_036.m4a
 ls sabishii "对啊对啊！"////守真害羞
-voice cp1/xiayo_211.m4a
+voice cp1/xiayo_268.m4a
 x think "......"////夏悠think
-voice cp1/xiayo_212.m4a
+voice cp1/xiayo_269.m4a
 x tameiki2 "行吧！"////夏悠闭眼叹气
-voice cp1/xiayo_213.m4a
+voice cp1/xiayo_270.m4a
 x pose2 tameiki "今天的游戏，算刘守真赢了！"////夏悠睁眼叹气
 nvlm
 "我倒是没有意见，在真正的决斗中，对敌人仁慈本来就是我的不对。"
