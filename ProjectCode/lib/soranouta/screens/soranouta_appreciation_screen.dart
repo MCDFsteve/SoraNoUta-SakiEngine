@@ -13,10 +13,11 @@ import 'package:sakiengine/src/utils/scaling_manager.dart';
 import 'package:sakiengine/src/utils/smart_asset_image.dart';
 import 'package:sakiengine/src/utils/ui_sound_manager.dart';
 import 'package:sakiengine/src/widgets/common/overlay_scaffold.dart';
+import 'package:sakiengine/src/widgets/movie_player.dart';
 
 import 'appreciation_catalog.dart';
 
-enum _AppreciationSection { characters, cg, backgrounds, music }
+enum _AppreciationSection { characters, cg, backgrounds, music, movies }
 
 /// 《空之歌》项目专用鉴赏界面。
 ///
@@ -43,9 +44,13 @@ class _SoranoutaAppreciationScreenState
   int? _activeCgIndex;
   int _activeCgVariant = 0;
   int? _activeBackgroundIndex;
+  int? _activeMovieIndex;
   bool _viewerUiVisible = true;
   String? _playingMusicId;
   bool _musicBusy = false;
+  bool _moviePlaying = false;
+  Duration _moviePosition = Duration.zero;
+  int _moviePlaybackRevision = 0;
 
   @override
   void initState() {
@@ -79,6 +84,7 @@ class _SoranoutaAppreciationScreenState
       _section = section;
       _activeCgIndex = null;
       _activeBackgroundIndex = null;
+      _activeMovieIndex = null;
     });
   }
 
@@ -124,6 +130,75 @@ class _SoranoutaAppreciationScreenState
     }
   }
 
+  Future<void> _openMovie(int index) async {
+    _uiSoundManager.playButtonClick();
+    try {
+      await MusicManager().stopBackgroundMusic(
+        fadeDuration: const Duration(milliseconds: 300),
+      );
+    } catch (_) {}
+    if (!mounted) {
+      return;
+    }
+    setState(() {
+      _playingMusicId = null;
+      _activeMovieIndex = index;
+      _moviePlaying = true;
+      _moviePosition = Duration.zero;
+      _moviePlaybackRevision++;
+      _viewerUiVisible = true;
+    });
+  }
+
+  void _closeMovie() {
+    setState(() {
+      _activeMovieIndex = null;
+      _moviePlaying = false;
+      _moviePosition = Duration.zero;
+      _viewerUiVisible = true;
+    });
+  }
+
+  void _restartMovie() {
+    _uiSoundManager.playButtonClick();
+    setState(() {
+      _moviePosition = Duration.zero;
+      _moviePlaying = true;
+      _moviePlaybackRevision++;
+    });
+  }
+
+  void _toggleMoviePlayback() {
+    final activeIndex = _activeMovieIndex;
+    if (activeIndex == null) {
+      return;
+    }
+    final movie = appreciationMovies[activeIndex];
+    if (_moviePosition >= movie.duration - const Duration(milliseconds: 300)) {
+      _restartMovie();
+      return;
+    }
+    _uiSoundManager.playButtonClick();
+    setState(() => _moviePlaying = !_moviePlaying);
+  }
+
+  void _updateMoviePosition(Duration position) {
+    if (!mounted || _activeMovieIndex == null) {
+      return;
+    }
+    if (position.inMilliseconds ~/ 250 ==
+        _moviePosition.inMilliseconds ~/ 250) {
+      return;
+    }
+    setState(() => _moviePosition = position);
+  }
+
+  String _formatDuration(Duration duration) {
+    final minutes = duration.inMinutes;
+    final seconds = duration.inSeconds.remainder(60);
+    return '$minutes:${seconds.toString().padLeft(2, '0')}';
+  }
+
   @override
   Widget build(BuildContext context) {
     final config = SakiEngineConfig();
@@ -132,7 +207,9 @@ class _SoranoutaAppreciationScreenState
       LocalizationManager().currentLanguage,
     );
     final viewingArtwork =
-        _activeCgIndex != null || _activeBackgroundIndex != null;
+        _activeCgIndex != null ||
+        _activeBackgroundIndex != null ||
+        _activeMovieIndex != null;
 
     return OverlayScaffold(
       title: copy.title,
@@ -145,6 +222,7 @@ class _SoranoutaAppreciationScreenState
               children: [
                 if (_activeCgIndex != null) _buildCgViewer(),
                 if (_activeBackgroundIndex != null) _buildBackgroundViewer(),
+                if (_activeMovieIndex != null) _buildMovieViewer(copy),
               ],
             )
           : Column(
@@ -193,6 +271,12 @@ class _SoranoutaAppreciationScreenState
         selected: _section == _AppreciationSection.music,
         onTap: () => _selectSection(_AppreciationSection.music),
       ),
+      _SectionTab(
+        icon: Icons.movie_outlined,
+        label: copy.movies,
+        selected: _section == _AppreciationSection.movies,
+        onTap: () => _selectSection(_AppreciationSection.movies),
+      ),
     ];
 
     return Container(
@@ -229,6 +313,8 @@ class _SoranoutaAppreciationScreenState
       _AppreciationSection.backgrounds =>
         '${appreciationBackgrounds.length} ${copy.backgrounds}',
       _AppreciationSection.music => '${appreciationMusic.length} ${copy.music}',
+      _AppreciationSection.movies =>
+        '${appreciationMovies.length} ${copy.movies}',
     };
 
     return Container(
@@ -266,6 +352,8 @@ class _SoranoutaAppreciationScreenState
         return _buildBackgroundGallery(copy);
       case _AppreciationSection.music:
         return _buildMusicGallery(copy);
+      case _AppreciationSection.movies:
+        return _buildMovieGallery(copy);
     }
   }
 
@@ -376,8 +464,7 @@ class _SoranoutaAppreciationScreenState
                       resourceId: character.id,
                       pose: _characterPose,
                       expression: _characterExpression,
-                      cacheRevision:
-                          CharacterCompositeCache.instance.revision,
+                      cacheRevision: CharacterCompositeCache.instance.revision,
                       isFadingOut: false,
                       skipAnimation: false,
                       useGpuAcceleration:
@@ -724,6 +811,189 @@ class _SoranoutaAppreciationScreenState
     );
   }
 
+  Widget _buildMovieGallery(_GalleryCopy copy) {
+    return _buildArtworkGrid(
+      itemCount: appreciationMovies.length,
+      itemBuilder: (context, index) {
+        final movie = appreciationMovies[index];
+        return _ArtworkCard(
+          title: movie.title,
+          subtitle:
+              '${movie.id.toUpperCase()}  ·  '
+              '${_formatDuration(movie.duration)}',
+          onTap: () => unawaited(_openMovie(index)),
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              SmartAssetImage(
+                assetName: movie.thumbnailAsset,
+                fit: BoxFit.cover,
+                errorWidget: const ColoredBox(color: Color(0xff17243a)),
+              ),
+              const DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: <Color>[Color(0x28111a28), Color(0xa80b111c)],
+                  ),
+                ),
+              ),
+              Center(
+                child: Container(
+                  width: 62,
+                  height: 62,
+                  decoration: BoxDecoration(
+                    color: Colors.black.withValues(alpha: 0.55),
+                    shape: BoxShape.circle,
+                    border: Border.all(color: const Color(0xaaffffff)),
+                  ),
+                  child: const Icon(
+                    Icons.play_arrow_rounded,
+                    color: Colors.white,
+                    size: 38,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildMovieViewer(_GalleryCopy copy) {
+    final index = _activeMovieIndex!;
+    final movie = appreciationMovies[index];
+    final durationMs = movie.duration.inMilliseconds;
+    final progress = durationMs <= 0
+        ? 0.0
+        : (_moviePosition.inMilliseconds / durationMs)
+              .clamp(0.0, 1.0)
+              .toDouble();
+
+    return Positioned.fill(
+      child: Material(
+        color: Colors.black,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () => setState(() => _viewerUiVisible = !_viewerUiVisible),
+              onDoubleTap: _toggleMoviePlayback,
+              child: MoviePlayer(
+                key: ValueKey('${movie.id}-$_moviePlaybackRevision'),
+                movieFile: movie.movieFile,
+                autoPlay: _moviePlaying,
+                looping: false,
+                fit: BoxFit.contain,
+                onPositionChanged: _updateMoviePosition,
+                onVideoEnd: () {
+                  if (!mounted || _activeMovieIndex != index) {
+                    return;
+                  }
+                  setState(() {
+                    _moviePosition = movie.duration;
+                    _moviePlaying = false;
+                    _viewerUiVisible = true;
+                  });
+                },
+              ),
+            ),
+            Positioned(
+              left: 16,
+              right: 16,
+              bottom: 0,
+              child: SafeArea(
+                top: false,
+                child: IgnorePointer(
+                  ignoring: !_viewerUiVisible,
+                  child: AnimatedOpacity(
+                    duration: const Duration(milliseconds: 160),
+                    opacity: _viewerUiVisible ? 1 : 0,
+                    child: Container(
+                      padding: const EdgeInsets.fromLTRB(14, 10, 14, 10),
+                      decoration: BoxDecoration(
+                        color: const Color(0xc20a0f17),
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(color: const Color(0x30ffffff)),
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(2),
+                            child: LinearProgressIndicator(
+                              value: progress,
+                              minHeight: 3,
+                              backgroundColor: const Color(0x30ffffff),
+                              valueColor: const AlwaysStoppedAnimation<Color>(
+                                Colors.white,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 7),
+                          Row(
+                            children: [
+                              _BareViewerButton(
+                                icon: Icons.close,
+                                tooltip: copy.back,
+                                onTap: _closeMovie,
+                              ),
+                              _BareViewerButton(
+                                icon: Icons.replay_rounded,
+                                tooltip: copy.replayMovie,
+                                onTap: _restartMovie,
+                              ),
+                              _BareViewerButton(
+                                icon: _moviePlaying
+                                    ? Icons.pause_rounded
+                                    : Icons.play_arrow_rounded,
+                                tooltip: _moviePlaying
+                                    ? copy.pauseMovie
+                                    : copy.playMovie,
+                                onTap: _toggleMoviePlayback,
+                              ),
+                              const SizedBox(width: 10),
+                              Expanded(
+                                child: Text(
+                                  movie.title,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'SourceHanSansCN',
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(width: 12),
+                              Text(
+                                '${_formatDuration(_moviePosition)} / '
+                                '${_formatDuration(movie.duration)}',
+                                style: const TextStyle(
+                                  color: Color(0xbfffffff),
+                                  fontFamily: 'SourceHanSansCN',
+                                  fontSize: 11,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   TextStyle get _artTitleStyle {
     final colors = SakiEngineConfig().themeColors;
     return TextStyle(
@@ -769,6 +1039,7 @@ class _GalleryCopy {
     required this.cg,
     required this.backgrounds,
     required this.music,
+    required this.movies,
     required this.back,
     required this.pose,
     required this.expression,
@@ -779,6 +1050,9 @@ class _GalleryCopy {
     required this.singleImage,
     required this.nowPlaying,
     required this.chooseMusic,
+    required this.playMovie,
+    required this.pauseMovie,
+    required this.replayMovie,
   });
 
   factory _GalleryCopy.forLanguage(SupportedLanguage language) {
@@ -790,6 +1064,7 @@ class _GalleryCopy {
           cg: 'CG',
           backgrounds: '背景',
           music: '音樂',
+          movies: '影片',
           back: '返回',
           pose: '姿勢',
           expression: '表情差分',
@@ -800,6 +1075,9 @@ class _GalleryCopy {
           singleImage: '單張',
           nowPlaying: '正在播放',
           chooseMusic: '選一首音樂',
+          playMovie: '播放',
+          pauseMovie: '暫停',
+          replayMovie: '重新播放',
         );
       case SupportedLanguage.en:
         return const _GalleryCopy(
@@ -808,6 +1086,7 @@ class _GalleryCopy {
           cg: 'CG',
           backgrounds: 'Backgrounds',
           music: 'Music',
+          movies: 'Movies',
           back: 'Back',
           pose: 'Pose',
           expression: 'Expression',
@@ -818,6 +1097,9 @@ class _GalleryCopy {
           singleImage: 'Single image',
           nowPlaying: 'NOW PLAYING',
           chooseMusic: 'Choose a track',
+          playMovie: 'Play',
+          pauseMovie: 'Pause',
+          replayMovie: 'Replay',
         );
       case SupportedLanguage.ja:
         return const _GalleryCopy(
@@ -826,6 +1108,7 @@ class _GalleryCopy {
           cg: 'CG',
           backgrounds: '背景',
           music: '音楽',
+          movies: '映像',
           back: '戻る',
           pose: 'ポーズ',
           expression: '表情差分',
@@ -836,6 +1119,9 @@ class _GalleryCopy {
           singleImage: '一枚絵',
           nowPlaying: '再生中',
           chooseMusic: '曲を選択',
+          playMovie: '再生',
+          pauseMovie: '一時停止',
+          replayMovie: '最初から再生',
         );
       case SupportedLanguage.zhHans:
         return const _GalleryCopy(
@@ -844,6 +1130,7 @@ class _GalleryCopy {
           cg: 'CG',
           backgrounds: '背景',
           music: '音乐',
+          movies: '影片',
           back: '返回',
           pose: '姿势',
           expression: '表情差分',
@@ -854,6 +1141,9 @@ class _GalleryCopy {
           singleImage: '单张',
           nowPlaying: '正在播放',
           chooseMusic: '选择一首音乐',
+          playMovie: '播放',
+          pauseMovie: '暂停',
+          replayMovie: '重新播放',
         );
     }
   }
@@ -863,6 +1153,7 @@ class _GalleryCopy {
   final String cg;
   final String backgrounds;
   final String music;
+  final String movies;
   final String back;
   final String pose;
   final String expression;
@@ -873,6 +1164,9 @@ class _GalleryCopy {
   final String singleImage;
   final String nowPlaying;
   final String chooseMusic;
+  final String playMovie;
+  final String pauseMovie;
+  final String replayMovie;
 }
 
 class _GlassPanel extends StatelessWidget {

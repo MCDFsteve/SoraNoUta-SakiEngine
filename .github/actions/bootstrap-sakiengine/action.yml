@@ -1,0 +1,28 @@
+name: Bootstrap SakiEngine
+description: Resolve the standalone game repository's local Engine dependencies.
+
+runs:
+  using: composite
+  steps:
+    - name: Checkout pinned SakiEngine runtime
+      uses: actions/checkout@v4
+      with:
+        repository: AimesSoft/SakiEngine
+        ref: 8f87c071ee51e9389ef6ca2034eb3caa05660ff3
+        path: .saki-engine
+        sparse-checkout: |
+          Engine
+          third_party
+        sparse-checkout-cone-mode: true
+
+    - name: Point project dependencies at the checked-out runtime
+      shell: bash
+      run: |
+        set -euo pipefail
+
+        sed -i.bak 's#path: ../../Engine#path: .saki-engine/Engine#' pubspec.yaml
+        sed -i.bak 's#path: ../../third_party/#path: .saki-engine/third_party/#g' pubspec.yaml
+        sed -i.bak 's#path: ../../../Engine#path: ../.saki-engine/Engine#' ProjectCode/pubspec.yaml
+        rm -f pubspec.yaml.bak ProjectCode/pubspec.yaml.bak
+
+        echo "SAKI_ENGINE_PATH=$GITHUB_WORKSPACE/.saki-engine/Engine" >> "$GITHUB_ENV"

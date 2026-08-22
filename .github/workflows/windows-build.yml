@@ -6,7 +6,7 @@ on:
       flutter_version:
         required: false
         type: string
-        default: '3.35.1'
+        default: '3.44.0'
       working_directory:
         required: false
         type: string
@@ -38,6 +38,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+
+      - name: Bootstrap SakiEngine dependencies
+        uses: ./.github/actions/bootstrap-sakiengine
       
       - name: Get app version
         id: get_version

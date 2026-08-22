@@ -13,6 +13,7 @@ import 'package:sakiengine/src/widgets/settings_screen.dart';
 import 'package:sakiengine/src/widgets/common/game_title_widget.dart';
 import 'package:sakiengine/src/widgets/common/game_background_widget.dart';
 import '../chapter_progress.dart';
+import '../release_config.dart';
 import '../widgets/soranouta_chapter_selector.dart';
 import '../widgets/soranouta_menu_buttons.dart';
 import '../widgets/firefly_animation.dart';
@@ -322,17 +323,18 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
                 textScale: menuScale, // 使用菜单缩放系数而不是文本缩放系数
               ),
 
-              Positioned(
-                top: screenSize.height * 0.08,
-                left: screenSize.width * 0.04,
-                child: SoranoutaChapterSelector(
-                  selectedChapter: _selectedChapter,
-                  chapter2Unlocked: _chapter2Unlocked,
-                  onChapterSelected: _handleChapterSelected,
-                  scale: menuScale,
-                  startAnimation: _startMenuAnimation,
+              if (SoranoutaReleaseConfig.showChapterSelector)
+                Positioned(
+                  top: screenSize.height * 0.08,
+                  left: screenSize.width * 0.04,
+                  child: SoranoutaChapterSelector(
+                    selectedChapter: _selectedChapter,
+                    chapter2Unlocked: _chapter2Unlocked,
+                    onChapterSelected: _handleChapterSelected,
+                    scale: menuScale,
+                    startAnimation: _startMenuAnimation,
+                  ),
                 ),
-              ),
 
               // 按钮区域的白色模糊阴影层 - 使用淡入动画
               SoranoutaMenuButtons.createShadowWidget(

@@ -1,0 +1,35 @@
+name: Desktop Build
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-windows:
+    name: Build Windows
+    uses: ./.github/workflows/windows-build.yml
+    with:
+      flutter_version: '3.44.0'
+      working_directory: '.'
+      architecture: x64
+    secrets: inherit
+
+  build-macos:
+    name: Build macOS
+    uses: ./.github/workflows/macos-build.yml
+    with:
+      flutter_version: '3.44.0'
+      working_directory: '.'
+      create_dmg: true
+    secrets: inherit
+
+  build-linux:
+    name: Build Linux
+    uses: ./.github/workflows/linux-build.yml
+    with:
+      flutter_version: '3.44.0'
+      working_directory: '.'
+      architecture: amd64
+    secrets: inherit

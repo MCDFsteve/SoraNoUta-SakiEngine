@@ -1,5 +1,7 @@
 import 'package:sakiengine/src/utils/global_variable_manager.dart';
 
+import 'release_config.dart';
+
 /// 主菜单章节选择与通关解锁状态。
 ///
 /// 使用 SakiEngine 的全局变量存储，状态独立于单个存档并会进入统一游戏数据。
@@ -16,10 +18,14 @@ class SoranoutaChapterProgress {
 
   static Future<void> initialize() => _variables.init();
 
-  static bool get isChapter2Unlocked => _variables.getBoolVariableSync(
+  static bool get hasCompletedChapter1 => _variables.getBoolVariableSync(
     chapter1CompletedVariable,
     defaultValue: false,
   );
+
+  /// 第二章必须已经正式放送，并且玩家已经通关第一章，才可以进入。
+  static bool get isChapter2Unlocked =>
+      SoranoutaReleaseConfig.chapter2Released && hasCompletedChapter1;
 
   static int get selectedChapter {
     final storedValue = _variables.getStringVariableSync(
@@ -37,8 +43,11 @@ class SoranoutaChapterProgress {
   static String resolveInitialScriptName({
     required bool chapter2Unlocked,
     required int selectedChapter,
+    bool chapter2Released = SoranoutaReleaseConfig.chapter2Released,
   }) {
-    return chapter2Unlocked && selectedChapter == 2 ? 'cp2_001' : 'start';
+    return chapter2Released && chapter2Unlocked && selectedChapter == 2
+        ? 'cp2_001'
+        : 'start';
   }
 
   static String quickSaveNamespaceForChapter(int chapter) {

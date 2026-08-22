@@ -5,22 +5,33 @@ import 'package:soranouta_project/soranouta/chapter_progress.dart';
 import 'package:soranouta_project/soranouta/widgets/soranouta_chapter_selector.dart';
 
 void main() {
-  test('chapter entry stays at start until chapter two is unlocked', () {
-    expect(
-      SoranoutaChapterProgress.resolveInitialScriptName(
-        chapter2Unlocked: false,
-        selectedChapter: 2,
-      ),
-      'start',
-    );
-    expect(
-      SoranoutaChapterProgress.resolveInitialScriptName(
-        chapter2Unlocked: true,
-        selectedChapter: 2,
-      ),
-      'cp2_001',
-    );
-  });
+  test(
+    'chapter entry stays at start until chapter two is released and unlocked',
+    () {
+      expect(
+        SoranoutaChapterProgress.resolveInitialScriptName(
+          chapter2Unlocked: false,
+          selectedChapter: 2,
+        ),
+        'start',
+      );
+      expect(
+        SoranoutaChapterProgress.resolveInitialScriptName(
+          chapter2Unlocked: true,
+          selectedChapter: 2,
+        ),
+        'start',
+      );
+      expect(
+        SoranoutaChapterProgress.resolveInitialScriptName(
+          chapter2Unlocked: true,
+          selectedChapter: 2,
+          chapter2Released: true,
+        ),
+        'cp2_001',
+      );
+    },
+  );
 
   test('chapter quick saves use separate namespaces', () {
     expect(
