@@ -752,6 +752,7 @@ scene bl
 play sound kazekage loop
 nvlm
 "记忆逐渐模糊了。"
+stop music
 "......"
 "......"
 "......"

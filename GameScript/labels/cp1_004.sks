@@ -456,7 +456,7 @@ nvlm
 endnvlm
 // persistent.music_023unlock = True
 play music yomi
-////一首更加情感 更加悲伤的曲子 有夕阳风味更好 参考：https://music.163.com/song?id=1487339791&userid=1688143944
+////一首更加情感 更加悲伤的曲子 有夕阳风味更好 参考：https:usic.163.com/song?id=1487339791&userid=1688143944
 ////夏悠cg2 naku和warui（调用的图像id是cg xiayo2，后面有三个接的 happy naku naku2 ，还有一个warui参数 会让cg变成黑脸）
 ////cg的动画是先放大cg到视野中心是受伤的部位 然后再缩小到cg的原始大小
 // persistent.cg021 = True

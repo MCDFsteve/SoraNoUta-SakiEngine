@@ -17,6 +17,30 @@ import 'screens/soranouta_startup_flow.dart';
 /// SoraNoUta 项目的自定义模块
 /// 这个示例展示了如何为特定项目创建自定义模块
 class SoranoutaModule extends DefaultGameModule {
+  static const List<VoiceCharacterProfile> _voiceCharacterProfiles = [
+    VoiceCharacterProfile(
+      id: 'xiayo',
+      displayName: '夏悠',
+      avatarAsset: 'Assets/images/characters/story1/pose/xiayo1-pose1.webp',
+      previewVoiceAsset: 'Assets/voice/cp0/xiayo_001.m4a',
+      voiceFilePrefixes: ['xiayo_'],
+    ),
+    VoiceCharacterProfile(
+      id: 'syozen',
+      displayName: '刘守真',
+      avatarAsset: 'Assets/images/characters/story1/pose/syozen1-pose1.webp',
+      previewVoiceAsset: 'Assets/voice/cp0/syozen_001.m4a',
+      voiceFilePrefixes: ['syozen_'],
+    ),
+    VoiceCharacterProfile(
+      id: 'gonna',
+      displayName: '李宫娜',
+      avatarAsset: 'Assets/images/characters/story1/pose/gonna1-pose1.webp',
+      previewVoiceAsset: 'Assets/voice/cp0/gonna_001.m4a',
+      voiceFilePrefixes: ['gonna_'],
+    ),
+  ];
+
   static const CharacterLighting _sunsetCharacterLighting = CharacterLighting(
     multiplyColor: Color(0xFFC56F3D),
     strength: 0.42,
@@ -104,6 +128,7 @@ class SoranoutaModule extends DefaultGameModule {
   @override
   Future<void> initialize() async {
     await SoranoutaChapterProgress.initialize();
+    MusicManager().configureVoiceCharacters(_voiceCharacterProfiles);
     await MusicManager().initialize();
   }
 
