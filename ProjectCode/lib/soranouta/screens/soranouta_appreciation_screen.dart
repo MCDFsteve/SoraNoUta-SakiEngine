@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:ui' as ui;
 
+import 'package:file_selector/file_selector.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:sakiengine/src/config/saki_engine_config.dart';
@@ -49,6 +51,7 @@ class _SoranoutaAppreciationScreenState
   String? _playingMusicId;
   bool _musicBusy = false;
   bool _moviePlaying = false;
+  bool _characterExportBusy = false;
   Duration _moviePosition = Duration.zero;
   int _moviePlaybackRevision = 0;
   Timer? _movieUiHideTimer;
@@ -147,6 +150,95 @@ class _SoranoutaAppreciationScreenState
       _characterPose = character.poses.first;
       _characterExpression = character.defaultExpression;
     });
+  }
+
+  bool get _supportsCharacterExport {
+    if (kIsWeb) {
+      return false;
+    }
+    return switch (defaultTargetPlatform) {
+      TargetPlatform.linux ||
+      TargetPlatform.macOS ||
+      TargetPlatform.windows => true,
+      _ => false,
+    };
+  }
+
+  Future<void> _exportCurrentCharacter(
+    AppreciationCharacter character,
+    _GalleryCopy copy,
+  ) async {
+    if (_characterExportBusy || !_supportsCharacterExport) {
+      return;
+    }
+
+    _uiSoundManager.playButtonClick();
+    final resourceId = character.id;
+    final pose = _characterPose;
+    final expression = _characterExpression;
+    final fileName = '$resourceId-$pose-$expression.png';
+    setState(() => _characterExportBusy = true);
+    try {
+      final location = await getSaveLocation(
+        suggestedName: fileName,
+        acceptedTypeGroups: const <XTypeGroup>[
+          XTypeGroup(label: 'PNG', extensions: <String>['png']),
+        ],
+      );
+      if (location == null || !mounted) {
+        return;
+      }
+
+      final image = await CharacterCompositeCache.instance.preload(
+        resourceId,
+        pose,
+        expression,
+      );
+      if (image == null) {
+        throw StateError('Character composite could not be rendered.');
+      }
+
+      final byteData = await image.toByteData(format: ui.ImageByteFormat.png);
+      if (byteData == null) {
+        throw StateError('Character composite could not be encoded as PNG.');
+      }
+      final pngBytes = byteData.buffer.asUint8List(
+        byteData.offsetInBytes,
+        byteData.lengthInBytes,
+      );
+      final outputPath = location.path.toLowerCase().endsWith('.png')
+          ? location.path
+          : '${location.path}.png';
+      await XFile.fromData(
+        pngBytes,
+        mimeType: 'image/png',
+        name: fileName,
+      ).saveTo(outputPath);
+      if (mounted) {
+        _showCharacterExportMessage(copy.savePngSuccess);
+      }
+    } catch (error) {
+      debugPrint('Failed to export character PNG: $error');
+      if (mounted) {
+        _showCharacterExportMessage(copy.savePngFailed, isError: true);
+      }
+    } finally {
+      if (mounted) {
+        setState(() => _characterExportBusy = false);
+      }
+    }
+  }
+
+  void _showCharacterExportMessage(String message, {bool isError = false}) {
+    final messenger = ScaffoldMessenger.maybeOf(context);
+    messenger
+      ?..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          content: Text(message),
+          backgroundColor: isError ? const Color(0xff9d3343) : null,
+        ),
+      );
   }
 
   Future<void> _toggleMusic(AppreciationMusic track) async {
@@ -556,11 +648,63 @@ class _SoranoutaAppreciationScreenState
             ),
           ),
           Positioned(
+            left: 14,
+            bottom: 12,
+            child: _buildCharacterExportButton(character, copy),
+          ),
+          Positioned(
             right: 14,
             bottom: 12,
             child: Text(copy.layeredHint, style: _eyebrowStyle),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildCharacterExportButton(
+    AppreciationCharacter character,
+    _GalleryCopy copy,
+  ) {
+    if (!_supportsCharacterExport) {
+      return const SizedBox.shrink();
+    }
+
+    final colors = SakiEngineConfig().themeColors;
+    return Tooltip(
+      message: _characterExportBusy ? copy.savingPng : copy.savePng,
+      child: Material(
+        color: colors.surface.withValues(alpha: 0.58),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(4),
+          side: BorderSide(color: colors.primary.withValues(alpha: 0.28)),
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: _characterExportBusy
+              ? null
+              : () => unawaited(_exportCurrentCharacter(character, copy)),
+          hoverColor: colors.primary.withValues(alpha: 0.12),
+          highlightColor: colors.primary.withValues(alpha: 0.16),
+          child: SizedBox.square(
+            dimension: 30,
+            child: Center(
+              child: _characterExportBusy
+                  ? SizedBox.square(
+                      dimension: 12,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 1.7,
+                        color: colors.primary,
+                      ),
+                    )
+                  : Icon(
+                      Icons.download_rounded,
+                      size: 17,
+                      color: colors.primary,
+                    ),
+            ),
+          ),
+        ),
       ),
     );
   }
@@ -1122,6 +1266,10 @@ class _GalleryCopy {
     required this.playMovie,
     required this.pauseMovie,
     required this.replayMovie,
+    required this.savePng,
+    required this.savingPng,
+    required this.savePngSuccess,
+    required this.savePngFailed,
   });
 
   factory _GalleryCopy.forLanguage(SupportedLanguage language) {
@@ -1147,6 +1295,10 @@ class _GalleryCopy {
           playMovie: '播放',
           pauseMovie: '暫停',
           replayMovie: '重新播放',
+          savePng: '儲存 PNG',
+          savingPng: '儲存中…',
+          savePngSuccess: '透明 PNG 已儲存',
+          savePngFailed: 'PNG 儲存失敗',
         );
       case SupportedLanguage.en:
         return const _GalleryCopy(
@@ -1169,6 +1321,10 @@ class _GalleryCopy {
           playMovie: 'Play',
           pauseMovie: 'Pause',
           replayMovie: 'Replay',
+          savePng: 'Save PNG',
+          savingPng: 'Saving…',
+          savePngSuccess: 'Transparent PNG saved',
+          savePngFailed: 'Could not save PNG',
         );
       case SupportedLanguage.ja:
         return const _GalleryCopy(
@@ -1191,6 +1347,10 @@ class _GalleryCopy {
           playMovie: '再生',
           pauseMovie: '一時停止',
           replayMovie: '最初から再生',
+          savePng: 'PNGを保存',
+          savingPng: '保存中…',
+          savePngSuccess: '透過PNGを保存しました',
+          savePngFailed: 'PNGを保存できませんでした',
         );
       case SupportedLanguage.zhHans:
         return const _GalleryCopy(
@@ -1213,6 +1373,10 @@ class _GalleryCopy {
           playMovie: '播放',
           pauseMovie: '暂停',
           replayMovie: '重新播放',
+          savePng: '保存 PNG',
+          savingPng: '保存中…',
+          savePngSuccess: '透明 PNG 已保存',
+          savePngFailed: 'PNG 保存失败',
         );
     }
   }
@@ -1236,6 +1400,10 @@ class _GalleryCopy {
   final String playMovie;
   final String pauseMovie;
   final String replayMovie;
+  final String savePng;
+  final String savingPng;
+  final String savePngSuccess;
+  final String savePngFailed;
 }
 
 class _GlassPanel extends StatelessWidget {
