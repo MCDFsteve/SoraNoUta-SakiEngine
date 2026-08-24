@@ -18,8 +18,17 @@ import 'package:sakiengine/src/widgets/common/overlay_scaffold.dart';
 import 'package:sakiengine/src/widgets/movie_player.dart';
 
 import 'appreciation_catalog.dart';
+import 'appreciation_sticker_catalog.dart';
+import 'soranouta_sticker_gallery.dart';
 
-enum _AppreciationSection { characters, cg, backgrounds, music, movies }
+enum _AppreciationSection {
+  characters,
+  stickers,
+  cg,
+  backgrounds,
+  music,
+  movies,
+}
 
 /// 《空之歌》项目专用鉴赏界面。
 ///
@@ -410,6 +419,12 @@ class _SoranoutaAppreciationScreenState
         onTap: () => _selectSection(_AppreciationSection.characters),
       ),
       _SectionTab(
+        icon: Icons.emoji_emotions_outlined,
+        label: copy.stickers,
+        selected: _section == _AppreciationSection.stickers,
+        onTap: () => _selectSection(_AppreciationSection.stickers),
+      ),
+      _SectionTab(
         icon: Icons.photo_library_outlined,
         label: copy.cg,
         selected: _section == _AppreciationSection.cg,
@@ -463,6 +478,8 @@ class _SoranoutaAppreciationScreenState
       _AppreciationSection.characters =>
         '${appreciationCharacters.length} ${copy.characters}  •  '
             '${appreciationCharacters.fold<int>(0, (sum, item) => sum + item.expressions.length)} ${copy.variants}',
+      _AppreciationSection.stickers =>
+        '${appreciationStickers.length} ${copy.stickers}  •  GIF',
       _AppreciationSection.cg =>
         '${appreciationCgs.length} ${copy.cg}  •  '
             '${appreciationCgs.fold<int>(0, (sum, item) => sum + item.variants.length)} ${copy.variants}',
@@ -502,6 +519,8 @@ class _SoranoutaAppreciationScreenState
     switch (_section) {
       case _AppreciationSection.characters:
         return _buildCharacterGallery(copy);
+      case _AppreciationSection.stickers:
+        return const SoranoutaStickerGallery();
       case _AppreciationSection.cg:
         return _buildCgGallery(copy);
       case _AppreciationSection.backgrounds:
@@ -1249,6 +1268,7 @@ class _GalleryCopy {
   const _GalleryCopy({
     required this.title,
     required this.characters,
+    required this.stickers,
     required this.cg,
     required this.backgrounds,
     required this.music,
@@ -1278,6 +1298,7 @@ class _GalleryCopy {
         return const _GalleryCopy(
           title: '鑑賞',
           characters: '角色立繪',
+          stickers: '表情包',
           cg: 'CG',
           backgrounds: '背景',
           music: '音樂',
@@ -1304,6 +1325,7 @@ class _GalleryCopy {
         return const _GalleryCopy(
           title: 'Gallery',
           characters: 'Characters',
+          stickers: 'Stickers',
           cg: 'CG',
           backgrounds: 'Backgrounds',
           music: 'Music',
@@ -1330,6 +1352,7 @@ class _GalleryCopy {
         return const _GalleryCopy(
           title: '鑑賞',
           characters: '立ち絵',
+          stickers: 'スタンプ',
           cg: 'CG',
           backgrounds: '背景',
           music: '音楽',
@@ -1356,6 +1379,7 @@ class _GalleryCopy {
         return const _GalleryCopy(
           title: '鉴赏',
           characters: '角色立绘',
+          stickers: '表情包',
           cg: 'CG',
           backgrounds: '背景',
           music: '音乐',
@@ -1383,6 +1407,7 @@ class _GalleryCopy {
 
   final String title;
   final String characters;
+  final String stickers;
   final String cg;
   final String backgrounds;
   final String music;

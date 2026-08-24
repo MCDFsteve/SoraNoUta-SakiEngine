@@ -79,6 +79,7 @@ flutter:
     - Assets/movies/
     - Assets/music/
     - Assets/sound/
+    - Assets/stickers/
     - Assets/voice/
     - Assets/voice/cp0/
     - Assets/voice/cp1/
