@@ -346,7 +346,9 @@ nvlm
 endnvlm
 voice cp0/xiayo_030.m4a
 x pose5 ciallo "到咯～你坐老地方吧。"////双手交叉的微笑
+voice cp0/gonna_015.m4a
 nan "来的真晚呢，林澄。"////未知人物的对话框
+voice cp0/syozen_006.m4a
 nan "快开始吧。"//3同上
 hide xiayo1
 voice cp0/xiayo_031.m4a
