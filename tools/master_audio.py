@@ -5,8 +5,9 @@ The mix policy is intentionally simple and reproducible:
 
 * Each BGM track is attenuated to -27 LUFS-I so music stays behind dialogue.
 * Dialogue keeps its within-performance dynamics. A single gain is calculated
-  for each chapter/performer recording batch so the batch median is
-  -17.5 LUFS-I.
+  for each chapter/performer recording batch. Most performers target
+  -17.5 LUFS-I; the brighter, more compressed Xiayo recordings target
+  -19.5 LUFS-I so their perceived loudness matches the rest of the cast.
 * A -1.5 dBFS limiter catches only peaks introduced by a positive voice gain.
 
 The script is a dry run unless ``--apply`` is passed. Applying is atomic per
@@ -36,6 +37,9 @@ VOICE_DIR = ROOT / "Assets" / "voice"
 
 MUSIC_TARGET_LUFS = -27.0
 VOICE_BATCH_TARGET_LUFS = -17.5
+VOICE_PERFORMER_TARGET_LUFS = {
+    "xiayo": -19.5,
+}
 TRUE_PEAK_LIMIT_LINEAR = 10 ** (-1.5 / 20.0)
 LOUDNORM_JSON = re.compile(r'\{\s*"input_i".*?\}', re.DOTALL)
 
@@ -86,6 +90,14 @@ def voice_batch(path: Path) -> str:
     return f"{path.parent.name}/{performer}"
 
 
+def voice_batch_target_lufs(batch: str) -> float:
+    performer = batch.rsplit("/", 1)[-1]
+    return VOICE_PERFORMER_TARGET_LUFS.get(
+        performer,
+        VOICE_BATCH_TARGET_LUFS,
+    )
+
+
 def discover() -> tuple[list[Path], list[Path]]:
     music = sorted(MUSIC_DIR.glob("*.mp3"))
     voice = sorted(VOICE_DIR.glob("**/*.m4a"))
@@ -125,7 +137,9 @@ def calculate_gains(
     for batch, values in batches.items():
         if not values:
             raise RuntimeError(f"Voice batch has no measurable clips: {batch}")
-        voice_batch_gains[batch] = VOICE_BATCH_TARGET_LUFS - statistics.median(values)
+        voice_batch_gains[batch] = (
+            voice_batch_target_lufs(batch) - statistics.median(values)
+        )
     return music_gains, voice_batch_gains
 
 
@@ -244,6 +258,7 @@ def print_plan(
         print(
             f"Voice {batch}: {len(values)} measurable clips, "
             f"median {statistics.median(values):.2f} LUFS-I, "
+            f"target {voice_batch_target_lufs(batch):.1f} LUFS-I, "
             f"gain {voice_batch_gains[batch]:+.2f} dB"
         )
 
