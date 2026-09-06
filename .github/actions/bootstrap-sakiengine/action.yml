@@ -8,7 +8,7 @@ runs:
       uses: actions/checkout@v4
       with:
         repository: AimesSoft/SakiEngine
-        ref: 1bfc9d7a9230ff93d1d606765bf15e3c342418e1
+        ref: 7cde8e38a87381fae7cf450944acfeaea2524e11
         path: .saki-engine
         sparse-checkout: |
           Engine
