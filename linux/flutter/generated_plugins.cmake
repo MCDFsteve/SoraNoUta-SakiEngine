@@ -3,11 +3,11 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  audioplayers_linux
   file_selector_linux
   flutter_avif_linux
   flutter_steamworks
   hotkey_manager_linux
-  media_kit_libs_linux
   screen_retriever_linux
   window_manager
 )
