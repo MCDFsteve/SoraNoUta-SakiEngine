@@ -16,6 +16,7 @@ import '../chapter_progress.dart';
 import '../release_config.dart';
 import '../widgets/soranouta_chapter_selector.dart';
 import '../widgets/soranouta_menu_buttons.dart';
+import '../widgets/soranouta_about_settings_tab.dart';
 import '../widgets/firefly_animation.dart';
 import 'package:sakiengine/src/game/save_load_manager.dart';
 import 'package:sakiengine/src/screens/story_flowchart_screen.dart';
@@ -574,6 +575,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
               if (_showSettings)
                 SettingsScreen(
                   onClose: () => setState(() => _showSettings = false),
+                  extraTabs: soranoutaSettingsTabs(),
                 ),
 
               if (_showFlowchart)

@@ -8,9 +8,11 @@ import 'package:sakiengine/src/utils/binary_serializer.dart';
 import 'package:sakiengine/src/utils/dialogue_progression_manager.dart';
 import 'package:sakiengine/src/utils/music_manager.dart';
 import 'package:sakiengine/src/widgets/common/configurable_menu_button.dart';
+import 'package:sakiengine/src/widgets/settings_screen.dart';
 import 'chapter_progress.dart';
 import 'widgets/soranouta_menu_buttons.dart';
 import 'widgets/soranouta_dialogue_box.dart';
+import 'widgets/soranouta_about_settings_tab.dart';
 import 'widgets/resonance_opening_canvas.dart';
 import 'screens/soranouta_startup_flow.dart';
 
@@ -66,6 +68,19 @@ class SoranoutaModule extends DefaultGameModule {
       onContinueGame: onContinueGame, // 新增：传递继续游戏回调
       skipMusicDelay: skipMusicDelay,
       skipIntro: skipMusicDelay,
+    );
+  }
+
+  @override
+  Widget createSettingsScreen({
+    required VoidCallback onClose,
+    GameManager? gameManager,
+    Function(SaveSlot)? onLoadSlot,
+  }) {
+    // 在引擎内建设置页签之后追加项目页签（关于 / 制作人员名单）。
+    return SettingsScreen(
+      onClose: onClose,
+      extraTabs: soranoutaSettingsTabs(),
     );
   }
 
