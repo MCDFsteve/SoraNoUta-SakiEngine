@@ -156,8 +156,10 @@ class _SoranoUtaDialogueBoxState extends State<SoranoUtaDialogueBox>
 
   @override
   void dispose() {
-    // 从推进管理器注销打字机
-    widget.progressionManager?.registerTypewriter(null);
+    // 只在当前注册的仍是本实例时才注销：旧实例的 dispose 可能晚于新实例的
+    // initState，无条件写 null 会把刚注册的新打字机一起清掉，导致点击直接
+    // 跳过打字动画甚至跳过整句对白。
+    widget.progressionManager?.unregisterTypewriter(_typewriterController);
     SettingsManager().removeListener(_onSettingsChanged);
     _typewriterController.removeListener(_onTypewriterStateChanged);
     _typewriterController.dispose();
