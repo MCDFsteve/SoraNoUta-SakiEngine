@@ -64,6 +64,14 @@ class SoranoutaAboutSettingsTab extends StatelessWidget {
           'アート',
           'キャスト',
         ];
+      case SupportedLanguage.ko:
+        return const <String>[
+          '시나리오 / 프로그래밍 / 연출',
+          '영상 / 홍보',
+          '연출',
+          '미술',
+          '성우',
+        ];
     }
   }
 
@@ -77,6 +85,8 @@ class SoranoutaAboutSettingsTab extends StatelessWidget {
         return 'Credits';
       case SupportedLanguage.ja:
         return 'スタッフ';
+      case SupportedLanguage.ko:
+        return '제작진';
     }
   }
 

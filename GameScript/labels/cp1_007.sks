@@ -2,26 +2,26 @@ label cp1_007
 ////nvl模式 无音乐
 nvlm
 play sound bird loop  
-"?"
-"又做了什么梦？"
-"Prometheus计划，是什么？"
-"这是从梦里的我口中说出来的。"
+"/zhs ?/ /zhc ?/ /en ?/ /jp ?/ /ko ?/"
+"/zhs 又做了什么梦？/ /zhc 又做了什麼夢？/ /en What had I dreamed this time?/ /jp 今度は、どんな夢を見たんだ？/ /ko 또 무슨 꿈을 꾼 거지?/"
+"/zhs Prometheus计划，是什么？/ /zhc Prometheus計劃，是什麼？/ /en What was Project Prometheus?/ /jp プロメテウス計画って、何だ？/ /ko Prometheus 계획은 뭐지?/"
+"/zhs 这是从梦里的我口中说出来的。/ /zhc 這是從夢裡的我口中說出來的。/ /en Those words had come from my own mouth in the dream./ /jp 夢の中の俺が、口にしていた言葉だ。/ /ko 꿈속의 내가 입 밖으로 한 말이었다./"
 endnvlm
 nvlm
-"普罗米修斯，是希腊神话里的人物吧。"
-"他为人类盗来了火种，最后被绑在悬崖峭壁上，永远被老鹰啄食着身体。"
-"梦里还梦到了另一个女人，看起来像是长大后的夏悠？"
-"果然是我太想和夏悠一起玩了。"
-"赶紧起床，去找夏悠吧！毕竟是约定好的东西。"
+"/zhs 普罗米修斯，是希腊神话里的人物吧。/ /zhc 普羅米修斯，是希臘神話裡的人物吧。/ /en Prometheus was someone from Greek mythology, wasn't he?/ /jp プロメテウスは、ギリシャ神話の人物だったはず。/ /ko 프로메테우스는 그리스 신화의 인물이잖아./"
+"/zhs 他为人类盗来了火种，最后被绑在悬崖峭壁上，永远被老鹰啄食着身体。/ /zhc 他為人類盜來了火種，最後被綁在懸崖峭壁上，永遠被老鷹啄食著身體。/ /en He stole fire for humanity, then was chained to a cliff, where an eagle ate at his body forever./ /jp 人類のために火を盗み、最後は断崖に縛られ、永遠に鷲に体をついばまれることになった。/ /ko 인간에게 불씨를 훔쳐 주었다가 절벽에 묶여 영원히 독수리에게 몸을 쪼이게 되었다./"
+"/zhs 梦里还梦到了另一个女人，看起来像是长大后的夏悠？/ /zhc 夢裡還夢到了另一個女人，看起來像是長大後的夏悠？/ /en There'd been another woman in the dream too. Had she looked like a grown-up Xia You?/ /jp 夢にはもう一人、女性もいた。大人になった夏悠に見えたけど？/ /ko 꿈에는 여자도 한 명 나왔다. 어른이 된 샤유 같았는데?/"
+"/zhs 果然是我太想和夏悠一起玩了。/ /zhc 果然是我太想和夏悠一起玩了。/ /en I really must have wanted to play with Xia You that badly./ /jp やっぱり、夏悠と遊びたくて仕方ないんだ。/ /ko 역시 샤유랑 너무 놀고 싶었나 보다./"
+"/zhs 赶紧起床，去找夏悠吧！毕竟是约定好的东西。/ /zhc 趕緊起床，去找夏悠吧！畢竟是約定好的東西。/ /en Time to get up and find her! We'd made a promise, after all./ /jp 早く起きて、夏悠に会いに行こう！ 約束したんだから。/ /ko 어서 일어나 샤유를 만나러 가자! 약속했으니까./"
 endnvlm
 play sound tsuchi  
 scene to school
 //with dissolve
 ////背景切到道路1 音乐heroine 小鸟叫声 走路声音 nvl模式
 nvlm
-"我吃完早饭以后踏上了路途。"
-"到处是小鸟的叫声。"
-"关于梦的记忆，渐渐褪去了。"
+"/zhs 我吃完早饭以后踏上了路途。/ /zhc 我吃完早飯以後踏上了路途。/ /en After breakfast, I set out./ /jp 朝食を終えると、道へ出た。/ /ko 아침을 먹고 길을 나섰다./"
+"/zhs 到处是小鸟的叫声。/ /zhc 到處是小鳥的叫聲。/ /en Birdsong filled the air./ /jp あちこちで、小鳥が鳴いている。/ /ko 곳곳에서 새소리가 났다./"
+"/zhs 关于梦的记忆，渐渐褪去了。/ /zhc 關於夢的記憶，漸漸褪去了。/ /en The memory of the dream gradually faded./ /jp 夢の記憶は、だんだん薄れていった。/ /ko 꿈의 기억은 조금씩 옅어졌다./"
 endnvlm
 play sound dayhigurashi
 ////两人一起的音乐
@@ -36,17 +36,17 @@ cg cg_cp1_3 2
 //with dissolve
 play music heroine  
 voice cp1/xiayo_364.m4a
-x2 "你真是慢呢～林澄......"////cg里夏悠生气
+x2 "/zhs 你真是慢呢～林澄....../ /zhc 你真是慢呢～林澄....../ /en You're so slow, Lin Cheng~/ /jp 遅いよ～、林澄……。/ /ko 정말 느리네～ 린청....../"////cg里夏悠生气
 nvlm
-"夏悠带着遮阳帽，在岩石处等待着我。"
+"/zhs 夏悠带着遮阳帽，在岩石处等待着我。/ /zhc 夏悠帶著遮陽帽，在岩石處等待著我。/ /en Wearing a sunhat, Xia You waited for me by the boulder./ /jp 日よけ帽をかぶった夏悠が、岩のところで待っていた。/ /ko 샤유가 햇빛 가리개 모자를 쓰고 바위에서 기다리고 있었다./"
 endnvlm
-l "抱歉，久等了。"
+l "/zhs 抱歉，久等了。/ /zhc 抱歉，久等了。/ /en Sorry to keep you waiting./ /jp ごめん、待たせた。/ /ko 미안. 오래 기다렸지./"
 scene cgdog 8
 nvlm
-"昨天的事情依旧记忆犹新，毕竟自己和夏悠一起，改变了未来。"////遭遇狗的cg。1秒以后清除（变成透明）
+"/zhs 昨天的事情依旧记忆犹新，毕竟自己和夏悠一起，改变了未来。/ /zhc 昨天的事情依舊記憶猶新，畢竟自己和夏悠一起，改變了未來。/ /en Yesterday was still fresh in my mind. Xia You and I had changed the future together./ /jp 昨日のことは、まだ鮮明に覚えている。夏悠と一緒に、未来を変えたのだから。/ /ko 어제 일은 아직 생생했다. 샤유와 함께 미래를 바꾸었으니까./"////遭遇狗的cg。1秒以后清除（变成透明）
 stop music
-"即便夏悠并不知晓我们一起所做的事情的全貌。"
-"毕竟那件事已经变成从未发生过的事情了。"
+"/zhs 即便夏悠并不知晓我们一起所做的事情的全貌。/ /zhc 即便夏悠並不知曉我們一起所做的事情的全貌。/ /en Even if she didn't know the full meaning of what we'd done./ /jp 夏悠は、俺たちがしたことの全体像を知らないけれど。/ /ko 샤유는 우리가 한 일의 전모를 모르지만./"
+"/zhs 毕竟那件事已经变成从未发生过的事情了。/ /zhc 畢竟那件事已經變成從未發生過的事情了。/ /en After all, that incident had become something that had never happened./ /jp なにしろ、あの出来事は「起きなかったこと」になったのだ。/ /ko 그 일은 이제 일어나지 않은 일이 되었으니까./"
 endnvlm
 // persistent.cg047 = True
 cg cg_cp1_3 3
@@ -54,179 +54,179 @@ cg cg_cp1_3 3
 ////夏悠微笑
 play music skysoul  
 voice cp1/xiayo_365.m4a
-x2 "我知道的哦！"
-l "啊？！"
+x2 "/zhs 我知道的哦！/ /zhc 我知道的哦！/ /en I know!/ /jp わかってるよ！/ /ko 나 알아!/"
+l "/zhs 啊？！/ /zhc 啊？！/ /en Huh?!/ /jp えっ？！/ /ko 어?!/"
 nvlm
-"夏悠突然打断了我的思考。"
+"/zhs 夏悠突然打断了我的思考。/ /zhc 夏悠突然打斷了我的思考。/ /en Xia You suddenly interrupted my thoughts./ /jp 夏悠の声が、不意に思考を遮った。/ /ko 샤유가 갑자기 내 생각을 끊었다./"
 endnvlm
 // persistent.cg049 = True
 cg cg_cp1_3 5
 //with dissolve
 ////微笑但是闭眼
 voice cp1/xiayo_366.m4a
-x2 "呃...我知道的哦！你现在一定很高兴吧！"
+x2 "/zhs 呃...我知道的哦！你现在一定很高兴吧！/ /zhc 呃...我知道的哦！你現在一定很高興吧！/ /en Um... I know! You must be really happy right now!/ /jp えっと……わかってるよ！ 今、すっごく嬉しいでしょ！/ /ko 어... 나 안다고! 너 지금 엄청 기쁘지!/"
 ////睁眼
 voice cp1/xiayo_367.m4a
-x2 "我也是！"
+x2 "/zhs 我也是！/ /zhc 我也是！/ /en So am I!/ /jp 私も！/ /ko 나도 그래!/"
 cg cg_cp1_3 2
 //with dissolve
 ////夏悠生气
 voice cp1/xiayo_368.m4a
-x2 "所以快点快点！蝉在嗷嗷待抓了！"
+x2 "/zhs 所以快点快点！蝉在嗷嗷待抓了！/ /zhc 所以快點快點！蟬在嗷嗷待抓了！/ /en So hurry, hurry! The cicadas are crying out to be caught!/ /jp だから早く、早く！ 蝉たちが捕まえてって鳴いてるよ！/ /ko 그러니까 빨리, 빨리! 매미들이 잡아 달라고 아우성이야!/"
 nvlm
-"原来是抓蝉。"
-"话说嗷嗷待抓是什么鬼啊？"
-"蝉说，请对我温柔一点。"
-"光是想象画面就很奇怪了。"
-"总之，和夏悠约定的捉蝉活动，真的......开始了。"
+"/zhs 原来是抓蝉。/ /zhc 原來是抓蟬。/ /en Oh. She meant catching cicadas./ /jp 蝉捕りのことか。/ /ko 매미 잡기 얘기였구나./"
+"/zhs 话说嗷嗷待抓是什么鬼啊？/ /zhc 話說嗷嗷待抓是什麼鬼啊？/ /en What did ‘crying out to be caught’ even mean?/ /jp というか、捕まえてって何だよ。/ /ko 그나저나 잡아 달라고 아우성이라니, 무슨 말이야?/"
+"/zhs 蝉说，请对我温柔一点。/ /zhc 蟬說，請對我溫柔一點。/ /en The cicadas say, ‘Please be gentle with me.’/ /jp 蝉いわく、優しくしてください。/ /ko 매미가 말한다. 부드럽게 대해 주세요./"
+"/zhs 光是想象画面就很奇怪了。/ /zhc 光是想象畫面就很奇怪了。/ /en That was a strange enough image just to imagine./ /jp 想像しただけで妙な光景だ。/ /ko 상상만 해도 이상한 광경이다./"
+"/zhs 总之，和夏悠约定的捉蝉活动，真的......开始了。/ /zhc 總之，和夏悠約定的捉蟬活動，真的......開始了。/ /en Anyway, the cicada-catching trip I'd promised Xia You... really had begun./ /jp とにかく、夏悠と約束した蝉捕りが、本当に……始まった。/ /ko 아무튼 샤유와 약속했던 매미 잡기가 정말로...... 시작됐다./"
 endnvlm
 // persistent.cg048 = True
 cg cg_cp1_3 4
 //with dissolve
 ////夏悠脸红 cg差分到手抓着帽檐 微笑
 voice cp1/xiayo_369.m4a
-x2 "那个......"
+x2 "/zhs 那个....../ /zhc 那個....../ /en Um.../ /jp あの……。/ /ko 저기....../"
 ////约会的音乐
 play sound poko
 voice cp1/xiayo_370.m4a
-x2"好看吗？这个？"
+x2"/zhs 好看吗？这个？/ /zhc 好看嗎？這個？/ /en Does it look nice? This?/ /jp 似合ってる？ これ。/ /ko 예뻐? 이거?/"
 nvlm
-"夏悠手抓着帽檐，上下拉扯着。"
-"生怕我没明白她指的是什么。"
+"/zhs 夏悠手抓着帽檐，上下拉扯着。/ /zhc 夏悠手抓著帽簷，上下拉扯著。/ /en Xia You tugged her hat brim up and down./ /jp 夏悠が帽子のつばを掴み、上下に引っ張る。/ /ko 샤유가 모자챙을 잡고 위아래로 당겼다./"
+"/zhs 生怕我没明白她指的是什么。/ /zhc 生怕我沒明白她指的是什麼。/ /en As if terrified I wouldn't know what she meant./ /jp 何を指しているか、俺に伝わらないのが心配らしい。/ /ko 뭘 말하는지 내가 모를까 봐 그런 듯했다./"
 endnvlm
-l "好看啊！"
-l "你妈的？"
+l "/zhs 好看啊！/ /zhc 好看啊！/ /en It looks great!/ /jp 似合ってるよ！/ /ko 예뻐!/"
+l "/zhs 你妈的？/ /zhc 你媽的？/ /en Your mom's?/ /jp お前の母ちゃんの？/ /ko 네 엄마 거?/"
 // persistent.cg050 = True
 cg cg_cp1_3 6
 //with dissolve
 ////夏悠叹气
 voice cp1/xiayo_371.m4a
-x2"你......"
-l "啊对不起我没在骂你！！我只是想说，这个帽子是你妈妈的吗？"
+x2"/zhs 你....../ /zhc 你....../ /en You.../ /jp 君……。/ /ko 너....../"
+l "/zhs 啊对不起我没在骂你！！我只是想说，这个帽子是你妈妈的吗？/ /zhc 啊對不起我沒在罵你！！我只是想說，這個帽子是你媽媽的嗎？/ /en Ah, sorry! That wasn't an insult! I just meant, is the hat your mom's?/ /jp あっ、ごめん、悪口じゃない！！ この帽子、お母さんの物なのかって聞きたかっただけ！/ /ko 아, 미안. 욕한 거 아니야!! 그냥 그 모자 너희 엄마 거냐고 물은 거야!/"
 nvlm
-"我似乎意识到自己说错了话。连忙进行辩解。"
+"/zhs 我似乎意识到自己说错了话。连忙进行辩解。/ /zhc 我似乎意識到自己說錯了話。連忙進行辯解。/ /en Realizing how it sounded, I hurried to explain./ /jp まずい言い方をしたと気づき、慌てて弁解する。/ /ko 말을 잘못했다는 걸 깨닫고 급히 해명했다./"
 endnvlm
 voice cp1/xiayo_372.m4a
-x2"啊！算了！毕竟你一直不会讲话！"
+x2"/zhs 啊！算了！毕竟你一直不会讲话！/ /zhc 啊！算了！畢竟你一直不會講話！/ /en Oh! Never mind! You've always been terrible with words!/ /jp ああ、もういい！ いつも口下手だもんね！/ /ko 아, 됐어! 넌 원래 말을 못 하니까!/"
 cg cg_cp1_3 2
 //with dissolve
 ////夏悠难过
 voice cp1/xiayo_373.m4a
-x2"唉......"
+x2"/zhs 唉....../ /zhc 唉....../ /en Sigh.../ /jp はあ……。/ /ko 에휴....../"
 cg cg_cp1_3 4
 //with dissolve
 ////夏悠叹气
 voice cp1/xiayo_374.m4a
-x2"明明可以夸我的，却转移话题到帽子来自哪......"
+x2"/zhs 明明可以夸我的，却转移话题到帽子来自哪....../ /zhc 明明可以誇我的，卻轉移話題到帽子來自哪....../ /en You could've complimented me, but you changed the subject to where my hat came from.../ /jp 私を褒めればいいのに、帽子がどこから来たかの話にしちゃって……。/ /ko 날 칭찬해 주면 되는데 모자가 어디서 났냐니....../"
 cg cg_cp1_3 2
 //with dissolve
 ////夏悠难过
 voice cp1/xiayo_375.m4a
-x2"算了......"
+x2"/zhs 算了....../ /zhc 算了....../ /en Forget it.../ /jp もういい……。/ /ko 됐어....../"
 cg cg_cp1_3 3
 //with dissolve
 ////夏悠眼睛转过来，露出笑容
 voice cp1/xiayo_376.m4a
-x2"那......走吧！！"
+x2"/zhs 那......走吧！！/ /zhc 那......走吧！！/ /en Well... let's go!!/ /jp じゃあ……行こう！！/ /ko 그럼...... 가자!!/"
 nvlm
-"夏悠重新露出了笑容。"
+"/zhs 夏悠重新露出了笑容。/ /zhc 夏悠重新露出了笑容。/ /en Xia You smiled again./ /jp 夏悠に、また笑顔が戻った。/ /ko 샤유가 다시 웃었다./"
 endnvlm
 stop music
 voice cp1/xiayo_377.m4a
-x2"现在还是正午，还只能抓到小蝉。"
+x2"/zhs 现在还是正午，还只能抓到小蝉。/ /zhc 現在還是正午，還只能抓到小蟬。/ /en It's still midday, so we can only catch the little cicadas./ /jp まだ真昼だから、小さい蝉しか捕まえられないよ。/ /ko 아직 한낮이라 작은 매미밖에 못 잡아./"
 voice cp1/xiayo_378.m4a
-x2"不过只要一直玩到黄昏之时，就可以了哦！"
+x2"/zhs 不过只要一直玩到黄昏之时，就可以了哦！/ /zhc 不過只要一直玩到黃昏之時，就可以了哦！/ /en But if we keep playing until dusk, it'll be fine!/ /jp でも、夕方までずっと遊んでいれば大丈夫！/ /ko 그래도 해 질 때까지 계속 놀면 돼!/"
 // persistent.music_012unlock = True
 // persistent.back030 = True
 ////背景切到玉米地 农间/道路的音乐 参考音乐：https:usic.163.com/song?id=1487339793&userid=1688143944 免费的！！
 ////nvl模式
 nvlm
-"......"
-"我跟随夏悠，去到了回她家的路上的，山坡上的农田。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 我跟随夏悠，去到了回她家的路上的，山坡上的农田。/ /zhc 我跟隨夏悠，去到了回她家的路上的，山坡上的農田。/ /en I followed Xia You to the hillside fields on the road to her house./ /jp 夏悠について、彼女の家への道にある、山の斜面の畑へ向かった。/ /ko 샤유를 따라 걔네 집으로 가는 길의 산비탈 밭에 갔다./"
 endnvlm
 play music hatake  
 scene hatake
 nvlm
-"种满了玉米的田地。"
-"玉米杆们一排排插在地里。"
-"蝉的叫声也在这田地里。"
+"/zhs 种满了玉米的田地。/ /zhc 種滿了玉米的田地。/ /en Fields full of corn./ /jp 一面にトウモロコシが植えられた畑。/ /ko 옥수수가 가득 심어진 밭이었다./"
+"/zhs 玉米杆们一排排插在地里。/ /zhc 玉米杆們一排排插在地裡。/ /en Rows of corn stalks stood in the earth./ /jp 茎が、列をなして地面から伸びている。/ /ko 옥수수 줄기들이 줄지어 땅에 서 있었다./"
+"/zhs 蝉的叫声也在这田地里。/ /zhc 蟬的叫聲也在這田地裡。/ /en The cicadas were calling from within the field too./ /jp 蝉の声も、この畑から聞こえていた。/ /ko 매미 소리도 그 안에서 났다./"
 endnvlm
 ////结束nvl模式
 ////夏悠带帽子的立绘 端庄的姿势
 voice cp1/xiayo_379.m4a
-x2 pose6 smilenaka1 "真是悦耳啊～"////闭眼陶醉的聆听 双手背在身后
+x2 pose6 smilenaka1 "/zhs 真是悦耳啊～/ /zhc 真是悅耳啊～/ /en What a lovely sound~/ /jp いい声だね～。/ /ko 정말 듣기 좋다～/"////闭眼陶醉的聆听 双手背在身后
 voice cp1/xiayo_380.m4a
-x2 pose6 tameiki "但是感觉白天的小蝉要比傍晚的蝉更难抓啊。" ////睁眼叹气
+x2 pose6 tameiki "/zhs 但是感觉白天的小蝉要比傍晚的蝉更难抓啊。/ /zhc 但是感覺白天的小蟬要比傍晚的蟬更難抓啊。/ /en But the little daytime cicadas seem harder to catch than the ones at dusk./ /jp でも、昼の小さい蝉って、夕方の蝉より捕まえにくい気がする。/ /ko 근데 낮에 있는 작은 매미는 저녁 매미보다 잡기 어려운 것 같아./" ////睁眼叹气
 voice cp1/xiayo_381.m4a
-x2 pose6 tameiki2 "大小也好，敏锐性也好，都和傍晚的蝉不一样。"////闭眼叹气
+x2 pose6 tameiki2 "/zhs 大小也好，敏锐性也好，都和傍晚的蝉不一样。/ /zhc 大小也好，敏銳性也好，都和傍晚的蟬不一樣。/ /en Their size and alertness were different from the evening cicadas./ /jp 大きさも、敏感さも、夕方の蝉とは違うし。/ /ko 크기도, 예민한 정도도 저녁 매미랑 달라./"////闭眼叹气
 voice cp1/xiayo_382.m4a
-x2 pose6 tameiki "更别说它爬在又细又矮的玉米杆上了。"////睁眼叹气
-l"！！！"////对话框震动
-l"我以为你很有把握的，毕竟看你这么自信。"
+x2 pose6 tameiki "/zhs 更别说它爬在又细又矮的玉米杆上了。/ /zhc 更別說它爬在又細又矮的玉米杆上了。/ /en Not to mention they sat on such short, thin corn stalks./ /jp 細くて低いトウモロコシの茎に止まってるから、なおさら。/ /ko 게다가 가늘고 낮은 옥수수 줄기에 붙어 있잖아./"////睁眼叹气
+l"/zhs ！！！/ /zhc ！！！/ /en !!!/ /jp ！！！/ /ko !!!/"////对话框震动
+l"/zhs 我以为你很有把握的，毕竟看你这么自信。/ /zhc 我以為你很有把握的，畢竟看你這麼自信。/ /en I thought you knew you could do it. You looked so confident./ /jp あんなに自信満々だったから、余裕なんだと思ってた。/ /ko 그렇게 자신 있어 보여서 잘 잡는 줄 알았어./"
 play sound haneru
 voice cp1/xiayo_383.m4a
-x2 pose6 hen an jump "哼！我很自信是因为你来了啊！你不是捉蝉高手嘛..."////夏悠疑惑 立绘震动 手放下去
-l"所以我们都互相认为对方很擅长这个！！？"////对话框震动
-l"那完了..."
+x2 pose6 hen an jump "/zhs 哼！我很自信是因为你来了啊！你不是捉蝉高手嘛.../ /zhc 哼！我很自信是因為你來了啊！你不是捉蟬高手嘛.../ /en Hmph! I was confident because you're here! Aren't you a cicada-catching expert...?/ /jp ふん！ 自信があったのは、君が来たからだよ！ 蝉捕りの名人でしょ……。/ /ko 흥! 네가 와서 자신 있었던 거야! 너 매미 잡기 고수잖아.../"////夏悠疑惑 立绘震动 手放下去
+l"/zhs 所以我们都互相认为对方很擅长这个！！？/ /zhc 所以我們都互相認為對方很擅長這個！！？/ /en So we each thought the other was good at this?!/ /jp お互い、相手が得意だと思ってたのか！！？/ /ko 그러니까 서로 상대가 잘할 거라고 생각한 거야!!?/"////对话框震动
+l"/zhs 那完了.../ /zhc 那完了.../ /en Then we're doomed.../ /jp 終わった……。/ /ko 그럼 망했네.../"
 voice cp1/xiayo_384.m4a
-x2 pose6 kowa "啊！！？？"////对话框震动  夏悠害怕
+x2 pose6 kowa "/zhs 啊！！？？/ /zhc 啊！！？？/ /en Whaaat?!/ /jp ええっ！！？？/ /ko 어!!??/"////对话框震动  夏悠害怕
 voice cp1/xiayo_385.m4a
-x2 pose6 naku "所以你也拿蝉没办法吗？"////夏悠快哭出来了
+x2 pose6 naku "/zhs 所以你也拿蝉没办法吗？/ /zhc 所以你也拿蟬沒辦法嗎？/ /en So you don't know how to catch these either?/ /jp 君も、蝉にはお手上げなの？/ /ko 너도 방법이 없어?/"////夏悠快哭出来了
 voice cp1/xiayo_386.m4a
-x2 pose6 naku2 "明明你说过你很擅长捉蝉的..."////夏悠大哭
+x2 pose6 naku2 "/zhs 明明你说过你很擅长捉蝉的.../ /zhc 明明你說過你很擅長捉蟬的.../ /en But you said you were really good at catching cicadas.../ /jp 蝉捕りが得意だって、言ってたのに……。/ /ko 매미 잡는 건 정말 잘한다고 했잖아.../"////夏悠大哭
 voice cp1/xiayo_387.m4a
-x2 pose6 naku "说蝉只要看到你来了，就乖乖地退到树根等你抓。"////夏悠快哭出来了
-l"为什么把捉蝉说的像投降仪式一样...蝉也会土下座吗......"
-l"不对，这不是重点...我确实很擅长捉蝉。"
-l"但是，仅限傍晚的蝉！！"////对话框震动
-l"因为我白天都在上学，没有时间练习啊..."
+x2 pose6 naku "/zhs 说蝉只要看到你来了，就乖乖地退到树根等你抓。/ /zhc 說蟬只要看到你來了，就乖乖地退到樹根等你抓。/ /en You said when they saw you coming, they'd obediently back down to the roots and wait for you./ /jp 君が来たのを見るだけで、おとなしく木の根元まで下がって、捕まるのを待つって。/ /ko 매미가 널 보기만 해도 얌전히 뿌리까지 내려와 잡히길 기다린다며./"////夏悠快哭出来了
+l"/zhs 为什么把捉蝉说的像投降仪式一样...蝉也会土下座吗....../ /zhc 為什麼把捉蟬說的像投降儀式一樣...蟬也會土下座嗎....../ /en Why make catching cicadas sound like a surrender ceremony...? Do they bow and beg for mercy too...?/ /jp なんで降伏式みたいな話になってるんだ……蝉も土下座するのか……。/ /ko 매미 잡기를 무슨 항복식처럼 말하냐... 매미도 도게자 하니....../"
+l"/zhs 不对，这不是重点...我确实很擅长捉蝉。/ /zhc 不對，這不是重點...我確實很擅長捉蟬。/ /en No, that's not the point... I am good at catching cicadas./ /jp いや、そこじゃない。確かに俺は蝉捕りが得意だ。/ /ko 아니, 중요한 건 그게 아니야... 나 매미 잘 잡는 건 맞아./"
+l"/zhs 但是，仅限傍晚的蝉！！/ /zhc 但是，僅限傍晚的蟬！！/ /en But only the evening ones!!/ /jp ただし、夕方の蝉だけ！！/ /ko 하지만 저녁 매미 한정이야!!/"////对话框震动
+l"/zhs 因为我白天都在上学，没有时间练习啊.../ /zhc 因為我白天都在上學，沒有時間練習啊.../ /en I'm at school during the day. I don't have time to practice.../ /jp 昼は学校だから、練習する時間がないんだよ……。/ /ko 낮에는 학교에 있어서 연습할 시간이 없잖아.../"
 voice cp1/xiayo_388.m4a
-x2 pose6 odoroki an shake2 repeat 4 "那完了..."////夏悠豆豆眼 
+x2 pose6 odoroki an shake2 repeat 4 "/zhs 那完了.../ /zhc 那完了.../ /en Then we're doomed.../ /jp 終わった……。/ /ko 그럼 망했네.../"////夏悠豆豆眼
 show nande at ajump
 play sound haneru
 play sound haneru
 voice cp1/xiayo_389.m4a
-x2 pose6 odoroki an jump "那咋办？"////豆豆眼 但是感叹号 立绘震动一次
-l"唔......没办法了，只能上了..."
-l"我试试我的捉蝉技巧能不能用..."
+x2 pose6 odoroki an jump "/zhs 那咋办？/ /zhc 那咋辦？/ /en What now?/ /jp じゃあ、どうする？/ /ko 이제 어떡해?/"////豆豆眼 但是感叹号 立绘震动一次
+l"/zhs 唔......没办法了，只能上了.../ /zhc 唔......沒辦法了，只能上了.../ /en Hmm... No choice. I'll have to try.../ /jp うーん……仕方ない。やってみるしか……。/ /ko 음...... 어쩔 수 없지. 해 보자.../"
+l"/zhs 我试试我的捉蝉技巧能不能用.../ /zhc 我試試我的捉蟬技巧能不能用.../ /en Let's see if my cicada-catching technique works.../ /jp 俺の捕り方が通用するか、試すよ……。/ /ko 내 매미 잡기 기술이 통하는지 해 볼게.../"
 voice cp1/xiayo_390.m4a
-x2 pose8 smile "嗯！！"////对话框震动 微笑 手背在身后
+x2 pose8 smile "/zhs 嗯！！/ /zhc 嗯！！/ /en Yeah!!/ /jp うん！！/ /ko 응!!/"////对话框震动 微笑 手背在身后
 scene sky
 //with dissolve
 ////背景切到天空 nvl模式
 nvlm
-"夏悠站在田垄上，期待地看着我。"
-"绝对不能在这里失手。"
-"我闭上眼，感受着最近的蝉的叫声。"
+"/zhs 夏悠站在田垄上，期待地看着我。/ /zhc 夏悠站在田壟上，期待地看著我。/ /en Xia You stood on the ridge between the rows, looking at me expectantly./ /jp 夏悠が畦に立ち、期待のまなざしを向けている。/ /ko 샤유가 밭둑에 서서 기대에 찬 눈으로 나를 보았다./"
+"/zhs 绝对不能在这里失手。/ /zhc 絕對不能在這裡失手。/ /en I absolutely couldn't fail here./ /jp ここで失敗するわけにはいかない。/ /ko 여기서 실패할 수는 없다./"
+"/zhs 我闭上眼，感受着最近的蝉的叫声。/ /zhc 我閉上眼，感受著最近的蟬的叫聲。/ /en I closed my eyes and listened for the nearest cicada./ /jp 目を閉じ、一番近い蝉の声を探る。/ /ko 눈을 감고 가장 가까운 매미 소리를 느꼈다./"
 endnvlm
 nvlm
 play sound dayhigurashi loop
 ////白天的蝉的叫声
-"......"
-"......"
-"....！"
-"发现了目标。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....！/ /zhc ....！/ /en ...!/ /jp ....！/ /ko ....!/"
+"/zhs 发现了目标。/ /zhc 發現了目標。/ /en Target acquired./ /jp 標的を発見した。/ /ko 목표를 찾았다./"
 endnvlm
 //with dissolve
 ////背景切到玉米地 nvl模式
 nvlm
 scene hatake with diss
-"我慢慢靠近那根玉米杆。"
+"/zhs 我慢慢靠近那根玉米杆。/ /zhc 我慢慢靠近那根玉米杆。/ /en I slowly approached that corn stalk./ /jp そのトウモロコシの茎へ、ゆっくり近づく。/ /ko 그 옥수수 줄기로 천천히 다가갔다./"
 endnvlm
 play sound edawooru
 ////咔嚓声音
-nan"咔嚓！！"
+nan"/zhs 咔嚓！！/ /zhc 咔嚓！！/ /en Crunch!!/ /jp バリッ！！/ /ko 바삭!!/"
 stop sound
 nvlm
-"！！一踩到地上的玉米叶，就发出了很大的响声。"
-"啊！！"
-"被我作为目标的蝉，一听到声音就停止了鸣叫，，飞走了。"
+"/zhs ！！一踩到地上的玉米叶，就发出了很大的响声。/ /zhc ！！一踩到地上的玉米葉，就發出了很大的響聲。/ /en !! The moment I stepped on a fallen corn leaf, it made a loud noise./ /jp ！！ 地面のトウモロコシの葉を踏んだ途端、大きな音がした。/ /ko !! 바닥의 옥수수 잎을 밟자 큰 소리가 났다./"
+"/zhs 啊！！/ /zhc 啊！！/ /en Ah!!/ /jp ああ！！/ /ko 아!!/"
+"/zhs 被我作为目标的蝉，一听到声音就停止了鸣叫，，飞走了。/ /zhc 被我作為目標的蟬，一聽到聲音就停止了鳴叫，，飛走了。/ /en At the sound, my target stopped singing and flew away./ /jp 狙っていた蝉は音を聞くなり鳴きやみ、飛び去ってしまった。/ /ko 목표로 삼았던 매미는 소리를 듣자마자 울음을 멈추고 날아갔다./"
 endnvlm
 nvlm
 play sound dokan
-"失败了..."
-"我回头看向夏悠。"
-"夏悠示意我回去。"
+"/zhs 失败了.../ /zhc 失敗了.../ /en I failed.../ /jp 失敗だ……。/ /ko 실패했다.../"
+"/zhs 我回头看向夏悠。/ /zhc 我回頭看向夏悠。/ /en I turned to look at Xia You./ /jp 夏悠を振り返る。/ /ko 샤유를 돌아보았다./"
+"/zhs 夏悠示意我回去。/ /zhc 夏悠示意我回去。/ /en She gestured for me to come back./ /jp 戻っておいでと、合図をしていた。/ /ko 샤유가 돌아오라는 손짓을 했다./"
 endnvlm
 scene bl timer 1.0
 //with dissolve
@@ -235,66 +235,66 @@ scene hatake
 //with fade
 //with dissolve
 voice cp1/xiayo_391.m4a
-x2 pose6 mesugaki3 "哈哈......"////夏悠嘲笑 手指着
+x2 pose6 mesugaki3 "/zhs 哈哈....../ /zhc 哈哈....../ /en Haha.../ /jp あはは……。/ /ko 하하....../"////夏悠嘲笑 手指着
 voice cp1/xiayo_392.m4a
-x2 ciallo "果然捉不到呢..."////夏悠ciallo 手放下去
-l"所以你一开始就不认为我捉得到吗？"
+x2 ciallo "/zhs 果然捉不到呢.../ /zhc 果然捉不到呢.../ /en We really can't catch them.../ /jp やっぱり捕まえられないね……。/ /ko 역시 못 잡네.../"////夏悠ciallo 手放下去
+l"/zhs 所以你一开始就不认为我捉得到吗？/ /zhc 所以你一開始就不認為我捉得到嗎？/ /en So you didn't think I could from the start?/ /jp 最初から無理だと思ってたのか？/ /ko 그럼 처음부터 못 잡을 거라고 생각했어?/"
 voice cp1/xiayo_393.m4a
-x2 think "嗯..."////夏悠think
+x2 think "/zhs 嗯.../ /zhc 嗯.../ /en Mm.../ /jp うん……。/ /ko 응.../"////夏悠think
 voice cp1/xiayo_394.m4a
-x2 pose7 ciallo "但是说不定会有奇迹呢？"////夏悠ciallo 手指着
-l"奇迹和魔法可不是免费的。"
+x2 pose7 ciallo "/zhs 但是说不定会有奇迹呢？/ /zhc 但是說不定會有奇蹟呢？/ /en But maybe a miracle could've happened?/ /jp でも、奇跡が起きるかもしれないでしょ？/ /ko 그래도 기적이 일어날 수도 있잖아?/"////夏悠ciallo 手指着
+l"/zhs 奇迹和魔法可不是免费的。/ /zhc 奇蹟和魔法可不是免費的。/ /en Miracles and magic don't come free./ /jp 奇跡も魔法も、ただじゃないんだ。/ /ko 기적과 마법은 공짜가 아니야./"
 voice cp1/xiayo_395.m4a
-x2 pose8 tameiki2 "好啦.......所以感觉活动告吹了..."////夏悠闭眼叹气 手放下去
+x2 pose8 tameiki2 "/zhs 好啦.......所以感觉活动告吹了.../ /zhc 好啦.......所以感覺活動告吹了.../ /en All right... I guess our plans are ruined.../ /jp まあまあ……今日は中止になりそうだね……。/ /ko 알았어....... 그럼 오늘 계획은 틀어진 것 같네.../"////夏悠闭眼叹气 手放下去
 voice cp1/xiayo_396.m4a
-x2 tameiki "明明是好不容易到来的，约定好的事情..."////夏悠睁眼叹气
+x2 tameiki "/zhs 明明是好不容易到来的，约定好的事情.../ /zhc 明明是好不容易到來的，約定好的事情.../ /en After we'd finally made it to the day we promised.../ /jp せっかく、やっと約束の日が来たのに……。/ /ko 어렵게 기다려 온 약속이었는데.../"////夏悠睁眼叹气
 play sound pekori
 voice cp1/xiayo_397.m4a
-x2 ciallo an topin "抱歉！！！"////对话框震动 夏悠闭眼叹气 立绘点点头
-l"抱歉！！！"////对话框震动
+x2 ciallo an topin "/zhs 抱歉！！！/ /zhc 抱歉！！！/ /en I'm sorry!!!/ /jp ごめん！！！/ /ko 미안해!!!/"////对话框震动 夏悠闭眼叹气 立绘点点头
+l"/zhs 抱歉！！！/ /zhc 抱歉！！！/ /en I'm sorry!!!/ /jp ごめん！！！/ /ko 미안해!!!/"////对话框震动
 scene bl //with Dissolve(0.15)
 //with vpunch
 play sound poko
 ////非常快地插入黑屏 //with vpunch震动 撞到头的音效
 voice cp1/xiayo_398.m4a
-x2nan "啊！！"////对话框震动
-l "啊！！"////对话框震动
+x2nan "/zhs 啊！！/ /zhc 啊！！/ /en Ah!!/ /jp あっ！！/ /ko 아!!/"////对话框震动
+l "/zhs 啊！！/ /zhc 啊！！/ /en Ah!!/ /jp あっ！！/ /ko 아!!/"////对话框震动
 ////清除黑屏
 scene hatake
 shake
 voice cp1/xiayo_399.m4a
-x2 pose6 naku "痛痛痛..."////夏悠快哭了 但是脸红
-l"痛痛痛..."
+x2 pose6 naku "/zhs 痛痛痛.../ /zhc 痛痛痛.../ /en Ow, ow, ow.../ /jp 痛い痛い痛い……。/ /ko 아야야.../"////夏悠快哭了 但是脸红
+l"/zhs 痛痛痛.../ /zhc 痛痛痛.../ /en Ow, ow, ow.../ /jp 痛い痛い痛い……。/ /ko 아야야.../"
 nvlm
-"因为我和夏悠同时低头道歉，导致头撞到了一起。"
-"我笑着道歉。"
+"/zhs 因为我和夏悠同时低头道歉，导致头撞到了一起。/ /zhc 因為我和夏悠同時低頭道歉，導致頭撞到了一起。/ /en We'd bowed to apologize at the same time and bumped heads./ /jp 同時に頭を下げたせいで、おでこがぶつかった。/ /ko 샤유와 내가 동시에 고개를 숙여 사과하는 바람에 머리가 부딪쳤다./"
+"/zhs 我笑着道歉。/ /zhc 我笑著道歉。/ /en I laughed as I apologized./ /jp 笑いながら謝る。/ /ko 웃으며 사과했다./"
 endnvlm
-l"对不起！"////对话框震动+
+l"/zhs 对不起！/ /zhc 對不起！/ /en Sorry!/ /jp ごめん！/ /ko 미안!/"////对话框震动+
 play sound haneru
 voice cp1/xiayo_400.m4a
-x2 ochikomu an jump "对不起！"////对话框震动 ////立绘shy4 抖一下
+x2 ochikomu an jump "/zhs 对不起！/ /zhc 對不起！/ /en Sorry!/ /jp ごめん！/ /ko 미안!/"////对话框震动 ////立绘shy4 抖一下
 ////夏悠笑
 play sound haneru
 voice cp1/xiayo_401.m4a
-x2 dame2 an shake2 repeat 2 "啊！真是对不起！"////对话框震动 夏悠表情 >~< 抖一下
-l "奇怪的同步..."
-l"要不临时改变活动内容吧..."
+x2 dame2 an shake2 repeat 2 "/zhs 啊！真是对不起！/ /zhc 啊！真是對不起！/ /en Ah! I'm really sorry!/ /jp あっ、ほんとにごめん！/ /ko 아! 정말 미안!/"////对话框震动 夏悠表情 >~< 抖一下
+l "/zhs 奇怪的同步.../ /zhc 奇怪的同步.../ /en Strangely in sync.../ /jp 変なところで息が合うな……。/ /ko 이상한 동기화다.../"
+l"/zhs 要不临时改变活动内容吧.../ /zhc 要不臨時改變活動內容吧.../ /en Maybe we should change the plan for now.../ /jp 予定を変えようか……。/ /ko 잠깐 계획을 바꿀까.../"
 play sound haneru
 play sound haneru
 voice cp1/xiayo_402.m4a
-x2 odoroki an jump "不捉蝉了吗？"////夏悠豆豆眼感叹号 抖一下
-l"去你家看动画片？"
+x2 odoroki an jump "/zhs 不捉蝉了吗？/ /zhc 不捉蟬了嗎？/ /en No more catching cicadas?/ /jp 蝉、捕まえないの？/ /ko 매미 안 잡아?/"////夏悠豆豆眼感叹号 抖一下
+l"/zhs 去你家看动画片？/ /zhc 去你家看動畫片？/ /en Watch cartoons at your house?/ /jp お前の家でアニメでも見る？/ /ko 너희 집에서 만화 볼까?/"
 voice cp1/xiayo_403.m4a
-x2 pose7 happy "这个也好！！"////对话框震动 ////夏悠开心 手指着
+x2 pose7 happy "/zhs 这个也好！！/ /zhc 這個也好！！/ /en That sounds good too!!/ /jp それもいいね！！/ /ko 그것도 좋아!!/"////对话框震动 ////夏悠开心 手指着
 stop sound
 stop music
 scene sky
 //with dissolve
 ////背景切到天空 nvl模式 音乐停止
 nvlm
-"虽然有些羞耻，但是结局还是变成了————"
-"正午的太阳猛烈的晒着。"
-"而我和夏悠坐在她家的客厅里看着金甲小宝..."
+"/zhs 虽然有些羞耻，但是结局还是变成了————/ /zhc 雖然有些羞恥，但是結局還是變成了————/ /en A little embarrassing, but in the end—/ /jp 少し気恥ずかしいけれど、結局こうなった――/ /ko 조금 부끄럽지만 결국은————/"
+"/zhs 正午的太阳猛烈的晒着。/ /zhc 正午的太陽猛烈的曬著。/ /en The midday sun blazed down./ /jp 真昼の太陽が、激しく照りつけている。/ /ko 한낮의 햇살이 뜨겁게 내리쬐는 동안./"
+"/zhs 而我和夏悠坐在她家的客厅里看着金甲小宝.../ /zhc 而我和夏悠坐在她家的客廳裡看著金甲小寶.../ /en And Xia You and I sat in her living room watching Golden Armor Kabuto.../ /jp 俺と夏悠は、彼女の家の居間で『金甲小宝』を見ていた……。/ /ko 샤유와 나는 걔네 집 거실에서 《철갑소보》를 보고 있었다.../"
 endnvlm
 scene sky yuu timer 2.0 with wipe
 //with Dissolve(1.5)
@@ -303,174 +303,174 @@ scene sky yuu timer 2.0 with wipe
 //(2.0)
 scene stone yuu
 nvlm
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 endnvlm
 play sound semi loop  
 play music gogo
-l "那，下周见？"
+l "/zhs 那，下周见？/ /zhc 那，下週見？/ /en Well, see you next week?/ /jp じゃあ、また来週？/ /ko 그럼 다음 주에 봐?/"
 ////夏悠ciallo 手背在身后 点点头
 play sound pekori
 //with dissolve
 voice cp1/xiayo_404.m4a
-x2 pose8 ciallo an fururu repeat 2 "嗯嗯..."
+x2 pose8 ciallo an fururu repeat 2 "/zhs 嗯嗯.../ /zhc 嗯嗯.../ /en Mm-hm.../ /jp うん、うん……。/ /ko 응, 응.../"
 ////夏悠微笑
 voice cp1/xiayo_405.m4a
-x2 smile "虽然和想象中不一样，但是还是很开心..."
+x2 smile "/zhs 虽然和想象中不一样，但是还是很开心.../ /zhc 雖然和想象中不一樣，但是還是很開心.../ /en It wasn't what I'd imagined, but I still had lots of fun.../ /jp 思ってたのとは違ったけど、それでも楽しかった……。/ /ko 생각한 것과는 달랐지만 그래도 정말 즐거웠어.../"
 ////夏悠从微笑切换为 闭眼 微笑着哭
 voice cp1/xiayo_406.m4a
-x2 smilenaka2 "[size=0.7]真是......太好了......[/size]"
-l"夏悠你......你为什么...哭了？"
+x2 smilenaka2 "/zhs [size=0.7]真是......太好了......[／size]/ /zhc [size=0.7]真是......太好了......[／size]/ /en [size=0.7]I'm... so glad...[／size]/ /jp [size=0.7]本当に……よかった……。[／size]/ /ko [size=0.7]정말...... 다행이야......[／size]/"
+l"/zhs 夏悠你......你为什么...哭了？/ /zhc 夏悠你......你為什麼...哭了？/ /en Xia You... why are you... crying?/ /jp 夏悠……なんで……泣いてるの？/ /ko 샤유, 너...... 왜... 울어?/"
 ////夏悠手放下去 睁开眼哭 微笑
 voice cp1/xiayo_407.m4a
-x2 smilenaka3 "哪有啊.......哦确实也有呢......为什么呢......"
+x2 smilenaka3 "/zhs 哪有啊.......哦确实也有呢......为什么呢....../ /zhc 哪有啊.......哦確實也有呢......為什麼呢....../ /en I'm not... Oh, I am... Why is that...?/ /jp 泣いてないよ……あ、ほんとだ……なんでだろ……。/ /ko 안 울어....... 아, 정말 그렇네...... 왜지....../"
 ////闭眼微笑着哭 手背在身后
 play sound haneru
 voice cp1/xiayo_408.m4a
-x2 smilenaka2 an jump "都无所谓了，下周见！！哼！！"////对话框震动
+x2 smilenaka2 an jump "/zhs 都无所谓了，下周见！！哼！！/ /zhc 都無所謂了，下週見！！哼！！/ /en Doesn't matter. See you next week!! Hmph!!/ /jp そんなの、どうでもいい！ また来週！！ ふん！！/ /ko 뭐든 상관없어. 다음 주에 봐!! 흥!!/"////对话框震动
 ////清理掉夏悠立绘
 hide xiayo1
 //with dissolve
 nvlm
-"夏悠擦了擦眼泪，就扭头准备走了。"
+"/zhs 夏悠擦了擦眼泪，就扭头准备走了。/ /zhc 夏悠擦了擦眼淚，就扭頭準備走了。/ /en She wiped her tears and turned to leave./ /jp 夏悠は涙を拭くと、くるりと背を向けた。/ /ko 샤유는 눈물을 닦고 돌아서려 했다./"
 endnvlm
-l"下周见！！"////对话框震动
+l"/zhs 下周见！！/ /zhc 下週見！！/ /en See you next week!!/ /jp また来週！！/ /ko 다음 주에 봐!!/"////对话框震动
 nvlm
-"我不断地挥着手告别，目送着夏悠顺着小路下到农田。"
+"/zhs 我不断地挥着手告别，目送着夏悠顺着小路下到农田。/ /zhc 我不斷地揮著手告別，目送著夏悠順著小路下到農田。/ /en I kept waving goodbye as I watched her follow the little path down into the fields./ /jp 何度も手を振り、小道を下って田畑へ向かう夏悠を見送った。/ /ko 계속 손을 흔들며 샤유가 오솔길을 따라 밭으로 내려가는 모습을 지켜보았다./"
 ////nvl模式
 voice cp1/xiayo_481.m4a
-x2nan "[size=0.6]笨蛋......[/size]"
+x2nan "/zhs [size=0.6]笨蛋......[／size]/ /zhc [size=0.6]笨蛋......[／size]/ /en [size=0.6]Idiot...[／size]/ /jp [size=0.6]ばか……。[／size]/ /ko [size=0.6]바보......[／size]/"
 nvlm
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 endnvlm
 scene sky yuu 
 //with Dissolve(2.0)
 ////背景切到黄昏的天空 无音乐 nvl模式
 nvlm
-"黄昏的余晖渐渐染红了天空，树影在微风中轻轻摇曳。"
-"映照在地面上斑驳的光影。空气中弥漫着一种难以言喻的静谧，仿佛时间在这一刻停滞。"
-"像这样无忧无虑的时光，会一直持续下去吗？"
+"/zhs 黄昏的余晖渐渐染红了天空，树影在微风中轻轻摇曳。/ /zhc 黃昏的餘暉漸漸染紅了天空，樹影在微風中輕輕搖曳。/ /en The evening afterglow slowly stained the sky red. Tree shadows swayed gently in the breeze./ /jp 夕暮れの名残が空を赤く染め、木々の影がそよ風に揺れている。/ /ko 황혼의 빛이 하늘을 붉게 물들이고, 나무 그림자가 산들바람에 살랑거렸다./"
+"/zhs 映照在地面上斑驳的光影。空气中弥漫着一种难以言喻的静谧，仿佛时间在这一刻停滞。/ /zhc 映照在地面上斑駁的光影。空氣中瀰漫著一種難以言喻的靜謐，彷彿時間在這一刻停滯。/ /en Light and shade dappled the ground. An indescribable stillness filled the air, as though time itself had stopped./ /jp 地面にはまだらな光と影。言葉にしがたい静けさが満ち、時間まで止まってしまったようだった。/ /ko 얼룩진 빛과 그림자가 땅에 비쳤다. 말로 하기 어려운 고요함이 공기 속에 감돌아, 시간이 멈춘 것 같았다./"
+"/zhs 像这样无忧无虑的时光，会一直持续下去吗？/ /zhc 像這樣無憂無慮的時光，會一直持續下去嗎？/ /en Would these carefree days go on forever?/ /jp こんな、何も心配のない時間は、ずっと続いていくのだろうか？/ /ko 이런 걱정 없는 시간은 계속 이어질까?/"
 endnvlm
 nvlm
-"我，在等待着。"
-"感觉失去了什么，却又找回了什么。"
-"这种感情，忽明忽暗，却一直存在。"
+"/zhs 我，在等待着。/ /zhc 我，在等待著。/ /en I was waiting./ /jp 俺は、待っている。/ /ko 나는 기다리고 있다./"
+"/zhs 感觉失去了什么，却又找回了什么。/ /zhc 感覺失去了什麼，卻又找回了什麼。/ /en It felt as if I'd lost something, then found something again./ /jp 何かを失って、何かを取り戻した気がする。/ /ko 무언가 잃었다가 되찾은 것 같은 기분./"
+"/zhs 这种感情，忽明忽暗，却一直存在。/ /zhc 這種感情，忽明忽暗，卻一直存在。/ /en That feeling flickered, sometimes clear and sometimes faint, but never disappeared./ /jp その気持ちは、明るくなったり暗くなったりしながら、ずっと消えずにいる。/ /ko 그 감정은 선명해졌다 흐려졌다 하면서도 늘 존재했다./"
 endnvlm
 stop music
 stop sound
 nvlm
-"现在开始写日记吧，把这些珍贵的东西记录下来。"
-"就从一个星期前开始记录。"
+"/zhs 现在开始写日记吧，把这些珍贵的东西记录下来。/ /zhc 現在開始寫日記吧，把這些珍貴的東西記錄下來。/ /en I'll start a diary now. Write down these precious things./ /jp 今日から日記を書こう。大切なものを、記録しておくんだ。/ /ko 이제 일기를 쓰자. 소중한 것들을 기록해 두자./"
+"/zhs 就从一个星期前开始记录。/ /zhc 就從一個星期前開始記錄。/ /en Starting with a week ago./ /jp 一週間前のことから、書き始めよう。/ /ko 일주일 전부터의 일을 적자./"
 endnvlm
 scene sky yoru timer 2.0 with diss
 //with dissolve
 ////背景切到夜晚的天空 nvl模式 音乐：夜晚/安眠 宁静 参考：舞い上がる因果交流のひかり
 nvlm
-"......"
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 endnvlm
 // persistent.music_024unlock = True
 play music yoru  
 play sound yorunomusi loop
 nvlm
-"夜晚的蟋蟀一直在吱吱叫着。"
-"浑然天成的催眠曲。"
-"今晚过后，就是崭新的未来了。"
+"/zhs 夜晚的蟋蟀一直在吱吱叫着。/ /zhc 夜晚的蟋蟀一直在吱吱叫著。/ /en The crickets kept chirping in the night./ /jp 夜のコオロギが、ずっと鳴いている。/ /ko 밤의 귀뚜라미는 계속 울고 있었다./"
+"/zhs 浑然天成的催眠曲。/ /zhc 渾然天成的催眠曲。/ /en A lullaby made by nature./ /jp 自然が奏でる子守歌。/ /ko 자연이 만든 자장가다./"
+"/zhs 今晚过后，就是崭新的未来了。/ /zhc 今晚過後，就是嶄新的未來了。/ /en After tonight, a brand-new future awaited./ /jp 今夜が過ぎれば、新しい未来が始まる。/ /ko 오늘 밤이 지나면 새로운 미래가 시작된다./"
 endnvlm
 scene bl
 //with dissolve
 ////背景切到黑屏
 nvlm
-"我闭上了双眼。"
-"..."
+"/zhs 我闭上了双眼。/ /zhc 我閉上了雙眼。/ /en I closed my eyes./ /jp 目を閉じた。/ /ko 두 눈을 감았다./"
+"/zhs .../ /zhc .../ /en .../ /jp .../ /ko .../"
 endnvlm
 play sound madowotataku
-"啪啪啪！！"////拍打窗户声音
+"/zhs 啪啪啪！！/ /zhc 啪啪啪！！/ /en Tap-tap-tap!!/ /jp パンパンパン！！/ /ko 탁탁탁!!/"////拍打窗户声音
 play sound madowotataku
-"啪啪啪！！"////拍打窗户声音
+"/zhs 啪啪啪！！/ /zhc 啪啪啪！！/ /en Tap-tap-tap!!/ /jp パンパンパン！！/ /ko 탁탁탁!!/"////拍打窗户声音
 nvlm
-"？？"
-"什么响声？"
+"/zhs ？？/ /zhc ？？/ /en ??/ /jp ？？/ /ko ??/"
+"/zhs 什么响声？/ /zhc 什麼響聲？/ /en What was that noise?/ /jp 何の音だ？/ /ko 무슨 소리지?/"
 endnvlm
 play sound madowotataku
-"啪啪啪！！"////拍打窗户声音
+"/zhs 啪啪啪！！/ /zhc 啪啪啪！！/ /en Tap-tap-tap!!/ /jp パンパンパン！！/ /ko 탁탁탁!!/"////拍打窗户声音
 nvlm
-"好像有谁在拍我的窗户。"
+"/zhs 好像有谁在拍我的窗户。/ /zhc 好像有誰在拍我的窗戶。/ /en It sounded as though someone was tapping on my window./ /jp 誰かが、窓を叩いているらしい。/ /ko 누가 창문을 두드리는 것 같다./"
 endnvlm
 play sound madowoake
 nvlm
-"我起身，慢慢推开窗户。"////推开窗户声音
+"/zhs 我起身，慢慢推开窗户。/ /zhc 我起身，慢慢推開窗戶。/ /en I got up and slowly pushed it open./ /jp 起き上がり、そっと窓を押し開ける。/ /ko 일어나 천천히 창문을 열었다./"////推开窗户声音
 endnvlm
 scene sky yoru
 //with dissolve
 ////背景切到夜晚的天空
 play sound pin
 nvlm
-"？？！夏悠？"
+"/zhs ？？！夏悠？/ /zhc ？？！夏悠？/ /en ??! Xia You?/ /jp えっ！？ 夏悠？/ /ko ??! 샤유?/"
 endnvlm
 stop sound
 nvlm
 voice cp1/xiayo_409.m4a
-x2nan pose6 "嘘～"
-l"夏悠？现在不是已经夜晚了吗？"
-l"你是怎么摸过来的？"
+x2nan pose6 "/zhs 嘘～/ /zhc 噓～/ /en Shh~/ /jp しーっ。/ /ko 쉿～/"
+l"/zhs 夏悠？现在不是已经夜晚了吗？/ /zhc 夏悠？現在不是已經夜晚了嗎？/ /en Xia You? Isn't it the middle of the night?/ /jp 夏悠？ もう夜だぞ？/ /ko 샤유? 벌써 밤이잖아?/"
+l"/zhs 你是怎么摸过来的？/ /zhc 你是怎麼摸過來的？/ /en How did you find your way here?/ /jp どうやって、ここまで来たんだ？/ /ko 여기까지 어떻게 온 거야?/"
 voice cp1/xiayo_410.m4a
-x2nan"嘘～你想不想看星星？"
-l"啊？"
-l"现在？"
-"这突然的邀请，把我吓到了。"
+x2nan"/zhs 嘘～你想不想看星星？/ /zhc 噓～你想不想看星星？/ /en Shh~ Want to look at the stars?/ /jp しーっ。星を見たくない？/ /ko 쉿～ 별 보고 싶지 않아?/"
+l"/zhs 啊？/ /zhc 啊？/ /en Huh?/ /jp え？/ /ko 어?/"
+l"/zhs 现在？/ /zhc 現在？/ /en Now?/ /jp 今から？/ /ko 지금?/"
+"/zhs 这突然的邀请，把我吓到了。/ /zhc 這突然的邀請，把我嚇到了。/ /en The sudden invitation startled me./ /jp 突然の誘いに、驚いた。/ /ko 갑작스러운 초대에 깜짝 놀랐다./"
 endnvlm
 nvlm
-l"为什么？"
+l"/zhs 为什么？/ /zhc 為什麼？/ /en Why?/ /jp どうして？/ /ko 왜?/"
 voice cp1/xiayo_411.m4a
-x2nan"因为，我......"
+x2nan"/zhs 因为，我....../ /zhc 因為，我....../ /en Because I.../ /jp だって、私……。/ /ko 그게, 난....../"
 voice cp1/xiayo_412.m4a
-x2nan"你看啊，今晚是不是很适合看星星嘛......"
+x2nan"/zhs 你看啊，今晚是不是很适合看星星嘛....../ /zhc 你看啊，今晚是不是很適合看星星嘛....../ /en Look. Tonight's perfect for stargazing, isn't it...?/ /jp ほら、今夜って、星を見るのにぴったりでしょ……。/ /ko 봐. 오늘 밤은 별 보기 딱 좋잖아....../"
 voice cp1/xiayo_413.m4a
-x2nan"晴朗天气的夜空..."
+x2nan"/zhs 晴朗天气的夜空.../ /zhc 晴朗天氣的夜空.../ /en The night sky on a clear day.../ /jp よく晴れた夜空だし……。/ /ko 맑은 날의 밤하늘.../"
 voice cp1/xiayo_414.m4a
-x2nan"所以......"
+x2nan"/zhs 所以....../ /zhc 所以....../ /en So.../ /jp だから……。/ /ko 그래서....../"
 voice cp1/xiayo_415.m4a
-x2nan "你来吗？"
+x2nan "/zhs 你来吗？/ /zhc 你來嗎？/ /en Will you come?/ /jp 来る？/ /ko 같이 갈래?/"
 voice cp1/xiayo_416.m4a
-x2nan"虽然这是很突然的邀请...如果不来也...也没关系的！"
+x2nan"/zhs 虽然这是很突然的邀请...如果不来也...也没关系的！/ /zhc 雖然這是很突然的邀請...如果不來也...也沒關係的！/ /en I know this is sudden... If you don't want to, that's... that's fine too!/ /jp 急な誘いだし……来なくても……大丈夫だけど！/ /ko 갑자기 말한 거니까... 안 와도... 괜찮아!/"
 voice cp1/xiayo_417.m4a
-x2nan"毕竟是我突然想看一下。"
+x2nan"/zhs 毕竟是我突然想看一下。/ /zhc 畢竟是我突然想看一下。/ /en I just suddenly felt like seeing them./ /jp 急に見たくなったのは、私だから。/ /ko 내가 갑자기 보고 싶어진 거니까./"
 voice cp1/xiayo_418.m4a
-x2nan"因为我.....呜...没事..."
+x2nan"/zhs 因为我.....呜...没事.../ /zhc 因為我.....嗚...沒事.../ /en Because I... mm... never mind.../ /jp 私が……ううん、何でもない……。/ /ko 난..... 으... 아무것도 아니야.../"
 voice cp1/xiayo_419.m4a
-x2nan"今天心情有点激动。"
+x2nan"/zhs 今天心情有点激动。/ /zhc 今天心情有點激動。/ /en I've been a little excited today./ /jp 今日は、少し気持ちが高ぶってて。/ /ko 오늘은 마음이 좀 들떠서./"
 voice cp1/xiayo_420.m4a
-x2nan"所以你来吗？"
+x2nan"/zhs 所以你来吗？/ /zhc 所以你來嗎？/ /en So will you come?/ /jp それで、来る？/ /ko 그래서 갈래?/"
 endnvlm
 nvlm
-"......"
-"地点在哪？"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 地点在哪？/ /zhc 地點在哪？/ /en Where?/ /jp 場所は？/ /ko 어디로?/"
 voice cp1/xiayo_421.m4a
-x2nan"在那个地方，比高更高的地方。"
+x2nan"/zhs 在那个地方，比高更高的地方。/ /zhc 在那個地方，比高更高的地方。/ /en That place. Higher than high./ /jp あの場所。高いところより、もっと高いところ。/ /ko 그곳. 높은 곳보다 더 높은 곳./"
 voice cp1/xiayo_422.m4a
-x2nan"沿着路一直到顶的山顶的那块坡地。"
+x2nan"/zhs 沿着路一直到顶的山顶的那块坡地。/ /zhc 沿著路一直到頂的山頂的那塊坡地。/ /en The slope at the very top, if you follow the road all the way up the mountain./ /jp 道を一番上まで登った、山頂の斜面。/ /ko 길을 따라 끝까지 올라가면 있는 산꼭대기 비탈./"
 voice cp1/xiayo_423.m4a
-x2nan"长满草的那块坡地。"
+x2nan"/zhs 长满草的那块坡地。/ /zhc 長滿草的那塊坡地。/ /en The one covered in grass./ /jp 草がいっぱい生えてるところ。/ /ko 풀이 가득한 그 비탈./"
 voice cp1/xiayo_424.m4a
-x2nan"没有比那里更适合的场所了吧..."
+x2nan"/zhs 没有比那里更适合的场所了吧.../ /zhc 沒有比那裡更適合的場所了吧.../ /en There couldn't be a better place.../ /jp あそこより、いい場所はないでしょ……。/ /ko 거기보다 좋은 곳은 없겠지.../"
 endnvlm
 nvlm
-"果然...说到看星星，我也是第一眼想到了那里..."
-"但是从这里过去，得十几分钟吧..."
-"一开始我就想问了，照明怎么办？"
+"/zhs 果然...说到看星星，我也是第一眼想到了那里.../ /zhc 果然...說到看星星，我也是第一眼想到了那裡.../ /en Of course... That was the first place I thought of for stargazing too.../ /jp やっぱり……星を見ると言われて、俺も真っ先に思い浮かんだのはそこだった……。/ /ko 역시... 별을 본다니까 나도 제일 먼저 거기가 떠올랐어.../"
+"/zhs 但是从这里过去，得十几分钟吧.../ /zhc 但是從這裡過去，得十幾分鍾吧.../ /en But it'll take more than ten minutes to get there.../ /jp でも、ここからだと十数分かかるよな……。/ /ko 근데 여기서 가려면 십몇 분은 걸릴 텐데.../"
+"/zhs 一开始我就想问了，照明怎么办？/ /zhc 一開始我就想問了，照明怎麼辦？/ /en I've been meaning to ask. What about light?/ /jp さっきから聞こうと思ってたけど、明かりは？/ /ko 처음부터 묻고 싶었는데, 불은 어떻게 밝혀?/"
 voice cp1/xiayo_425.m4a
-x2nan"不要小看人类科技啊！"
-"夏悠说着，举了举手里的手电。"
-"懂了。"
-"我还从来没有专门为了看星星而在夜晚出门过。"
-"既然夏悠提出了，那就跟着她吧！"
+x2nan"/zhs 不要小看人类科技啊！/ /zhc 不要小看人類科技啊！/ /en Don't underestimate human technology!/ /jp 人類の科学技術を甘く見ないで！/ /ko 인류의 과학 기술을 얕보지 마!/"
+"/zhs 夏悠说着，举了举手里的手电。/ /zhc 夏悠說著，舉了舉手裡的手電。/ /en As she spoke, Xia You raised the flashlight in her hand./ /jp そう言って、夏悠は懐中電灯を持ち上げた。/ /ko 샤유가 손전등을 들어 보였다./"
+"/zhs 懂了。/ /zhc 懂了。/ /en Got it./ /jp なるほど。/ /ko 알겠다./"
+"/zhs 我还从来没有专门为了看星星而在夜晚出门过。/ /zhc 我還從來沒有專門為了看星星而在夜晚出門過。/ /en I'd never gone out at night specifically to look at the stars before./ /jp 星を見るためだけに、夜、出かけたことなんて一度もない。/ /ko 별을 보려고 일부러 밤에 나간 적은 한 번도 없다./"
+"/zhs 既然夏悠提出了，那就跟着她吧！/ /zhc 既然夏悠提出了，那就跟著她吧！/ /en Since Xia You had suggested it, I'd go with her!/ /jp 夏悠が誘ってくれたのだ。ついていこう！/ /ko 샤유가 제안했으니 따라가 보자!/"
 endnvlm
 scene bl
 nvlm
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 play sound hanomasatsu
-"我小心翼翼地起床，穿好衣物。小心翼翼地开门，再小心翼翼地让门虚掩着。"
-"毕竟这时候父母应该已经熟睡了。"
+"/zhs 我小心翼翼地起床，穿好衣物。小心翼翼地开门，再小心翼翼地让门虚掩着。/ /zhc 我小心翼翼地起床，穿好衣物。小心翼翼地開門，再小心翼翼地讓門虛掩著。/ /en I carefully got up and dressed. Carefully opened the door, then carefully left it resting almost shut./ /jp 慎重に起きて服を着る。慎重に戸を開き、さらに慎重に、少しだけ開けたままにしておく。/ /ko 조심스럽게 일어나 옷을 입었다. 조심스럽게 문을 열고, 다시 조심스럽게 살짝 닫아 두었다./"
+"/zhs 毕竟这时候父母应该已经熟睡了。/ /zhc 畢竟這時候父母應該已經熟睡了。/ /en My parents were probably fast asleep by now./ /jp 父も母も、もう熟睡しているはずだから。/ /ko 부모님은 벌써 깊이 잠드셨을 테니까./"
 endnvlm
 ////结束nvl模式
 ////夜晚的家门口背景 角色也要使用阴影
@@ -478,204 +478,204 @@ endnvlm
 scene home yoru
 //with dissolve
 voice cp1/xiayo_426.m4a
-x2 pose6 happy "走吧！"////对话框震动 夏悠手指着 ciallo
-l"嗯！"////对话框震动
+x2 pose6 happy "/zhs 走吧！/ /zhc 走吧！/ /en Let's go!/ /jp 行こう！/ /ko 가자!/"////对话框震动 夏悠手指着 ciallo
+l"/zhs 嗯！/ /zhc 嗯！/ /en Yeah!/ /jp うん！/ /ko 응!/"////对话框震动
 scene sky yoru
 //with dissolve
 ////背景切到夜晚天空 nvl模式
 play sound tsuchi loop  
 nvlm
-"......"
-"我和夏悠一路一边举着手电照明，一边聊着这些天的事情。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 我和夏悠一路一边举着手电照明，一边聊着这些天的事情。/ /zhc 我和夏悠一路一邊舉著手電照明，一邊聊著這些天的事情。/ /en We walked along with the flashlight lighting our way, talking about the past few days./ /jp 懐中電灯で照らしながら、二人で最近の出来事を話しつつ歩いた。/ /ko 샤유와 나는 손전등으로 길을 비추며 며칠 동안의 일을 이야기했다./"
 endnvlm
 // persistent.back015 = True
 scene stone yoru
 //with dissolve
 ////结束nvl模式 背景切到夜晚的石头
 nvlm
-"....."
+"/zhs ...../ /zhc ...../ /en ...../ /jp ...../ /ko ...../"
 endnvlm
-l"呼～好累～歇一会吧....."
+l"/zhs 呼～好累～歇一会吧...../ /zhc 呼～好累～歇一會吧...../ /en Phew~ I'm tired~ Let's rest a minute.../ /jp ふう……疲れた。少し休もう……。/ /ko 후우～ 힘들다～ 좀 쉬자...../"
 play sound haneru
 //with dissolve
 ////夏悠叉腰 闭眼叹气
 voice cp1/xiayo_427.m4a
-x2 pose7 ciallo an jump "加油啊！！离终点就剩五分钟路程了。"
+x2 pose7 ciallo an jump "/zhs 加油啊！！离终点就剩五分钟路程了。/ /zhc 加油啊！！離終點就剩五分鐘路程了。/ /en Come on!! Only five more minutes to go./ /jp 頑張って！！ あと五分で着くよ。/ /ko 힘내!! 이제 오 분만 더 가면 돼./"
 scene sky yoru
 //with dissolve
 //with vpunch
 ////屏幕震动 vpunch 背景切到夜晚天空
 play sound kusahasiru loop
-l "啊？"////对话框震动
-l "呜！"////对话框震动
+l "/zhs 啊？/ /zhc 啊？/ /en Huh?/ /jp え？/ /ko 어?/"////对话框震动
+l "/zhs 呜！/ /zhc 嗚！/ /en Oof!/ /jp うわっ！/ /ko 으!/"////对话框震动
 // persistent.cg055 = True
 ////快速推入 cg：夏悠抓着林澄手奔跑
-"夏悠抓着我的手，不断带着我前进。"
+"/zhs 夏悠抓着我的手，不断带着我前进。/ /zhc 夏悠抓著我的手，不斷帶著我前進。/ /en Xia You took my hand and kept pulling me forward./ /jp 夏悠が俺の手を掴み、ぐんぐん引っ張っていく。/ /ko 샤유가 내 손을 잡고 계속 앞으로 이끌었다./"
 scene cg_cp1_4 an cg1_4
 //with None
-"空气中弥漫着夜晚特有的清新气息。"
-"直到终于到了那片坡地。"
-"目的地当然是坡地的顶端了。"
-l "啊！！慢点！！"////对话框震动
-"除了蟋蟀叫声以外一片寂静的夜晚，现在混入了草地因为奔跑而被踩踏的声响。"
+"/zhs 空气中弥漫着夜晚特有的清新气息。/ /zhc 空氣中瀰漫著夜晚特有的清新氣息。/ /en The air was filled with that fresh scent unique to the night./ /jp 夜特有の、澄んだ空気の匂いが漂う。/ /ko 밤 특유의 싱그러운 공기가 감돌았다./"
+"/zhs 直到终于到了那片坡地。/ /zhc 直到終於到了那片坡地。/ /en Until at last we reached the grassy slope./ /jp やがて、ようやくあの斜面に着いた。/ /ko 마침내 그 비탈에 도착했다./"
+"/zhs 目的地当然是坡地的顶端了。/ /zhc 目的地當然是坡地的頂端了。/ /en Our destination, naturally, was its very top./ /jp 目指すのは、もちろんその頂上だ。/ /ko 목적지는 당연히 비탈 맨 위였다./"
+l "/zhs 啊！！慢点！！/ /zhc 啊！！慢點！！/ /en Ah!! Slow down!!/ /jp ああっ！ ゆっくり！！/ /ko 아!! 천천히!!/"////对话框震动
+"/zhs 除了蟋蟀叫声以外一片寂静的夜晚，现在混入了草地因为奔跑而被踩踏的声响。/ /zhc 除了蟋蟀叫聲以外一片寂靜的夜晚，現在混入了草地因為奔跑而被踩踏的聲響。/ /en The night had been silent except for crickets. Now it held the sound of grass crushed beneath our running feet./ /jp コオロギ以外は静かな夜に、駆ける足が草を踏む音が混ざった。/ /ko 귀뚜라미 소리 말고는 조용하던 밤에, 달리며 풀을 밟는 소리가 섞여 들었다./"
 scene sky yoru
 //with dissolve
 ////背景切到夜晚的天空
 voice cp1/xiayo_428.m4a
-x2nan "到了。"
+x2nan "/zhs 到了。/ /zhc 到了。/ /en We're here./ /jp 着いた。/ /ko 도착했다./"
 stop sound
 //nvl模式
 stop music
 nvlm
-"映入眼帘的，是令人不自觉沉浸其中的绝妙美景。"
+"/zhs 映入眼帘的，是令人不自觉沉浸其中的绝妙美景。/ /zhc 映入眼簾的，是令人不自覺沉浸其中的絕妙美景。/ /en The sight before us was so beautiful that I couldn't help losing myself in it./ /jp 目の前に広がったのは、思わず心を奪われる、見事な景色だった。/ /ko 눈앞에는 저절로 빠져들게 되는 절경이 펼쳐졌다./"
 // persistent.nvl2 = False
-"夜空如同一块巨大的黑色绒布，铺展在世界的顶端。"
+"/zhs 夜空如同一块巨大的黑色绒布，铺展在世界的顶端。/ /zhc 夜空如同一塊巨大的黑色絨布，鋪展在世界的頂端。/ /en The night sky spread over the top of the world like a vast sheet of black velvet./ /jp 巨大な黒いベルベットのような夜空が、世界のてっぺんに広がっている。/ /ko 밤하늘은 거대한 검은 벨벳처럼 세상 위에 펼쳐져 있었다./"
 // persistent.nvl2 = False
-"远离城市的喧嚣与吵闹，使这片夜空显得格外清澈而深邃。"
+"/zhs 远离城市的喧嚣与吵闹，使这片夜空显得格外清澈而深邃。/ /zhc 遠離城市的喧囂與吵鬧，使這片夜空顯得格外清澈而深邃。/ /en Far from the city's noise and bustle, it seemed especially clear and deep./ /jp 街の喧騒から遠く離れたこの空は、ひときわ澄んで、どこまでも深く見えた。/ /ko 도시의 소란에서 멀리 떨어져 있어서인지 유난히 맑고 깊어 보였다./"
 endnvlm
 cg cg_cp1_5 1
 //with dissolve
 ////背景切到cg：两个人坐着看天空 绝美的景色 音乐 夜晚 带感情 参考曲目：ざくざくと散る錆びた夢
 ////这里的nvl模式 没有上下黑边 并且背景也不是很黑 我会在相关技术上处理
 nvln
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 // persistent.music_026unlock = True
 play music yozora 
-"我和夏悠悠闲地坐在松软的草地上，惬意地望着天空。"
-"夜风轻轻拂过，带来一丝凉意。"
-"天空中星光闪烁，仿佛无数颗钻石洒在深蓝色的天幕上。"
+"/zhs 我和夏悠悠闲地坐在松软的草地上，惬意地望着天空。/ /zhc 我和夏悠悠閒地坐在鬆軟的草地上，愜意地望著天空。/ /en Xia You and I settled comfortably on the soft grass and gazed up at the sky./ /jp 柔らかな草の上に二人で腰を下ろし、のんびりと空を見上げる。/ /ko 샤유와 나는 부드러운 풀밭에 느긋하게 앉아 하늘을 바라보았다./"
+"/zhs 夜风轻轻拂过，带来一丝凉意。/ /zhc 夜風輕輕拂過，帶來一絲涼意。/ /en The night breeze brushed past, carrying a hint of coolness./ /jp 夜風がそっと吹き、かすかな涼しさを運んでくる。/ /ko 밤바람이 살며시 스치며 서늘함을 전했다./"
+"/zhs 天空中星光闪烁，仿佛无数颗钻石洒在深蓝色的天幕上。/ /zhc 天空中星光閃爍，彷彿無數顆鑽石灑在深藍色的天幕上。/ /en Stars glittered overhead like countless diamonds scattered across a deep-blue curtain./ /jp 深い青の天幕に、無数のダイヤモンドを散らしたように、星が瞬いていた。/ /ko 별빛은 짙푸른 하늘에 뿌려 놓은 수많은 다이아몬드처럼 반짝였다./"
 voice cp1/xiayo_429.m4a
-x2 "真美呢......"
-l"真美呢......"
+x2 "/zhs 真美呢....../ /zhc 真美呢....../ /en It's beautiful.../ /jp きれいだね……。/ /ko 정말 예쁘다....../"
+l"/zhs 真美呢....../ /zhc 真美呢....../ /en It's beautiful.../ /jp きれいだな……。/ /ko 정말 예쁘다....../"
 endnvln
 nvln
-x2 "......"
+x2 "/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 voice cp1/xiayo_430.m4a
-x2 "这个学期结束，你就要去镇上上学了吧..."
-l"......"
-l"啊？为什么？"
-x2 "......"
+x2 "/zhs 这个学期结束，你就要去镇上上学了吧.../ /zhc 這個學期結束，你就要去鎮上上學了吧.../ /en When this term ends, you'll have to go to school in town, won't you...?/ /jp 今学期が終わったら、町の学校へ行くんだよね……。/ /ko 이번 학기가 끝나면 넌 읍내 학교에 가겠지.../"
+l"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+l"/zhs 啊？为什么？/ /zhc 啊？為什麼？/ /en Huh? Why?/ /jp え？ どうして？/ /ko 어? 왜?/"
+x2 "/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 voice cp1/xiayo_431.m4a
-x2 "该说真不愧是你呢..."
+x2 "/zhs 该说真不愧是你呢.../ /zhc 該說真不愧是你呢.../ /en That's just like you.../ /jp さすが君、って言えばいいのかな……。/ /ko 너답다고 해야 하나.../"
 voice cp1/xiayo_432.m4a
-x2 "因为我们现在的学校没有四年级啊..."
+x2 "/zhs 因为我们现在的学校没有四年级啊.../ /zhc 因為我們現在的學校沒有四年級啊.../ /en Because our school doesn't have fourth grade.../ /jp 今の学校には、四年生がないでしょ……。/ /ko 우리 학교에는 4학년이 없잖아.../"
 voice cp1/xiayo_433.m4a
-x2 "想上四年级不就得去镇上的学校了..."
+x2 "/zhs 想上四年级不就得去镇上的学校了.../ /zhc 想上四年級不就得去鎮上的學校了.../ /en You'll have to go to the town school for that.../ /jp 四年生になるには、町の学校へ行くしかないじゃん……。/ /ko 4학년이 되려면 읍내 학교로 가야지.../"
 voice cp1/xiayo_434.m4a
-x2 "以前你还是二年级的时候，学长跟你说过吧...你也经历过他离开这个学校的日子..."
+x2 "/zhs 以前你还是二年级的时候，学长跟你说过吧...你也经历过他离开这个学校的日子.../ /zhc 以前你還是二年級的時候，學長跟你說過吧...你也經歷過他離開這個學校的日子.../ /en The older student told you when you were in second grade, remember...? You were here when he left this school too.../ /jp 君が二年生だった頃、上級生が話してたでしょ……その人がここを去るのも、見たはずだよ……。/ /ko 네가 2학년일 때 선배가 말해 줬잖아... 그 선배가 학교를 떠나는 것도 봤고.../"
 endnvln
 nvln
-l"那我去镇上以后，你怎么办呢？"
+l"/zhs 那我去镇上以后，你怎么办呢？/ /zhc 那我去鎮上以後，你怎麼辦呢？/ /en What about you, once I go to town?/ /jp じゃあ、俺が町へ行ったら、夏悠はどうする？/ /ko 내가 읍내로 가면 넌 어떡해?/"
 voice cp1/xiayo_435.m4a
-x2 "我啊...仍然会继续留在这个学校，和李宫娜，刘守真一起。"
+x2 "/zhs 我啊...仍然会继续留在这个学校，和李宫娜，刘守真一起。/ /zhc 我啊...仍然會繼續留在這個學校，和李宮娜，劉守真一起。/ /en Me...? I'll stay at this school with Li Gongna and Liu Shouzhen./ /jp 私は……ここに残るよ。李宮娜と劉守真と一緒に。/ /ko 나는... 리궁나랑 류서우전하고 계속 이 학교에 있겠지./"
 voice cp1/xiayo_436.m4a
-x2 "不过没事的，很快的，记得等我一年哦..."
+x2 "/zhs 不过没事的，很快的，记得等我一年哦.../ /zhc 不過沒事的，很快的，記得等我一年哦.../ /en But it's okay. It'll go quickly. Wait a year for me.../ /jp でも大丈夫。すぐだから。一年、待っててね……。/ /ko 그래도 괜찮아. 금방이야. 일 년만 기다려 줘.../"
 voice cp1/xiayo_437.m4a
-x2 "一年以后，我也会和刘守真，李宫娜一起去镇上的小学了。"
-l"没有其他办法吗？"
-l"至少得同时去镇上学校吧..."
+x2 "/zhs 一年以后，我也会和刘守真，李宫娜一起去镇上的小学了。/ /zhc 一年以後，我也會和劉守真，李宮娜一起去鎮上的小學了。/ /en A year later, I'll go to the elementary school in town with them too./ /jp 一年後には、私も二人と一緒に町の小学校へ行くから。/ /ko 일 년 뒤에는 나도 류서우전, 리궁나랑 읍내 초등학교에 갈 거야./"
+l"/zhs 没有其他办法吗？/ /zhc 沒有其他辦法嗎？/ /en Isn't there another way?/ /jp 他に方法はないの？/ /ko 다른 방법은 없어?/"
+l"/zhs 至少得同时去镇上学校吧.../ /zhc 至少得同時去鎮上學校吧.../ /en We should at least go to the town school together.../ /jp せめて、一緒に町へ行きたい……。/ /ko 적어도 읍내 학교에는 같이 가야지.../"
 voice cp1/xiayo_438.m4a
-x2 "除非你留级一年。"
-l"怎么申请留级？"
+x2 "/zhs 除非你留级一年。/ /zhc 除非你留級一年。/ /en Unless you repeat a year./ /jp 君が、一年留年すれば。/ /ko 네가 일 년 유급하지 않는 한./"
+l"/zhs 怎么申请留级？/ /zhc 怎麼申請留級？/ /en How do I apply to repeat a year?/ /jp 留年って、どうやって申し込むんだ？/ /ko 유급은 어떻게 신청해?/"
 voice cp1/xiayo_439.m4a
-x2 "......唉..."
+x2 "/zhs ......唉.../ /zhc ......唉.../ /en ...Honestly.../ /jp ……はあ……。/ /ko ...... 에휴.../"
 voice cp1/xiayo_440.m4a
-x2 "你不许留级，不然我会生气的，哼！"
+x2 "/zhs 你不许留级，不然我会生气的，哼！/ /zhc 你不許留級，不然我會生氣的，哼！/ /en You're not allowed to repeat a year. I'll be angry if you do. Hmph!/ /jp 留年しちゃだめ。したら怒るから。ふん！/ /ko 유급하면 안 돼. 그러면 나 화낼 거야. 흥!/"
 voice cp1/xiayo_441.m4a
-x2 "总之其实很快的...说不定是“唰”的一下就过去了呢..."
+x2 "/zhs 总之其实很快的...说不定是“唰”的一下就过去了呢.../ /zhc 總之其實很快的...說不定是“唰”的一下就過去了呢.../ /en Anyway, it'll go by quickly... Maybe it'll be over in a flash.../ /jp とにかく、本当にすぐだよ……「しゅっ」て、一瞬で過ぎるかもしれないし……。/ /ko 아무튼 금방이야... 어쩌면 ‘휙’ 하고 지나갈지도 모르잖아.../"
 endnvln
 nvln
 voice cp1/xiayo_442.m4a
-x2 "先不聊这个了。"
+x2 "/zhs 先不聊这个了。/ /zhc 先不聊這個了。/ /en Let's stop talking about that./ /jp この話は、もうおしまい。/ /ko 이 얘기는 그만하자./"
 voice cp1/xiayo_443.m4a
-x2 "你看那边，那一串星星，你知道是什么星座吗？"
+x2 "/zhs 你看那边，那一串星星，你知道是什么星座吗？/ /zhc 你看那邊，那一串星星，你知道是什麼星座嗎？/ /en Look over there. That group of stars. Do you know which constellation it is?/ /jp あっちを見て。並んだあの星、何座かわかる？/ /ko 저기 별들 봐. 무슨 별자리인지 알아?/"
 // persistent.cg056 = True
 cg cg_cp1_5 2
-"夏悠抬起手，指向东南方的天空。"////cg里抬手
-"我顺着她的指引望去，看到几颗星星连成一条弧线，形成了一个大致的形状。"
-l"嗯......"
-l"嗯......."
-l"北.....北斗七星？"
+"/zhs 夏悠抬起手，指向东南方的天空。/ /zhc 夏悠抬起手，指向東南方的天空。/ /en Xia You raised her hand and pointed to the southeastern sky./ /jp 夏悠が手を上げ、南東の空を指した。/ /ko 샤유가 손을 들어 남동쪽 하늘을 가리켰다./"////cg里抬手
+"/zhs 我顺着她的指引望去，看到几颗星星连成一条弧线，形成了一个大致的形状。/ /zhc 我順著她的指引望去，看到幾顆星星連成一條弧線，形成了一個大致的形狀。/ /en I followed her finger and saw a few stars forming an arc, tracing a rough shape./ /jp 指の先を追うと、いくつかの星が弧を描いてつながり、おおよその形を作っていた。/ /ko 그쪽을 보니 별 몇 개가 곡선을 이루어 대강의 모양을 만들고 있었다./"
+l"/zhs 嗯....../ /zhc 嗯....../ /en Hmm.../ /jp うーん……。/ /ko 음....../"
+l"/zhs 嗯......./ /zhc 嗯......./ /en Hmm.../ /jp うーん……。/ /ko 음......./"
+l"/zhs 北.....北斗七星？/ /zhc 北.....北斗七星？/ /en The... Big Dipper?/ /jp ほ、北斗七星？/ /ko 부..... 북두칠성?/"
 voice cp1/xiayo_444.m4a
-x2 "才不是！！"
+x2 "/zhs 才不是！！/ /zhc 才不是！！/ /en No!!/ /jp 違う！！/ /ko 아니거든!!/"
 voice cp1/xiayo_445.m4a
-x2 "是射手座！"
+x2 "/zhs 是射手座！/ /zhc 是射手座！/ /en Sagittarius!/ /jp いて座！/ /ko 사수자리야!/"
 // persistent.cg057 = True
 cg cg_cp1_5 1
 ////手放下去
 voice cp1/xiayo_446.m4a
-x2 "你看，那颗最亮的星星，就是人马座α星，或者叫做“射手座的心脏”。"
-l"你对星星挺了解的嘛。"
+x2 "/zhs 你看，那颗最亮的星星，就是人马座α星，或者叫做“射手座的心脏”。/ /zhc 你看，那顆最亮的星星，就是人馬座α星，或者叫做“射手座的心臟”。/ /en See that brightest star? That's Alpha Sagittarii, also called the ‘heart of the Archer.’/ /jp ほら、一番明るい星が、いて座のアルファ星。「いて座の心臓」とも呼ぶんだよ。/ /ko 저기 제일 밝은 별이 궁수자리 알파별이야. ‘사수자리의 심장’이라고도 해./"
+l"/zhs 你对星星挺了解的嘛。/ /zhc 你對星星挺了解的嘛。/ /en You know quite a bit about stars./ /jp 星に詳しいんだな。/ /ko 별을 꽤 잘 아네./"
 cg cg_cp1_5 2
 ////抬手
 endnvln
 nvln
 voice cp1/xiayo_447.m4a
-x2 "再看那边！！你猜那个是什么星座？"
-l"嗯......"
-l"北......北斗七星？"
+x2 "/zhs 再看那边！！你猜那个是什么星座？/ /zhc 再看那邊！！你猜那個是什麼星座？/ /en Now look over there!! Guess which constellation that is!/ /jp じゃあ、あっちは！！ 何座だと思う？/ /ko 저기도 봐!! 저건 무슨 별자리게?/"
+l"/zhs 嗯....../ /zhc 嗯....../ /en Hmm.../ /jp うーん……。/ /ko 음....../"
+l"/zhs 北......北斗七星？/ /zhc 北......北斗七星？/ /en The... Big Dipper?/ /jp ほ……北斗七星？/ /ko 부...... 북두칠성?/"
 voice cp1/xiayo_448.m4a
-x2 "才不是！！"
+x2 "/zhs 才不是！！/ /zhc 才不是！！/ /en No!!/ /jp 違う！！/ /ko 아니거든!!/"
 voice cp1/xiayo_449.m4a
-x2 "是猎户座！！"
+x2 "/zhs 是猎户座！！/ /zhc 是獵戶座！！/ /en Orion!!/ /jp オリオン座！！/ /ko 오리온자리야!!/"
 cg cg_cp1_5 1
 ////手放下去
 voice cp1/xiayo_450.m4a
-x2 "我说啊，你只认识北斗七星对吧！？"
-l"好厉害，你是怎么知道的？"
-x2 "......"
+x2 "/zhs 我说啊，你只认识北斗七星对吧！？/ /zhc 我說啊，你只認識北斗七星對吧！？/ /en Hey, the Big Dipper is the only one you know, isn't it?!/ /jp ねえ、北斗七星しか知らないでしょ！？/ /ko 너 말이야, 북두칠성밖에 모르지!?/"
+l"/zhs 好厉害，你是怎么知道的？/ /zhc 好厲害，你是怎麼知道的？/ /en Amazing. How did you know?/ /jp すごいな。なんでわかった？/ /ko 대단하다. 어떻게 알았어?/"
+x2 "/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 voice cp1/xiayo_451.m4a
-x2 "哼！"
+x2 "/zhs 哼！/ /zhc 哼！/ /en Hmph!/ /jp ふん！/ /ko 흥!/"
 voice cp1/xiayo_452.m4a
-x2 "算了..."
+x2 "/zhs 算了.../ /zhc 算了.../ /en Never mind.../ /jp もういい……。/ /ko 됐어.../"
 endnvln
 nvln
 voice cp1/xiayo_453.m4a
-x2 "那一排排列成直线的三颗星星，就是猎户座的腰带，也叫“猎户腰带”。"
+x2 "/zhs 那一排排列成直线的三颗星星，就是猎户座的腰带，也叫“猎户腰带”。/ /zhc 那一排排列成直線的三顆星星，就是獵戶座的腰帶，也叫“獵戶腰帶”。/ /en Those three stars in a straight line make the hunter's belt. They're called Orion's Belt./ /jp 一直線に並んだ三つの星が、オリオンのベルト。「オリオンの三つ星」とも呼ばれるの。/ /ko 일렬로 나란한 세 별은 오리온의 허리띠야. ‘오리온 벨트’라고도 하지./"
 voice cp1/xiayo_454.m4a
-x2 "而且在猎户座的右上角，还有一颗巨大的红色星星，叫做参宿四，是猎户的肩膀。"
+x2 "/zhs 而且在猎户座的右上角，还有一颗巨大的红色星星，叫做参宿四，是猎户的肩膀。/ /zhc 而且在獵戶座的右上角，還有一顆巨大的紅色星星，叫做參宿四，是獵戶的肩膀。/ /en And at Orion's upper right is a huge red star, Betelgeuse. That's his shoulder./ /jp それから右上には、大きな赤い星があるでしょ。ベテルギウスっていって、オリオンの肩なの。/ /ko 그리고 오리온자리 오른쪽 위의 커다란 붉은 별은 베텔게우스야. 오리온의 어깨지./"
 voice cp1/xiayo_455.m4a
-x2 "它是一个超级巨星，据说未来某天可能会爆发成超新星，到时候整个天空都会被照亮。"
-l"那岂不是很震撼？"
+x2 "/zhs 它是一个超级巨星，据说未来某天可能会爆发成超新星，到时候整个天空都会被照亮。/ /zhc 它是一個超級巨星，據說未來某天可能會爆發成超新星，到時候整個天空都會被照亮。/ /en It's a supergiant. They say it might explode as a supernova someday and light up the whole sky./ /jp 超巨星で、いつか超新星爆発を起こすかもしれないんだって。そのときは、空全体が明るくなるんだよ。/ /ko 초거성이야. 언젠가 초신성으로 폭발하면 온 하늘을 밝힐 수도 있대./"
+l"/zhs 那岂不是很震撼？/ /zhc 那豈不是很震撼？/ /en Wouldn't that be incredible?/ /jp それって、すごい光景じゃないか？/ /ko 그럼 엄청나겠다?/"
 voice cp1/xiayo_456.m4a
-x2 "是啊，所以我一直期待着那一天。"
+x2 "/zhs 是啊，所以我一直期待着那一天。/ /zhc 是啊，所以我一直期待著那一天。/ /en Yeah. That's why I'm always looking forward to it./ /jp うん。だから、ずっとその日を楽しみにしてる。/ /ko 응. 그래서 그날을 계속 기다리고 있어./"
 voice cp1/xiayo_457.m4a
-x2 "可惜我们不知道那会是什么时候，也许是几千年后，也许是明天。"
+x2 "/zhs 可惜我们不知道那会是什么时候，也许是几千年后，也许是明天。/ /zhc 可惜我們不知道那會是什麼時候，也許是幾千年後，也許是明天。/ /en Too bad we don't know when. It could be thousands of years from now, or tomorrow./ /jp でも、いつなのかわからないのが残念。何千年も先かもしれないし、明日かもしれない。/ /ko 언제일지 모르는 게 아쉽지. 몇천 년 뒤일 수도, 내일일 수도 있어./"
 endnvln
 nvln
 cg cg_cp1_5 2
 ////抬手
 voice cp1/xiayo_458.m4a
-x2 "你再猜那个是什么星座？"
-"夏悠指向北方那一片繁星闪烁的天空。"
-l"首先排除北斗七星......"
+x2 "/zhs 你再猜那个是什么星座？/ /zhc 你再猜那個是什麼星座？/ /en Now guess what that constellation is./ /jp じゃあ、あれは何座だと思う？/ /ko 그럼 저건 무슨 별자리게?/"
+"/zhs 夏悠指向北方那一片繁星闪烁的天空。/ /zhc 夏悠指向北方那一片繁星閃爍的天空。/ /en Xia You pointed toward the star-filled northern sky./ /jp 夏悠が、星のきらめく北の空を指した。/ /ko 샤유가 별이 반짝이는 북쪽 하늘을 가리켰다./"
+l"/zhs 首先排除北斗七星....../ /zhc 首先排除北斗七星....../ /en Well, first we can rule out the Big Dipper.../ /jp とりあえず、北斗七星は除外して……。/ /ko 일단 북두칠성은 아니고....../"
 voice cp1/xiayo_459.m4a
-x2 "才不是！！"
+x2 "/zhs 才不是！！/ /zhc 才不是！！/ /en No!!/ /jp 違う！！/ /ko 아니거든!!/"
 voice cp1/xiayo_460.m4a
-x2 "这次的还真是北斗七星！！"
+x2 "/zhs 这次的还真是北斗七星！！/ /zhc 這次的還真是北斗七星！！/ /en This one really is the Big Dipper!!/ /jp 今度こそ、本当に北斗七星！！/ /ko 이번에는 진짜 북두칠성이야!!/"
 voice cp1/xiayo_461.m4a
-x2 "终于见到真的北斗七星了，可喜可贺可喜可贺。"
-"夏悠笑了起来。"
+x2 "/zhs 终于见到真的北斗七星了，可喜可贺可喜可贺。/ /zhc 終於見到真的北斗七星了，可喜可賀可喜可賀。/ /en At last, the real Big Dipper. Congratulations. Congratulations./ /jp やっと本物の北斗七星に会えたね。めでたい、めでたい。/ /ko 드디어 진짜 북두칠성을 만났다. 경사로다, 경사로다./"
+"/zhs 夏悠笑了起来。/ /zhc 夏悠笑了起來。/ /en Xia You laughed./ /jp 夏悠が笑った。/ /ko 샤유가 웃었다./"
 voice cp1/xiayo_462.m4a
-x2 "我跟你说哦...北斗七星其实是大熊座的一部分，小时候我一直以为它是个独立的星座呢。"
-l"啊？"
-l"真的假的？"
+x2 "/zhs 我跟你说哦...北斗七星其实是大熊座的一部分，小时候我一直以为它是个独立的星座呢。/ /zhc 我跟你說哦...北斗七星其實是大熊座的一部分，小時候我一直以為它是個獨立的星座呢。/ /en You know... the Big Dipper is actually part of Ursa Major. When I was little, I always thought it was its own constellation./ /jp あのね……北斗七星って、実はおおぐま座の一部なんだよ。小さい頃は、独立した星座だと思ってた。/ /ko 있잖아... 북두칠성은 사실 큰곰자리의 일부야. 어릴 땐 별개의 별자리인 줄 알았어./"
+l"/zhs 啊？/ /zhc 啊？/ /en Huh?/ /jp え？/ /ko 어?/"
+l"/zhs 真的假的？/ /zhc 真的假的？/ /en Really?/ /jp 本当に？/ /ko 진짜?/"
 endnvln
 nvln
 cg cg_cp1_5 1
 voice cp1/xiayo_463.m4a
-x2 "没事的，很多人到现在都还不知道这件事情的。"
+x2 "/zhs 没事的，很多人到现在都还不知道这件事情的。/ /zhc 沒事的，很多人到現在都還不知道這件事情的。/ /en It's okay. Lots of people still don't know that./ /jp 大丈夫。今でも知らない人、いっぱいいるから。/ /ko 괜찮아. 아직도 모르는 사람 많아./"
 voice cp1/xiayo_464.m4a
-x2 "北斗七星，更多被提起，是因为它长得像一根细长的勺子。"
-l"嗯嗯，语文课本的课文里提到过。"
+x2 "/zhs 北斗七星，更多被提起，是因为它长得像一根细长的勺子。/ /zhc 北斗七星，更多被提起，是因為它長得像一根細長的勺子。/ /en People talk about the Big Dipper so much because it looks like a long, thin ladle./ /jp 細長いひしゃくみたいな形だから、北斗七星のほうがよく話題になるんだ。/ /ko 북두칠성이 유명한 건 길쭉한 국자처럼 생겨서야./"
+l"/zhs 嗯嗯，语文课本的课文里提到过。/ /zhc 嗯嗯，語文課本的課文裡提到過。/ /en Yeah. Our Chinese textbook mentioned that./ /jp うんうん、国語の教科書にも出てきた。/ /ko 응, 응. 국어 교과서에서 봤어./"
 voice cp1/xiayo_465.m4a
-x2 "找到只知道北斗七星的原因了..."
+x2 "/zhs 找到只知道北斗七星的原因了.../ /zhc 找到只知道北斗七星的原因了.../ /en Mystery solved. That's why you only know the Big Dipper.../ /jp 北斗七星しか知らない理由がわかった……。/ /ko 북두칠성만 아는 이유를 찾았네.../"
 voice cp1/xiayo_466.m4a
-x2 "不过只要看到天上有北斗七星，就会觉得心里很踏实。毕竟它总是在北方嘛，像个指路的标志一样。"
+x2 "/zhs 不过只要看到天上有北斗七星，就会觉得心里很踏实。毕竟它总是在北方嘛，像个指路的标志一样。/ /zhc 不過只要看到天上有北斗七星，就會覺得心裡很踏實。畢竟它總是在北方嘛，像個指路的標誌一樣。/ /en But seeing it in the sky always makes me feel safe. It's always in the north, after all. Like a signpost./ /jp でも、空に北斗七星があると安心するんだ。いつも北にあって、道しるべみたいだから。/ /ko 그래도 하늘에 북두칠성이 있으면 마음이 놓여. 항상 북쪽에 있으니까 길잡이 같잖아./"
 voice cp1/xiayo_467.m4a
-x2 "无论你在哪里，只要看到北斗七星，就能知道北方在哪。"
+x2 "/zhs 无论你在哪里，只要看到北斗七星，就能知道北方在哪。/ /zhc 無論你在哪裡，只要看到北斗七星，就能知道北方在哪。/ /en Wherever you are, seeing the Big Dipper tells you which way is north./ /jp どこにいても、北斗七星が見えれば、北がわかる。/ /ko 어디에 있든 북두칠성만 보면 북쪽을 알 수 있어./"
 voice cp1/xiayo_468.m4a
-x2 "这大概也是为什么它那么受欢迎的原因吧。"
+x2 "/zhs 这大概也是为什么它那么受欢迎的原因吧。/ /zhc 這大概也是為什麼它那麼受歡迎的原因吧。/ /en That's probably another reason it's so popular./ /jp それも、人気がある理由なのかもしれないね。/ /ko 그래서 인기가 많은가 봐./"
 endnvln
 nvln
 cg cg_cp1_5 2
@@ -683,65 +683,65 @@ cg cg_cp1_5 2
 endnvln
 nvln
 voice cp1/xiayo_469.m4a
-x2 "诶，你说林澄..."
+x2 "/zhs 诶，你说林澄.../ /zhc 誒，你說林澄.../ /en Hey, Lin Cheng.../ /jp ねえ、林澄……。/ /ko 저기, 린청.../"
 voice cp1/xiayo_470.m4a
-x2 "星空的另一侧是什么呢？"
-l"令人深思的问题。"
-l"这是什么人格测试吗？"
+x2 "/zhs 星空的另一侧是什么呢？/ /zhc 星空的另一側是什麼呢？/ /en What's on the other side of the stars?/ /jp 星空の向こう側には、何があるんだろう？/ /ko 별하늘 저편에는 뭐가 있을까?/"
+l"/zhs 令人深思的问题。/ /zhc 令人深思的問題。/ /en A thought-provoking question./ /jp 考えさせられる質問だな。/ /ko 깊이 생각하게 만드는 질문이다./"
+l"/zhs 这是什么人格测试吗？/ /zhc 這是什麼人格測試嗎？/ /en Is this some kind of personality test?/ /jp 何かの性格診断？/ /ko 심리 테스트야?/"
 voice cp1/xiayo_471.m4a
-x2 "不是哦..."
+x2 "/zhs 不是哦.../ /zhc 不是哦.../ /en No.../ /jp 違うよ……。/ /ko 아니야.../"
 voice cp1/xiayo_472.m4a
-x2 "星空的另一侧，宇宙之上的部分...是什么呢？"
+x2 "/zhs 星空的另一侧，宇宙之上的部分...是什么呢？/ /zhc 星空的另一側，宇宙之上的部分...是什麼呢？/ /en Beyond the stars, above the universe... what's there?/ /jp 星空の向こう側、宇宙のさらに上には……何があるのかな？/ /ko 별하늘 저편, 우주 위에는... 뭐가 있을까?/"
 voice cp1/xiayo_473.m4a
-x2 "会有神的存在吗？"
-l"如果是以前的我，大概会立马否决。"
-l"神明是什么东西啊～你说神明创造了人类，那神明又是谁创造的呢？"
-l"但是现在我陷入了迷茫，或许神明确实存在。"
-l"毕竟就算是科学解释上的宇宙大爆炸，那宇宙为什么会大爆炸呢?大爆炸之前的宇宙是怎么形成的呢？"
-l"再加上，我确确实实看到了超自然现象。"
-l"超自然到科学很难解释的，涉足神明领域的范畴。"
+x2 "/zhs 会有神的存在吗？/ /zhc 會有神的存在嗎？/ /en Could there be a god?/ /jp 神様が、いるのかな？/ /ko 신이 있을까?/"
+l"/zhs 如果是以前的我，大概会立马否决。/ /zhc 如果是以前的我，大概會立馬否決。/ /en The old me would probably have dismissed the idea at once./ /jp 前の俺なら、すぐ否定してただろうな。/ /ko 예전의 나라면 바로 아니라고 했을 것이다./"
+l"/zhs 神明是什么东西啊～你说神明创造了人类，那神明又是谁创造的呢？/ /zhc 神明是什麼東西啊～你說神明創造了人類，那神明又是誰創造的呢？/ /en What was a god, anyway? If gods created humanity, then who created the gods?/ /jp 神様って何だよ～。人間を神様が作ったなら、神様は誰が作ったんだ、って。/ /ko 신이 뭐야～ 신이 인간을 만들었다면 신은 누가 만들었는데?/"
+l"/zhs 但是现在我陷入了迷茫，或许神明确实存在。/ /zhc 但是現在我陷入了迷茫，或許神明確實存在。/ /en But now I wasn't sure. Perhaps a god really did exist./ /jp でも今は、わからなくなってる。本当にいるのかもしれない。/ /ko 하지만 지금은 혼란스럽다. 어쩌면 신은 정말 존재할지도 모른다./"
+l"/zhs 毕竟就算是科学解释上的宇宙大爆炸，那宇宙为什么会大爆炸呢?大爆炸之前的宇宙是怎么形成的呢？/ /zhc 畢竟就算是科學解釋上的宇宙大爆炸，那宇宙為什麼會大爆炸呢?大爆炸之前的宇宙是怎麼形成的呢？/ /en Even with science's Big Bang explanation, why had the Big Bang happened? How had the universe before it come into being?/ /jp 科学が言うビッグバンだって、どうして起きたんだ？ その前の宇宙は、どうやってできたんだろう？/ /ko 과학에서 설명하는 빅뱅이라고 해도, 우주는 왜 대폭발을 했을까? 그전의 우주는 어떻게 생겨났을까?/"
+l"/zhs 再加上，我确确实实看到了超自然现象。/ /zhc 再加上，我確確實實看到了超自然現象。/ /en Besides, I'd truly witnessed something supernatural./ /jp それに俺は、確かに超常現象を見た。/ /ko 게다가 나는 분명 초자연 현상을 보았다./"
+l"/zhs 超自然到科学很难解释的，涉足神明领域的范畴。/ /zhc 超自然到科學很難解釋的，涉足神明領域的範疇。/ /en Something so far beyond science's explanations that it touched the realm of gods./ /jp 科学では説明しづらい、神様の領域に踏み込むようなことを。/ /ko 과학으로 설명하기 어려운, 신의 영역에 발을 들인 현상을./"
 endnvln
 nvln
 cg cg_cp1_5 1
 voice cp1/xiayo_474.m4a
-x2 "..."
+x2 "/zhs .../ /zhc .../ /en .../ /jp .../ /ko .../"
 voice cp1/xiayo_475.m4a
-x2 "也对...现在不知道答案的话也没关系..."
+x2 "/zhs 也对...现在不知道答案的话也没关系.../ /zhc 也對...現在不知道答案的話也沒關係.../ /en You're right... It's okay if we don't know the answer yet.../ /jp そうだね……今は答えがわからなくても、いいよね……。/ /ko 그러게... 지금 답을 몰라도 괜찮아.../"
 voice cp1/xiayo_476.m4a
-x2 "总会有答案揭示的那一天的..."
+x2 "/zhs 总会有答案揭示的那一天的.../ /zhc 總會有答案揭示的那一天的.../ /en One day, the answer will come to light.../ /jp いつか、明かされる日が来るはずだから……。/ /ko 언젠가는 답이 드러나는 날이 올 테니까.../"
 endnvln
 nvln
-"......"
-"我和夏悠继续欣赏着那片美丽的星空。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 我和夏悠继续欣赏着那片美丽的星空。/ /zhc 我和夏悠繼續欣賞著那片美麗的星空。/ /en Xia You and I kept admiring the beautiful starry sky./ /jp 夏悠と、美しい星空を眺め続けた。/ /ko 샤유와 나는 아름다운 별하늘을 계속 바라보았다./"
 endnvln
 nvln
 cg cg_cp1_5 2
 ////抬手
 voice cp1/xiayo_477.m4a
-x2 "真是皎洁的月光啊～"
-"夏悠指着月亮，说到。"
+x2 "/zhs 真是皎洁的月光啊～/ /zhc 真是皎潔的月光啊～/ /en What lovely, bright moonlight~/ /jp きれいな月明かりだね～。/ /ko 달빛 참 곱다～/"
+"/zhs 夏悠指着月亮，说到。/ /zhc 夏悠指著月亮，說到。/ /en Xia You said, pointing at the moon./ /jp 月を指さして、夏悠が言った。/ /ko 샤유가 달을 가리키며 말했다./"
 endnvln
 nvln
-l"是啊..."
-l"我说你啊！不要用手指月亮啊！耳朵会被割掉的！！"
+l"/zhs 是啊.../ /zhc 是啊.../ /en Yeah.../ /jp そうだな……。/ /ko 그러게.../"
+l"/zhs 我说你啊！不要用手指月亮啊！耳朵会被割掉的！！/ /zhc 我說你啊！不要用手指月亮啊！耳朵會被割掉的！！/ /en Hey! Don't point at the moon! It'll cut your ears off!!/ /jp おい！ 月を指さすなよ！ 耳を切られちゃうぞ！！/ /ko 야! 손으로 달 가리키지 마! 귀 잘린단 말이야!!/"
 voice cp1/xiayo_478.m4a
-x2 "哈哈哈哈......"
+x2 "/zhs 哈哈哈哈....../ /zhc 哈哈哈哈....../ /en Hahaha.../ /jp あははは……。/ /ko 하하하하....../"
 cg cg_cp1_5 1
 ////放手
 voice cp1/xiayo_479.m4a
-x2 "你说...月亮上，会住着另一个我们吗？"
-l"谁知道呢......"
-l"毕竟那还是，无人踏足过的隐秘之地......"
-l"发射过的探测器，都会在中途失去信号..."
-l"被称为星空中的百慕大三角。"
-l"这轮明月，藏着多少东西呢？"
+x2 "/zhs 你说...月亮上，会住着另一个我们吗？/ /zhc 你說...月亮上，會住著另一個我們嗎？/ /en Do you think... another us might live on the moon?/ /jp ねえ……月には、もう一組の私たちが住んでるのかな？/ /ko 있잖아... 달에는 또 다른 우리가 살고 있을까?/"
+l"/zhs 谁知道呢....../ /zhc 誰知道呢....../ /en Who knows...?/ /jp さあ、どうだろう……。/ /ko 누가 알겠어....../"
+l"/zhs 毕竟那还是，无人踏足过的隐秘之地....../ /zhc 畢竟那還是，無人踏足過的隱秘之地....../ /en After all, it's still a mysterious place no one has ever set foot on.../ /jp まだ誰も踏み入れたことのない、秘密の場所だからな……。/ /ko 아직 아무도 발을 들이지 못한 비밀의 땅이잖아....../"
+l"/zhs 发射过的探测器，都会在中途失去信号.../ /zhc 發射過的探測器，都會在中途失去訊號.../ /en Every probe sent there loses contact on the way.../ /jp 送られた探査機は、どれも途中で通信が途絶える……。/ /ko 보낸 탐사선은 전부 도중에 신호가 끊겼고.../"
+l"/zhs 被称为星空中的百慕大三角。/ /zhc 被稱為星空中的百慕大三角。/ /en They call it the Bermuda Triangle of the stars./ /jp 星空のバミューダトライアングルと呼ばれてる。/ /ko 별하늘의 버뮤다 삼각지대라고 불리지./"
+l"/zhs 这轮明月，藏着多少东西呢？/ /zhc 這輪明月，藏著多少東西呢？/ /en How many secrets does that bright moon hold?/ /jp あの月は、どれだけのものを隠してるんだろう？/ /ko 저 밝은 달에는 얼마나 많은 게 숨어 있을까?/"
 endnvln
 nvln
-"........"
-".........."
-l"这么梦幻的景色，都怀疑自己是在做梦了......"
+"/zhs ......../ /zhc ......../ /en ......../ /jp ......../ /ko ......../"
+"/zhs ........../ /zhc ........../ /en ........../ /jp ........../ /ko ........../"
+l"/zhs 这么梦幻的景色，都怀疑自己是在做梦了....../ /zhc 這麼夢幻的景色，都懷疑自己是在做夢了....../ /en A view this dreamlike... I almost wonder if I'm dreaming.../ /jp こんな夢みたいな景色、本当に夢を見てる気がしてくるな……。/ /ko 너무 환상적이라 꿈꾸는 것 같아....../"
 voice cp1/xiayo_480.m4a
-x2 "如果真是在做梦呢？"
+x2 "/zhs 如果真是在做梦呢？/ /zhc 如果真是在做夢呢？/ /en What if you really are?/ /jp もし、本当に夢を見てるとしたら？/ /ko 정말 꿈이라면?/"
 endnvln
 achievement unlock achievement4_cp1end
 api soranouta.chapter.complete id=1

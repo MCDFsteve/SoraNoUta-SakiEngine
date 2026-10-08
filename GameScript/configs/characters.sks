@@ -2,47 +2,47 @@
 //格式: 别名 : "显示名称" : 资源ID
 
 // 示例角色定义（请根据实际需要修改）
-main : "主角" : narrator
-nr : "旁白" : narrator
-n : "空白" : narrator
-nan : "???" :  narrator
-nanshin : "???" :  narrator
-lm : "林澄母亲" : narrator
-l : "林澄" : narrator
-x : "夏悠" : xiayo1 at xiayo1pose
-x2 : "夏悠" : xiayo1 at xiayo1pose
-xcp2 : "夏悠" : xiayo2 at xiayo2pose
-xcp2strong : "夏悠" : xiayo2 at xiayo2pose
-x2nan : "夏悠" : narrator
-ls : "刘守真" : syozen1 at xiayo1pose
-lsnan : "刘守真" : narrator
-lg : "李宫娜" : gonna1 at xiayo1pose
+main : "/zhs 主角/ /zhc 主角/ /en Protagonist/ /jp 主人公/ /ko 주인공/" : narrator
+nr : "/zhs 旁白/ /zhc 旁白/ /en Narrator/ /jp 地の文/ /ko 해설/" : narrator
+n : "/zhs 空白/ /zhc 空白/ /en Blank/ /jp 空白/ /ko 공백/" : narrator
+nan : "/zhs ???/ /zhc ???/ /en ???/ /jp ???/ /ko ???/" :  narrator
+nanshin : "/zhs ???/ /zhc ???/ /en ???/ /jp ???/ /ko ???/" :  narrator
+lm : "/zhs 林澄母亲/ /zhc 林澄母親/ /en Lin Cheng’s Mother/ /jp 林澄の母/ /ko 린청의 어머니/" : narrator
+l : "/zhs 林澄/ /zhc 林澄/ /en Lin Cheng/ /jp 林澄/ /ko 린청/" : narrator
+x : "/zhs 夏悠/ /zhc 夏悠/ /en Xia You/ /jp 夏悠/ /ko 샤유/" : xiayo1 at xiayo1pose
+x2 : "/zhs 夏悠/ /zhc 夏悠/ /en Xia You/ /jp 夏悠/ /ko 샤유/" : xiayo1 at xiayo1pose
+xcp2 : "/zhs 夏悠/ /zhc 夏悠/ /en Xia You/ /jp 夏悠/ /ko 샤유/" : xiayo2 at xiayo2pose
+xcp2strong : "/zhs 夏悠/ /zhc 夏悠/ /en Xia You/ /jp 夏悠/ /ko 샤유/" : xiayo2 at xiayo2pose
+x2nan : "/zhs 夏悠/ /zhc 夏悠/ /en Xia You/ /jp 夏悠/ /ko 샤유/" : narrator
+ls : "/zhs 刘守真/ /zhc 劉守真/ /en Liu Shouzhen/ /jp 劉守真/ /ko 류서우전/" : syozen1 at xiayo1pose
+lsnan : "/zhs 刘守真/ /zhc 劉守真/ /en Liu Shouzhen/ /jp 劉守真/ /ko 류서우전/" : narrator
+lg : "/zhs 李宫娜/ /zhc 李宮娜/ /en Li Gongna/ /jp 李宮娜/ /ko 리궁나/" : gonna1 at xiayo1pose
 // 第二章画师素材挂点：当前资源为透明层，交付后覆盖 gonna2/syozen2 即可。
-lgcp2 : "李宫娜" : gonna2 at cp2center slot:lg
-lscp2 : "刘守真" : syozen2 at cp2center slot:ls
-xnan : "夏悠" : narrator
-sensei : "老师" : narrator
-iru : "狗" : narrator
-oba : "老婆婆" : narrator
-onna : "阿姨" : narrator
-chan : "蝉" : narrator
-ojisann : "大叔" : narrator
-lb : "老板" : narrator
-ds : "大叔" : narrator
-xk : "萧可" : shioke at shiokepose
-xkm : "萧可母亲" : narrator
-qt : "蜻蜓" : narrator
-nan2 : "???" : narrator
-ijin : "旅人" : ijin at ijinpose
-msr : "女士" : ijin at ijinpose
-mswgr : "旅人" : ijin at ijinposeright
-lcfq : "林澄父亲" : narrator
-ccy : "陈雏莺" : chen at chenpose
-xkfq : "萧可父亲" : narrator
-phone : "手机" : narrator
-xpc : "林澄" : narrator
-xpxk : "萧可" : narrator
-xklc : "林澄&萧可" : narrator
+lgcp2 : "/zhs 李宫娜/ /zhc 李宮娜/ /en Li Gongna/ /jp 李宮娜/ /ko 리궁나/" : gonna2 at cp2center slot:lg
+lscp2 : "/zhs 刘守真/ /zhc 劉守真/ /en Liu Shouzhen/ /jp 劉守真/ /ko 류서우전/" : syozen2 at cp2center slot:ls
+xnan : "/zhs 夏悠/ /zhc 夏悠/ /en Xia You/ /jp 夏悠/ /ko 샤유/" : narrator
+sensei : "/zhs 老师/ /zhc 老師/ /en Teacher/ /jp 先生/ /ko 선생님/" : narrator
+iru : "/zhs 狗/ /zhc 狗/ /en Dog/ /jp 犬/ /ko 개/" : narrator
+oba : "/zhs 老婆婆/ /zhc 老婆婆/ /en Old Lady/ /jp おばあさん/ /ko 할머니/" : narrator
+onna : "/zhs 阿姨/ /zhc 阿姨/ /en Woman/ /jp おばさん/ /ko 아주머니/" : narrator
+chan : "/zhs 蝉/ /zhc 蟬/ /en Cicada/ /jp 蝉/ /ko 매미/" : narrator
+ojisann : "/zhs 大叔/ /zhc 大叔/ /en Man/ /jp おじさん/ /ko 아저씨/" : narrator
+lb : "/zhs 老板/ /zhc 老闆/ /en Shopkeeper/ /jp 店主/ /ko 사장님/" : narrator
+ds : "/zhs 大叔/ /zhc 大叔/ /en Man/ /jp おじさん/ /ko 아저씨/" : narrator
+xk : "/zhs 萧可/ /zhc 蕭可/ /en Xiao Ke/ /jp 蕭可/ /ko 샤오커/" : shioke at shiokepose
+xkm : "/zhs 萧可母亲/ /zhc 蕭可母親/ /en Xiao Ke’s Mother/ /jp 蕭可の母/ /ko 샤오커의 어머니/" : narrator
+qt : "/zhs 蜻蜓/ /zhc 蜻蜓/ /en Dragonfly/ /jp トンボ/ /ko 잠자리/" : narrator
+nan2 : "/zhs ???/ /zhc ???/ /en ???/ /jp ???/ /ko ???/" : narrator
+ijin : "/zhs 旅人/ /zhc 旅人/ /en Traveler/ /jp 旅人/ /ko 여행자/" : ijin at ijinpose
+msr : "/zhs 女士/ /zhc 女士/ /en Woman/ /jp 女性/ /ko 여성/" : ijin at ijinpose
+mswgr : "/zhs 旅人/ /zhc 旅人/ /en Traveler/ /jp 旅人/ /ko 여행자/" : ijin at ijinposeright
+lcfq : "/zhs 林澄父亲/ /zhc 林澄父親/ /en Lin Cheng’s Father/ /jp 林澄の父/ /ko 린청의 아버지/" : narrator
+ccy : "/zhs 陈雏莺/ /zhc 陳雛鶯/ /en Chen Chuying/ /jp 陳雛鶯/ /ko 천추잉/" : chen at chenpose
+xkfq : "/zhs 萧可父亲/ /zhc 蕭可父親/ /en Xiao Ke’s Father/ /jp 蕭可の父/ /ko 샤오커의 아버지/" : narrator
+phone : "/zhs 手机/ /zhc 手機/ /en Phone/ /jp 携帯電話/ /ko 휴대전화/" : narrator
+xpc : "/zhs 林澄/ /zhc 林澄/ /en Lin Cheng/ /jp 林澄/ /ko 린청/" : narrator
+xpxk : "/zhs 萧可/ /zhc 蕭可/ /en Xiao Ke/ /jp 蕭可/ /ko 샤오커/" : narrator
+xklc : "/zhs 林澄&萧可/ /zhc 林澄&蕭可/ /en Lin Cheng & Xiao Ke/ /jp 林澄＆蕭可/ /ko 린청&샤오커/" : narrator
 // 第二章物件特写；显示名为空，只作为 show/hide 可视资源使用。
 bookitem : "" : book at cp2item
 moneyitem : "" : money at cp2item

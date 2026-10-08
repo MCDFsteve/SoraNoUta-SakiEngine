@@ -19,24 +19,35 @@ import 'screens/soranouta_startup_flow.dart';
 /// SoraNoUta 项目的自定义模块
 /// 这个示例展示了如何为特定项目创建自定义模块
 class SoranoutaModule extends DefaultGameModule {
+  // The bundled serif contains Hangul, kana and traditional Chinese glyphs.
+  // Keep a deterministic fallback even on systems without CJK fonts.
+  static const _fontFallback = <String>['ChillJinshuSongPro_Soft'];
+
+  @override
+  ThemeData createTheme() => ThemeData(
+    primarySwatch: Colors.blue,
+    fontFamily: 'SourceHanSansCN',
+    fontFamilyFallback: _fontFallback,
+  );
+
   static const List<VoiceCharacterProfile> _voiceCharacterProfiles = [
     VoiceCharacterProfile(
       id: 'xiayo',
-      displayName: '夏悠',
+      displayName: '夏悠/en Xia You//jp 夏悠//zhc 夏悠//ko 샤유/',
       avatarAsset: 'Assets/images/characters/story1/pose/xiayo1-pose1.webp',
       previewVoiceAsset: 'Assets/voice/cp0/xiayo_001.m4a',
       voiceFilePrefixes: ['xiayo_'],
     ),
     VoiceCharacterProfile(
       id: 'syozen',
-      displayName: '刘守真',
+      displayName: '刘守真/en Liu Shouzhen//jp 劉守真//zhc 劉守真//ko 류서우전/',
       avatarAsset: 'Assets/images/characters/story1/pose/syozen1-pose1.webp',
       previewVoiceAsset: 'Assets/voice/cp0/syozen_001.m4a',
       voiceFilePrefixes: ['syozen_'],
     ),
     VoiceCharacterProfile(
       id: 'gonna',
-      displayName: '李宫娜',
+      displayName: '李宫娜/en Li Gongna//jp 李宮娜//zhc 李宮娜//ko 리궁나/',
       avatarAsset: 'Assets/images/characters/story1/pose/gonna1-pose1.webp',
       previewVoiceAsset: 'Assets/voice/cp0/gonna_001.m4a',
       voiceFilePrefixes: ['gonna_'],
@@ -78,10 +89,7 @@ class SoranoutaModule extends DefaultGameModule {
     Function(SaveSlot)? onLoadSlot,
   }) {
     // 在引擎内建设置页签之后追加项目页签（关于 / 制作人员名单）。
-    return SettingsScreen(
-      onClose: onClose,
-      extraTabs: soranoutaSettingsTabs(),
-    );
+    return SettingsScreen(onClose: onClose, extraTabs: soranoutaSettingsTabs());
   }
 
   @override
@@ -140,8 +148,28 @@ class SoranoutaModule extends DefaultGameModule {
     return 'SoraNoUta';
   }
 
+  static void configureTypography() {
+    final config = SakiEngineConfig();
+    config.dialogueTextStyle = config.dialogueTextStyle.copyWith(
+      fontFamilyFallback: _fontFallback,
+    );
+    config.speakerTextStyle = config.speakerTextStyle.copyWith(
+      fontFamilyFallback: _fontFallback,
+    );
+    config.choiceTextStyle = config.choiceTextStyle.copyWith(
+      fontFamilyFallback: _fontFallback,
+    );
+    config.reviewTitleTextStyle = config.reviewTitleTextStyle.copyWith(
+      fontFamilyFallback: _fontFallback,
+    );
+    config.quickMenuTextStyle = config.quickMenuTextStyle.copyWith(
+      fontFamilyFallback: _fontFallback,
+    );
+  }
+
   @override
   Future<void> initialize() async {
+    configureTypography();
     await SoranoutaChapterProgress.initialize();
     MusicManager().configureVoiceCharacters(_voiceCharacterProfiles);
     await MusicManager().initialize();

@@ -3,37 +3,37 @@ label cp1_006
 stop music 
 scene sky
 nvlm
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 endnvlm
 ////音乐 思考
 nvlm
 play music think
-"关于今天的事情，我所知道的是，未来的确有在被改变。"
-"我没有再请假回家了。"
-"还一起玩了枪手游戏。"
-"树干里子弹的来源，似乎也搞清楚了。"
-"不明白的是响声。"
-"但是说到底，真的存在过响声吗？"
-"会不会是我记忆出现了错误。"
-"会不会是我记错了，误认为听到了响声。"
+"/zhs 关于今天的事情，我所知道的是，未来的确有在被改变。/ /zhc 關於今天的事情，我所知道的是，未來的確有在被改變。/ /en What I knew about today was that the future really was changing./ /jp 今日のことでわかったのは、未来は確かに変わりつつあるということだ。/ /ko 오늘 일을 통해 확실히 알게 된 건 미래가 바뀌고 있다는 것이다./"
+"/zhs 我没有再请假回家了。/ /zhc 我沒有再請假回家了。/ /en I hadn't gone home sick this time./ /jp 今回は、早退しなかった。/ /ko 나는 다시 조퇴하지 않았다./"
+"/zhs 还一起玩了枪手游戏。/ /zhc 還一起玩了槍手遊戲。/ /en We'd even played our gunfight game together./ /jp みんなとガンマンごっこもした。/ /ko 함께 총잡이 놀이도 했다./"
+"/zhs 树干里子弹的来源，似乎也搞清楚了。/ /zhc 樹幹裡子彈的來源，似乎也搞清楚了。/ /en And I seemed to have figured out where the bullet in the tree came from./ /jp 幹の弾丸がどこから来たのかも、わかった気がする。/ /ko 나무줄기에 박힌 총알의 출처도 알아낸 것 같다./"
+"/zhs 不明白的是响声。/ /zhc 不明白的是響聲。/ /en The noise was what I couldn't explain./ /jp わからないのは、あの音だ。/ /ko 설명되지 않는 건 소리다./"
+"/zhs 但是说到底，真的存在过响声吗？/ /zhc 但是說到底，真的存在過響聲嗎？/ /en But had there really been a noise at all?/ /jp でも、そもそも音なんて本当にしたのか？/ /ko 그런데 정말 소리가 나긴 했을까?/"
+"/zhs 会不会是我记忆出现了错误。/ /zhc 會不會是我記憶出現了錯誤。/ /en Could my memory be wrong?/ /jp 俺の記憶が間違っているんじゃないか。/ /ko 내 기억이 잘못된 건 아닐까?/"
+"/zhs 会不会是我记错了，误认为听到了响声。/ /zhc 會不會是我記錯了，誤認為聽到了響聲。/ /en Had I misremembered and only thought I'd heard it?/ /jp 記憶違いで、聞いたと思い込んでいるんじゃないか。/ /ko 잘못 기억해서 소리를 들었다고 착각한 건 아닐까?/"
 endnvlm
 nvlm
-"因为那段记忆已经开始变得模糊不清了。"
-"以及中午的白日梦是怎么回事？"
-"在我所经历过一次的那次，中午我午睡的时候也没有做出这种梦。"
-"也对，我不仅更换了睡觉的姿势和场所，甚至我都没在草地上睡着。"
-"听说梦的内容跟睡觉之前所想的东西，所做的事都有关系。"
-"想起以前我白天看了好几集名侦探的动画片。"
-"到了晚上做梦就真的梦到了名侦探在破案，我则在案发现场。"
-"所以做的梦内容不一样也是可以解释的。"
+"/zhs 因为那段记忆已经开始变得模糊不清了。/ /zhc 因為那段記憶已經開始變得模糊不清了。/ /en That memory was already beginning to blur./ /jp あの記憶は、もう曖昧になり始めているから。/ /ko 그 기억이 이미 흐릿해지기 시작했으니까./"
+"/zhs 以及中午的白日梦是怎么回事？/ /zhc 以及中午的白日夢是怎麼回事？/ /en And what was that daydream at noon?/ /jp それに、昼の白昼夢は何だったんだ？/ /ko 그리고 점심때의 백일몽은 뭐였지?/"
+"/zhs 在我所经历过一次的那次，中午我午睡的时候也没有做出这种梦。/ /zhc 在我所經歷過一次的那次，中午我午睡的時候也沒有做出這種夢。/ /en The first time I'd lived through this, I hadn't had a dream like that during my nap./ /jp 一度目に体験したときは、昼寝をしてもあんな夢は見なかった。/ /ko 지난번에는 점심에 낮잠을 자도 그런 꿈을 꾸지 않았다./"
+"/zhs 也对，我不仅更换了睡觉的姿势和场所，甚至我都没在草地上睡着。/ /zhc 也對，我不僅更換了睡覺的姿勢和場所，甚至我都沒在草地上睡著。/ /en Then again, I'd changed both my sleeping position and location. I hadn't even properly fallen asleep on the grass./ /jp そうか。寝る姿勢も場所も変わったし、そもそも草の上では眠ってすらいなかった。/ /ko 하긴. 자세와 장소가 달라졌고, 풀밭에서는 잠이 든 것도 아니었다./"
+"/zhs 听说梦的内容跟睡觉之前所想的东西，所做的事都有关系。/ /zhc 聽說夢的內容跟睡覺之前所想的東西，所做的事都有關係。/ /en They said dreams were connected to what you thought and did before sleeping./ /jp 夢は眠る前に考えたことや、やったことに影響されるという。/ /ko 꿈의 내용은 자기 전에 생각하거나 했던 일과 관련이 있다던데./"
+"/zhs 想起以前我白天看了好几集名侦探的动画片。/ /zhc 想起以前我白天看了好幾集名偵探的動畫片。/ /en I remembered watching several episodes of a famous detective cartoon one day./ /jp 前に、昼間ずっと名探偵のアニメを何話も見たことがあった。/ /ko 전에 낮에 명탐정 만화를 몇 편이나 봤던 게 떠올랐다./"
+"/zhs 到了晚上做梦就真的梦到了名侦探在破案，我则在案发现场。/ /zhc 到了晚上做夢就真的夢到了名偵探在破案，我則在案發現場。/ /en That night, I'd actually dreamed of the detective solving a case, with me at the crime scene./ /jp その晩は、本当に名探偵が事件を解く夢を見て、俺も現場にいた。/ /ko 그날 밤 꿈에 정말 명탐정이 나와 사건을 풀었고, 나는 사건 현장에 있었다./"
+"/zhs 所以做的梦内容不一样也是可以解释的。/ /zhc 所以做的夢內容不一樣也是可以解釋的。/ /en So there was an explanation for having a different dream./ /jp だから、夢の内容が変わったことは説明できる。/ /ko 그러니 꿈 내용이 달라진 것도 설명할 수 있다./"
 endnvlm
 stop music 
 scene grass with wipe
 ////背景切到草地 无音乐 结束nvl
 nvlm
-"......"
-"玩够以后李宫娜和刘守真回到了教室。"
-"我则和夏悠继续在草地上晒太阳。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 玩够以后李宫娜和刘守真回到了教室。/ /zhc 玩夠以後李宮娜和劉守真回到了教室。/ /en When we'd had enough, Li Gongna and Liu Shouzhen returned to the classroom./ /jp 十分遊ぶと、李宮娜と劉守真は教室へ戻った。/ /ko 실컷 놀고 리궁나와 류서우전은 교실로 돌아갔다./"
+"/zhs 我则和夏悠继续在草地上晒太阳。/ /zhc 我則和夏悠繼續在草地上曬太陽。/ /en Xia You and I stayed on the grass to sunbathe./ /jp 俺と夏悠は、そのまま草地で日向ぼっこを続ける。/ /ko 샤유와 나는 풀밭에 남아 햇볕을 쬐었다./"
 endnvlm
 play music gogo
 ////空灵的音乐
@@ -42,230 +42,230 @@ play sound suzume loop
 cg cgcp0_1 1
 ////夏悠躺草地cg
 voice cp1/xiayo_271.m4a
-x "阳光真是舒服啊～"////cg1 4
-"夏悠感叹道。"
-l "确实很舒服～"
-"我附和道。"
+x "/zhs 阳光真是舒服啊～/ /zhc 陽光真是舒服啊～/ /en The sunshine feels so nice~/ /jp お日さま、気持ちいいね～。/ /ko 햇볕 정말 좋다～/"////cg1 4
+"/zhs 夏悠感叹道。/ /zhc 夏悠感嘆道。/ /en Xia You sighed contentedly./ /jp 夏悠がしみじみ言う。/ /ko 샤유가 감탄했다./"
+l "/zhs 确实很舒服～/ /zhc 確實很舒服～/ /en It really does~/ /jp ほんと、気持ちいいな～。/ /ko 그러게, 좋네～/"
+"/zhs 我附和道。/ /zhc 我附和道。/ /en I agreed./ /jp 俺も同意した。/ /ko 나도 맞장구쳤다./"
 scene sky with diss
 //how一个天空背景
-"两个人躺在松软的草地上，望着天空。"
-"阳光惬意的打在身上。"
-"躺了很久很久。"
+"/zhs 两个人躺在松软的草地上，望着天空。/ /zhc 兩個人躺在鬆軟的草地上，望著天空。/ /en The two of us lay on the soft grass, looking up at the sky./ /jp 二人で柔らかな草に寝そべり、空を眺める。/ /ko 두 사람은 푹신한 풀밭에 누워 하늘을 보았다./"
+"/zhs 阳光惬意的打在身上。/ /zhc 陽光愜意的打在身上。/ /en Sunlight rested comfortably on our skin./ /jp 心地よい日差しが体を包む。/ /ko 햇살이 포근하게 몸을 비췄다./"
+"/zhs 躺了很久很久。/ /zhc 躺了很久很久。/ /en We lay there for a long, long time./ /jp 長い、長い時間、そうしていた。/ /ko 아주, 아주 오래 누워 있었다./"
 ////hide掉show的天空
 cg cgcp0_2 1 
 voice cp1/xiayo_272.m4a
-x "那个。"////cg1_1 1
-"夏悠开口了。"
-"夏悠扭过头，似乎有想说的话题。"
-l "怎么了？"
-l "你又打算问“你到底是谁”吗？"
+x "/zhs 那个。/ /zhc 那個。/ /en Hey./ /jp ねえ。/ /ko 저기./"////cg1_1 1
+"/zhs 夏悠开口了。/ /zhc 夏悠開口了。/ /en Xia You spoke./ /jp 夏悠が口を開いた。/ /ko 샤유가 입을 열었다./"
+"/zhs 夏悠扭过头，似乎有想说的话题。/ /zhc 夏悠扭過頭，似乎有想說的話題。/ /en She turned her head, as though she had something she wanted to say./ /jp こちらへ顔を向ける。何か、話したいことがあるようだった。/ /ko 샤유가 고개를 돌렸다. 무언가 할 말이 있는 것 같았다./"
+l "/zhs 怎么了？/ /zhc 怎麼了？/ /en What is it?/ /jp どうした？/ /ko 왜?/"
+l "/zhs 你又打算问“你到底是谁”吗？/ /zhc 你又打算問“你到底是誰”嗎？/ /en Are you going to ask, ‘Who are you, really?’ again?/ /jp また「あなたは、いったい誰？」って聞くのか？/ /ko 또 ‘너, 대체 누구야’라고 물으려고?/"
 cg cgcp0_2 5
 voice cp1/xiayo_273.m4a
-x "这个玩笑已经开过了！"////cg 夏悠生气
+x "/zhs 这个玩笑已经开过了！/ /zhc 這個玩笑已經開過了！/ /en You've already made that joke!/ /jp その冗談は、もう言ったでしょ！/ /ko 그 농담은 이미 했잖아!/"////cg 夏悠生气
 cg cgcp0_2 4
 voice cp1/xiayo_274.m4a
-x "我想说的是。"////恢复正常 cg1_1 4
+x "/zhs 我想说的是。/ /zhc 我想說的是。/ /en What I wanted to say was,/ /jp 言いたいのはね。/ /ko 내가 하고 싶은 말은./"////恢复正常 cg1_1 4
 cg cgcp0_2 3
 voice cp1/xiayo_275.m4a
-x "昨天晚上我做了一个噩梦。"//cg1_1 3
+x "/zhs 昨天晚上我做了一个噩梦。/ /zhc 昨天晚上我做了一個噩夢。/ /en I had a nightmare last night./ /jp 昨日の夜、怖い夢を見たんだ。/ /ko 어젯밤에 악몽을 꿨어./"//cg1_1 3
 cg cgcp0_2 1
 voice cp1/xiayo_276.m4a
-x "不过比起说是噩梦，不如说它真实的像我真实发生的事情一样。"////cg1_1 1
-l "什么噩梦？"
-"无非就是梦到床下有鬼或者窗外半夜有人看着这种东西吧。"
+x "/zhs 不过比起说是噩梦，不如说它真实的像我真实发生的事情一样。/ /zhc 不過比起說是噩夢，不如說它真實的像我真實發生的事情一樣。/ /en Though calling it a nightmare... it felt more like something that had really happened to me./ /jp でも悪夢っていうより、本当に自分に起きたことみたいに、現実的だった。/ /ko 악몽이라기보단 정말 내가 겪은 일처럼 생생했어./"////cg1_1 1
+l "/zhs 什么噩梦？/ /zhc 什麼噩夢？/ /en What kind of nightmare?/ /jp どんな夢？/ /ko 무슨 악몽?/"
+"/zhs 无非就是梦到床下有鬼或者窗外半夜有人看着这种东西吧。/ /zhc 無非就是夢到床下有鬼或者窗外半夜有人看著這種東西吧。/ /en Probably ghosts under the bed, or someone watching through the window at midnight./ /jp ベッドの下に幽霊がいたとか、夜中に窓の外から誰かに見られたとか、そんなところだろう。/ /ko 침대 밑에 귀신이 있다거나 한밤중에 누가 창밖에서 쳐다보는 그런 거겠지./"
 cg cgcp0_2 4
 voice cp1/xiayo_277.m4a
-x "我梦到我死了。"////cg1_1 4
-l "然后呢？"
+x "/zhs 我梦到我死了。/ /zhc 我夢到我死了。/ /en I dreamed that I died./ /jp 私が死ぬ夢。/ /ko 내가 죽는 꿈을 꿨어./"////cg1_1 4
+l "/zhs 然后呢？/ /zhc 然後呢？/ /en And then?/ /jp それで？/ /ko 그다음엔?/"
 cg cgcp0_2 5
 voice cp1/xiayo_278.m4a
-x "然后就醒了啊！"////生气
+x "/zhs 然后就醒了啊！/ /zhc 然後就醒了啊！/ /en Then I woke up!/ /jp それで、目が覚めたの！/ /ko 그다음엔 깼지!/"////生气
 voice cp1/xiayo_279.m4a
-x "我以为你会问为什么。"////生气
-l "为什么？"
+x "/zhs 我以为你会问为什么。/ /zhc 我以為你會問為什麼。/ /en I thought you'd ask why./ /jp 理由を聞いてくれると思ったんだけど。/ /ko 왜냐고 물을 줄 알았는데./"////生气
+l "/zhs 为什么？/ /zhc 為什麼？/ /en Why?/ /jp どうして？/ /ko 왜?/"
 cg cgcp0_2 6
 voice cp1/xiayo_280.m4a
-x "这才对啊！"////笑
+x "/zhs 这才对啊！/ /zhc 這才對啊！/ /en That's more like it!/ /jp そう、それ！/ /ko 그래, 그래야지!/"////笑
 cg cgcp0_2 2
 voice cp1/xiayo_281.m4a
-x "我梦到我遇到了意料之外的事情。"////cg1_1 2
+x "/zhs 我梦到我遇到了意料之外的事情。/ /zhc 我夢到我遇到了意料之外的事情。/ /en I dreamed that something unexpected happened./ /jp 夢の中で、予想外のことが起きたんだ。/ /ko 뜻밖의 일을 당하는 꿈이었어./"////cg1_1 2
 cg cgcp0_2 3
 voice cp1/xiayo_282.m4a
-x "然后我尝试去解决这个事情的时候，死了。"////cg1_1 3
+x "/zhs 然后我尝试去解决这个事情的时候，死了。/ /zhc 然後我嘗試去解決這個事情的時候，死了。/ /en And when I tried to deal with it, I died./ /jp それを何とかしようとして、死んじゃった。/ /ko 그걸 해결하려고 하다가 죽었어./"////cg1_1 3
 cg cgcp0_2 4
 voice cp1/xiayo_283.m4a
-x "那种痛苦的感觉实在难以形容。"////cg1_1 4
+x "/zhs 那种痛苦的感觉实在难以形容。/ /zhc 那種痛苦的感覺實在難以形容。/ /en The pain was impossible to describe./ /jp あの苦しさは、とても言葉にできない。/ /ko 그 고통은 정말 말로 설명하기 어려워./"////cg1_1 4
 cg cgcp0_2 2
 voice cp1/xiayo_284.m4a
-x "这就是我没睡好的原因。"////cg1_1 2
+x "/zhs 这就是我没睡好的原因。/ /zhc 這就是我沒睡好的原因。/ /en That's why I didn't sleep well./ /jp だから、よく眠れなかったの。/ /ko 그래서 잠을 잘 못 잔 거야./"////cg1_1 2
 cg cgcp0_2 4
 nvlm
 ////cg1_1 4
 ////nvl模式
-"听起来像在描述..."
-"描述着夏悠确实所经过的那件事。"
-"难道说？"
-"夏悠也跟我一样，经历了时间的回溯但是保留了记忆？"
-"但是如果是这样，那为什么夏悠早上我提议捡树枝的时候表现的像是不知道接下来的用途一样。"
-"难道说只是存在模糊的记忆吗？只记得自己受伤了，却不记得是什么造成的。"
-"我尝试询问。"
+"/zhs 听起来像在描述.../ /zhc 聽起來像在描述.../ /en It sounded as though she was describing.../ /jp まるで、語っているように聞こえる……。/ /ko 이 이야기는 마치.../"
+"/zhs 描述着夏悠确实所经过的那件事。/ /zhc 描述著夏悠確實所經過的那件事。/ /en What had actually happened to her./ /jp 夏悠が実際に体験した、あの出来事を。/ /ko 샤유가 실제로 겪은 그 일을 말하는 것 같다./"
+"/zhs 难道说？/ /zhc 難道說？/ /en Could it be?/ /jp まさか？/ /ko 설마?/"
+"/zhs 夏悠也跟我一样，经历了时间的回溯但是保留了记忆？/ /zhc 夏悠也跟我一樣，經歷了時間的回溯但是保留了記憶？/ /en Had Xia You gone back in time too, keeping her memories like me?/ /jp 夏悠も俺と同じように、時間が戻っても記憶が残っているのか？/ /ko 샤유도 나처럼 시간이 되돌아갔는데 기억이 남은 건가?/"
+"/zhs 但是如果是这样，那为什么夏悠早上我提议捡树枝的时候表现的像是不知道接下来的用途一样。/ /zhc 但是如果是這樣，那為什麼夏悠早上我提議撿樹枝的時候表現的像是不知道接下來的用途一樣。/ /en But if so, why had she acted as though she didn't know what the sticks were for when I suggested finding them this morning?/ /jp でも、それなら朝、棒を拾おうと提案したとき、どうして用途を知らないような反応をした？/ /ko 그렇다면 왜 아침에 나뭇가지를 줍자고 했을 때 어디에 쓸지 모르는 것처럼 굴었지?/"
+"/zhs 难道说只是存在模糊的记忆吗？只记得自己受伤了，却不记得是什么造成的。/ /zhc 難道說只是存在模糊的記憶嗎？只記得自己受傷了，卻不記得是什麼造成的。/ /en Were her memories only vague? Did she remember being hurt without remembering what caused it?/ /jp 曖昧な記憶しかないのか？ 怪我をしたことだけ覚えていて、原因までは覚えていないとか。/ /ko 희미하게만 기억하는 걸까? 다친 것만 기억하고 원인은 잊은 걸까?/"
+"/zhs 我尝试询问。/ /zhc 我嘗試詢問。/ /en I tried asking./ /jp 尋ねてみる。/ /ko 물어보기로 했다./"
 endnvlm
 ////结束nvl
-l "那你记得你的梦里，那个意料之外的事情，是什么吗？"
+l "/zhs 那你记得你的梦里，那个意料之外的事情，是什么吗？/ /zhc 那你記得你的夢裡，那個意料之外的事情，是什麼嗎？/ /en Do you remember what that unexpected thing in your dream was?/ /jp その夢で、予想外に起きたことって、何だったか覚えてる？/ /ko 꿈에서 일어난 그 뜻밖의 일이 뭔지 기억나?/"
 cg cgcp0_2 2
 voice cp1/xiayo_285.m4a
-x "一觉醒来以后，就有点不记得了。"////cg1_1 2
+x "/zhs 一觉醒来以后，就有点不记得了。/ /zhc 一覺醒來以後，就有點不記得了。/ /en After waking up, I couldn't really remember./ /jp 起きたら、少し忘れちゃった。/ /ko 깨고 나니까 잘 기억 안 나./"////cg1_1 2
 cg cgcp0_2 3
 voice cp1/xiayo_286.m4a
-x "但是隐约记得那个时候的我长大了。"////cg1_1 3
+x "/zhs 但是隐约记得那个时候的我长大了。/ /zhc 但是隱約記得那個時候的我長大了。/ /en But I vaguely remember being grown up./ /jp でも、そのときは大人になってた気がする。/ /ko 그때의 내가 어른이었다는 건 어렴풋이 기억해./"////cg1_1 3
 cg cgcp0_2 
 voice cp1/xiayo_287.m4a
-x "意料之外的事情，则是在执行某个任务的时候，脑袋受到了剧烈的冲击。"////cg1_1 1
+x "/zhs 意料之外的事情，则是在执行某个任务的时候，脑袋受到了剧烈的冲击。/ /zhc 意料之外的事情，則是在執行某個任務的時候，腦袋受到了劇烈的衝擊。/ /en The unexpected thing was... while carrying out some mission, I took a hard blow to the head./ /jp 予想外のことっていうのは、何かの任務の途中で、頭にものすごい衝撃を受けたこと。/ /ko 어떤 임무를 하다가 머리에 심한 충격을 받았어./"////cg1_1 1
 cg cgcp0_2 4
 ////cg1_1 4
 //nvl模式
 nvlm
-"听起来并不像是在描述被狗咬伤的事情。"
-"果然只是噩梦吗？"
-"虽然这个梦跟我所梦到的一样，都是自己长大后的视角。"
-"虽然我也不清楚为什么最近很频繁的梦到这些。"
+"/zhs 听起来并不像是在描述被狗咬伤的事情。/ /zhc 聽起來並不像是在描述被狗咬傷的事情。/ /en That didn't sound like a dog bite./ /jp 犬に噛まれた話には、聞こえない。/ /ko 개에게 물린 일을 말하는 것 같지는 않다./"
+"/zhs 果然只是噩梦吗？/ /zhc 果然只是噩夢嗎？/ /en So it really was just a nightmare?/ /jp やっぱり、ただの悪夢か？/ /ko 역시 그냥 악몽인가?/"
+"/zhs 虽然这个梦跟我所梦到的一样，都是自己长大后的视角。/ /zhc 雖然這個夢跟我所夢到的一樣，都是自己長大後的視角。/ /en Though like my dreams, it had been from the perspective of her grown-up self./ /jp 俺の夢と同じく、大人になった自分の視点ではあるけれど。/ /ko 나의 꿈처럼 어른이 된 자신의 시점이라는 건 같지만./"
+"/zhs 虽然我也不清楚为什么最近很频繁的梦到这些。/ /zhc 雖然我也不清楚為什麼最近很頻繁的夢到這些。/ /en I didn't know why I'd been dreaming about that so often lately either./ /jp 最近なぜそんな夢ばかり見るのか、俺にもわからない。/ /ko 요즘 왜 이런 꿈을 자꾸 꾸는지 나도 모르겠다./"
 endnvlm
-l "现实的你不还在这吗？还活的好好的！"
-l "这就足够了。"
+l "/zhs 现实的你不还在这吗？还活的好好的！/ /zhc 現實的你不還在這嗎？還活的好好的！/ /en But the real you is right here, isn't she? Alive and well!/ /jp 現実のお前は、ここにいるだろ？ 元気に生きてる！/ /ko 현실의 너는 여기 있잖아. 멀쩡히 살아 있고!/"
+l "/zhs 这就足够了。/ /zhc 這就足夠了。/ /en That's enough./ /jp それで十分だ。/ /ko 그거면 됐어./"
 voice cp1/xiayo_288.m4a
-x "是啊！我实际上还活着，这就够了。"////cg1 3
+x "/zhs 是啊！我实际上还活着，这就够了。/ /zhc 是啊！我實際上還活著，這就夠了。/ /en Yeah! I'm actually alive. That's enough./ /jp そうだね！ 今の私は生きてる。それで十分。/ /ko 맞아! 실제로 살아 있으니까 그거면 돼./"////cg1 3
 stop sound
 stop music 
 scene classroom
 ////背景切到黑板
 ////无音乐 nvl模式
 nvlm
-"......"
-"下午的时间基本上就在等待放学。"
-"果然干等着还是不太行。"
-"我得找点事情做。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 下午的时间基本上就在等待放学。/ /zhc 下午的時間基本上就在等待放學。/ /en I spent most of the afternoon waiting for school to end./ /jp 午後は、ほとんど下校を待つだけだった。/ /ko 오후에는 거의 하교 시간만 기다렸다./"
+"/zhs 果然干等着还是不太行。/ /zhc 果然乾等著還是不太行。/ /en Simply waiting wasn't working./ /jp ただ待っているのは、やっぱりつらい。/ /ko 그냥 기다리기만 해서는 안 되겠다./"
+"/zhs 我得找点事情做。/ /zhc 我得找點事情做。/ /en I needed something to do./ /jp 何かすることを探そう。/ /ko 뭔가 할 일을 찾아야 한다./"
 endnvlm
 play music what  
 scene sky with wipe
 ////背景切到天空 nvl模式 校园bgm
 nvlm
-"下课以后，我走到了老师的办公室。"
-"这个既是办公室又是图书馆的地方。"
-"我在书柜前面蹲下，看看有没有什么感兴趣的书。"
-"感兴趣的书找到了。"
-"《生物的进化》。"
-"我翻开书，里面展示着很多昆虫的标本图片。"
-"配着解释文字。"
-"我不断翻看着。"
-l "嗯......"
-"看得入迷了。"
+"/zhs 下课以后，我走到了老师的办公室。/ /zhc 下課以後，我走到了老師的辦公室。/ /en After class, I went to the teacher's office./ /jp 休み時間に、職員室へ行った。/ /ko 수업이 끝나고 교무실에 갔다./"
+"/zhs 这个既是办公室又是图书馆的地方。/ /zhc 這個既是辦公室又是圖書館的地方。/ /en The room that was both office and library./ /jp 職員室でもあり、図書室でもある場所。/ /ko 교무실이자 도서관인 이곳./"
+"/zhs 我在书柜前面蹲下，看看有没有什么感兴趣的书。/ /zhc 我在書櫃前面蹲下，看看有沒有什麼感興趣的書。/ /en I crouched in front of the bookcase and looked for something interesting./ /jp 本棚の前にしゃがみ、面白そうな本がないか探す。/ /ko 책장 앞에 쪼그려 앉아 흥미로운 책이 있나 살폈다./"
+"/zhs 感兴趣的书找到了。/ /zhc 感興趣的書找到了。/ /en I found a book that caught my interest./ /jp 興味を引く本が見つかった。/ /ko 마음에 드는 책을 찾았다./"
+"/zhs 《生物的进化》。/ /zhc 《生物的進化》。/ /en The Evolution of Life./ /jp 『生物の進化』。/ /ko 《생물의 진화》./"
+"/zhs 我翻开书，里面展示着很多昆虫的标本图片。/ /zhc 我翻開書，裡面展示著很多昆蟲的標本圖片。/ /en I opened it. Inside were lots of photographs of insect specimens./ /jp 開くと、昆虫の標本写真がたくさん載っていた。/ /ko 책을 펼치자 여러 곤충 표본 사진이 나왔다./"
+"/zhs 配着解释文字。/ /zhc 配著解釋文字。/ /en With explanatory text./ /jp 説明文も添えられている。/ /ko 설명도 함께 적혀 있었다./"
+"/zhs 我不断翻看着。/ /zhc 我不斷翻看著。/ /en I kept turning the pages./ /jp 次々にページをめくる。/ /ko 계속 넘겨 보았다./"
+l "/zhs 嗯....../ /zhc 嗯....../ /en Hmm.../ /jp ふむ……。/ /ko 음....../"
+"/zhs 看得入迷了。/ /zhc 看得入迷了。/ /en I became absorbed in it./ /jp 夢中になって読んでいた。/ /ko 푹 빠져 읽었다./"
 endnvlm
 nvlm
-"......"
-l "哇哦～"
-"对这个年纪的我很有刺激性的一页。"
-"内容是人类的进化。"
-"但是上面。"
-"分别有女人和男人的裸体。"
-"就像在偷尝禁果一般，我逐字品尝着书上的内容。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+l "/zhs 哇哦～/ /zhc 哇哦～/ /en Wow~/ /jp わあ……。/ /ko 우와～/"
+"/zhs 对这个年纪的我很有刺激性的一页。/ /zhc 對這個年紀的我很有刺激性的一頁。/ /en A rather startling page for someone my age./ /jp この年齢の俺には、なかなか刺激的なページだ。/ /ko 이 나이의 나에게는 아주 자극적인 페이지였다./"
+"/zhs 内容是人类的进化。/ /zhc 內容是人類的進化。/ /en It was about human evolution./ /jp 内容は、人類の進化。/ /ko 내용은 인류의 진화다./"
+"/zhs 但是上面。/ /zhc 但是上面。/ /en But on the page,/ /jp けれどそこには、/ /ko 그런데 그 위에는./"
+"/zhs 分别有女人和男人的裸体。/ /zhc 分別有女人和男人的裸體。/ /en There were unclothed figures of a woman and a man./ /jp 女性と男性の裸が、それぞれ載っていた。/ /ko 여자와 남자의 알몸이 각각 실려 있었다./"
+"/zhs 就像在偷尝禁果一般，我逐字品尝着书上的内容。/ /zhc 就像在偷嚐禁果一般，我逐字品嚐著書上的內容。/ /en Like sneaking a taste of forbidden fruit, I savored every word./ /jp 禁断の果実をこっそり味わうように、一文字ずつ内容を噛みしめた。/ /ko 금단의 열매를 몰래 맛보듯 글자 하나하나를 음미했다./"
 endnvlm
 nvlm
-"老师还在办公室里看书呢。"
-"我不能让他发现我快流口水了。"
-"得控制住自己的表情管理。"
-"不能痴笑。"
+"/zhs 老师还在办公室里看书呢。/ /zhc 老師還在辦公室裡看書呢。/ /en The teacher was still in the office reading./ /jp 先生も、まだ職員室で本を読んでいる。/ /ko 선생님은 아직 교무실에서 책을 읽고 계셨다./"
+"/zhs 我不能让他发现我快流口水了。/ /zhc 我不能讓他發現我快流口水了。/ /en I couldn't let him notice my expression./ /jp よだれを垂らしそうになっていると、気づかれてはいけない。/ /ko 침 흘릴 것 같은 표정을 들켜서는 안 된다./"
+"/zhs 得控制住自己的表情管理。/ /zhc 得控制住自己的表情管理。/ /en I had to keep my face under control./ /jp 表情を抑えなければ。/ /ko 표정 관리를 잘해야 한다./"
+"/zhs 不能痴笑。/ /zhc 不能痴笑。/ /en No silly grinning./ /jp にやつくな。/ /ko 실실 웃으면 안 돼./"
 endnvlm
 voice cp1/xiayo_289.m4a
-xnan "在看什么？"
+xnan "/zhs 在看什么？/ /zhc 在看什麼？/ /en What are you reading?/ /jp 何を読んでるの？/ /ko 뭘 봐?/"
 shake
-l "啊！！"
+l "/zhs 啊！！/ /zhc 啊！！/ /en Ah!!/ /jp うわっ！！/ /ko 아!!/"
 nvlm
-"心都快被吓的跳出来了。"
-"我以光速合上书本，放回原位。"
+"/zhs 心都快被吓的跳出来了。/ /zhc 心都快被嚇的跳出來了。/ /en My heart nearly jumped out of my chest./ /jp 心臓が飛び出すかと思った。/ /ko 심장이 튀어나올 뻔했다./"
+"/zhs 我以光速合上书本，放回原位。/ /zhc 我以光速合上書本，放回原位。/ /en At the speed of light, I closed the book and put it back./ /jp 光の速さで本を閉じ、元に戻した。/ /ko 빛의 속도로 책을 덮고 제자리에 꽂았다./"
 endnvlm
-l "咳咳，没什么。"
+l "/zhs 咳咳，没什么。/ /zhc 咳咳，沒什麼。/ /en Ahem. Nothing./ /jp こほん、何でもない。/ /ko 크흠, 아무것도 아니야./"
 voice cp1/xiayo_290.m4a
-xnan "我看看。"
+xnan "/zhs 我看看。/ /zhc 我看看。/ /en Let me see./ /jp 見せて。/ /ko 나도 보자./"
 nvlm
-"夏悠从书柜里将我刚放进去的书再次抽了出来。"
+"/zhs 夏悠从书柜里将我刚放进去的书再次抽了出来。/ /zhc 夏悠從書櫃裡將我剛放進去的書再次抽了出來。/ /en Xia You pulled the book I'd just put away back out of the shelf./ /jp 夏悠が、今戻したばかりの本を棚から引き抜いた。/ /ko 샤유가 방금 내가 넣은 책을 다시 꺼냈다./"
 endnvlm
 voice cp1/xiayo_291.m4a
-xnan "害，这本书我看过了。"
+xnan "/zhs 害，这本书我看过了。/ /zhc 害，這本書我看過了。/ /en Oh, I've read this one./ /jp ああ、この本なら読んだよ。/ /ko 에이, 이 책은 나도 읽었어./"
 voice cp1/xiayo_292.m4a
-xnan "也知道里面内容是什么。"
+xnan "/zhs 也知道里面内容是什么。/ /zhc 也知道里面內容是什麼。/ /en I know what's in it too./ /jp 何が書いてあるかも知ってる。/ /ko 무슨 내용인지도 알아./"
 nvlm
-"夏悠面无表情的说到。"
-"那就好，她估计没看过那页。"
-"也可能只是我思想太变态了。"
-"那种东西，对她来说只是习以为常的内容。"
+"/zhs 夏悠面无表情的说到。/ /zhc 夏悠面無表情的說到。/ /en She said it with a perfectly straight face./ /jp 無表情で、夏悠が言った。/ /ko 샤유가 무표정하게 말했다./"
+"/zhs 那就好，她估计没看过那页。/ /zhc 那就好，她估計沒看過那頁。/ /en Good. She probably hadn't seen that page./ /jp ならよかった。たぶん、あのページは見ていない。/ /ko 다행이다. 그 페이지는 안 봤나 보다./"
+"/zhs 也可能只是我思想太变态了。/ /zhc 也可能只是我思想太變態了。/ /en Or maybe my mind was just too weird./ /jp 単に俺の考え方が、変態すぎるだけかもしれない。/ /ko 내 생각이 너무 변태적인 걸지도 모른다./"
+"/zhs 那种东西，对她来说只是习以为常的内容。/ /zhc 那種東西，對她來說只是習以為常的內容。/ /en To her, that sort of thing might be perfectly ordinary./ /jp ああいうのも、彼女には見慣れた内容なのかも。/ /ko 걔한테는 그냥 익숙한 내용일 수도 있다./"
 endnvlm
 voice cp1/xiayo_293.m4a
-xnan "没想到你也好......"
+xnan "/zhs 没想到你也好....../ /zhc 沒想到你也好....../ /en I didn't think you liked that sort of—/ /jp 君も、そういうのが好……。/ /ko 너도 그런 걸 좋아할 줄은.../"
 shake
 voice cp1/xiayo_294.m4a
-xnan "啊！"
+xnan "/zhs 啊！/ /zhc 啊！/ /en Ah!/ /jp あっ！/ /ko 아!/"
 nvlm
-"我在她说出最后一个字之前抓住了她的手。"
-"将她拉出了办公室。"
+"/zhs 我在她说出最后一个字之前抓住了她的手。/ /zhc 我在她說出最後一個字之前抓住了她的手。/ /en I grabbed her hand before she could finish./ /jp 最後まで言う前に、彼女の手を掴んだ。/ /ko 마지막 말을 꺼내기 전에 손을 붙잡았다./"
+"/zhs 将她拉出了办公室。/ /zhc 將她拉出了辦公室。/ /en And pulled her out of the office./ /jp そのまま職員室の外へ引っ張り出す。/ /ko 교무실 밖으로 끌고 나왔다./"
 endnvlm
 scene school
 ////背景切到学校 结束nvl模式 搞怪的音乐
 ////夏悠生气
 play sound haneru
 voice cp1/xiayo_295.m4a
-x pose3 hen an jump repeat 4 "林澄！"////对话框震动
+x pose3 hen an jump repeat 4 "/zhs 林澄！/ /zhc 林澄！/ /en Lin Cheng!/ /jp 林澄！/ /ko 린청!/"////对话框震动
 nvlm
-"我不想让老师听到这些。"
-"不然好印象全没了。"
+"/zhs 我不想让老师听到这些。/ /zhc 我不想讓老師聽到這些。/ /en I didn't want the teacher to hear any of this./ /jp 先生に、そんな話を聞かれたくない。/ /ko 선생님한테 그런 말을 들려드리고 싶지 않았다./"
+"/zhs 不然好印象全没了。/ /zhc 不然好印象全沒了。/ /en There'd go his good impression of me./ /jp 好印象が全部消えてしまう。/ /ko 좋은 인상이 전부 사라질 테니까./"
 endnvlm
-l "你要多少钱？"
+l "/zhs 你要多少钱？/ /zhc 你要多少錢？/ /en How much money do you want?/ /jp いくら欲しい？/ /ko 얼마면 돼?/"
 voice cp1/xiayo_296.m4a
-x pose4 what "什么钱？"////夏悠疑惑
-l "封口费。"
+x pose4 what "/zhs 什么钱？/ /zhc 什麼錢？/ /en What money?/ /jp 何のお金？/ /ko 무슨 돈?/"////夏悠疑惑
+l "/zhs 封口费。/ /zhc 封口費。/ /en Hush money./ /jp 口止め料。/ /ko 입막음 돈./"
 voice cp1/xiayo_297.m4a
-x kowa "电视看太多了。"////夏悠害怕
+x kowa "/zhs 电视看太多了。/ /zhc 電視看太多了。/ /en You've been watching too much TV./ /jp テレビの見すぎ。/ /ko 텔레비전 너무 봤네./"////夏悠害怕
 voice cp1/xiayo_298.m4a
-x tameiki2 "行！"////对话框震动 夏悠闭眼叹气
+x tameiki2 "/zhs 行！/ /zhc 行！/ /en Fine!/ /jp いいよ！/ /ko 알았어!/"////对话框震动 夏悠闭眼叹气
 voice cp1/xiayo_299.m4a
-x pose2 tameiki "这件事，是我们两个之间的秘密，我最好不要告诉任何人。"////夏悠睁眼叹气
+x pose2 tameiki "/zhs 这件事，是我们两个之间的秘密，我最好不要告诉任何人。/ /zhc 這件事，是我們兩個之間的秘密，我最好不要告訴任何人。/ /en This is a secret between us. I'd better not tell anyone./ /jp これは二人だけの秘密。誰にも話さないほうが身のためなのね。/ /ko 이 일은 우리 둘만의 비밀이고, 아무한테도 말하면 안 되겠지./"////夏悠睁眼叹气
 voice cp1/xiayo_300.m4a
-x ciallo "你知道我学校在哪，你也知道我在哪个班，我听清楚了。"////夏悠ciallo
-l "都学会抢答了。"
-l "那就好，我相信你。呼～"
+x ciallo "/zhs 你知道我学校在哪，你也知道我在哪个班，我听清楚了。/ /zhc 你知道我學校在哪，你也知道我在哪個班，我聽清楚了。/ /en You know where my school is, and you know which class I'm in. Message received./ /jp 君は私の学校もクラスも知ってる。ちゃんと聞いたから。/ /ko 넌 내가 어느 학교, 어느 반인지도 알고 있잖아. 잘 알아들었어./"////夏悠ciallo
+l "/zhs 都学会抢答了。/ /zhc 都學會搶答了。/ /en She'd even learned to get her answer in early./ /jp 先回りまで覚えたのか。/ /ko 이젠 말하기도 전에 답하네./"
+l "/zhs 那就好，我相信你。呼～/ /zhc 那就好，我相信你。呼～/ /en Good. I trust you. Phew~/ /jp ならいい。信じてるよ。ふう。/ /ko 그럼 됐어. 널 믿어. 후우～/"
 voice cp1/xiayo_301.m4a
-x smile "我说你啊......居然宁愿看书都不愿意来直接问问我，呼呼呼"
+x smile "/zhs 我说你啊......居然宁愿看书都不愿意来直接问问我，呼呼呼/ /zhc 我說你啊......居然寧願看書都不願意來直接問問我，呼呼呼/ /en Honestly... you'd rather read a book than just ask me. Hmph, hmph, hmph./ /jp まったく……私に直接聞くより、本を読むほうがいいなんて。ふうふう。/ /ko 너 말이야...... 나한테 직접 물어보느니 책을 보겠다는 거야? 후후후./"
 voice cp1/xiayo_302.m4a
-x pose4 hen "气死了气死了，嗯...回去记在小本本上......"
+x pose4 hen "/zhs 气死了气死了，嗯...回去记在小本本上....../ /zhc 氣死了氣死了，嗯...回去記在小本本上....../ /en I'm so mad. So mad. Hmm... I'll write this in my little book when I get home.../ /jp 腹立つ、腹立つ。うん……帰ったら手帳に書いておこう……。/ /ko 화나, 화나. 음... 돌아가서 수첩에 적어 놔야지....../"
 voice cp1/xiayo_303.m4a
-x unhappy "原来我在你心中的地位是这样的吗？"
-"这种东西这么好意思开口问啊喂！"
-l "这种东西......怎么好意思开口......"
+x unhappy "/zhs 原来我在你心中的地位是这样的吗？/ /zhc 原來我在你心中的地位是這樣的嗎？/ /en So that's how little I mean to you?/ /jp 君にとって、私はその程度なの？/ /ko 네 마음속에서 난 그 정도였구나?/"
+"/zhs 这种东西这么好意思开口问啊喂！/ /zhc 這種東西這麼好意思開口問啊喂！/ /en How was I supposed to ask about something like that?!/ /jp こんなこと、どうやって聞けっていうんだよ！/ /ko 그런 걸 어떻게 태연하게 물어보냐고!/"
+l "/zhs 这种东西......怎么好意思开口....../ /zhc 這種東西......怎麼好意思開口....../ /en How could I possibly ask... about that...?/ /jp そういうことは……聞きづらいだろ……。/ /ko 그런 걸...... 어떻게 입 밖에 내....../"
 voice cp1/xiayo_304.m4a
-x pose3 kowa "又不是什么很下流的内容，有什么不好意思开口的......"
+x pose3 kowa "/zhs 又不是什么很下流的内容，有什么不好意思开口的....../ /zhc 又不是什麼很下流的內容，有什麼不好意思開口的....../ /en It's not anything dirty. What's there to be embarrassed about...?/ /jp 別に下品な話でもないのに、何が聞きづらいの……。/ /ko 엄청 야한 내용도 아닌데 뭘 부끄러워해....../"
 voice cp1/xiayo_305.m4a
-x pose2 ciallo "昆虫标本而已，我可熟的很，问我就行了。"
-"看来她就是没翻到那页而已，搞了半天原来一直在跨服聊天啊！！"
+x pose2 ciallo "/zhs 昆虫标本而已，我可熟的很，问我就行了。/ /zhc 昆蟲標本而已，我可熟的很，問我就行了。/ /en They're just insect specimens. I know loads about them. Ask me./ /jp 昆虫の標本でしょ。詳しいから、私に聞けばいいよ。/ /ko 곤충 표본일 뿐이잖아. 그건 내가 잘 아니까 나한테 물어봐./"
+"/zhs 看来她就是没翻到那页而已，搞了半天原来一直在跨服聊天啊！！/ /zhc 看來她就是沒翻到那頁而已，搞了半天原來一直在跨服聊天啊！！/ /en So she simply hadn't reached that page! We'd been having completely different conversations all along!!/ /jp やっぱり、あのページは見ていないだけか。ずっと話が噛み合ってなかったんだ！！/ /ko 역시 그 페이지를 안 봤을 뿐이었다. 여태 서로 딴소리하고 있었잖아!!/"
 voice cp1/xiayo_306.m4a
-x odoroki "难道不是吗？"
+x odoroki "/zhs 难道不是吗？/ /zhc 難道不是嗎？/ /en Wasn't that it?/ /jp 違うの？/ /ko 그거 아니야?/"
 play sound haneru
 voice cp1/xiayo_307.m4a
-x ciallo an jump repeat 2 "那我知道了，一定是太阳风暴对吧！"
-"为什么生物有关的书上会出现太阳风暴啊喂！！"
+x ciallo an jump repeat 2 "/zhs 那我知道了，一定是太阳风暴对吧！/ /zhc 那我知道了，一定是太陽風暴對吧！/ /en Then I know. It must be solar storms!/ /jp じゃあわかった。きっと太陽嵐だね！/ /ko 아, 알았다. 태양 폭풍이지!/"
+"/zhs 为什么生物有关的书上会出现太阳风暴啊喂！！/ /zhc 為什麼生物有關的書上會出現太陽風暴啊喂！！/ /en Why would a biology book have solar storms in it?!/ /jp 生物の本に、なんで太陽嵐が出てくるんだよ！！/ /ko 생물 책에 태양 폭풍이 왜 나와!/"
 voice cp1/xiayo_308.m4a
-x pose4 doyagao "你没看完吧，嘿嘿，那我就给你剧透一下《太阳的奥秘》的后面的内容了。"
-"不行了这家伙，得赶紧想想办法才行，这不是连我看的书都没搞明白嘛......"
+x pose4 doyagao "/zhs 你没看完吧，嘿嘿，那我就给你剧透一下《太阳的奥秘》的后面的内容了。/ /zhc 你沒看完吧，嘿嘿，那我就給你劇透一下《太陽的奧秘》的後面的內容了。/ /en You didn't finish it, did you? Hehe. Then let me spoil the end of The Secrets of the Sun for you./ /jp 最後まで読んでないでしょ。えへへ。じゃあ『太陽のひみつ』の続きを、ネタばらししてあげる。/ /ko 끝까지 안 읽었지? 헤헤. 그럼 내가 《태양의 비밀》 뒷부분을 스포해 줄게./"
+"/zhs 不行了这家伙，得赶紧想想办法才行，这不是连我看的书都没搞明白嘛....../ /zhc 不行了這傢伙，得趕緊想想辦法才行，這不是連我看的書都沒搞明白嘛....../ /en She was hopeless. I had to do something. She didn't even know which book I'd been reading.../ /jp だめだ、早く何とかしないと。読んでいた本すら、わかってないじゃないか……。/ /ko 얘는 안 되겠다. 빨리 방법을 찾아야 한다. 무슨 책을 읽었는지도 모르잖아....../"
 voice cp1/xiayo_309.m4a
-x pose2 ciallo "明年就会进入极大期的太阳风暴哦......如果你家还有卫星的话记得做好防护措施哦......"
-"是不是我吹牛过头之后的恶果，为什么她会理所当然认为我家有卫星啊！！"
+x pose2 ciallo "/zhs 明年就会进入极大期的太阳风暴哦......如果你家还有卫星的话记得做好防护措施哦....../ /zhc 明年就會進入極大期的太陽風暴哦......如果你家還有衛星的話記得做好防護措施哦....../ /en Solar activity reaches its peak next year... If you've got a satellite at home, remember to protect it.../ /jp 来年、太陽嵐が極大期に入るんだって……君の家にも人工衛星があるなら、ちゃんと対策しておいてね……。/ /ko 내년에 태양 활동이 극대기에 들어가서 태양 폭풍이 온대...... 너희 집에 인공위성도 있으면 대비해 둬....../"
+"/zhs 是不是我吹牛过头之后的恶果，为什么她会理所当然认为我家有卫星啊！！/ /zhc 是不是我吹牛過頭之後的惡果，為什麼她會理所當然認為我家有衛星啊！！/ /en Was this the price of all my bragging? Why did she take it for granted that my family owned a satellite?!/ /jp ほらを吹きすぎた報いか？ なんで、うちに人工衛星があると思ってるんだ！！/ /ko 이게 허풍을 너무 떤 대가인가? 왜 우리 집에 인공위성이 있는 걸 당연하게 생각해!!/"
 voice cp1/xiayo_310.m4a
-x pose1 tameiki "明年只要熬过去以后，就得等到十二年之后了，嗯......2025年了。"
+x pose1 tameiki "/zhs 明年只要熬过去以后，就得等到十二年之后了，嗯......2025年了。/ /zhc 明年只要熬過去以後，就得等到十二年之後了，嗯......2025年了。/ /en Get through next year, and it'll be another twelve years. Hmm... 2025./ /jp 来年を乗り切れば、次は十二年後。うーん……二〇二五年だね。/ /ko 내년만 버티면 다음은 12년 뒤야. 음...... 2025년이네./"
 voice cp1/xiayo_311.m4a
-x tameiki2 "很长呢......"
+x tameiki2 "/zhs 很长呢....../ /zhc 很長呢....../ /en That's a long time.../ /jp ずいぶん先だなあ……。/ /ko 멀다....../"
 voice cp1/xiayo_312.m4a
-x smilenaka1 "希望那时候我们也依旧在一起玩。"
-l"绝对会的。"
+x smilenaka1 "/zhs 希望那时候我们也依旧在一起玩。/ /zhc 希望那時候我們也依舊在一起玩。/ /en I hope we'll still be playing together then./ /jp そのときも、一緒に遊んでいられるといいね。/ /ko 그때도 우리 같이 놀고 있으면 좋겠다./"
+l"/zhs 绝对会的。/ /zhc 絕對會的。/ /en We definitely will./ /jp 絶対に、そうなるよ。/ /ko 꼭 그럴 거야./"
 nvlm
-"终于找到能插上话的地方了。"
+"/zhs 终于找到能插上话的地方了。/ /zhc 終於找到能插上話的地方了。/ /en At last, something I could join in with./ /jp ようやく、口を挟めるところが見つかった。/ /ko 드디어 끼어들 수 있는 이야기가 나왔다./"
 endnvlm
 stop music 
 scene sky timer 2.0
@@ -274,521 +274,521 @@ scene school yuu
 ////白天天空切到黄昏的过渡 无音乐
 ////黄昏的校园背景 记得后面角色都带黄昏阴影
 nvlm
-"......"
-"即将进入关键的分歧点了。"
-"下午放学了。"
-"早上我和夏悠约好的，准备的木棍还放在它们应该放的地方。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 即将进入关键的分歧点了。/ /zhc 即將進入關鍵的分歧點了。/ /en The crucial branching point was approaching./ /jp いよいよ、大事な分岐点だ。/ /ko 중요한 갈림길이 다가오고 있었다./"
+"/zhs 下午放学了。/ /zhc 下午放學了。/ /en School was over for the afternoon./ /jp 午後の授業が終わった。/ /ko 오후 수업이 끝났다./"
+"/zhs 早上我和夏悠约好的，准备的木棍还放在它们应该放的地方。/ /zhc 早上我和夏悠約好的，準備的木棍還放在它們應該放的地方。/ /en The sticks Xia You and I had agreed to keep that morning were still where they belonged./ /jp 朝の約束どおり、用意した棒は、置いた場所に残っていた。/ /ko 아침에 샤유와 약속하고 준비한 막대기들은 두었던 자리에 그대로 있었다./"
 endnvlm
 play music yuugure 
 show mastersword at items an jump
-l "我的大师之剑还在这里！"////对话框震动
+l "/zhs 我的大师之剑还在这里！/ /zhc 我的大師之劍還在這裡！/ /en My Master Sword's still here!/ /jp 俺のマスターソード、まだあった！/ /ko 내 마스터 소드도 그대로 있어!/"////对话框震动
 hide mastersword
 play sound haneru
 voice cp1/xiayo_313.m4a
-x pose3 happy an jump repeat 4 "我的黄昏弓也还在！嘻嘻！"////夏悠叉腰 开心
-l "为什么会给一个木棍取名为弓？"
+x pose3 happy an jump repeat 4 "/zhs 我的黄昏弓也还在！嘻嘻！/ /zhc 我的黃昏弓也還在！嘻嘻！/ /en And my Bow of Twilight! Hehe!/ /jp 私の黄昏の弓も！ えへへ！/ /ko 내 황혼의 활도 있어! 히히!/"////夏悠叉腰 开心
+l "/zhs 为什么会给一个木棍取名为弓？/ /zhc 為什麼會給一個木棍取名為弓？/ /en Why would you name a stick after a bow?/ /jp なんで棒に、弓って名前をつけるんだ？/ /ko 막대기에 왜 활이라는 이름을 붙여?/"
 voice cp1/xiayo_314.m4a
-x hen "当然是形状看起来很像弓啊！"////对话框震动 叉腰赌气
-l "但是它是近战......算了。"
+x hen "/zhs 当然是形状看起来很像弓啊！/ /zhc 當然是形狀看起來很像弓啊！/ /en Because it looks like one, obviously!/ /jp 形が弓みたいだからに決まってるでしょ！/ /ko 모양이 활처럼 생겼으니까!/"////对话框震动 叉腰赌气
+l "/zhs 但是它是近战......算了。/ /zhc 但是它是近戰......算了。/ /en But it's a melee... never mind./ /jp でも、それ近接武器……まあいい。/ /ko 근데 근접 무기...... 됐다./"
 nvlm
 ////夏悠立绘变成正常
-"无力吐槽这些了。"
-"重点也不是这个。"
+"/zhs 无力吐槽这些了。/ /zhc 無力吐槽這些了。/ /en I had no energy left to argue./ /jp 突っ込む気力もない。/ /ko 이런 데 태클 걸 힘도 없다./"
+"/zhs 重点也不是这个。/ /zhc 重點也不是這個。/ /en That wasn't the important thing anyway./ /jp 大事なのはそこじゃない。/ /ko 중요한 건 그게 아니니까./"
 endnvlm
 voice cp1/gonna_029.m4a
-lg what "啊！你们这是要去干什么？"////宫娜从左边进来 疑惑
+lg what "/zhs 啊！你们这是要去干什么？/ /zhc 啊！你們這是要去幹什麼？/ /en Oh! What are you two going to do?/ /jp あっ！ 何しに行くの？/ /ko 어! 너희 뭐 하러 가?/"////宫娜从左边进来 疑惑
 voice cp1/gonna_030.m4a
-lg kowa2 an shake2 repeat 2 "要击剑吗？"////宫娜害怕 立绘颤抖
-"怎么每个人第一个想到的都是这个。"
+lg kowa2 an shake2 repeat 2 "/zhs 要击剑吗？/ /zhc 要擊劍嗎？/ /en Sword-fight?/ /jp 剣の勝負？/ /ko 칼싸움하게?/"////宫娜害怕 立绘颤抖
+"/zhs 怎么每个人第一个想到的都是这个。/ /zhc 怎麼每個人第一個想到的都是這個。/ /en Why was that everyone's first thought?/ /jp なんで、みんな最初にそれを思いつくんだ。/ /ko 왜 다들 처음 떠올리는 게 그거야./"
 voice cp1/syozen_037.m4a
-ls "要切磋剑法了吗？"////守真从右边进来
+ls "/zhs 要切磋剑法了吗？/ /zhc 要切磋劍法了嗎？/ /en Practice your swordsmanship?/ /jp 剣技を競うのか？/ /ko 검술 겨루러 가?/"////守真从右边进来
 voice cp1/syozen_038.m4a
-ls think "一把剑和一把弓。"
-"为什么都觉得夏悠那根木棍是弓啊。"
-l "不是。"
-l "是有用的。"
+ls think "/zhs 一把剑和一把弓。/ /zhc 一把劍和一把弓。/ /en One sword and one bow./ /jp 剣と弓か。/ /ko 검 한 자루랑 활 하나네./"
+"/zhs 为什么都觉得夏悠那根木棍是弓啊。/ /zhc 為什麼都覺得夏悠那根木棍是弓啊。/ /en Why did everyone think Xia You's stick was a bow?/ /jp どうしてみんな、夏悠の棒を弓だと思うんだ。/ /ko 왜 다들 샤유 막대기를 활이라고 생각하지./"
+l "/zhs 不是。/ /zhc 不是。/ /en No./ /jp 違う。/ /ko 아니./"
+l "/zhs 是有用的。/ /zhc 是有用的。/ /en They're for something useful./ /jp 使い道があるんだ。/ /ko 쓸 데가 있어./"
 nvlm
 ////nvl模式
-"我打算全盘托出。"
-"于是说出了来龙去脉。"
-"重点将那条恶犬描述的凶神恶煞，无恶不作。"
+"/zhs 我打算全盘托出。/ /zhc 我打算全盤托出。/ /en I decided to tell them everything./ /jp 全部話すことにした。/ /ko 전부 털어놓기로 했다./"
+"/zhs 于是说出了来龙去脉。/ /zhc 於是說出了來龍去脈。/ /en So I explained how it had happened./ /jp そこで、いきさつを説明する。/ /ko 사건의 처음부터 끝까지 설명했다./"
+"/zhs 重点将那条恶犬描述的凶神恶煞，无恶不作。/ /zhc 重點將那條惡犬描述的凶神惡煞，無惡不作。/ /en Putting particular emphasis on the dog's vicious looks and endless wicked deeds./ /jp とりわけ犬については、凶悪で、悪事の限りを尽くすやつだと強調した。/ /ko 특히 그 개가 얼마나 험악하고 못된 짓을 일삼는지 강조했다./"
 endnvlm
 ////结束nvl模式
 voice cp1/syozen_039.m4a
-ls konoyarou "真的太坏了！居然每天晚上跑几百米去你家偷鸡！"////守真愤怒 对话框震动 立绘震动
+ls konoyarou "/zhs 真的太坏了！居然每天晚上跑几百米去你家偷鸡！/ /zhc 真的太壞了！居然每天晚上跑幾百米去你家偷雞！/ /en That's awful! Running hundreds of meters to your house every night to steal chickens!/ /jp なんて悪いやつだ！ 毎晩何百メートルも走って、お前の家の鶏を盗むなんて！/ /ko 정말 나쁘다! 밤마다 몇백 미터를 달려 너희 집 닭을 훔치다니!/"////守真愤怒 对话框震动 立绘震动
 voice cp1/gonna_031.m4a
-lg "更可恶的是每天把大便拉到马路的车辙上。"////宫娜生气 立绘震动
+lg "/zhs 更可恶的是每天把大便拉到马路的车辙上。/ /zhc 更可惡的是每天把大便拉到馬路的車轍上。/ /en Even worse, it poops in the tire tracks on the road every day./ /jp それより、毎日道路のわだちにうんちをするほうが許せない。/ /ko 더 괘씸한 건 매일 길바닥 바퀴 자국에 똥을 싼다는 거야./"////宫娜生气 立绘震动
 voice cp1/gonna_032.m4a
-lg kowa2 "每次有车经过就会碾的大便四处飞溅。"////宫娜害怕 看人渣的眼神
+lg kowa2 "/zhs 每次有车经过就会碾的大便四处飞溅。/ /zhc 每次有車經過就會碾的大便四處飛濺。/ /en Whenever a car passes, it splatters everywhere./ /jp 車が通るたびに、踏まれてあちこちに飛び散るなんて。/ /ko 차가 지나갈 때마다 밟혀서 사방으로 튄대./"////宫娜害怕 看人渣的眼神
 voice cp1/gonna_033.m4a
-lg pose2 kowa2 "真是太恶劣了！！"////对话框震动
+lg pose2 kowa2 "/zhs 真是太恶劣了！！/ /zhc 真是太惡劣了！！/ /en That's just horrible!!/ /jp ひどすぎるよ！！/ /ko 진짜 못됐네!!/"////对话框震动
 nvlm
-"当然很多东西是我编的。"
+"/zhs 当然很多东西是我编的。/ /zhc 當然很多東西是我編的。/ /en Naturally, I'd made up a lot of it./ /jp もちろん、大半は俺の作り話だ。/ /ko 물론 많이 지어낸 이야기다./"
 endnvlm
 voice cp1/xiayo_315.m4a
-x odoroki "原来这条狗还作过这么多恶。"////夏悠豆豆眼问号
-"喂！连你也相信了吗？"////对话框震动
+x odoroki "/zhs 原来这条狗还作过这么多恶。/ /zhc 原來這條狗還作過這麼多惡。/ /en I didn't know that dog had done so many bad things./ /jp あの犬、そんなに悪いことしてたんだ。/ /ko 저 개가 그렇게 못된 짓을 많이 했구나./"////夏悠豆豆眼问号
+"/zhs 喂！连你也相信了吗？/ /zhc 喂！連你也相信了嗎？/ /en Hey! You believed me too?/ /jp おい！ お前まで信じたのか？/ /ko 야! 너까지 믿는 거야?/"////对话框震动
 ////三个人表情都恢复正常
-"不过不管了，总之就是这样。"
-l "所以我和夏悠要用武器防身，顺便找那条狗的主人理论。"
-"不这样做的话。"
-"我又想到了自己的记忆。"
+"/zhs 不过不管了，总之就是这样。/ /zhc 不過不管了，總之就是這樣。/ /en Never mind. That was the gist of it./ /jp まあいい。とにかく、そういうことだ。/ /ko 아무튼 그렇다./"
+l "/zhs 所以我和夏悠要用武器防身，顺便找那条狗的主人理论。/ /zhc 所以我和夏悠要用武器防身，順便找那條狗的主人理論。/ /en So Xia You and I need weapons to protect ourselves. We'll also go have a word with its owner./ /jp だから二人で武器を持って身を守る。ついでに、飼い主にも話をしに行く。/ /ko 그래서 샤유와 나는 무기로 몸을 지키고 개 주인에게 따지러 갈 것이다./"
+"/zhs 不这样做的话。/ /zhc 不這樣做的話。/ /en If we didn't,/ /jp そうしなければ。/ /ko 그렇게 하지 않으면./"
+"/zhs 我又想到了自己的记忆。/ /zhc 我又想到了自己的記憶。/ /en My memories came back again./ /jp また、あの記憶がよぎった。/ /ko 기억이 다시 떠올랐다./"
 cg cg_cp1_1 naku
 ////白色过渡闪回夏悠受伤cg
-"夏悠的腿伤，行车的事故。"
+"/zhs 夏悠的腿伤，行车的事故。/ /zhc 夏悠的腿傷，行車的事故。/ /en Xia You's wounded leg. The accident on the road./ /jp 夏悠の脚の傷。車の事故。/ /ko 샤유의 다리 상처. 교통사고./"
 ////白色过渡hide掉cg
 scene school yuu
-"已经够了。"
-"不会再出现了。"
-l "走吧！"////对话框震动
-l "该出发了！"////对话框震动
+"/zhs 已经够了。/ /zhc 已經夠了。/ /en Enough was enough./ /jp もう、たくさんだ。/ /ko 이제 됐다./"
+"/zhs 不会再出现了。/ /zhc 不會再出現了。/ /en It would never happen again./ /jp 二度と起こさせない。/ /ko 다시는 일어나지 않는다./"
+l "/zhs 走吧！/ /zhc 走吧！/ /en Let's go!/ /jp 行こう！/ /ko 가자!/"////对话框震动
+l "/zhs 该出发了！/ /zhc 該出發了！/ /en Time to set out!/ /jp 出発だ！/ /ko 출발할 시간이야!/"////对话框震动
 play sound pekori
 voice cp1/xiayo_316.m4a
-x moeru "嗯，好，我准备好了。"////夏悠点点头 燃起来了
+x moeru "/zhs 嗯，好，我准备好了。/ /zhc 嗯，好，我準備好了。/ /en Yeah. Okay. I'm ready./ /jp うん、よし。準備できた。/ /ko 응, 좋아. 준비됐어./"////夏悠点点头 燃起来了
 voice cp1/gonna_034.m4a
-lg happy "加油。"////宫娜笑
+lg happy "/zhs 加油。/ /zhc 加油。/ /en Good luck./ /jp 頑張って。/ /ko 힘내./"////宫娜笑
 voice cp1/syozen_040.m4a
-ls moeru "正义必胜！"//////对话框震动 守真燃起来了
-l "一定会的。"
+ls moeru "/zhs 正义必胜！/ /zhc 正義必勝！/ /en Justice will prevail!/ /jp 正義は勝つ！/ /ko 정의는 반드시 이긴다!/"//////对话框震动 守真燃起来了
+l "/zhs 一定会的。/ /zhc 一定會的。/ /en It certainly will./ /jp 絶対にな。/ /ko 반드시./"
 scene sky yuu
 nvlm
 //背景切到黄昏的天空 nvl模式
-"虽然这并不至于搞得这么轰轰烈烈。"
-"但是只有我清楚，不解决好这个问题的后果是什么。"
+"/zhs 虽然这并不至于搞得这么轰轰烈烈。/ /zhc 雖然這並不至於搞得這麼轟轟烈烈。/ /en This hardly needed to be such a grand undertaking./ /jp ここまで大げさにするほどのことでもない。/ /ko 이렇게 거창하게 할 일까지는 아니다./"
+"/zhs 但是只有我清楚，不解决好这个问题的后果是什么。/ /zhc 但是隻有我清楚，不解決好這個問題的後果是什麼。/ /en But only I knew what would happen if we didn't solve it./ /jp でも、この問題を解決しなければ何が起こるか、知っているのは俺だけだ。/ /ko 그래도 이 문제를 해결하지 못하면 어떻게 되는지는 나만 안다./"
 endnvlm
 stop music 
 scene otherroad yuu
 nvlm
 ////背景切到黄昏的道路2 无音乐 nvl模式
-"......"
-"我和夏悠商量好了计划。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 我和夏悠商量好了计划。/ /zhc 我和夏悠商量好了計劃。/ /en Xia You and I agreed on a plan./ /jp 夏悠と、作戦を話し合った。/ /ko 샤유와 계획을 의논했다./"
 ////结束nvl模式
 endnvlm
 play music keikaku
 ////夏悠立绘 think 
-l "等会背靠背行走，因为它很可能从背后突袭。"
+l "/zhs 等会背靠背行走，因为它很可能从背后突袭。/ /zhc 等會背靠背行走，因為它很可能從背後突襲。/ /en We'll walk back to back. It might attack from behind./ /jp あそこでは、背中を合わせて歩こう。後ろから襲ってくるかもしれない。/ /ko 이따 등을 맞대고 걸어가자. 뒤에서 기습할 수도 있으니까./"
 play sound moeru
 voice cp1/xiayo_317.m4a
-x pose3 moeru "好！"////对话框震动 夏悠 燃起来了
-"因为它上次就是从背后突袭的。"
+x pose3 moeru "/zhs 好！/ /zhc 好！/ /en Okay!/ /jp わかった！/ /ko 좋아!/"////对话框震动 夏悠 燃起来了
+"/zhs 因为它上次就是从背后突袭的。/ /zhc 因為它上次就是從背後突襲的。/ /en Because that was how it had attacked last time./ /jp 前回は、本当に背後から襲ったのだから。/ /ko 지난번에도 뒤에서 기습했으니까./"
 scene toschool yuu
 nvlm
 ////切到黄昏 道路1
-"走到那条路的时候，我面朝前面，夏悠面朝后面。"
-"缓缓移动着。"
-"计划好的，赶走恶犬之后，去找恶犬的主人。"
-"让他将狗重新拴好。"
+"/zhs 走到那条路的时候，我面朝前面，夏悠面朝后面。/ /zhc 走到那條路的時候，我面朝前面，夏悠面朝後面。/ /en When we reached that road, I faced forward and Xia You faced backward./ /jp あの道に入ると、俺は前を、夏悠は後ろを向いた。/ /ko 그 길에 들어서자 나는 앞을, 샤유는 뒤를 보았다./"
+"/zhs 缓缓移动着。/ /zhc 緩緩移動著。/ /en We moved slowly./ /jp ゆっくりと進む。/ /ko 천천히 움직였다./"
+"/zhs 计划好的，赶走恶犬之后，去找恶犬的主人。/ /zhc 計劃好的，趕走惡犬之後，去找惡犬的主人。/ /en The plan was to drive the dog off, then find its owner./ /jp 犬を追い払ったら、飼い主を訪ねる。打ち合わせたとおりだ。/ /ko 계획대로 개를 쫓아낸 다음 주인을 찾아갈 것이다./"
+"/zhs 让他将狗重新拴好。/ /zhc 讓他將狗重新拴好。/ /en And get him to tie it up again properly./ /jp もう一度、きちんとつないでもらおう。/ /ko 개를 다시 묶어 달라고 하자./"
 endnvlm
-l "我这边情况一切正常，你那边呢？"
+l "/zhs 我这边情况一切正常，你那边呢？/ /zhc 我這邊情況一切正常，你那邊呢？/ /en Everything's clear on my side. How about yours?/ /jp こちら異常なし。そちらは？/ /ko 내 쪽은 이상 없어. 너는?/"
 voice cp1/xiayo_318.m4a
-x think "目前没发现可疑的动静。"////夏悠立绘 think
-l "保持警惕！"////对话框震动
+x think "/zhs 目前没发现可疑的动静。/ /zhc 目前沒發現可疑的動靜。/ /en No suspicious movement so far./ /jp 今のところ、不審な動きはありません。/ /ko 아직 수상한 움직임은 없어./"////夏悠立绘 think
+l "/zhs 保持警惕！/ /zhc 保持警惕！/ /en Stay alert!/ /jp 警戒を怠るな！/ /ko 경계 늦추지 마!/"////对话框震动
 play sound pekori
 voice cp1/xiayo_319.m4a
-x moedu an fururu repeat 4 "收到！"////对话框震动 夏悠燃起来了 立绘抖动
-"缓缓踱步着。"
+x moedu an fururu repeat 4 "/zhs 收到！/ /zhc 收到！/ /en Roger!/ /jp 了解！/ /ko 알았어!/"////对话框震动 夏悠燃起来了 立绘抖动
+"/zhs 缓缓踱步着。/ /zhc 緩緩踱步著。/ /en We edged forward./ /jp じりじりと歩を進める。/ /ko 천천히 걸음을 옮겼다./"
 play sound hanomasatsu
 ////沙沙音效
-"随着坡上一阵沙沙声。"
+"/zhs 随着坡上一阵沙沙声。/ /zhc 隨著坡上一陣沙沙聲。/ /en Then came a rustle from the slope./ /jp 斜面の上で、ざわざわと音がした。/ /ko 비탈 위에서 바스락 소리가 나더니./"
 play sound pin
 voice cp1/xiayo_320.m4a
-x nande an jump "来了！！！"////对话框震动 夏悠kowa 带感叹号nande 立绘抖一下
+x nande an jump "/zhs 来了！！！/ /zhc 來了！！！/ /en Here it comes!!!/ /jp 来た！！！/ /ko 왔다!!!/"////对话框震动 夏悠kowa 带感叹号nande 立绘抖一下
 cg cgdog 6
 ////狗的q版cg 但是没有狗 但是是夕阳
 play sound kakeru
-"我急忙回头，和夏悠处于同一视角。"
+"/zhs 我急忙回头，和夏悠处于同一视角。/ /zhc 我急忙回頭，和夏悠處於同一視角。/ /en I turned quickly to face the same way as Xia You./ /jp 急いで振り返り、夏悠と同じ方向を向いた。/ /ko 급히 돌아서서 샤유와 같은 방향을 보았다./"
 play sound donaru loop
 ////狗叫声
-iru "汪！呜～汪！"////对话框震动
+iru "/zhs 汪！呜～汪！/ /zhc 汪！嗚～汪！/ /en Woof! Grrr~ Woof!/ /jp ワン！ ウー、ワン！/ /ko 멍! 으르릉～ 멍!/"////对话框震动
 cg cgdog 5
 ////cg里更新狗
-"恶犬从坡上跳下，接着一边嚎叫一边朝着我们猛冲过来。"
+"/zhs 恶犬从坡上跳下，接着一边嚎叫一边朝着我们猛冲过来。/ /zhc 惡犬從坡上跳下，接著一邊嚎叫一邊朝著我們猛衝過來。/ /en The dog leaped down from the slope, snarling as it charged at us./ /jp 犬が斜面から飛び降り、吠えながらこちらへ猛然と突っ込んでくる。/ /ko 개가 비탈에서 뛰어내려 짖으며 맹렬히 달려왔다./"
 cg cgdog 7
-l "小心！"////对话框震动
+l "/zhs 小心！/ /zhc 小心！/ /en Careful!/ /jp 気をつけて！/ /ko 조심해!/"////对话框震动
 cg cgdog 15
 play sound utsu
 voice cp1/xiayo_321.m4a
-x "收到！"////对话框震动
+x "/zhs 收到！/ /zhc 收到！/ /en Got it!/ /jp 了解！/ /ko 알았어!/"////对话框震动
 play sound utsu
 ////cg里夏悠更新成胡乱挥舞的样子
 cg cgdog 8
 ////nvl模式
 nvlm
-"夏悠开始胡乱挥着木棍。"
-"不过大多数情况这样做也足够恐吓恶犬了。"
+"/zhs 夏悠开始胡乱挥着木棍。/ /zhc 夏悠開始胡亂揮著木棍。/ /en Xia You began waving her stick wildly./ /jp 夏悠が、むやみに棒を振り回し始めた。/ /ko 샤유가 막대기를 마구 휘두르기 시작했다./"
+"/zhs 不过大多数情况这样做也足够恐吓恶犬了。/ /zhc 不過大多數情況這樣做也足夠恐嚇惡犬了。/ /en In most cases, that would have been enough to frighten a dog away./ /jp たいていは、それだけでも犬を怯ませるには十分だ。/ /ko 대부분은 그렇게 해도 개를 충분히 겁줄 수 있다./"
 endnvlm
 cg cgdog 10
-"我则举着木棍，等待着机会。"
+"/zhs 我则举着木棍，等待着机会。/ /zhc 我則舉著木棍，等待著機會。/ /en I held mine ready, waiting for an opening./ /jp 俺は棒を構え、機会を待つ。/ /ko 나는 몽둥이를 들고 기회를 기다렸다./"
 cg cgdog 13
-"恶犬不像早上见到的那样胆小。"
-"看到我们挥舞武器以后依旧选择冲过来。"
-"恐吓不管用了。只能上了。"
+"/zhs 恶犬不像早上见到的那样胆小。/ /zhc 惡犬不像早上見到的那樣膽小。/ /en This dog wasn't as timid as it had been in the morning./ /jp 犬は、朝ほど臆病ではなかった。/ /ko 개는 아침에 봤을 때처럼 겁먹지 않았다./"
+"/zhs 看到我们挥舞武器以后依旧选择冲过来。/ /zhc 看到我們揮舞武器以後依舊選擇衝過來。/ /en Even after seeing our weapons, it kept charging./ /jp 武器を振る俺たちを見ても、そのまま突っ込んでくる。/ /ko 우리가 무기를 휘두르는데도 계속 달려왔다./"
+"/zhs 恐吓不管用了。只能上了。/ /zhc 恐嚇不管用了。只能上了。/ /en Scaring it wasn't working. I had to act./ /jp 威嚇は効かない。やるしかない。/ /ko 위협이 통하지 않는다. 싸울 수밖에./"
 cg cgdog 11
-"我猛吸一口气。"
-l "呼～"
+"/zhs 我猛吸一口气。/ /zhc 我猛吸一口氣。/ /en I drew a deep breath./ /jp 大きく息を吸う。/ /ko 크게 숨을 들이켰다./"
+l "/zhs 呼～/ /zhc 呼～/ /en Hah~/ /jp ふう……。/ /ko 후우～/"
 scene bl
 ////黑色背景 nvl模式
 play sound kakeru
 play sound syokku
 nvlm
-"在恶犬即将扑倒夏悠的时候，我猛的出棍。"
+"/zhs 在恶犬即将扑倒夏悠的时候，我猛的出棍。/ /zhc 在惡犬即將撲倒夏悠的時候，我猛的出棍。/ /en Just as it was about to knock Xia You down, I swung my stick./ /jp 犬が夏悠へ飛びかかろうとした瞬間、棒を振り出した。/ /ko 개가 샤유를 덮치려는 순간 몽둥이를 힘껏 휘둘렀다./"
 stop sound
-iru"嗷呜～"
+iru"/zhs 嗷呜～/ /zhc 嗷嗚～/ /en Yelp~/ /jp キャンッ！/ /ko 깨갱～/"
 play sound bikkuri
-"打中了狗的头。"
+"/zhs 打中了狗的头。/ /zhc 打中了狗的頭。/ /en I hit the dog's head./ /jp 犬の頭に当たった。/ /ko 개의 머리를 맞혔다./"
 play sound down
-"狗痛的倒在地上。"
-"接着便连忙起身，朝着坡下，夹着尾巴灰溜溜地跑了。"
+"/zhs 狗痛的倒在地上。/ /zhc 狗痛的倒在地上。/ /en It fell to the ground in pain./ /jp 痛みで、犬が地面へ倒れる。/ /ko 개가 아파하며 바닥에 쓰러졌다./"
+"/zhs 接着便连忙起身，朝着坡下，夹着尾巴灰溜溜地跑了。/ /zhc 接著便連忙起身，朝著坡下，夾著尾巴灰溜溜地跑了。/ /en Then quickly got up and fled down the slope with its tail between its legs./ /jp すぐに起き上がると、尻尾を巻き、すごすごと坂の下へ逃げていった。/ /ko 그러더니 황급히 일어나 꼬리를 말고 비탈 아래로 달아났다./"
 endnvlm
 scene otherroad yuu
 ////音乐切到yuugure 背景切到道路2黄昏 结束nvl模式
-l "呼～安全了。"
+l "/zhs 呼～安全了。/ /zhc 呼～安全了。/ /en Phew~ We're safe./ /jp ふう、もう大丈夫だ。/ /ko 후우～ 살았다./"
 ////夏悠闭眼叹气叉腰
 voice cp1/xiayo_322.m4a
-x body4 tameiki2 an topin "呼～安全了。"
-l "你没事吧？"
-l "有没有抓到你？"
+x body4 tameiki2 an topin "/zhs 呼～安全了。/ /zhc 呼～安全了。/ /en Phew~ We're safe./ /jp ふう、もう大丈夫だね。/ /ko 후우～ 살았다./"
+l "/zhs 你没事吧？/ /zhc 你沒事吧？/ /en Are you okay?/ /jp 怪我はない？/ /ko 괜찮아?/"
+l "/zhs 有没有抓到你？/ /zhc 有沒有抓到你？/ /en Did it scratch you?/ /jp 引っかかれなかった？/ /ko 할퀸 데는 없어?/"
 ////睁眼叹气 手放下去
 voice cp1/xiayo_323.m4a
-x pose2 tameiki "呼，没事。"
+x pose2 tameiki "/zhs 呼，没事。/ /zhc 呼，沒事。/ /en Phew. I'm fine./ /jp ふう、大丈夫。/ /ko 후우, 괜찮아./"
 ////夏悠侧脸思考
 voice cp1/xiayo_324.m4a
-x think "感觉这条狗比早上见到的要更凶一些啊！"////对话框震动
+x think "/zhs 感觉这条狗比早上见到的要更凶一些啊！/ /zhc 感覺這條狗比早上見到的要更兇一些啊！/ /en That dog seemed fiercer than it did this morning!/ /jp 朝の犬より、凶暴だった気がする！/ /ko 아침보다 더 사나워진 것 같아!/"////对话框震动
 voice cp1/xiayo_325.m4a
-x think2 "也不怕恐吓了。"////对话框震动 眼睛看过来
-l "我也发现了。"
-l "可能是一天过去了，狗饿了？"
+x think2 "/zhs 也不怕恐吓了。/ /zhc 也不怕恐嚇了。/ /en It wasn't scared of us anymore either./ /jp 脅しても怖がらなかったし。/ /ko 겁도 안 먹고./"////对话框震动 眼睛看过来
+l "/zhs 我也发现了。/ /zhc 我也發現了。/ /en I noticed too./ /jp 俺も、そう思った。/ /ko 나도 그렇게 느꼈어./"
+l "/zhs 可能是一天过去了，狗饿了？/ /zhc 可能是一天過去了，狗餓了？/ /en Maybe it's hungry after being out all day?/ /jp 一日経って、腹が減ったのかな？/ /ko 하루가 지나서 배고픈가?/"
 play sound haneru
 ////夏悠害怕 立绘抖一下
 voice cp1/xiayo_326.m4a
-x pose4 kowa an shake2 repeat 4 "那我不敢想象如果没击退狗会怎么样。"
-l "那种事不会发生了。"
-l "现在去找狗主人吧！"
+x pose4 kowa an shake2 repeat 4 "/zhs 那我不敢想象如果没击退狗会怎么样。/ /zhc 那我不敢想象如果沒擊退狗會怎麼樣。/ /en Then I don't want to imagine what would've happened if we hadn't driven it off./ /jp じゃあ、追い払えなかったらどうなってたか、考えたくもないよ。/ /ko 못 쫓아냈으면 어땠을지 상상도 하기 싫어./"
+l "/zhs 那种事不会发生了。/ /zhc 那種事不會發生了。/ /en That won't happen now./ /jp そんなことは、もう起こらない。/ /ko 그런 일은 이제 없어./"
+l "/zhs 现在去找狗主人吧！/ /zhc 現在去找狗主人吧！/ /en Let's find its owner!/ /jp 今度は飼い主を訪ねよう！/ /ko 이제 주인한테 가자!/"
 stop music 
 ////夏悠开心 叉腰
 voice cp1/xiayo_327.m4a
-x happy "嗯。"
+x happy "/zhs 嗯。/ /zhc 嗯。/ /en Yeah./ /jp うん。/ /ko 응./"
 stop music 
 ////音乐sizuka 背景夕阳的天空 nvl模式
 scene sky yuu with wipe
 play sound semi loop
 nvlm
-"狗主人就在这条路坡下的一栋房子里。"
-"之所以这么肯定，是因为这条狗以前每次上下学都会见到。"
-"被拴在房门口。"
-"只是那时狗除了一直冲着我们汪汪叫以外做不出其他行动了。"
-"我在夏悠前面下坡，走到房门口。"
-"但是我却看到了。"
-"明明不应该会出现的事情。"
+"/zhs 狗主人就在这条路坡下的一栋房子里。/ /zhc 狗主人就在這條路坡下的一棟房子裡。/ /en The dog's owner lived in a house below this road./ /jp 飼い主は、この道を下りた家に住んでいる。/ /ko 개 주인은 이 길 아래쪽 집에 산다./"
+"/zhs 之所以这么肯定，是因为这条狗以前每次上下学都会见到。/ /zhc 之所以這麼肯定，是因為這條狗以前每次上下學都會見到。/ /en I was certain because we'd seen it every day on the walk to school and back./ /jp そう断言できるのは、前から登下校のたびに、この犬を見ていたからだ。/ /ko 확신하는 이유는 등하교할 때마다 늘 보던 개이기 때문이다./"
+"/zhs 被拴在房门口。/ /zhc 被拴在房門口。/ /en Tied up outside the door./ /jp 玄関につながれていた。/ /ko 집 문 앞에 묶여 있었다./"
+"/zhs 只是那时狗除了一直冲着我们汪汪叫以外做不出其他行动了。/ /zhc 只是那時狗除了一直衝著我們汪汪叫以外做不出其他行動了。/ /en Back then, all it could do was keep barking at us./ /jp その頃は、俺たちに吠え続ける以外、何もできなかった。/ /ko 그때는 우리를 향해 계속 짖는 것 말고는 아무것도 못 했다./"
+"/zhs 我在夏悠前面下坡，走到房门口。/ /zhc 我在夏悠前面下坡，走到房門口。/ /en I led the way down the slope to the front door./ /jp 夏悠の前を歩いて坂を下り、玄関へ向かった。/ /ko 샤유보다 앞서 비탈을 내려가 문 앞으로 갔다./"
+"/zhs 但是我却看到了。/ /zhc 但是我卻看到了。/ /en But there, I saw something./ /jp そこで、見てしまった。/ /ko 그런데 눈앞에 보였다./"
+"/zhs 明明不应该会出现的事情。/ /zhc 明明不應該會出現的事情。/ /en Something that shouldn't have been possible./ /jp 起こるはずのない光景を。/ /ko 일어날 리 없는 일이./"
 endnvlm
 nvlm
 play music nandato  
 play sound donaru
-iru"汪！汪汪！"
-"狗被拴在房门口，冲着我们凶狠地叫着。"
+iru"/zhs 汪！汪汪！/ /zhc 汪！汪汪！/ /en Woof! Woof, woof!/ /jp ワン！ ワンワン！/ /ko 멍! 멍멍!/"
+"/zhs 狗被拴在房门口，冲着我们凶狠地叫着。/ /zhc 狗被拴在房門口，衝著我們兇狠地叫著。/ /en The dog was tied up outside, barking fiercely at us./ /jp 犬が玄関につながれ、こちらへ凶暴に吠えていた。/ /ko 개가 문 앞에 묶여 우리를 향해 사납게 짖고 있었다./"
 voice cp1/xiayo_328.m4a
-xnan "这......"
-"怎么回事？"
-l "为什么刚才才被我们击退的狗，这么快就被拴住了。"
-"从时间上来说根本不能可能。"
-"但我还是尝试敲了敲房门。"
-l "在吗？"
+xnan "/zhs 这....../ /zhc 這....../ /en What.../ /jp これ……。/ /ko 이....../"
+"/zhs 怎么回事？/ /zhc 怎麼回事？/ /en What was going on?/ /jp どういうことだ？/ /ko 어떻게 된 거지?/"
+l "/zhs 为什么刚才才被我们击退的狗，这么快就被拴住了。/ /zhc 為什麼剛才才被我們擊退的狗，這麼快就被拴住了。/ /en How had the dog we'd just driven away been tied up again so quickly?/ /jp 今追い払ったばかりの犬が、なんでもうつながれてるんだ？/ /ko 방금 쫓아낸 개가 왜 벌써 묶여 있지?/"
+"/zhs 从时间上来说根本不能可能。/ /zhc 從時間上來說根本不能可能。/ /en The timing made it impossible./ /jp 時間的に、ありえない。/ /ko 시간상 절대 불가능하다./"
+"/zhs 但我还是尝试敲了敲房门。/ /zhc 但我還是嘗試敲了敲房門。/ /en Still, I tried knocking on the door./ /jp それでも、ひとまず戸を叩いてみた。/ /ko 그래도 문을 두드려 보았다./"
+l "/zhs 在吗？/ /zhc 在嗎？/ /en Hello? Anyone there?/ /jp すみません、いますか？/ /ko 계세요?/"
 endnvlm
 nvlm
 stop sound
 play sound doawoake
-"敲了几声以后，门开了。"
-"走出来的是一位中年妇女。"
+"/zhs 敲了几声以后，门开了。/ /zhc 敲了幾聲以後，門開了。/ /en After a few knocks, it opened./ /jp 何度か叩くと、戸が開いた。/ /ko 몇 번 두드리자 문이 열렸다./"
+"/zhs 走出来的是一位中年妇女。/ /zhc 走出來的是一位中年婦女。/ /en A middle-aged woman stepped out./ /jp 中年の女性が出てきた。/ /ko 중년 아주머니가 나오셨다./"
 endnvlm
 nvlm
-onna"这不是这附近的学生吗？"
-onna"有什么事情吗？"
-l "那个，我早上看到您家的狗，把绳子挣断了......"
-onna"啊，那个啊，没事，我中午就给它重新拴好了，就在外面你应该看到了。"
-onna"不会到处咬人的。拴的很牢的。"
+onna"/zhs 这不是这附近的学生吗？/ /zhc 這不是這附近的學生嗎？/ /en Aren't you students from the school nearby?/ /jp あら、この近くの学校の子たちね？/ /ko 근처 학교 학생들이구나?/"
+onna"/zhs 有什么事情吗？/ /zhc 有什麼事情嗎？/ /en Is something wrong?/ /jp どうしたの？/ /ko 무슨 일이니?/"
+l "/zhs 那个，我早上看到您家的狗，把绳子挣断了....../ /zhc 那個，我早上看到您家的狗，把繩子掙斷了....../ /en Um, I saw your dog this morning. It had broken its rope.../ /jp あの、朝、お宅の犬が縄を切って逃げてるのを見て……。/ /ko 저기, 아침에 댁의 개가 줄을 끊은 걸 봐서요....../"
+onna"/zhs 啊，那个啊，没事，我中午就给它重新拴好了，就在外面你应该看到了。/ /zhc 啊，那個啊，沒事，我中午就給它重新拴好了，就在外面你應該看到了。/ /en Oh, that. It's fine. I tied it up again at noon. It's right outside. You must have seen it./ /jp ああ、それなら大丈夫。お昼にちゃんとつなぎ直したから。外にいるの、見えたでしょ。/ /ko 아, 그거. 괜찮아. 점심에 다시 묶어 놨어. 밖에 있으니 봤겠네./"
+onna"/zhs 不会到处咬人的。拴的很牢的。/ /zhc 不會到處咬人的。拴的很牢的。/ /en It won't be biting anyone. The rope's secure./ /jp 人を噛みに回ったりしないわ。しっかりつないであるから。/ /ko 아무나 물고 다니진 않을 거야. 단단히 묶었거든./"
 play sound dokan
-l "但是......"
+l "/zhs 但是....../ /zhc 但是....../ /en But.../ /jp でも……。/ /ko 그런데....../"
 endnvlm
 nvlm
-"我相信我刚才和夏悠经历过的事情是真实发生的。"
-"旁边的夏悠也在思考着什么。"
+"/zhs 我相信我刚才和夏悠经历过的事情是真实发生的。/ /zhc 我相信我剛才和夏悠經歷過的事情是真實發生的。/ /en I believed what Xia You and I had just experienced was real./ /jp さっき、俺と夏悠が体験したことは、本当にあったはずだ。/ /ko 방금 샤유와 겪은 일은 분명 현실이었다./"
+"/zhs 旁边的夏悠也在思考着什么。/ /zhc 旁邊的夏悠也在思考著什麼。/ /en Beside me, Xia You seemed to be thinking too./ /jp 隣の夏悠も、何か考えている。/ /ko 옆의 샤유도 무언가 생각하고 있었다./"
 voice cp1/xiayo_329.m4a
-xnan "那个，阿姨。"
+xnan "/zhs 那个，阿姨。/ /zhc 那個，阿姨。/ /en Um, ma'am./ /jp あの、おばさん。/ /ko 저기요, 아주머니./"
 voice cp1/xiayo_330.m4a
-xnan "您家的狗，是双胞胎吗？"
-"对哦，既然早上遇到的狗已经被拴住了，那刚刚我们遇到的那条，就不可能还是同一条狗了。"
-"那就只会存在一个可能性了。"
+xnan "/zhs 您家的狗，是双胞胎吗？/ /zhc 您家的狗，是雙胞胎嗎？/ /en Is your dog a twin?/ /jp この犬って、双子ですか？/ /ko 이 개는 쌍둥이인가요?/"
+"/zhs 对哦，既然早上遇到的狗已经被拴住了，那刚刚我们遇到的那条，就不可能还是同一条狗了。/ /zhc 對哦，既然早上遇到的狗已經被拴住了，那剛剛我們遇到的那條，就不可能還是同一條狗了。/ /en Of course. If the dog we'd seen this morning was already tied up, the one we'd just met couldn't be the same dog./ /jp そうか。朝の犬がもうつながれていたなら、さっき出会ったのは同じ犬ではない。/ /ko 맞다. 아침에 만난 개가 이미 묶여 있다면 방금 만난 개는 같은 개일 수 없다./"
+"/zhs 那就只会存在一个可能性了。/ /zhc 那就只會存在一個可能性了。/ /en That left only one possibility./ /jp 考えられることは、一つだけだ。/ /ko 그럼 가능성은 하나뿐이다./"
 endnvlm
 nvlm
-"是另外一条，只是长得跟早上的太像了，我们才会误认为是同一条狗。"
-onna"双胞胎的话，我这条狗倒是从这附近一户人家讨过来的。"
-onna"不确定是不是双胞胎，但是同一窝确实有长得很像的。"
-onna"不过小狗幼崽来说，一窝基本长的都大差不差。"
-l "那......"
-l "那您知道那户人家在哪吗？"
-onna"哦，你们也想要小狗吗？我不清楚他家现在有没有新的崽可以抓。"
-onna"要找的话，上面的大路走到上面的分叉路口，往上坡那条岔路一直走，大概几百米路边那家就是了。"
-onna"他家门前堆了一人高的空心砖。"
-l "谢谢！"
+"/zhs 是另外一条，只是长得跟早上的太像了，我们才会误认为是同一条狗。/ /zhc 是另外一條，只是長得跟早上的太像了，我們才會誤認為是同一條狗。/ /en It was another dog. It looked so much like the first that we'd mistaken them./ /jp 別の犬だった。朝の犬に似すぎていて、同じ犬だと思い込んだのだ。/ /ko 다른 개였는데 아침의 개와 너무 닮아서 같은 개라고 착각한 것이다./"
+onna"/zhs 双胞胎的话，我这条狗倒是从这附近一户人家讨过来的。/ /zhc 雙胞胎的話，我這條狗倒是從這附近一戶人家討過來的。/ /en A twin? Well, I got this dog from a family nearby./ /jp 双子かはともかく、この子は近くの家からもらってきたのよ。/ /ko 쌍둥이? 얘는 근처 집에서 데려왔어./"
+onna"/zhs 不确定是不是双胞胎，但是同一窝确实有长得很像的。/ /zhc 不確定是不是雙胞胎，但是同一窩確實有長得很像的。/ /en I don't know about twins, but some from the same litter did look very similar./ /jp 同じときに生まれた子には、よく似たのがいたわね。/ /ko 쌍둥이인지는 몰라도 한배에서 닮은 애들이 태어나긴 했지./"
+onna"/zhs 不过小狗幼崽来说，一窝基本长的都大差不差。/ /zhc 不過小狗幼崽來說，一窩基本長的都大差不差。/ /en Though most puppies in a litter look pretty much alike./ /jp でも子犬なんて、同じ腹なら大体似てるものだけど。/ /ko 그런데 강아지들은 같은 배에서 태어나면 대부분 비슷비슷하잖아./"
+l "/zhs 那....../ /zhc 那....../ /en Then.../ /jp じゃあ……。/ /ko 그럼....../"
+l "/zhs 那您知道那户人家在哪吗？/ /zhc 那您知道那戶人家在哪嗎？/ /en Do you know where that family lives?/ /jp その家がどこにあるか、わかりますか？/ /ko 그 집이 어딘지 아세요?/"
+onna"/zhs 哦，你们也想要小狗吗？我不清楚他家现在有没有新的崽可以抓。/ /zhc 哦，你們也想要小狗嗎？我不清楚他家現在有沒有新的崽可以抓。/ /en Oh, do you want a puppy too? I don't know if they've got another litter right now./ /jp あら、あなたたちも子犬が欲しいの？ 今、もらえる子がいるかは知らないけど。/ /ko 아, 너희도 강아지를 키우고 싶니? 요즘 새끼가 있는지는 모르겠네./"
+onna"/zhs 要找的话，上面的大路走到上面的分叉路口，往上坡那条岔路一直走，大概几百米路边那家就是了。/ /zhc 要找的話，上面的大路走到上面的分叉路口，往上坡那條岔路一直走，大概幾百米路邊那家就是了。/ /en If you want to find them, follow the main road above to the fork, then take the uphill branch. Their house is a few hundred meters along, beside the road./ /jp 行くなら、上の大きい道を分かれ道まで進んで、上りのほうへずっと行って。数百メートル先の道端の家よ。/ /ko 가려면 위쪽 큰길로 가서 갈림길이 나올 때 오르막으로 쭉 가. 몇백 미터쯤 가면 길가에 있는 집이야./"
+onna"/zhs 他家门前堆了一人高的空心砖。/ /zhc 他家門前堆了一人高的空心磚。/ /en There's a stack of hollow bricks as tall as a person out front./ /jp 玄関に、人の背丈くらいまで空洞のブロックが積んであるわ。/ /ko 집 앞에 속 빈 블록이 사람 키만큼 쌓여 있어./"
+l "/zhs 谢谢！/ /zhc 謝謝！/ /en Thank you!/ /jp ありがとうございます！/ /ko 감사합니다!/"
 endnvlm
 nvlm
-"......"
-"我和夏悠告别了妇女，从她家走了出来。"
-"狗依旧在卖力地叫着。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 我和夏悠告别了妇女，从她家走了出来。/ /zhc 我和夏悠告別了婦女，從她家走了出來。/ /en Xia You and I said goodbye to the woman and left her house./ /jp 女性に別れを告げ、夏悠と家を出た。/ /ko 샤유와 나는 아주머니께 인사하고 집을 나왔다./"
+"/zhs 狗依旧在卖力地叫着。/ /zhc 狗依舊在賣力地叫著。/ /en The dog kept barking for all it was worth./ /jp 犬はまだ、全力で吠えている。/ /ko 개는 여전히 힘껏 짖고 있었다./"
 play sound donaru
-iru"汪！汪汪！"
-"我忍的不耐烦了。"
-l "呜～～汪汪汪！！呜汪！哼～～～"
+iru"/zhs 汪！汪汪！/ /zhc 汪！汪汪！/ /en Woof! Woof, woof!/ /jp ワン！ ワンワン！/ /ko 멍! 멍멍!/"
+"/zhs 我忍的不耐烦了。/ /zhc 我忍的不耐煩了。/ /en My patience ran out./ /jp 我慢できなくなった。/ /ko 참다 못해 짜증이 났다./"
+l "/zhs 呜～～汪汪汪！！呜汪！哼～～～/ /zhc 嗚～～汪汪汪！！嗚汪！哼～～～/ /en Grrr~~ WOOF, WOOF, WOOF!! GRR-WOOF! Grrrr~~~/ /jp ウー、ワンワンワン！！ ウワン！ グルルル～！/ /ko 으르릉～～ 멍멍멍!! 으르멍! 크르릉～～～/"
 stop sound
 play sound syobon
-iru "汪.......呜......."
-"这条狗还是一样胆小。"
-"我装成更凶猛的狗，它就萎下来了。"
+iru "/zhs 汪.......呜......./ /zhc 汪.......嗚......./ /en Woof... whine.../ /jp ワン……クゥン……。/ /ko 멍....... 낑......./"
+"/zhs 这条狗还是一样胆小。/ /zhc 這條狗還是一樣膽小。/ /en This dog was as timid as ever./ /jp この犬は、やっぱり臆病だ。/ /ko 이 개는 여전히 겁쟁이다./"
+"/zhs 我装成更凶猛的狗，它就萎下来了。/ /zhc 我裝成更兇猛的狗，它就萎下來了。/ /en The moment I pretended to be a fiercer dog, it shrank back./ /jp もっと凶暴な犬の真似をすると、しおらしくなった。/ /ko 더 사나운 개 흉내를 내자 바로 기가 죽었다./"
 endnvlm
 nvlm
 play sound dokan
 voice cp1/xiayo_331.m4a
-xnan "呵呵...你比狗更像狗呢..."
+xnan "/zhs 呵呵...你比狗更像狗呢.../ /zhc 呵呵...你比狗更像狗呢.../ /en Hehe... You're more of a dog than the dog is.../ /jp ふふ……犬より犬みたいだね……。/ /ko 헤헤... 개보다 더 개 같네.../"
 voice cp1/xiayo_332.m4a
-xnan "可选的职业又多了一个。"
+xnan "/zhs 可选的职业又多了一个。/ /zhc 可選的職業又多了一個。/ /en Another career option for me./ /jp 選べる職業が、また一つ増えたよ。/ /ko 직업 선택지가 하나 늘었어./"
 play sound syokku
-l "我才不想成为任何人的狗呢..."
-l "虽然这个世界上人这么多，一定会存在那些想当别人的狗的变态吧～"
-"但是这还不够变态。"
-"真正的变态，应该就像西方流传羊角魅魔的始作俑者，和东方流传狗耳魅魔的始作俑者一样。"
-"或者是世界上第一个喝牛奶的人。"
+l "/zhs 我才不想成为任何人的狗呢.../ /zhc 我才不想成為任何人的狗呢.../ /en I don't want to be anyone's dog.../ /jp 誰かの犬になんて、なりたくない……。/ /ko 누구의 개도 되고 싶지 않아.../"
+l "/zhs 虽然这个世界上人这么多，一定会存在那些想当别人的狗的变态吧～/ /zhc 雖然這個世界上人這麼多，一定會存在那些想當別人的狗的變態吧～/ /en Though with so many people in the world, there must be weirdos who do want to be someone else's dog~/ /jp 世界にはこんなに人がいるんだから、誰かの犬になりたい変態もいるんだろうけど。/ /ko 세상에 사람이 그렇게 많으니 남의 개가 되고 싶은 변태도 있겠지만～/"
+"/zhs 但是这还不够变态。/ /zhc 但是這還不夠變態。/ /en But that wasn't weird enough./ /jp でも、それくらいじゃまだ甘い。/ /ko 그래도 그 정도는 아직 부족하다./"
+"/zhs 真正的变态，应该就像西方流传羊角魅魔的始作俑者，和东方流传狗耳魅魔的始作俑者一样。/ /zhc 真正的變態，應該就像西方流傳羊角魅魔的始作俑者，和東方流傳狗耳魅魔的始作俑者一樣。/ /en The real weirdos must be whoever started those Western stories about goat-horned succubi, and those Eastern stories about dog-eared ones./ /jp 本当の変態は、西洋で山羊の角のサキュバスを考えた人や、東洋で犬耳のサキュバスを考えた人みたいなやつだ。/ /ko 진짜 변태는 서양의 염소 뿔 서큐버스나 동양의 개 귀 서큐버스를 처음 생각해 낸 사람쯤은 되어야 한다./"
+"/zhs 或者是世界上第一个喝牛奶的人。/ /zhc 或者是世界上第一個喝牛奶的人。/ /en Or the first person in the world to drink cow's milk./ /jp あるいは、世界で最初に牛乳を飲んだ人。/ /ko 아니면 세상에서 처음 우유를 마신 사람./"
 endnvlm
 play music yuugure  
 scene otherroad yuu
 ////背景切到夕阳的道路2 音乐yuugure 结束nvl模式
 ////夏悠思侧脸考
 voice cp1/xiayo_333.m4a
-x think "所以刚刚遇到的那条恶犬。"
+x think "/zhs 所以刚刚遇到的那条恶犬。/ /zhc 所以剛剛遇到的那條惡犬。/ /en So that vicious dog we just met/ /jp じゃあ、さっきの凶暴な犬は、/ /ko 그럼 방금 만난 사나운 개는./"
 ////眼睛转过来
 voice cp1/xiayo_334.m4a
-x think2 "实际上是另一户人家的。"
-l "我们去问问吧。"
+x think2 "/zhs 实际上是另一户人家的。/ /zhc 實際上是另一戶人家的。/ /en Actually belongs to someone else./ /jp 別の家の犬だったんだね。/ /ko 사실 다른 집 개였네./"
+l "/zhs 我们去问问吧。/ /zhc 我們去問問吧。/ /en Let's go ask them./ /jp 聞きに行こう。/ /ko 가서 물어보자./"
 play sound pekori
-x pose2 smile an jump repeat 2 "嗯。"////夏悠微笑 手指着 立绘点头
+x pose2 smile an jump repeat 2 "/zhs 嗯。/ /zhc 嗯。/ /en Yeah./ /jp うん。/ /ko 응./"////夏悠微笑 手指着 立绘点头
 voice cp1/xiayo_335.m4a
-x tameiki "只可惜约定好的捉蝉..."////夏悠睁眼叹气
-l "明天！！"////对话框震动
+x tameiki "/zhs 只可惜约定好的捉蝉.../ /zhc 只可惜約定好的捉蟬.../ /en It's a shame about catching cicadas, though.../ /jp 約束してた蝉捕りは、残念だけど……。/ /ko 아쉽다. 매미 잡기로 했는데.../"////夏悠睁眼叹气
+l "/zhs 明天！！/ /zhc 明天！！/ /en Tomorrow!!/ /jp 明日！！/ /ko 내일!!/"////对话框震动
 play sound haneru
 voice cp1/xiayo_336.m4a
-x odoroki an jump "啊？"////夏悠豆豆眼震惊 立绘抖一下
-l "明天早上我去接你，我们去玩一整天！然后下午捉蝉！！"////对话框震动
+x odoroki an jump "/zhs 啊？/ /zhc 啊？/ /en Huh?/ /jp え？/ /ko 어?/"////夏悠豆豆眼震惊 立绘抖一下
+l "/zhs 明天早上我去接你，我们去玩一整天！然后下午捉蝉！！/ /zhc 明天早上我去接你，我們去玩一整天！然後下午捉蟬！！/ /en I'll come get you tomorrow morning. We can play all day, then catch cicadas in the afternoon!!/ /jp 明日の朝、迎えに行く。一日中遊んで、午後に蝉を捕まえよう！！/ /ko 내일 아침에 데리러 갈게. 하루 종일 놀고 오후엔 매미를 잡자!!/"////对话框震动
 voice cp1/xiayo_337.m4a
-x think "嗯......那约定好了！"////夏悠先侧脸思考，0.75秒以后变成微笑
-l "我没睡过头的话..."
+x think "/zhs 嗯......那约定好了！/ /zhc 嗯......那約定好了！/ /en Mm... Then it's a promise!/ /jp うん……じゃあ、約束ね！/ /ko 응...... 그럼 약속이야!/"////夏悠先侧脸思考，0.75秒以后变成微笑
+l "/zhs 我没睡过头的话.../ /zhc 我沒睡過頭的話.../ /en If I don't oversleep.../ /jp 寝坊しなければ……。/ /ko 내가 늦잠만 안 자면.../"
 play sound haneru
 shake
 voice cp1/xiayo_338.m4a
-x pose3 hen an shake2 repeat 4 "我就知道！！"////夏悠赌气 对话框震动 立绘颤抖
+x pose3 hen an shake2 repeat 4 "/zhs 我就知道！！/ /zhc 我就知道！！/ /en I knew it!!/ /jp やっぱり！！/ /ko 그럴 줄 알았어!!/"////夏悠赌气 对话框震动 立绘颤抖
 voice cp1/xiayo_339.m4a
-x "你不许睡过头！"////对话框震动
+x "/zhs 你不许睡过头！/ /zhc 你不許睡過頭！/ /en You're not allowed to oversleep!/ /jp 寝坊しちゃだめ！/ /ko 늦잠 자면 안 돼!/"////对话框震动
 voice cp1/xiayo_340.m4a
-x think "不然我..."////夏悠think
+x think "/zhs 不然我.../ /zhc 不然我.../ /en Or I'll.../ /jp じゃないと、私……。/ /ko 안 그러면 나.../"////夏悠think
 voice cp1/xiayo_341.m4a
-x unhappy "不然我就..."////夏悠unhappy
+x unhappy "/zhs 不然我就.../ /zhc 不然我就.../ /en Or I'll.../ /jp じゃないと……。/ /ko 안 그러면 내가.../"////夏悠unhappy
 play sound poko
 voice cp1/xiayo_342.m4a
-x pose2 hen "玩的时候不带你了！"////对话框震动 夏悠赌气 但是带脸红挂件
+x pose2 hen "/zhs 玩的时候不带你了！/ /zhc 玩的時候不帶你了！/ /en Go play without you!/ /jp 遊ぶとき、仲間に入れてあげない！/ /ko 놀 때 너 안 끼워 줄 거야!/"////对话框震动 夏悠赌气 但是带脸红挂件
 play sound chin
-l "绝对不会！！"////对话框震动
+l "/zhs 绝对不会！！/ /zhc 絕對不會！！/ /en I absolutely won't!!/ /jp 絶対にしない！！/ /ko 절대 안 잘게!!/"////对话框震动
 scene sky yuu
 nvlm
 ////背景切到夕阳的天空 nvl模式
-"好残酷的刑罚。"
-"于是我们改变了傍晚的计划。"
+"/zhs 好残酷的刑罚。/ /zhc 好殘酷的刑罰。/ /en What a cruel punishment./ /jp なんて残酷な罰だ。/ /ko 참혹한 형벌이다./"
+"/zhs 于是我们改变了傍晚的计划。/ /zhc 於是我們改變了傍晚的計劃。/ /en And so we changed our plans for the evening./ /jp こうして、夕方の予定を変えた。/ /ko 그렇게 저녁 계획을 바꾸었다./"
 stop music 
-"也改变了回家的方向。"
-"朝着获得线索的那家房子去。"
+"/zhs 也改变了回家的方向。/ /zhc 也改變了回家的方向。/ /en And our route home./ /jp 帰る方向も変える。/ /ko 집으로 가던 방향도 바꾸었다./"
+"/zhs 朝着获得线索的那家房子去。/ /zhc 朝著獲得線索的那家房子去。/ /en We headed for the house we'd been told about./ /jp 教わった家へ向かった。/ /ko 단서를 얻은 그 집으로 향했다./"
 endnvlm
 ////背景切到黄昏道路1 音乐omoi
 play music omoi  
 scene toschool yuu
-l "上学上了好几年了，这条路倒是几乎没有走过呢～"
+l "/zhs 上学上了好几年了，这条路倒是几乎没有走过呢～/ /zhc 上學上了好幾年了，這條路倒是幾乎沒有走過呢～/ /en We've been going to school for years, but I've hardly ever taken this road~/ /jp 何年も学校に通ってるのに、この道はほとんど歩いたことないな～。/ /ko 몇 년이나 학교에 다녔는데 이 길은 거의 안 와 봤네～/"
 ////夏悠微笑
 voice cp1/xiayo_343.m4a
-x smile "是啊～我也记得只有几次是走小路从这条路上来过。"
-l "是为了什么呢？"
+x smile "/zhs 是啊～我也记得只有几次是走小路从这条路上来过。/ /zhc 是啊～我也記得只有幾次是走小路從這條路上來過。/ /en Yeah~ I only remember coming up here from a little path a few times./ /jp そうだね。私も、小道からここへ上がったのは数回だけだったと思う。/ /ko 그러게～ 나도 오솔길로 이쪽에 올라온 적은 몇 번밖에 없어./"
+l "/zhs 是为了什么呢？/ /zhc 是為了什麼呢？/ /en What was that for?/ /jp 何のためだったっけ？/ /ko 뭐 하러 왔더라?/"
 ////夏悠流口水
 play sound harapeko
 voice cp1/xiayo_344.m4a
-x tabetaibase "我记得是因为，那条小路的两侧长着野生的猕猴桃。"
-l "哦，想起来了。"
+x tabetaibase "/zhs 我记得是因为，那条小路的两侧长着野生的猕猴桃。/ /zhc 我記得是因為，那條小路的兩側長著野生的獼猴桃。/ /en I think it was because wild kiwifruit grew along both sides of that path./ /jp 覚えてる。小道の両側に、野生のキウイがなってたから。/ /ko 그 오솔길 양옆에 야생 키위가 자라서였던 것 같아./"
+l "/zhs 哦，想起来了。/ /zhc 哦，想起來了。/ /en Oh, now I remember./ /jp ああ、思い出した。/ /ko 아, 생각났다./"
 ////////问题：需要cg
 ////新CG 黄昏里 夏悠扭头呲牙微笑闭眼
 cg cg_cp1_2 4
 voice cp1/xiayo_345.m4a
-x"诶.....对了......"
-"夏悠突然把头扭了过来。"
+x"/zhs 诶.....对了....../ /zhc 誒.....對了....../ /en Hey... by the way.../ /jp ねえ……そうだ……。/ /ko 어..... 맞다....../"
+"/zhs 夏悠突然把头扭了过来。/ /zhc 夏悠突然把頭扭了過來。/ /en Xia You suddenly turned toward me./ /jp 夏悠が不意に、こちらを向いた。/ /ko 샤유가 갑자기 고개를 돌렸다./"
 voice cp1/xiayo_346.m4a
-x "下次等猕猴桃成熟以后，再从这条路走一次吧！"////对话框震动
-l "嗯！"////对话框震动
-l "绝对会的。"
+x "/zhs 下次等猕猴桃成熟以后，再从这条路走一次吧！/ /zhc 下次等獼猴桃成熟以後，再從這條路走一次吧！/ /en Once the kiwifruit ripen, let's take this road again!/ /jp 今度キウイが熟れたら、またこの道を歩こう！/ /ko 다음에 키위가 익으면 이 길로 또 가자!/"////对话框震动
+l "/zhs 嗯！/ /zhc 嗯！/ /en Yeah!/ /jp うん！/ /ko 응!/"////对话框震动
+l "/zhs 绝对会的。/ /zhc 絕對會的。/ /en We definitely will./ /jp 絶対に。/ /ko 꼭 그러자./"
 cg cg_cp1_2 3
 ////嘴叹气
 voice cp1/xiayo_347.m4a
-x"如果...我说是如果..."
+x"/zhs 如果...我说是如果.../ /zhc 如果...我說是如果.../ /en If... I mean, just if.../ /jp もし……もしもの話だけど……。/ /ko 만약... 정말 만약에.../"
 cg cg_cp1_2 1
 voice cp1/xiayo_348.m4a
-x"你食言了的话，怎么办？"////一只眼睁开，略带失望的表情
-l "当然不会了，再来拉勾上吊一次嘛。"
+x"/zhs 你食言了的话，怎么办？/ /zhc 你食言了的話，怎麼辦？/ /en What if you break your promise?/ /jp 約束を破ったら、どうする？/ /ko 네가 약속을 어기면 어떡해?/"////一只眼睁开，略带失望的表情
+l "/zhs 当然不会了，再来拉勾上吊一次嘛。/ /zhc 當然不會了，再來拉勾上吊一次嘛。/ /en Of course I won't. Let's pinky-swear again./ /jp 破るわけないだろ。もう一度、指切りげんまんしよう。/ /ko 그럴 리 없지. 손가락 걸고 다시 약속하자./"
 cg cg_cp1_2 3
 voice cp1/xiayo_349.m4a
-x "我相信你哦......只是我想起了那个梦.......担心会变成现实......"//眼睛重新闭上 叹气
-l "绝对不会...我会拼命阻止这种事情发生的！"////对话框震动
-"因为我现在就在做着这样的事。"
-"夏悠，你已经快度过危机了..."
+x "/zhs 我相信你哦......只是我想起了那个梦.......担心会变成现实....../ /zhc 我相信你哦......只是我想起了那個夢.......擔心會變成現實....../ /en I believe you... I just remembered that dream... I'm afraid it'll come true.../ /jp 信じてるよ……ただ、あの夢を思い出して……本当になったらって、怖くて……。/ /ko 널 믿어...... 그냥 그 꿈이 생각나서....... 현실이 될까 봐....../"//眼睛重新闭上 叹气
+l "/zhs 绝对不会...我会拼命阻止这种事情发生的！/ /zhc 絕對不會...我會拼命阻止這種事情發生的！/ /en It absolutely won't. I'll do everything I can to stop it!/ /jp 絶対にならない……そんなこと、命懸けで止めるから！/ /ko 절대 안 돼... 그런 일은 목숨 걸고 막을 거야!/"////对话框震动
+"/zhs 因为我现在就在做着这样的事。/ /zhc 因為我現在就在做著這樣的事。/ /en Because that was exactly what I was doing now./ /jp 今、まさにそれをやっている。/ /ko 지금 내가 바로 그 일을 하고 있으니까./"
+"/zhs 夏悠，你已经快度过危机了.../ /zhc 夏悠，你已經快度過危機了.../ /en Xia You, you're almost out of danger.../ /jp 夏悠、もうすぐ危機を越えられるんだ……。/ /ko 샤유, 이제 거의 위기를 넘겼어.../"
 cg cg_cp1_2 2
 voice cp1/xiayo_350.m4a
-x"嗯嗯......"////恢复成扭头呲牙微笑闭眼
+x"/zhs 嗯嗯....../ /zhc 嗯嗯....../ /en Mm-hm.../ /jp うん、うん……。/ /ko 응, 응....../"////恢复成扭头呲牙微笑闭眼
 cg cg_cp1_2 1
 voice cp1/xiayo_351.m4a
-x"那说好了哟！在以后的某个时候，我们再一次回到这里来吧！！"////对话框震动 夏悠一只眼睁开
-"绝对......"
-"绝对会做到......"
+x"/zhs 那说好了哟！在以后的某个时候，我们再一次回到这里来吧！！/ /zhc 那說好了喲！在以後的某個時候，我們再一次回到這裡來吧！！/ /en Then it's a promise! Sometime in the future, let's come back here together!!/ /jp じゃあ約束だよ！ いつかまた、一緒にここへ来ようね！！/ /ko 그럼 약속이다! 언젠가 우리 다시 여기 오자!!/"////对话框震动 夏悠一只眼睁开
+"/zhs 绝对....../ /zhc 絕對....../ /en Definitely.../ /jp 絶対に……。/ /ko 꼭....../"
+"/zhs 绝对会做到....../ /zhc 絕對會做到....../ /en We'll definitely do it.../ /jp 絶対に、守る……。/ /ko 반드시 지킬게....../"
 stop music 
 scene sky yuu
 ////背景过渡到夕阳天空 无音乐 nvl模式
 nvlm
-"......"
-"......"
-"我们继续走着，路途中不断聊着一些以前有提起过的话题。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 我们继续走着，路途中不断聊着一些以前有提起过的话题。/ /zhc 我們繼續走著，路途中不斷聊著一些以前有提起過的話題。/ /en We kept walking, chatting about things we'd talked about before./ /jp 歩き続けながら、前にも話したことのある話題を、あれこれ話した。/ /ko 계속 걸으며 예전에 했던 이야기들을 나누었다./"
 endnvlm
 play music yuugure  
 //音乐 yuugure
 voice cp1/xiayo_352.m4a
-xnan "你看，到了。"
+xnan "/zhs 你看，到了。/ /zhc 你看，到了。/ /en Look, we're here./ /jp ほら、着いたよ。/ /ko 봐, 도착했어./"
 voice cp1/xiayo_353.m4a
-xnan "是不是这家。"
-l "门口确实有很多空心砖堆积。"
+xnan "/zhs 是不是这家。/ /zhc 是不是這家。/ /en Is it this house?/ /jp この家じゃない？/ /ko 이 집 맞지?/"
+l "/zhs 门口确实有很多空心砖堆积。/ /zhc 門口確實有很多空心磚堆積。/ /en There really was a large stack of hollow bricks outside./ /jp 確かに、玄関に空洞のブロックが山積みだ。/ /ko 문 앞에는 정말 속 빈 블록이 잔뜩 쌓여 있었다./"
 voice cp1/xiayo_354.m4a
-xnan "啊！你看！"
+xnan "/zhs 啊！你看！/ /zhc 啊！你看！/ /en Ah! Look!/ /jp あっ、見て！/ /ko 아! 저기 봐!/"
 play sound donaru loop
-iru "呜～汪！"
+iru "/zhs 呜～汪！/ /zhc 嗚～汪！/ /en Grrr~ Woof!/ /jp ウー、ワン！/ /ko 으르릉～ 멍!/"
 nvlm
-"那条在这之前被我们赶走的狗就蹲坐在房门口。"
+"/zhs 那条在这之前被我们赶走的狗就蹲坐在房门口。/ /zhc 那條在這之前被我們趕走的狗就蹲坐在房門口。/ /en The dog we'd driven away earlier was sitting by the door./ /jp さっき追い払った犬が、玄関の前に座っていた。/ /ko 아까 우리가 쫓아낸 개가 문 앞에 앉아 있었다./"
 stop sound 
-"不过看到我们拿着的木棍以后，夹着尾巴跑开了。"
+"/zhs 不过看到我们拿着的木棍以后，夹着尾巴跑开了。/ /zhc 不過看到我們拿著的木棍以後，夾著尾巴跑開了。/ /en But when it saw the sticks in our hands, it ran off with its tail between its legs./ /jp でも、俺たちの棒を見ると、尻尾を巻いて逃げていった。/ /ko 하지만 우리가 든 몽둥이를 보자 꼬리를 말고 달아났다./"
 endnvlm
 nvlm
-"房门是开着的。"
-"并且门口停着一辆摩托车。"
+"/zhs 房门是开着的。/ /zhc 房門是開著的。/ /en The front door was open./ /jp 戸は開いている。/ /ko 집 문은 열려 있었다./"
+"/zhs 并且门口停着一辆摩托车。/ /zhc 並且門口停著一輛摩托車。/ /en And a motorcycle was parked outside./ /jp しかも、玄関にバイクが停まっていた。/ /ko 문 앞에는 오토바이가 한 대 서 있었다./"
 endnvlm
-l "看来主人现在在家。"
+l "/zhs 看来主人现在在家。/ /zhc 看來主人現在在家。/ /en The owner seemed to be home./ /jp 飼い主は、家にいるみたいだ。/ /ko 주인이 집에 있나 보네./"
 nvlm
-"似乎是听到了狗的叫声，从房门里走出来一位中年大叔。"
+"/zhs 似乎是听到了狗的叫声，从房门里走出来一位中年大叔。/ /zhc 似乎是聽到了狗的叫聲，從房門裡走出來一位中年大叔。/ /en Apparently hearing the dog bark, a middle-aged man came out./ /jp 犬の声が聞こえたのか、中年のおじさんが戸口から出てきた。/ /ko 개 짖는 소리를 들었는지 중년 아저씨가 문에서 나오셨다./"
 endnvlm
-ojisann "诶？"
-ojisann "这不是夏家的女儿吗？"
-ojisann "还有旁边这位...不认识。"
+ojisann "/zhs 诶？/ /zhc 誒？/ /en Huh?/ /jp おや？/ /ko 어?/"
+ojisann "/zhs 这不是夏家的女儿吗？/ /zhc 這不是夏家的女兒嗎？/ /en Aren't you the Xia family's daughter?/ /jp 夏さんとこの娘じゃないか。/ /ko 샤 씨네 딸 아니니?/"
+ojisann "/zhs 还有旁边这位...不认识。/ /zhc 還有旁邊這位...不認識。/ /en And the one beside you... don't know you./ /jp 隣の子は……知らないな。/ /ko 옆의 애는... 모르겠네./"
 nvlm
-"我的存在感被盖过去了。"
+"/zhs 我的存在感被盖过去了。/ /zhc 我的存在感被蓋過去了。/ /en My presence had been completely overshadowed./ /jp 俺の存在感は、かき消されてしまった。/ /ko 내 존재감은 묻혀 버렸다./"
 endnvlm
-ojisann"有啥事啊？"
-l "叔叔你好，您家的狗是不是没拴？"
-ojisann"你说我家老黄啊，这不，拴太久了这几天解了让它透透气。"
-l "您这老黄，穿皮衣吗？"
+ojisann"/zhs 有啥事啊？/ /zhc 有啥事啊？/ /en What's up?/ /jp どうしたんだ？/ /ko 무슨 일이냐?/"
+l "/zhs 叔叔你好，您家的狗是不是没拴？/ /zhc 叔叔你好，您家的狗是不是沒拴？/ /en Hello, sir. Have you left your dog untied?/ /jp こんにちは。お宅の犬、つないでないんですか？/ /ko 안녕하세요, 아저씨. 댁의 개를 안 묶어 두셨어요?/"
+ojisann"/zhs 你说我家老黄啊，这不，拴太久了这几天解了让它透透气。/ /zhc 你說我家老黃啊，這不，拴太久了這幾天解了讓它透透氣。/ /en You mean Old Yellow? Yeah, he'd been tied up too long, so I let him get some air these past few days./ /jp うちのラオホアンか。長いことつないでたからな。ここ何日かは外して、息抜きさせてるんだ。/ /ko 우리 라오황 말이냐? 너무 오래 묶어 놔서 요 며칠은 바람 쐬라고 풀어 줬지./"
+l "/zhs 您这老黄，穿皮衣吗？/ /zhc 您這老黃，穿皮衣嗎？/ /en This Old Yellow of yours... does he wear a leather jacket?/ /jp そのラオホアン、革ジャンは着てます？/ /ko 그 라오황은 가죽 재킷도 입나요?/"
 voice cp1/xiayo_355.m4a
-xnan "您家这狗感觉有点危险啊！不拴好的话。"
+xnan "/zhs 您家这狗感觉有点危险啊！不拴好的话。/ /zhc 您家這狗感覺有點危險啊！不拴好的話。/ /en Your dog seems pretty dangerous if you don't tie him up!/ /jp あの犬、ちょっと危ない気がします。ちゃんとつながないと。/ /ko 댁의 개, 제대로 안 묶으면 좀 위험할 것 같아요!/"
 voice cp1/xiayo_356.m4a
-xnan "我们今天放学路上就看到它在到处逛，还对着人叫。"
+xnan "/zhs 我们今天放学路上就看到它在到处逛，还对着人叫。/ /zhc 我們今天放學路上就看到它在到處逛，還對著人叫。/ /en We saw him wandering around and barking at people on our way home today./ /jp 今日の帰りも、うろうろして人に吠えてるのを見ました。/ /ko 오늘 하굣길에도 돌아다니면서 사람한테 짖던데요./"
 voice cp1/xiayo_357.m4a
-xnan "看起来还很凶。"
-ojisann"啊？跑了这么远了，都跑到这附近学校去了。"
-ojisann"不过没事，它只是吓唬的，不会咬人的。"
+xnan "/zhs 看起来还很凶。/ /zhc 看起來還很兇。/ /en He looked really fierce too./ /jp すごく凶暴そうだったし。/ /ko 엄청 사나워 보였어요./"
+ojisann"/zhs 啊？跑了这么远了，都跑到这附近学校去了。/ /zhc 啊？跑了這麼遠了，都跑到這附近學校去了。/ /en Huh? He's gone that far? All the way to the school nearby?/ /jp え？ そんなに遠くまで行ってたのか。学校の近くまで。/ /ko 어? 그렇게 멀리 갔어? 학교 근처까지 갔구나./"
+ojisann"/zhs 不过没事，它只是吓唬的，不会咬人的。/ /zhc 不過沒事，它只是嚇唬的，不會咬人的。/ /en Don't worry. He's only scaring you. He won't bite./ /jp でも大丈夫。脅してるだけで、噛みやしないよ。/ /ko 그래도 괜찮아. 겁만 주는 거야. 안 물어./"
 nvlm
-"不行了得想个办法。"
+"/zhs 不行了得想个办法。/ /zhc 不行了得想個辦法。/ /en This wouldn't do. I had to think of something./ /jp だめだ。何とかしないと。/ /ko 안 되겠다. 방법을 찾아야 한다./"
 endnvlm
-l "我看到它在这附近农田里的坟上拉大便。"
+l "/zhs 我看到它在这附近农田里的坟上拉大便。/ /zhc 我看到它在這附近農田裡的墳上拉大便。/ /en I saw him pooping on a grave in the fields nearby./ /jp 近くの畑にあるお墓に、うんちしてるのを見ました。/ /ko 근처 밭에 있는 무덤에 똥 싸는 것도 봤어요./"
 play sound pin
-ojisann"什么？"
+ojisann"/zhs 什么？/ /zhc 什麼？/ /en What?/ /jp 何だと？/ /ko 뭐?/"
 play sound syokku
 shake
-ojisann"那t*是我爷爷的坟。"
+ojisann"/zhs 那t*是我爷爷的坟。/ /zhc 那t*是我爺爺的墳。/ /en That's my damn granddad's grave./ /jp あそこは、くそっ、俺のじいさんの墓だ。/ /ko 거긴 씨* 우리 할아버지 무덤인데./"
 play sound daisyokku
 shake
-ojisann"c*m！"
-ojisann"今晚吃狗肉！"
-l "......"
+ojisann"/zhs c*m！/ /zhc c*m！/ /en Son of a b*tch!/ /jp あのクソ野郎！/ /ko 이 개**!/"
+ojisann"/zhs 今晚吃狗肉！/ /zhc 今晚吃狗肉！/ /en We're having dog meat tonight!/ /jp 今夜は犬鍋だ！/ /ko 오늘 저녁은 개고기다!/"
+l "/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 play sound moeru
-ojisann"老黄你给我过来！"
-ojisann"狗呢？"
-ojisann"有本事今晚别回来了！"
-xnan "......"
-ojisann"必须得拴好了。"
-ojisann"那谢谢你们，等会我就收拾它。"
-l "嗯，好。"
+ojisann"/zhs 老黄你给我过来！/ /zhc 老黃你給我過來！/ /en Old Yellow, get over here!/ /jp ラオホアン、こっちへ来い！/ /ko 라오황, 이리 와!/"
+ojisann"/zhs 狗呢？/ /zhc 狗呢？/ /en Where's the dog?/ /jp 犬はどこだ？/ /ko 개 어디 갔어?/"
+ojisann"/zhs 有本事今晚别回来了！/ /zhc 有本事今晚別回來了！/ /en You'd better not come home tonight!/ /jp 帰ってこない覚悟はできてるんだろうな！/ /ko 어디 오늘 밤에 돌아오지 말아 봐!/"
+xnan "/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+ojisann"/zhs 必须得拴好了。/ /zhc 必須得拴好了。/ /en Definitely needs tying up./ /jp 絶対につないでおかないと。/ /ko 꼭 묶어 둬야겠다./"
+ojisann"/zhs 那谢谢你们，等会我就收拾它。/ /zhc 那謝謝你們，等會我就收拾它。/ /en Thanks, kids. I'll deal with him in a bit./ /jp 教えてくれてありがとな。あとで懲らしめてやる。/ /ko 고맙다. 이따 내가 혼내 주마./"
+l "/zhs 嗯，好。/ /zhc 嗯，好。/ /en Okay. Thanks./ /jp はい。/ /ko 네, 알겠어요./"
 nvlm
 ////保持nvl
 stop music 
-"问题应该是解决了。"
-"我也没更多的追究这些。"
-"希望大叔说到做到。"
+"/zhs 问题应该是解决了。/ /zhc 問題應該是解決了。/ /en The problem should be solved./ /jp これで、問題は解決したはずだ。/ /ko 문제는 해결된 것 같다./"
+"/zhs 我也没更多的追究这些。/ /zhc 我也沒更多的追究這些。/ /en I didn't press it any further./ /jp それ以上は、追及しなかった。/ /ko 더 캐묻지는 않았다./"
+"/zhs 希望大叔说到做到。/ /zhc 希望大叔說到做到。/ /en I hoped he'd keep his word./ /jp おじさんが約束を守ってくれるといい。/ /ko 아저씨가 말대로 해 주시길./"
 endnvlm
 scene stone yuu
 ////背景切到黄昏岩石 nvl模式 音乐停止
-"我和夏悠在岩石处分别了。"
+"/zhs 我和夏悠在岩石处分别了。/ /zhc 我和夏悠在岩石處分別了。/ /en Xia You and I parted at the boulder./ /jp 岩のところで、夏悠と別れた。/ /ko 바위에서 샤유와 헤어졌다./"
 ////音乐 dream
 play music dream  
 voice cp1/xiayo_358.m4a
-x pose2 ciallo "明天别迟到哦！"////对话框震动 手指着 ciallo
-l "当然！"////对话框震动
+x pose2 ciallo "/zhs 明天别迟到哦！/ /zhc 明天別遲到哦！/ /en Don't be late tomorrow!/ /jp 明日、遅れないでね！/ /ko 내일 늦지 마!/"////对话框震动 手指着 ciallo
+l "/zhs 当然！/ /zhc 當然！/ /en Of course!/ /jp もちろん！/ /ko 당연하지!/"////对话框震动
 ////nvl模式
 nvlm
-"我们仍未知道那天大叔吃到了狗肉没有。"
-"但是现在开始，夏悠可以一直活下去了。"
+"/zhs 我们仍未知道那天大叔吃到了狗肉没有。/ /zhc 我們仍未知道那天大叔吃到了狗肉沒有。/ /en We still don't know whether that man had dog meat that day./ /jp あの日、おじさんが犬肉を食べたのか、俺たちはまだ知らない。/ /ko 우리는 그날 아저씨가 개고기를 드셨는지 아직 모른다./"
+"/zhs 但是现在开始，夏悠可以一直活下去了。/ /zhc 但是現在開始，夏悠可以一直活下去了。/ /en But from now on, Xia You could keep living./ /jp でもこれからは、夏悠はずっと生きていける。/ /ko 하지만 이제 샤유는 계속 살아갈 수 있다./"
 endnvlm
 nvlm
-"一直，一直。"
-"即便我并不清楚时间为什么会回溯。"
-"大概这之前关于夏悠的记忆都是我在做梦吧。"
+"/zhs 一直，一直。/ /zhc 一直，一直。/ /en On and on./ /jp ずっと、ずっと。/ /ko 계속, 계속./"
+"/zhs 即便我并不清楚时间为什么会回溯。/ /zhc 即便我並不清楚時間為什麼會回溯。/ /en Even if I didn't know why time had turned back./ /jp なぜ時間が戻ったのか、わからなくても。/ /ko 시간이 왜 되돌아갔는지는 모르지만./"
+"/zhs 大概这之前关于夏悠的记忆都是我在做梦吧。/ /zhc 大概這之前關於夏悠的記憶都是我在做夢吧。/ /en Maybe all those earlier memories of Xia You had been a dream./ /jp それ以前の夏悠の記憶は、全部夢だったのかもしれない。/ /ko 그전의 샤유에 대한 기억은 모두 꿈이었을지도 모른다./"
 endnvlm
 stop sound 
 scene bl
 ////背景黑场 nvl
 play sound kazekage loop
 nvlm
-"记忆逐渐模糊了。"
+"/zhs 记忆逐渐模糊了。/ /zhc 記憶逐漸模糊了。/ /en The memories were growing hazy./ /jp 記憶が、少しずつ薄れていく。/ /ko 기억이 조금씩 흐릿해졌다./"
 stop music
-"......"
-"......"
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 endnvlm
 nvl
-nanshin "嗯......"
+nanshin "/zhs 嗯....../ /zhc 嗯....../ /en Mm.../ /jp ううん……。/ /ko 음....../"
 voice cp1/xiayo_359.m4a
-nanshin "我......"
-nanshin "你终于醒过来了吗？"
+nanshin "/zhs 我....../ /zhc 我....../ /en I.../ /jp 私……。/ /ko 나....../"
+nanshin "/zhs 你终于醒过来了吗？/ /zhc 你終於醒過來了嗎？/ /en You're finally awake?/ /jp やっと、目が覚めたのか？/ /ko 드디어 깨어났구나?/"
 voice cp1/xiayo_360.m4a
-nanshin "我做了一个很长的梦。"
+nanshin "/zhs 我做了一个很长的梦。/ /zhc 我做了一個很長的夢。/ /en I had a very long dream./ /jp 長い夢を、見ていた。/ /ko 아주 긴 꿈을 꿨어./"
 endnvl
 nvl
-nanshin "没关系，你活过来了。"
+nanshin "/zhs 没关系，你活过来了。/ /zhc 沒關係，你活過來了。/ /en It's all right. You're alive again./ /jp 大丈夫。生きて戻ってきたんだ。/ /ko 괜찮아. 넌 살아 돌아왔어./"
 voice cp1/xiayo_361.m4a
-nanshin "怎么会......是因为什么......"
-nanshin "你先缓一缓，详细的事情我后面会说。"
+nanshin "/zhs 怎么会......是因为什么....../ /zhc 怎麼會......是因為什麼....../ /en How... what happened...?/ /jp どうして……何があったの……。/ /ko 어떻게...... 왜....../"
+nanshin "/zhs 你先缓一缓，详细的事情我后面会说。/ /zhc 你先緩一緩，詳細的事情我後面會說。/ /en Take a moment. I'll explain everything later./ /jp まずは落ち着いて。詳しいことは、あとで話す。/ /ko 먼저 좀 진정해. 자세한 건 나중에 말할게./"
 endnvl
 nvl
-nanshin "嗯。"
+nanshin "/zhs 嗯。/ /zhc 嗯。/ /en Okay./ /jp うん。/ /ko 응./"
 voice cp1/xiayo_362.m4a
-nanshin "其他人呢？"
-nanshin "它们......对不起..."
-nanshin"它们现在需要你的帮助..."
-nanshin"我会都告诉你的..."
+nanshin "/zhs 其他人呢？/ /zhc 其他人呢？/ /en What about the others?/ /jp 他のみんなは？/ /ko 다른 사람들은?/"
+nanshin "/zhs 它们......对不起.../ /zhc 它們......對不起.../ /en They... I'm sorry.../ /jp みんなは……ごめん……。/ /ko 그것들은...... 미안해.../"
+nanshin"/zhs 它们现在需要你的帮助.../ /zhc 它們現在需要你的幫助.../ /en They need your help now.../ /jp 今、君の助けを必要としている……。/ /ko 지금 네 도움이 필요해.../"
+nanshin"/zhs 我会都告诉你的.../ /zhc 我會都告訴你的.../ /en I'll tell you everything.../ /jp 全部、話すから……。/ /ko 전부 말해 줄게.../"
 voice cp1/xiayo_363.m4a
-nanshin "好吧。"
-nanshin "Prometheus计划。"
+nanshin "/zhs 好吧。/ /zhc 好吧。/ /en All right./ /jp わかった。/ /ko 알았어./"
+nanshin "/zhs Prometheus计划。/ /zhc Prometheus計劃。/ /en Project Prometheus./ /jp プロメテウス計画。/ /ko Prometheus 계획./"
 endnvl
 nvlm
 stop sound 
 scene sky
 stop music 
 ////背景黑场到白天天空 音乐停止 nvl模式
-"......"
-"......"
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 endnvlm
 jump cp1_007

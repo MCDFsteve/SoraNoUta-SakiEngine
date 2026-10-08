@@ -1294,6 +1294,33 @@ class _GalleryCopy {
 
   factory _GalleryCopy.forLanguage(SupportedLanguage language) {
     switch (language) {
+      case SupportedLanguage.ko:
+        return const _GalleryCopy(
+          title: '감상',
+          characters: '캐릭터',
+          stickers: '스티커',
+          cg: 'CG',
+          backgrounds: '배경',
+          music: '음악',
+          movies: '영상',
+          back: '돌아가기',
+          pose: '포즈',
+          expression: '표정',
+          variant: '변형',
+          variants: '개 변형',
+          layeredHint: '포즈 × 표정',
+          animation: '애니메이션',
+          singleImage: '이미지',
+          nowPlaying: '재생 중',
+          chooseMusic: '음악 선택',
+          playMovie: '재생',
+          pauseMovie: '일시 정지',
+          replayMovie: '다시 재생',
+          savePng: 'PNG 저장',
+          savingPng: '저장 중…',
+          savePngSuccess: '투명 PNG 저장 완료',
+          savePngFailed: 'PNG를 저장할 수 없습니다',
+        );
       case SupportedLanguage.zhHant:
         return const _GalleryCopy(
           title: '鑑賞',

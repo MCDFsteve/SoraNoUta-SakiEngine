@@ -2,43 +2,43 @@ label cp1_002
 /////结束nvl模式
 stop music
 scene classroom
-"......"
-"想这些也没用。出去透透气吧。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 想这些也没用。出去透透气吧。/ /zhc 想這些也沒用。出去透透氣吧。/ /en Thinking about it won't help. I'll get some air./ /jp 考えても仕方ない。外で風に当たろう。/ /ko 이런 생각 해 봐야 소용없다. 바람이나 쐬자./"
 //背景切到教室外 教室外的bgm
 scene school
-"我走出教室，想看看夏悠她们在做什么。"
+"/zhs 我走出教室，想看看夏悠她们在做什么。/ /zhc 我走出教室，想看看夏悠她們在做什麼。/ /en I left the classroom to see what Xia You and the others were doing./ /jp 夏悠たちが何をしているのか見ようと、教室を出た。/ /ko 샤유랑 애들이 뭘 하는지 보려고 교실을 나섰다./"
 play sound haneru
 play music goodday  
 //夏悠“o”的立绘（wakuwaku2） 从下方跳出
 voice cp1/xiayo_002.m4a
-x wakuwaku2 an topin "林澄你出来了。"
-l "你在干什么？不带我一个？"
+x wakuwaku2 an topin "/zhs 林澄你出来了。/ /zhc 林澄你出來了。/ /en Oh, you're out, Lin Cheng./ /jp 林澄、出てきたんだ。/ /ko 린청, 나왔네./"
+l "/zhs 你在干什么？不带我一个？/ /zhc 你在幹什麼？不帶我一個？/ /en What are you doing? Aren't you inviting me?/ /jp 何してるの？ 俺も混ぜてよ。/ /ko 뭐 해? 나도 끼워 줘./"
 voice cp1/xiayo_003.m4a
-x think "我刚上完厕所回来啊。"//夏悠皱眉
+x think "/zhs 我刚上完厕所回来啊。/ /zhc 我剛上完廁所回來啊。/ /en I just got back from the toilet./ /jp トイレから戻ってきたところだけど。/ /ko 화장실 갔다 오는 길인데./"//夏悠皱眉
 voice cp1/xiayo_004.m4a
-x pose4 think2 an fururu "啊！？你想让我带你上厕所，一起？"//夏悠思考
+x pose4 think2 an fururu "/zhs 啊！？你想让我带你上厕所，一起？/ /zhc 啊！？你想讓我帶你上廁所，一起？/ /en Huh?! You wanted me to take you to the toilet? Together?/ /jp えっ！？ トイレに連れていってほしいの？ 一緒に？/ /ko 어!? 너도 화장실에 데려가 달라고? 같이?/"//夏悠思考
 play sound haneru
 voice cp1/xiayo_005.m4a
-x pose3 kowa an shake2 repeat 4 "害怕。"//对话框震动 夏悠害怕
-l "那没事了。还以为有什么新的可以玩的。"
+x pose3 kowa an shake2 repeat 4 "/zhs 害怕。/ /zhc 害怕。/ /en Scary./ /jp 怖い。/ /ko 무섭다./"//对话框震动 夏悠害怕
+l "/zhs 那没事了。还以为有什么新的可以玩的。/ /zhc 那沒事了。還以為有什麼新的可以玩的。/ /en Oh, never mind, then. I thought you'd found something new to play./ /jp ならいいや。何か新しい遊びでもしてるのかと思った。/ /ko 그럼 됐어. 뭔가 새로운 놀이라도 찾은 줄 알았지./"
 voice cp1/xiayo_006.m4a
-x pose1 smile an ukeru repeat 2 "嗯嗯。" //夏悠微笑 手指着
+x pose1 smile an ukeru repeat 2 "/zhs 嗯嗯。/ /zhc 嗯嗯。/ /en Mm-hm./ /jp うんうん。/ /ko 응, 응./" //夏悠微笑 手指着
 voice cp1/xiayo_007.m4a
-x pose2 star "嗯......去玩捉迷藏去吧！"
-l "好！"
+x pose2 star "/zhs 嗯......去玩捉迷藏去吧！/ /zhc 嗯......去玩捉迷藏去吧！/ /en Hmm... Let's play hide-and-seek!/ /jp そうだ……かくれんぼしよう！/ /ko 음...... 숨바꼭질하러 가자!/"
+l "/zhs 好！/ /zhc 好！/ /en Okay!/ /jp いいよ！/ /ko 좋아!/"
 stop music
 scene grass with wipe
 //背景切到树林 休闲的bgm
 //nvl模式
 play sound kusa
 nvlm
-"我们叫上了李宫娜和刘守真，朝着中午去过的那片草地赶去。"
+"/zhs 我们叫上了李宫娜和刘守真，朝着中午去过的那片草地赶去。/ /zhc 我們叫上了李宮娜和劉守真，朝著中午去過的那片草地趕去。/ /en We called Li Gongna and Liu Shouzhen and headed for the grassy patch we'd visited at noon./ /jp 李宮娜と劉守真を呼び、昼に行った草地へ向かった。/ /ko 리궁나와 류서우전을 불러 점심때 갔던 풀밭으로 향했다./"
 endnvlm
 scene sky with diss
 //背景切到天空
 nvlm
-"即便是下午了，太阳依旧很大。"
-"与其说是很大，不如说简直像是一天中太阳最大的时候。"
+"/zhs 即便是下午了，太阳依旧很大。/ /zhc 即便是下午了，太陽依舊很大。/ /en Even in the afternoon, the sun was still blazing./ /jp 午後になっても、日差しはまだ強い。/ /ko 오후인데도 햇볕은 여전히 강했다./"
+"/zhs 与其说是很大，不如说简直像是一天中太阳最大的时候。/ /zhc 與其說是很大，不如說簡直像是一天中太陽最大的時候。/ /en In fact, it felt more like the brightest part of the whole day./ /jp 強いどころか、一日のうちで一番照りつけているようにさえ思える。/ /ko 강한 정도가 아니라 하루 중 제일 따가운 시간 같았다./"
 endnvlm
 scene grass
 show gonna1 at xiayo1pose
@@ -48,435 +48,435 @@ show syozen1 at xiayo1pose
 //夏悠在中间 宫娜和守真在左右
 play music what  
 voice cp1/xiayo_008.m4a
-x pose2 ciallo "靠两两石头剪刀布的形式决定谁负责捉吧！"//夏悠侧脸思考
+x pose2 ciallo "/zhs 靠两两石头剪刀布的形式决定谁负责捉吧！/ /zhc 靠兩兩石頭剪刀布的形式決定誰負責捉吧！/ /en Let's pair up for rock-paper-scissors to decide who's it!/ /jp 二人ずつじゃんけんして、鬼を決めよう！/ /ko 둘씩 가위바위보 해서 술래를 정하자!/"//夏悠侧脸思考
 voice cp1/xiayo_009.m4a
-x pose4 doyagao "我和李宫娜一组，林澄和刘守真一组。"
+x pose4 doyagao "/zhs 我和李宫娜一组，林澄和刘守真一组。/ /zhc 我和李宮娜一組，林澄和劉守真一組。/ /en I'll play Li Gongna. Lin Cheng, you play Liu Shouzhen./ /jp 私と李宮娜、林澄と劉守真の組ね。/ /ko 나랑 리궁나가 한 조, 린청이랑 류서우전이 한 조./"
 voice cp1/xiayo_010.m4a
-x pose1 tameiki "两边输了的人再进行总决赛。"
+x pose1 tameiki "/zhs 两边输了的人再进行总决赛。/ /zhc 兩邊輸了的人再進行總決賽。/ /en Then the two losers go to the finals./ /jp それぞれ負けた人が、決勝戦。/ /ko 양쪽에서 진 사람이 결승전을 하는 거야./"
 voice cp1/xiayo_011.m4a
-x pose2 think2 "最后的输家就负责抓人了。"//侧脸但是眼睛转过来
+x pose2 think2 "/zhs 最后的输家就负责抓人了。/ /zhc 最後的輸家就負責抓人了。/ /en Whoever loses last has to find everyone./ /jp 最後に負けた人が鬼だよ。/ /ko 마지막에 지는 사람이 술래!/"//侧脸但是眼睛转过来
 nvlm
-"就这样，开始了比赛。"
+"/zhs 就这样，开始了比赛。/ /zhc 就這樣，開始了比賽。/ /en And so the contest began./ /jp こうして、勝負が始まった。/ /ko 그렇게 시합이 시작됐다./"
 endnvlm
 //背景树林 欢快的音乐
 //守真的满腔热血的立绘
 hide xiayo1
 hide gonna1
 voice cp1/syozen_001.m4a
-ls moeru "我不会输的。"
-l "我也不会。"
+ls moeru "/zhs 我不会输的。/ /zhc 我不會輸的。/ /en I'm not losing./ /jp 負けないからな。/ /ko 난 안 질 거야./"
+l "/zhs 我也不会。/ /zhc 我也不會。/ /en Neither am I./ /jp 俺だって。/ /ko 나도./"
 nvlm
-"对捉迷藏游戏来说，我觉得当躲的人可比当捉的人有意思多了。"
+"/zhs 对捉迷藏游戏来说，我觉得当躲的人可比当捉的人有意思多了。/ /zhc 對捉迷藏遊戲來說，我覺得當躲的人可比當捉的人有意思多了。/ /en When it came to hide-and-seek, hiding was much more fun than seeking./ /jp かくれんぼなら、探すより隠れるほうがずっと面白いと思う。/ /ko 숨바꼭질은 찾는 것보다 숨는 쪽이 훨씬 재미있다./"
 endnvlm
-"我想想，我应该："
+"/zhs 我想想，我应该：/ /zhc 我想想，我應該：/ /en Let me think. I should throw:/ /jp さて、何を出そう。/ /ko 어디 보자. 내가 낼 건:/"
 menu
-"出剪刀" cp1_002_r
-"出石头" cp1_002_b
-"出布" cp1_002_g
+"/zhs 出剪刀/ /zhc 出剪刀/ /en Scissors/ /jp チョキ/ /ko 가위/" cp1_002_r
+"/zhs 出石头/ /zhc 出石頭/ /en Rock/ /jp グー/ /ko 바위/" cp1_002_b
+"/zhs 出布/ /zhc 出布/ /en Paper/ /jp パー/ /ko 보/" cp1_002_g
 endmenu
 label cp1_002_r
 scene grass
 hide xiayo1
 hide gonna1
 show syozen1 moeru
-"我想了一会，出了剪刀。"
+"/zhs 我想了一会，出了剪刀。/ /zhc 我想了一會，出了剪刀。/ /en After thinking it over, I threw scissors./ /jp 少し考えて、チョキを出した。/ /ko 잠깐 생각하다 가위를 냈다./"
 show syozen1 moeru an jump
 play sound haneru
-"刘守真则出了布。"
+"/zhs 刘守真则出了布。/ /zhc 劉守真則出了布。/ /en Liu Shouzhen threw paper./ /jp 劉守真はパーだった。/ /ko 류서우전은 보를 냈다./"
 jump cp1_002_true
 label cp1_002_true
-l "是我赢咯！"
+l "/zhs 是我赢咯！/ /zhc 是我贏咯！/ /en I win!/ /jp 俺の勝ち！/ /ko 내가 이겼다!/"
 voice cp1/syozen_002.m4a
-ls unhappy "啊，可恶，输了。"//对话框震动
+ls unhappy "/zhs 啊，可恶，输了。/ /zhc 啊，可惡，輸了。/ /en Ah, darn it. I lost./ /jp ああ、くそ。負けた。/ /ko 아, 젠장. 졌네./"//对话框震动
 scene sky
 //加载天空背景 黑场fade过渡
-"我走到观众席等待最终负责捉人的人出现。"
-"观众席。"
-"假想的，实际上坐的是空气。"
+"/zhs 我走到观众席等待最终负责捉人的人出现。/ /zhc 我走到觀眾席等待最終負責捉人的人出現。/ /en I went to the spectator stands to wait and see who would be it./ /jp 観客席へ行き、最後に鬼が決まるのを待つ。/ /ko 관중석으로 가서 최종 술래가 정해지기를 기다렸다./"
+"/zhs 观众席。/ /zhc 觀眾席。/ /en The spectator stands./ /jp 観客席。/ /ko 관중석./"
+"/zhs 假想的，实际上坐的是空气。/ /zhc 假想的，實際上坐的是空氣。/ /en Imaginary ones. I was actually sitting on air./ /jp 想像上の物だ。実際に座っているのは空気。/ /ko 상상의 관중석이다. 실제로는 허공에 앉아 있었다./"
 scene grass with wipe
 //2秒黑场重新加载背景
-"......"
-"似乎那边也决出了结果，我起身前去查看。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 似乎那边也决出了结果，我起身前去查看。/ /zhc 似乎那邊也決出了結果，我起身前去檢視。/ /en It looked as though they'd decided over there too. I stood up to see./ /jp あちらも決着したようなので、立ち上がって見に行った。/ /ko 저쪽도 결과가 나온 모양이라 일어나 보러 갔다./"
 //加载树林背景
-l "所以谁是最后抓人的人？"
+l "/zhs 所以谁是最后抓人的人？/ /zhc 所以誰是最後抓人的人？/ /en So who's it?/ /jp で、最後の鬼は誰？/ /ko 그래서 최종 술래가 누구야?/"
 voice cp1/xiayo_012.m4a
-x tameiki2 "呃...我。"//夏悠叹气
-l "真的假的？你负责抓人？"
+x tameiki2 "/zhs 呃...我。/ /zhc 呃...我。/ /en Um... me./ /jp えっと……私。/ /ko 어... 나./"//夏悠叹气
+l "/zhs 真的假的？你负责抓人？/ /zhc 真的假的？你負責抓人？/ /en Seriously? You're it?/ /jp 本当に？ 夏悠が鬼？/ /ko 진짜? 네가 술래야?/"
 jump cp1_002_xy
 label cp1_002_xy
 voice cp1/xiayo_013.m4a
-x mesugaki2 "没错。"
+x mesugaki2 "/zhs 没错。/ /zhc 沒錯。/ /en That's right./ /jp そうだよ。/ /ko 그래./"
 //夏悠奸笑
 voice cp1/xiayo_014.m4a
-x "我要狠狠地抓住你们！"
+x "/zhs 我要狠狠地抓住你们！/ /zhc 我要狠狠地抓住你們！/ /en I'm gonna catch every last one of you!/ /jp 絶対に捕まえてやるからね！/ /ko 너희 전부 가만 안 둘 거야!/"
 voice cp1/xiayo_015.m4a
-x tameiki "不过提前说好啊！不能离开我太远的距离。"
+x tameiki "/zhs 不过提前说好啊！不能离开我太远的距离。/ /zhc 不過提前說好啊！不能離開我太遠的距離。/ /en But I'm saying this first! Don't go too far away./ /jp でも先に言っておくよ！ あんまり遠くに行かないこと。/ /ko 대신 미리 말해 두는데, 나한테서 너무 멀리 가지 마!/"
 //夏悠叹气
 voice cp1/xiayo_016.m4a
-x tameiki2 "太远的话我怎么可能找得到。"
+x tameiki2 "/zhs 太远的话我怎么可能找得到。/ /zhc 太遠的話我怎麼可能找得到。/ /en How am I supposed to find you if you go too far?/ /jp 遠すぎたら、見つけられるわけないんだから。/ /ko 너무 멀리 가면 어떻게 찾겠어./"
 nvlm
-"也就是说这是一场扮演越共的游戏。"
-"躲藏场所基本限制在森林了。"
+"/zhs 也就是说这是一场扮演越共的游戏。/ /zhc 也就是說這是一場扮演越共的遊戲。/ /en In other words, we were playing Viet Cong./ /jp つまり、これはベトコンになりきるゲームだ。/ /ko 그러니까 이건 베트콩이 되어 보는 게임이다./"
+"/zhs 躲藏场所基本限制在森林了。/ /zhc 躲藏場所基本限制在森林了。/ /en Our hiding places were basically limited to the woods./ /jp 隠れ場所は、ほぼ森の中に限られる。/ /ko 숨을 곳은 사실상 숲으로 한정된다./"
 endnvlm
 //重新加载森林背景 玩耍的bgm
 scene bl
 //nvl模式
 nvlm
-"......"
-"夏悠背靠大树，开始了报数。"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs 夏悠背靠大树，开始了报数。/ /zhc 夏悠背靠大樹，開始了報數。/ /en Xia You faced a big tree and started counting./ /jp 夏悠が大木を背にして、数え始めた。/ /ko 샤유가 큰 나무를 등지고 숫자를 세기 시작했다./"
 voice cp1/xiayo_017.m4a
-xnan "100，99，98，97，96，95，94........."
-"我们四散躲开了。"
+xnan "/zhs 100，99，98，97，96，95，94........./ /zhc 100，99，98，97，96，95，94........./ /en 100, 99, 98, 97, 96, 95, 94........./ /jp 100，99，98，97，96，95，94........./ /ko 100, 99, 98, 97, 96, 95, 94........./"
+"/zhs 我们四散躲开了。/ /zhc 我們四散躲開了。/ /en We scattered to hide./ /jp 俺たちは散り散りに隠れに行った。/ /ko 우리는 흩어져 숨었다./"
 endnvlm
 scene forest
 nvlm
-"我寻找着好躲但是不容易被发现的地方。"
-"我在山坡的接近背面下坡的几棵树之间，慢慢蹲了下来，将身体躲在两棵粗壮大树的后面。"
-"不特地绕过来看的话基本不会看得到我。"
-"就像电子游戏躲在了空气墙后面的感觉。"
-"我听着夏悠的报数。"
+"/zhs 我寻找着好躲但是不容易被发现的地方。/ /zhc 我尋找著好躲但是不容易被發現的地方。/ /en I looked for somewhere easy to hide in but hard to spot./ /jp 隠れやすく、見つかりにくい場所を探す。/ /ko 숨기 좋으면서도 잘 안 보이는 곳을 찾았다./"
+"/zhs 我在山坡的接近背面下坡的几棵树之间，慢慢蹲了下来，将身体躲在两棵粗壮大树的后面。/ /zhc 我在山坡的接近背面下坡的幾棵樹之間，慢慢蹲了下來，將身體躲在兩棵粗壯大樹的後面。/ /en Near the slope on the far side of the hill, I crouched among a few trees and tucked myself behind two thick trunks./ /jp 丘の裏手へ下りかけた場所にある木々の間でしゃがみ、二本の太い幹の陰に体を隠した。/ /ko 언덕 뒤편 내리막에 가까운 나무들 사이에 천천히 쪼그려 앉아 굵은 나무 두 그루 뒤로 몸을 숨겼다./"
+"/zhs 不特地绕过来看的话基本不会看得到我。/ /zhc 不特地繞過來看的話基本不會看得到我。/ /en Unless someone deliberately came around this way, they probably wouldn't see me./ /jp わざわざ回り込まなければ、まず見えないはずだ。/ /ko 일부러 이쪽으로 돌아오지 않으면 거의 보이지 않을 것이다./"
+"/zhs 就像电子游戏躲在了空气墙后面的感觉。/ /zhc 就像電子遊戲躲在了空氣牆後面的感覺。/ /en It felt like hiding behind an invisible wall in a video game./ /jp ゲームの見えない壁の向こうに隠れたような気分。/ /ko 게임에서 보이지 않는 벽 뒤에 숨은 기분이다./"
+"/zhs 我听着夏悠的报数。/ /zhc 我聽著夏悠的報數。/ /en I listened to Xia You counting./ /jp 夏悠の数える声を聞く。/ /ko 샤유가 숫자를 세는 소리를 들었다./"
 endnvlm
 nvlm
 voice cp1/xiayo_018.m4a
-xnan "10，9，8，7，6......"
+xnan "/zhs 10，9，8，7，6....../ /zhc 10，9，8，7，6....../ /en 10, 9, 8, 7, 6....../ /jp 10，9，8，7，6....../ /ko 10, 9, 8, 7, 6....../"
 voice cp1/xiayo_019.m4a
-xnan "5，4，3，2，1，0。"
+xnan "/zhs 5，4，3，2，1，0。/ /zhc 5，4，3，2，1，0。/ /en 5, 4, 3, 2, 1, 0./ /jp 5，4，3，2，1，0。/ /ko 5, 4, 3, 2, 1, 0./"
 voice cp1/xiayo_020.m4a
-xnan "我要开始找咯！"
-"我小心地保持一动不动。"
-"连呼吸都放慢了。"
-"专心听着四周的动静。"
+xnan "/zhs 我要开始找咯！/ /zhc 我要開始找咯！/ /en Ready or not, here I come!/ /jp 探し始めるよ！/ /ko 이제 찾는다!/"
+"/zhs 我小心地保持一动不动。/ /zhc 我小心地保持一動不動。/ /en I carefully kept perfectly still./ /jp 慎重に、じっと動かずにいる。/ /ko 조심스럽게 꼼짝도 하지 않았다./"
+"/zhs 连呼吸都放慢了。/ /zhc 連呼吸都放慢了。/ /en Even my breathing slowed./ /jp 呼吸までゆっくりになった。/ /ko 숨도 천천히 쉬었다./"
+"/zhs 专心听着四周的动静。/ /zhc 專心聽著四周的動靜。/ /en I concentrated on the sounds around me./ /jp 耳を澄ませ、周囲の気配に集中する。/ /ko 주변 소리에 온 신경을 집중했다./"
 endnvlm
 scene bl
 nvlm
-"......"
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 endnvlm
 scene forest with wipe
 stop music
 play sound rin
-nan "当！当！当！"
+nan "/zhs 当！当！当！/ /zhc 當！當！當！/ /en Clang! Clang! Clang!/ /jp カン！ カン！ カン！/ /ko 땡! 땡! 땡!/"
 nvlm
-"听到了上课的声音。"
-"所以直到上课为止，都没有抓到我。"
+"/zhs 听到了上课的声音。/ /zhc 聽到了上課的聲音。/ /en The school bell rang./ /jp 授業開始の鐘が聞こえた。/ /ko 수업 종이 들렸다./"
+"/zhs 所以直到上课为止，都没有抓到我。/ /zhc 所以直到上課為止，都沒有抓到我。/ /en She hadn't found me before class started./ /jp つまり授業が始まるまで、俺は捕まらなかった。/ /ko 수업이 시작할 때까지 나를 못 찾은 거다./"
 endnvlm
 //结束了nvl模式 重新加载树林背景 愉快的bgm
 scene grass
 play music goodday
-"我缓缓走出躲藏地点。"
-"夏悠，刘守真和李宫娜也分别从树林里钻出来了。"
+"/zhs 我缓缓走出躲藏地点。/ /zhc 我緩緩走出躲藏地點。/ /en I slowly emerged from my hiding place./ /jp 隠れ場所からゆっくり出る。/ /ko 천천히 숨어 있던 곳에서 나왔다./"
+"/zhs 夏悠，刘守真和李宫娜也分别从树林里钻出来了。/ /zhc 夏悠，劉守真和李宮娜也分別從樹林裡鑽出來了。/ /en Xia You, Liu Shouzhen, and Li Gongna came out of the woods from different directions too./ /jp 夏悠、劉守真、李宮娜も、それぞれ林から姿を現した。/ /ko 샤유와 류서우전, 리궁나도 각각 숲에서 나왔다./"
 //加载夏悠 守真 宫娜立绘
 show xiayo1 at xiayo1pose
 show syozen1 at xiayo1pose
 show gonna1 at xiayo1pose
-"每个人身上都粘着几片枯叶。"
-l "夏悠，你抓到谁了？"
+"/zhs 每个人身上都粘着几片枯叶。/ /zhc 每個人身上都粘著幾片枯葉。/ /en A few dead leaves clung to each of them./ /jp みんな、体に枯れ葉を数枚くっつけている。/ /ko 모두 몸에 마른 잎이 몇 장씩 붙어 있었다./"
+l "/zhs 夏悠，你抓到谁了？/ /zhc 夏悠，你抓到誰了？/ /en Xia You, who did you find?/ /jp 夏悠、誰を見つけた？/ /ko 샤유, 누구 찾았어?/"
 voice cp1/xiayo_021.m4a
-x ciallo "除了你以外都抓住咯。"//夏悠眼睛一闭一睁地笑着
+x ciallo "/zhs 除了你以外都抓住咯。/ /zhc 除了你以外都抓住咯。/ /en Everyone except you./ /jp 林澄以外はみんな捕まえたよ。/ /ko 너 빼고 다 찾았어./"//夏悠眼睛一闭一睁地笑着
 voice cp1/xiayo_022.m4a
-x smile "刘守真直接趴到树林的地上，拿枯叶把自己盖满了。"//夏悠微笑
+x smile "/zhs 刘守真直接趴到树林的地上，拿枯叶把自己盖满了。/ /zhc 劉守真直接趴到樹林的地上，拿枯葉把自己蓋滿了。/ /en Liu Shouzhen lay right down on the forest floor and covered himself in dead leaves./ /jp 劉守真なんて、林の地面にうつぶせになって、枯れ葉で体を覆ってたの。/ /ko 류서우전은 숲 바닥에 엎드려 낙엽을 잔뜩 덮어썼더라./"//夏悠微笑
 //守真黑脸 不愉快的表情
 voice cp1/xiayo_023.m4a
-x mesugaki3 "以为躲的很严密，结果一眼就看到了哈哈。"//夏悠嘲笑 宫娜嘲笑
+x mesugaki3 "/zhs 以为躲的很严密，结果一眼就看到了哈哈。/ /zhc 以為躲的很嚴密，結果一眼就看到了哈哈。/ /en He thought he was perfectly hidden, but I spotted him straight away. Haha!/ /jp 完璧に隠れたつもりだったみたいだけど、一目でわかっちゃった。あはは。/ /ko 잘 숨었다고 생각했겠지만 한눈에 보였어, 하하./"//夏悠嘲笑 宫娜嘲笑
 voice cp1/syozen_003.m4a
-ls sabishii2 "哎～不要再说这么丢脸的事了。"//守真脸红
+ls sabishii2 "/zhs 哎～不要再说这么丢脸的事了。/ /zhc 哎～不要再說這麼丟臉的事了。/ /en Oh, come on~ Don't tell everyone about that./ /jp ああ～。恥ずかしい話を蒸し返すなよ。/ /ko 에휴～ 창피한 얘기 그만 좀 해./"//守真脸红
 voice cp1/xiayo_024.m4a
-x smile "好～好～"//夏悠叉腰微笑
+x smile "/zhs 好～好～/ /zhc 好～好～/ /en Okay, okay~/ /jp はーい、はい。/ /ko 네～ 네～/"//夏悠叉腰微笑
 jump cp1_003
 label cp1_002_b
 scene grass
 show syozen1 moeru
-"我想了一会，出了石头。"
+"/zhs 我想了一会，出了石头。/ /zhc 我想了一會，出了石頭。/ /en After thinking it over, I threw rock./ /jp 少し考えて、グーを出した。/ /ko 잠깐 생각하다 바위를 냈다./"
 show syozen1 moeru  an jump
 play sound haneru
-"刘守真则出了布。"
+"/zhs 刘守真则出了布。/ /zhc 劉守真則出了布。/ /en Liu Shouzhen threw paper./ /jp 劉守真はパーだった。/ /ko 류서우전은 보를 냈다./"
 jump cp1_002_false
 label cp1_002_false
-"啊？输了。"
+"/zhs 啊？输了。/ /zhc 啊？輸了。/ /en Huh? I lost./ /jp え？ 負けた。/ /ko 어? 졌네./"
 //守真开心
 voice cp1/syozen_004.m4a
-ls happy "哈哈，我就说嘛，我肯定会赢的。"
-"我不想当捉人的啊～"
-"不过还有机会可以赢。"
+ls happy "/zhs 哈哈，我就说嘛，我肯定会赢的。/ /zhc 哈哈，我就說嘛，我肯定會贏的。/ /en Haha! Told you I'd win./ /jp あはは、だから言っただろ。絶対に勝つって。/ /ko 하하, 내가 이긴다고 했잖아./"
+"/zhs 我不想当捉人的啊～/ /zhc 我不想當捉人的啊～/ /en I don't wanna be it~/ /jp 鬼にはなりたくないな～。/ /ko 술래 하기 싫은데～/"
+"/zhs 不过还有机会可以赢。/ /zhc 不過還有機會可以贏。/ /en Still, I had another chance to win./ /jp でも、まだ勝てるチャンスはある。/ /ko 그래도 아직 이길 기회는 있다./"
 scene bl
 nvlm
-"我等待夏悠那边的结果。"
+"/zhs 我等待夏悠那边的结果。/ /zhc 我等待夏悠那邊的結果。/ /en I waited for the result of Xia You's match./ /jp 夏悠たちの結果を待つ。/ /ko 샤유 쪽의 결과를 기다렸다./"
 endnvlm
 //黑场重新记载树林背景
 scene grass with wipe
 voice cp1/xiayo_025.m4a
-x tameiki2 "好了，你的对手是我。"//夏悠叹气
-l "啊？你也输了吗？"
+x tameiki2 "/zhs 好了，你的对手是我。/ /zhc 好了，你的對手是我。/ /en All right. I'm your opponent./ /jp はい、相手は私だよ。/ /ko 자, 네 상대는 나야./"//夏悠叹气
+l "/zhs 啊？你也输了吗？/ /zhc 啊？你也輸了嗎？/ /en Huh? You lost too?/ /jp え？ 夏悠も負けたの？/ /ko 어? 너도 졌어?/"
 nvlm
-"看着后面一脸兴奋的李宫娜，我知道了答案。"
+"/zhs 看着后面一脸兴奋的李宫娜，我知道了答案。/ /zhc 看著後面一臉興奮的李宮娜，我知道了答案。/ /en The excited look on Li Gongna's face behind her gave me my answer./ /jp 後ろで喜んでいる李宮娜を見て、答えがわかった。/ /ko 뒤에서 신난 표정으로 서 있는 리궁나를 보고 답을 알았다./"
 endnvlm
 voice cp1/xiayo_026.m4a
-x pose2 moeru an fururu repeat 2 "开始吧，赌上一切的最终之战。"//夏悠燃起来了
-l "开始吧！"
+x pose2 moeru an fururu repeat 2 "/zhs 开始吧，赌上一切的最终之战。/ /zhc 開始吧，賭上一切的最終之戰。/ /en Let's begin. The final battle, with everything on the line./ /jp 始めよう。すべてを賭けた、最後の戦いを。/ /ko 시작하자. 모든 걸 건 최후의 승부./"//夏悠燃起来了
+l "/zhs 开始吧！/ /zhc 開始吧！/ /en Let's do it!/ /jp 勝負だ！/ /ko 덤벼!/"
 menu
-"出剪刀" cp1_002_p
-"出石头" cp1_002_a
-"出布" cp1_002_y
+"/zhs 出剪刀/ /zhc 出剪刀/ /en Scissors/ /jp チョキ/ /ko 가위/" cp1_002_p
+"/zhs 出石头/ /zhc 出石頭/ /en Rock/ /jp グー/ /ko 바위/" cp1_002_a
+"/zhs 出布/ /zhc 出布/ /en Paper/ /jp パー/ /ko 보/" cp1_002_y
 endmenu
 label cp1_002_p
-"我命运的一战，我出的是：剪刀。"
-"夏悠出的则是——"
+"/zhs 我命运的一战，我出的是：剪刀。/ /zhc 我命運的一戰，我出的是：剪刀。/ /en In this fateful battle, I threw scissors./ /jp 運命の一戦。俺が出したのは、チョキ。/ /ko 운명을 건 승부. 내가 낸 건 가위다./"
+"/zhs 夏悠出的则是——/ /zhc 夏悠出的則是——/ /en And Xia You threw—/ /jp そして夏悠が出したのは――/ /ko 샤유가 낸 건——/"
 show xiayo1 moeru at xiayo1pose an jump
 play sound haneru
-"剪刀！"
+"/zhs 剪刀！/ /zhc 剪刀！/ /en Scissors!/ /jp チョキ！/ /ko 가위!/"
 voice cp1/xiayo_027.m4a
-x tameiki "平局了。"//夏悠叹气
+x tameiki "/zhs 平局了。/ /zhc 平局了。/ /en A tie./ /jp あいこだね。/ /ko 비겼다./"//夏悠叹气
 voice cp1/xiayo_028.m4a
-x moeru "只能再来一次了。"
-l "好吧。毕竟不能两个人抓，两个人躲。"
-"这次我要出："
+x moeru "/zhs 只能再来一次了。/ /zhc 只能再來一次了。/ /en We'll have to go again./ /jp もう一回やるしかないか。/ /ko 한 번 더 해야겠네./"
+l "/zhs 好吧。毕竟不能两个人抓，两个人躲。/ /zhc 好吧。畢竟不能兩個人抓，兩個人躲。/ /en Fine. We can't exactly have two seekers and two hiders./ /jp そうだな。二人が鬼で二人が隠れるわけにもいかないし。/ /ko 그래. 두 명이 찾고 두 명이 숨을 순 없으니까./"
+"/zhs 这次我要出：/ /zhc 這次我要出：/ /en This time, I'll throw:/ /jp 今度はこれだ。/ /ko 이번에 내가 낼 건:/"
 menu
-"出剪刀" cp1_002_m
-"出石头" cp1_002_a
-"出布" cp1_002_y
+"/zhs 出剪刀/ /zhc 出剪刀/ /en Scissors/ /jp チョキ/ /ko 가위/" cp1_002_m
+"/zhs 出石头/ /zhc 出石頭/ /en Rock/ /jp グー/ /ko 바위/" cp1_002_a
+"/zhs 出布/ /zhc 出布/ /en Paper/ /jp パー/ /ko 보/" cp1_002_y
 endmenu
 label cp1_002_m
-"人不会踏进同一条河流。至少我是这么想的对面的。"
-"所以我又出了一次剪刀。"
-"夏悠出的则是——"
+"/zhs 人不会踏进同一条河流。至少我是这么想的对面的。/ /zhc 人不會踏進同一條河流。至少我是這麼想的對面的。/ /en You can't step into the same river twice. At least, that's what I thought my opponent would think./ /jp 人は同じ川に二度入らない。少なくとも、相手はそう考えるはず。/ /ko 사람은 같은 강에 두 번 들어가지 않는다. 적어도 상대는 그럴 거라 생각했다./"
+"/zhs 所以我又出了一次剪刀。/ /zhc 所以我又出了一次剪刀。/ /en So I threw scissors again./ /jp だから、俺はもう一度チョキを出した。/ /ko 그래서 또 가위를 냈다./"
+"/zhs 夏悠出的则是——/ /zhc 夏悠出的則是——/ /en And Xia You threw—/ /jp 夏悠が出したのは――/ /ko 샤유가 낸 건——/"
 show xiayo1 moeru at xiayo1pose an jump
 play sound haneru
-"剪刀！"
+"/zhs 剪刀！/ /zhc 剪刀！/ /en Scissors!/ /jp チョキ！/ /ko 가위!/"
 voice cp1/xiayo_029.m4a
-x wakuwaku "啊！"//对话框震动 //夏悠震惊
+x wakuwaku "/zhs 啊！/ /zhc 啊！/ /en Ah!/ /jp あっ！/ /ko 아!/"//对话框震动 //夏悠震惊
 voice cp1/xiayo_030.m4a
-x wakuwaku2 "为什么你出的还是剪刀？"
-l "为什么你出的还是剪刀？"
-l "只能再来一次了。"
+x wakuwaku2 "/zhs 为什么你出的还是剪刀？/ /zhc 為什麼你出的還是剪刀？/ /en Why did you throw scissors again?/ /jp なんでまたチョキなの？/ /ko 넌 왜 또 가위야?/"
+l "/zhs 为什么你出的还是剪刀？/ /zhc 為什麼你出的還是剪刀？/ /en Why did you throw scissors again?/ /jp そっちこそ、なんでまたチョキなんだよ？/ /ko 넌 왜 또 가위야?/"
+l "/zhs 只能再来一次了。/ /zhc 只能再來一次了。/ /en We'll have to go again./ /jp もう一回やるしかないな。/ /ko 한 번 더 해야겠네./"
 jump cp1_002_loop
 label cp1_002_loop
 //成就：总有一天，但不是今天。 -- 连续十次出剪刀。
 voice cp1/xiayo_031.m4a
-x tameiki "没办法了，再来一局！"//夏悠叹气
-"这次我要出："
+x tameiki "/zhs 没办法了，再来一局！/ /zhc 沒辦法了，再來一局！/ /en No choice. Another round!/ /jp 仕方ない、もう一回！/ /ko 어쩔 수 없지. 한 판 더!/"//夏悠叹气
+"/zhs 这次我要出：/ /zhc 這次我要出：/ /en This time, I'll throw:/ /jp 今度はこれだ。/ /ko 이번에 내가 낼 건:/"
 menu
-"出剪刀" cp1_002_loop_0
-"出石头" cp1_002_a
-"出布" cp1_002_y
+"/zhs 出剪刀/ /zhc 出剪刀/ /en Scissors/ /jp チョキ/ /ko 가위/" cp1_002_loop_0
+"/zhs 出石头/ /zhc 出石頭/ /en Rock/ /jp グー/ /ko 바위/" cp1_002_a
+"/zhs 出布/ /zhc 出布/ /en Paper/ /jp パー/ /ko 보/" cp1_002_y
 endmenu
 label cp1_002_loop_0
-"我出了剪刀。"
-"夏悠则出的是——"
+"/zhs 我出了剪刀。/ /zhc 我出了剪刀。/ /en I threw scissors./ /jp 俺はチョキを出した。/ /ko 가위를 냈다./"
+"/zhs 夏悠则出的是——/ /zhc 夏悠則出的是——/ /en And Xia You threw—/ /jp 夏悠が出したのは――/ /ko 샤유가 낸 건——/"
 show xiayo1 moeru  at xiayo1pose an jump
 play sound haneru
-"剪刀！"
+"/zhs 剪刀！/ /zhc 剪刀！/ /en Scissors!/ /jp チョキ！/ /ko 가위!/"
 voice cp1/xiayo_032.m4a
-x hen "再来！！"//对话框震动 夏悠生气
+x hen "/zhs 再来！！/ /zhc 再來！！/ /en Again!!/ /jp もう一回！！/ /ko 다시!!/"//对话框震动 夏悠生气
 jump cp1_002_loop
 label cp1_002_a
-"这次我出了石头。"
-"夏悠则出的是——"
+"/zhs 这次我出了石头。/ /zhc 這次我出了石頭。/ /en This time, I threw rock./ /jp 今度はグーを出した。/ /ko 이번엔 바위를 냈다./"
+"/zhs 夏悠则出的是——/ /zhc 夏悠則出的是——/ /en And Xia You threw—/ /jp 夏悠が出したのは――/ /ko 샤유가 낸 건——/"
 show xiayo1 moeru at xiayo1pose an jump
 play sound haneru
-"剪刀！"
-l "哈哈，我赢了。"
-"我就知道。"
+"/zhs 剪刀！/ /zhc 剪刀！/ /en Scissors!/ /jp チョキ！/ /ko 가위!/"
+l "/zhs 哈哈，我赢了。/ /zhc 哈哈，我贏了。/ /en Haha, I win./ /jp はは、俺の勝ち。/ /ko 하하, 이겼다./"
+"/zhs 我就知道。/ /zhc 我就知道。/ /en I knew it./ /jp やっぱりな。/ /ko 이럴 줄 알았지./"
 voice cp1/xiayo_033.m4a
-x odoroki "啊——！"//夏悠豆豆眼惊讶
+x odoroki "/zhs 啊——！/ /zhc 啊——！/ /en Aaaah!/ /jp ああ――！/ /ko 아——!/"//夏悠豆豆眼惊讶
 voice cp1/xiayo_034.m4a
-x tameiki "没办法了。我来抓人。"//夏悠叹气
-"刘守真和李宫娜看到我们已经决出了胜负，也过来了。"
+x tameiki "/zhs 没办法了。我来抓人。/ /zhc 沒辦法了。我來抓人。/ /en Fine. I'll be it./ /jp 仕方ない。私が鬼ね。/ /ko 어쩔 수 없네. 내가 술래 할게./"//夏悠叹气
+"/zhs 刘守真和李宫娜看到我们已经决出了胜负，也过来了。/ /zhc 劉守真和李宮娜看到我們已經決出了勝負，也過來了。/ /en Seeing we'd finally settled things, Liu Shouzhen and Li Gongna came over./ /jp 決着がついたのを見て、劉守真と李宮娜も近づいてきた。/ /ko 승부가 난 걸 보고 류서우전과 리궁나도 다가왔다./"
 show syozen1 at xiayo1pose
 show gonna1 at xiayo1pose
 voice cp1/syozen_005.m4a
-ls "啊！是夏悠抓吗？"//夏悠立绘移动到左边 右边插进来守真
+ls "/zhs 啊！是夏悠抓吗？/ /zhc 啊！是夏悠抓嗎？/ /en Oh! Xia You's it?/ /jp あっ、夏悠が鬼？/ /ko 아! 샤유가 술래야?/"//夏悠立绘移动到左边 右边插进来守真
 jump cp1_002_xy
 label cp1_002_y
-"这次我出了布。"
-"而夏悠出的是——"
+"/zhs 这次我出了布。/ /zhc 這次我出了布。/ /en This time, I threw paper./ /jp 今度はパーを出した。/ /ko 이번엔 보를 냈다./"
+"/zhs 而夏悠出的是——/ /zhc 而夏悠出的是——/ /en And Xia You threw—/ /jp ところが、夏悠が出したのは――/ /ko 샤유가 낸 건——/"
 show xiayo1 pose1 moeru at xiayo1pose an jump
 play sound haneru
-"剪刀！！"
+"/zhs 剪刀！！/ /zhc 剪刀！！/ /en Scissors!!/ /jp チョキ！！/ /ko 가위!!/"
 voice cp1/xiayo_035.m4a
-x  pose4 dame an shake2 repeat 2 "耶！我赢了！"//夏悠高兴
-l "怎，怎么会？"
-l "不，不可能。"
+x  pose4 dame an shake2 repeat 2 "/zhs 耶！我赢了！/ /zhc 耶！我贏了！/ /en Yay! I won!/ /jp やった！ 勝った！/ /ko 야호! 내가 이겼다!/"//夏悠高兴
+l "/zhs 怎，怎么会？/ /zhc 怎，怎麼會？/ /en H-how?/ /jp な、なんで？/ /ko 어, 어떻게?/"
+l "/zhs 不，不可能。/ /zhc 不，不可能。/ /en N-no way./ /jp あ、ありえない。/ /ko 마, 말도 안 돼./"
 voice cp1/xiayo_036.m4a
-x doyagao "加油咯林澄，我会好好藏起来的！"//手指着 开心
+x doyagao "/zhs 加油咯林澄，我会好好藏起来的！/ /zhc 加油咯林澄，我會好好藏起來的！/ /en Good luck, Lin Cheng. I'll hide really well!/ /jp 頑張ってね、林澄。私はしっかり隠れるから！/ /ko 힘내, 린청. 난 잘 숨을 테니까!/"//手指着 开心
 voice cp1/xiayo_037.m4a
-x smile "大家可以去躲了！"
+x smile "/zhs 大家可以去躲了！/ /zhc 大家可以去躲了！/ /en You can all go hide!/ /jp みんな、隠れていいよ！/ /ko 다들 숨어!/"
 voice cp1/xiayo_038.m4a
-x "不过不能躲太远哦！只能在这片草地附近躲。"
+x "/zhs 不过不能躲太远哦！只能在这片草地附近躲。/ /zhc 不過不能躲太遠哦！只能在這片草地附近躲。/ /en But don't go too far! Stay near this grassy patch./ /jp でも、遠くまで行っちゃだめだよ！ この草地の周りだけね。/ /ko 대신 너무 멀리 가면 안 돼! 이 풀밭 근처에만 숨는 거야./"
 nvlm
-"也就是说这是一场扮演越共的游戏。"
-"躲藏场所基本限制在森林了。"
-"没办法了，愿赌服输。"
+"/zhs 也就是说这是一场扮演越共的游戏。/ /zhc 也就是說這是一場扮演越共的遊戲。/ /en In other words, we were playing Viet Cong./ /jp つまり、これはベトコンになりきるゲームだ。/ /ko 그러니까 이건 베트콩이 되어 보는 게임이다./"
+"/zhs 躲藏场所基本限制在森林了。/ /zhc 躲藏場所基本限制在森林了。/ /en Our hiding places were basically limited to the woods./ /jp 隠れ場所は、ほぼ森の中に限られる。/ /ko 숨을 곳은 사실상 숲으로 한정된다./"
+"/zhs 没办法了，愿赌服输。/ /zhc 沒辦法了，願賭服輸。/ /en Nothing I could do. I'd lost fair and square./ /jp 仕方ない。勝負に負けた以上、従おう。/ /ko 어쩔 수 없지. 내기를 했으면 결과에 승복해야 한다./"
 endnvlm
 scene bl
 //黑场背景 nvl模式
 stop music
 nvlm
-"我走向最近的一棵大树，背对着大家开始报数。"
-l "100，99，98，97，96......"
-l "50，49，48，47，46......."
-l "10，9，8，7，6........."
-l "3，2，1，0。"
-l "我开始找咯！！"
+"/zhs 我走向最近的一棵大树，背对着大家开始报数。/ /zhc 我走向最近的一棵大樹，背對著大家開始報數。/ /en I went to the nearest big tree, turned away from everyone, and began to count./ /jp 一番近い大木まで歩き、みんなに背を向けて数え始めた。/ /ko 가장 가까운 큰 나무로 가서 모두를 등지고 숫자를 세기 시작했다./"
+l "/zhs 100，99，98，97，96....../ /zhc 100，99，98，97，96....../ /en 100, 99, 98, 97, 96....../ /jp 100，99，98，97，96....../ /ko 100, 99, 98, 97, 96....../"
+l "/zhs 50，49，48，47，46......./ /zhc 50，49，48，47，46......./ /en 50, 49, 48, 47, 46......./ /jp 50，49，48，47，46......./ /ko 50, 49, 48, 47, 46......./"
+l "/zhs 10，9，8，7，6........./ /zhc 10，9，8，7，6........./ /en 10, 9, 8, 7, 6........./ /jp 10，9，8，7，6........./ /ko 10, 9, 8, 7, 6........./"
+l "/zhs 3，2，1，0。/ /zhc 3，2，1，0。/ /en 3, 2, 1, 0./ /jp 3，2，1，0。/ /ko 3, 2, 1, 0./"
+l "/zhs 我开始找咯！！/ /zhc 我開始找咯！！/ /en Ready or not, here I come!!/ /jp 探し始めるぞ！！/ /ko 이제 찾는다!!/"
 endnvlm
 scene grass
 //树林的背景 安静/躲藏的bgm 结束nvl
 play music nandato  
 nvlm
-"我转过身，环视了一下周围。"
-"果然看不到任何人。"
-"说明大家至少都躲好了。"
-"先从左边树林开始找起吧！"
+"/zhs 我转过身，环视了一下周围。/ /zhc 我轉過身，環視了一下週圍。/ /en I turned around and scanned the area./ /jp 振り向き、周囲を見回す。/ /ko 돌아서서 주변을 둘러보았다./"
+"/zhs 果然看不到任何人。/ /zhc 果然看不到任何人。/ /en As expected, nobody was in sight./ /jp やっぱり誰もいない。/ /ko 역시 아무도 안 보인다./"
+"/zhs 说明大家至少都躲好了。/ /zhc 說明大家至少都躲好了。/ /en At least everyone had found somewhere to hide./ /jp 少なくとも、みんな隠れ終えたようだ。/ /ko 적어도 다들 숨기는 했다는 뜻이다./"
+"/zhs 先从左边树林开始找起吧！/ /zhc 先從左邊樹林開始找起吧！/ /en I'll start with the woods on the left!/ /jp まずは左の林から探そう！/ /ko 왼쪽 숲부터 찾아보자!/"
 endnvlm
 scene forest
 //重新切入树林背景 黑场
-"我轻手轻脚地踏入树林。"
-"但是这是不可能的。"
+"/zhs 我轻手轻脚地踏入树林。/ /zhc 我輕手輕腳地踏入樹林。/ /en I tried to creep quietly into the woods./ /jp 足音を忍ばせて林へ入る。/ /ko 살금살금 숲에 들어갔다./"
+"/zhs 但是这是不可能的。/ /zhc 但是這是不可能的。/ /en But that was impossible./ /jp なんてことは、できなかった。/ /ko 하지만 조용히 걷는 건 불가능했다./"
 play sound kusa
 //枯叶被踩到的声音
-"脚踩到枯叶上就会发出声音。"
-"在告诉大家，我已经在找了。"
-"但是一般躲藏的人不会中途转移目的地，不然一样会因为踩到枯叶而发出声响。"
-"？！"//对话框震动
-"我看到一块地面出现了很不自然的隆起。"
-"枯叶下面盖着的是——"
-"刘守真。"
+"/zhs 脚踩到枯叶上就会发出声音。/ /zhc 腳踩到枯葉上就會發出聲音。/ /en Every step on the dead leaves made a sound./ /jp 枯れ葉を踏むたびに音が鳴る。/ /ko 낙엽을 밟으면 소리가 난다./"
+"/zhs 在告诉大家，我已经在找了。/ /zhc 在告訴大家，我已經在找了。/ /en Announcing that I was searching already./ /jp 俺が探し始めたことを、みんなに知らせてしまう。/ /ko 이미 찾기 시작했다고 모두에게 알려 주는 셈이다./"
+"/zhs 但是一般躲藏的人不会中途转移目的地，不然一样会因为踩到枯叶而发出声响。/ /zhc 但是一般躲藏的人不會中途轉移目的地，不然一樣會因為踩到枯葉而發出聲響。/ /en Usually, though, the people hiding wouldn't change spots either. Their footsteps would rustle the leaves just as loudly./ /jp とはいえ隠れた側も、途中で場所を変えることはあまりない。動けば同じように枯れ葉が鳴るからだ。/ /ko 그래도 숨은 사람은 보통 도중에 자리를 옮기지 않는다. 움직이면 그쪽도 낙엽 밟는 소리가 나니까./"
+"/zhs ？！/ /zhc ？！/ /en ?!/ /jp ？！/ /ko ?!/"//对话框震动
+"/zhs 我看到一块地面出现了很不自然的隆起。/ /zhc 我看到一塊地面出現了很不自然的隆起。/ /en I spotted an unnaturally large mound on the ground./ /jp 地面の一角が、不自然に盛り上がっていた。/ /ko 땅이 아주 부자연스럽게 솟아 있는 곳이 보였다./"
+"/zhs 枯叶下面盖着的是——/ /zhc 枯葉下面蓋著的是——/ /en Beneath the dead leaves was—/ /jp 枯れ葉の下に隠れていたのは――/ /ko 낙엽 밑에 덮여 있는 건——/"
+"/zhs 刘守真。/ /zhc 劉守真。/ /en Liu Shouzhen./ /jp 劉守真。/ /ko 류서우전이었다./"
 play sound chin
-l "抓到了！"//对话框震动
-"我跑过去一把抓住刘守真的手臂。"
+l "/zhs 抓到了！/ /zhc 抓到了！/ /en Found you!/ /jp 見つけた！/ /ko 잡았다!/"//对话框震动
+"/zhs 我跑过去一把抓住刘守真的手臂。/ /zhc 我跑過去一把抓住劉守真的手臂。/ /en I ran over and grabbed his arm./ /jp 駆け寄って、劉守真の腕を掴んだ。/ /ko 달려가 류서우전의 팔을 덥석 잡았다./"
 //刘守真立绘 惊讶 立绘跳一下
 play sound haneru
 voice cp1/syozen_006.m4a
-ls odoroki an topin "啊？"
+ls odoroki an topin "/zhs 啊？/ /zhc 啊？/ /en Huh?/ /jp え？/ /ko 어?/"
 //守真失落
 voice cp1/syozen_007.m4a
-ls ochikomu "我已经很努力的伪装自己了！"
-l "你甚至连衣服都露在外面。"
-l "也就只有和盲人玩捉迷藏的时候才有优势了。"
+ls ochikomu "/zhs 我已经很努力的伪装自己了！/ /zhc 我已經很努力的偽裝自己了！/ /en I worked so hard on my camouflage!/ /jp 頑張ってカモフラージュしたのに！/ /ko 열심히 위장했는데!/"
+l "/zhs 你甚至连衣服都露在外面。/ /zhc 你甚至連衣服都露在外面。/ /en Your clothes are still sticking out./ /jp 服まで丸見えじゃないか。/ /ko 옷도 밖으로 나와 있었잖아./"
+l "/zhs 也就只有和盲人玩捉迷藏的时候才有优势了。/ /zhc 也就只有和盲人玩捉迷藏的時候才有優勢了。/ /en This would only give you an advantage against a blind person./ /jp 目が見えない人とかくれんぼするときにしか、通用しないぞ。/ /ko 눈이 안 보이는 사람이랑 할 때나 유리하겠다./"
 //守真愤怒
 voice cp1/syozen_008.m4a
-ls konoyarou "可恶。"
+ls konoyarou "/zhs 可恶。/ /zhc 可惡。/ /en Darn it./ /jp くそっ。/ /ko 젠장./"
 voice cp1/syozen_009.m4a
-ls "今天我应该获取的教训是：伪装的要彻底。"
-"这小子突然说什么呢。"
+ls "/zhs 今天我应该获取的教训是：伪装的要彻底。/ /zhc 今天我應該獲取的教訓是：偽裝的要徹底。/ /en Today's lesson: camouflage must be complete./ /jp 今日得た教訓は、カモフラージュは徹底すべし、だな。/ /ko 오늘의 교훈. 위장은 철저하게./"
+"/zhs 这小子突然说什么呢。/ /zhc 這小子突然說什麼呢。/ /en What was he talking about all of a sudden?/ /jp 急に何を言い出すんだ、こいつ。/ /ko 얘는 갑자기 무슨 소리를 하는 거야./"
 //重新加载树林背景
 scene forest with wipe
 nvlm
-"刘守真意犹未尽地回到了草地上休息。"
-"我继续寻找其他人的踪迹。"
+"/zhs 刘守真意犹未尽地回到了草地上休息。/ /zhc 劉守真意猶未盡地回到了草地上休息。/ /en Still looking reluctant to give up, Liu Shouzhen went back to rest on the grass./ /jp 劉守真は名残惜しそうに草地へ戻り、休むことになった。/ /ko 류서우전은 아쉬운 표정으로 풀밭에 돌아가 쉬었다./"
+"/zhs 我继续寻找其他人的踪迹。/ /zhc 我繼續尋找其他人的蹤跡。/ /en I carried on looking for the others./ /jp 俺は残り二人の痕跡を探す。/ /ko 나는 다른 애들의 흔적을 계속 찾았다./"
 endnvlm
 scene bl
 nvlm
-"我在树林中转悠了一会。"
+"/zhs 我在树林中转悠了一会。/ /zhc 我在樹林中轉悠了一會。/ /en I wandered through the woods for a while./ /jp しばらく林の中を歩き回った。/ /ko 잠시 숲속을 돌아다녔다./"
 endnvlm
 nvlm
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 endnvlm
 scene forest
 play sound chin
-l "找到了！"//对话框震动
+l "/zhs 找到了！/ /zhc 找到了！/ /en Found you!/ /jp 見つけた！/ /ko 찾았다!/"//对话框震动
 play sound haneru
 //宫娜立绘 震惊
 voice cp1/gonna_001.m4a
-lg odoroki an topin "啊？怎么抓到我的？"//对话框震动
-l "你虽然躲在树后面，但是有衣角露出来了。"
-l "今天你应该获取的教训是：伪装的要彻底。"
-"无意中模仿了刘守真。"
+lg odoroki an topin "/zhs 啊？怎么抓到我的？/ /zhc 啊？怎麼抓到我的？/ /en Huh? How did you find me?/ /jp え？ どうしてわかったの？/ /ko 어? 나 어떻게 찾았어?/"//对话框震动
+l "/zhs 你虽然躲在树后面，但是有衣角露出来了。/ /zhc 你雖然躲在樹後面，但是有衣角露出來了。/ /en You're behind a tree, but the edge of your clothes is showing./ /jp 木の後ろには隠れてたけど、服の裾が出てたよ。/ /ko 나무 뒤에 숨었어도 옷자락이 삐져나왔잖아./"
+l "/zhs 今天你应该获取的教训是：伪装的要彻底。/ /zhc 今天你應該獲取的教訓是：偽裝的要徹底。/ /en Today's lesson for you: camouflage must be complete./ /jp 今日の教訓は、カモフラージュは徹底すべし、だな。/ /ko 네가 오늘 얻어야 할 교훈. 위장은 철저하게./"
+"/zhs 无意中模仿了刘守真。/ /zhc 無意中模仿了劉守真。/ /en I'd copied Liu Shouzhen without meaning to./ /jp うっかり劉守真を真似してしまった。/ /ko 나도 모르게 류서우전을 따라 했다./"
 //宫娜失落
 voice cp1/gonna_002.m4a
-lg tameiki "好吧......"
+lg tameiki "/zhs 好吧....../ /zhc 好吧....../ /en Fine.../ /jp そっか……。/ /ko 알았어....../"
 //重新加载树林背景
 scene sky with wipe
 nvlm
-"李宫娜也回到了草地上，还剩下夏悠了。"
+"/zhs 李宫娜也回到了草地上，还剩下夏悠了。/ /zhc 李宮娜也回到了草地上，還剩下夏悠了。/ /en Li Gongna went back to the grass too. Only Xia You remained./ /jp 李宮娜も草地に戻った。残るは夏悠だけ。/ /ko 리궁나도 풀밭으로 돌아갔다. 이제 샤유만 남았다./"
 //思考的bgm
-"夏悠现在大概已经清楚知道了我的战绩。"
-"除非离我还比较远。"
-"反正这个树林里基本没有什么好躲的，除了躲在树后面和石头后面，还能躲哪？"
-"当然刘守真那种躲法确实在我意料之外。"
+"/zhs 夏悠现在大概已经清楚知道了我的战绩。/ /zhc 夏悠現在大概已經清楚知道了我的戰績。/ /en By now, Xia You probably knew exactly how well I was doing./ /jp 夏悠も、今ごろ俺の戦果を知っているだろう。/ /ko 샤유도 지금쯤 내가 얼마나 찾았는지 알 것이다./"
+"/zhs 除非离我还比较远。/ /zhc 除非離我還比較遠。/ /en Unless she was still some distance away./ /jp よほど遠くにいなければ。/ /ko 아직 멀리 있는 게 아니라면./"
+"/zhs 反正这个树林里基本没有什么好躲的，除了躲在树后面和石头后面，还能躲哪？/ /zhc 反正這個樹林裡基本沒有什麼好躲的，除了躲在樹後面和石頭後面，還能躲哪？/ /en There weren't many good hiding spots in these woods anyway. Other than behind trees and rocks, where could you hide?/ /jp そもそも、この林には大した隠れ場所がない。木か岩の後ろ以外に、どこへ隠れる？/ /ko 어차피 이 숲은 숨을 곳도 별로 없다. 나무나 바위 뒤 말고 어디 숨겠어?/"
+"/zhs 当然刘守真那种躲法确实在我意料之外。/ /zhc 當然劉守真那種躲法確實在我意料之外。/ /en Though admittedly, Liu Shouzhen's approach had surprised me./ /jp もちろん、劉守真の隠れ方は予想外だったけど。/ /ko 물론 류서우전의 방법은 예상 밖이었지만./"
 endnvlm
 nvlm
 //黑场
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 endnvlm
 scene forest
 play sound chin
-"找到了！"//对话框震动
+"/zhs 找到了！/ /zhc 找到了！/ /en Found you!/ /jp 見つけた！/ /ko 찾았다!/"//对话框震动
 voice cp1/xiayo_039.m4a
-xnan "哇唔！！"//对话框震动
+xnan "/zhs 哇唔！！/ /zhc 哇唔！！/ /en Wah!!/ /jp わあっ！！/ /ko 와아!!/"//对话框震动
 shake
 show xiayo1 pose1 dame  at xiayo1pose an topin
 play sound haneru
-"夏悠从树上跳了下来，扑倒在我身上。"
+"/zhs 夏悠从树上跳了下来，扑倒在我身上。/ /zhc 夏悠從樹上跳了下來，撲倒在我身上。/ /en Xia You jumped down from a tree and landed on me, knocking me over./ /jp 夏悠が木から飛び降り、俺の上に倒れ込んできた。/ /ko 샤유가 나무에서 뛰어내려 나를 덮쳤다./"
 //搞怪的bgm
-l "你是猴子吗？居然躲在树上！"
-l "幸好这里的树都长的比较矮。"
+l "/zhs 你是猴子吗？居然躲在树上！/ /zhc 你是猴子嗎？居然躲在樹上！/ /en Are you a monkey?! Hiding up a tree!/ /jp お前は猿か！ 木の上に隠れるなんて！/ /ko 원숭이야? 나무 위에 숨다니!/"
+l "/zhs 幸好这里的树都长的比较矮。/ /zhc 幸好這裡的樹都長的比較矮。/ /en Luckily, the trees here weren't very tall./ /jp ここの木が低くてよかったよ。/ /ko 이곳 나무들이 낮아서 다행이었다./"
 hide xiayo1
-"夏悠从我身上下来，拍了拍身上的落叶和灰尘。"
+"/zhs 夏悠从我身上下来，拍了拍身上的落叶和灰尘。/ /zhc 夏悠從我身上下來，拍了拍身上的落葉和灰塵。/ /en Xia You got off me and brushed away the dead leaves and dust./ /jp 夏悠は俺の上から降り、服の落ち葉と土を払った。/ /ko 샤유가 내 위에서 일어나 몸에 붙은 낙엽과 먼지를 털었다./"
 play sound poko
 voice cp1/xiayo_040.m4a
-x shy an jump "啊哈哈哈。"//夏悠不好意思的笑
+x shy an jump "/zhs 啊哈哈哈。/ /zhc 啊哈哈哈。/ /en Ahahaha./ /jp あははは。/ /ko 아하하하./"//夏悠不好意思的笑
 voice cp1/xiayo_041.m4a
-x "还以为你不会抬头看的。"
-l "这种高度就算不抬头，离远点也大概能看到了。"
+x "/zhs 还以为你不会抬头看的。/ /zhc 還以為你不會抬頭看的。/ /en I thought you wouldn't look up./ /jp 上は見ないと思ったんだけどな。/ /ko 네가 위는 안 볼 줄 알았지./"
+l "/zhs 这种高度就算不抬头，离远点也大概能看到了。/ /zhc 這種高度就算不抬頭，離遠點也大概能看到了。/ /en At that height, I could probably spot you from farther away without even looking up./ /jp この高さなら、見上げなくても少し離れれば見えるだろ。/ /ko 이 정도 높이는 고개를 안 들어도 멀리서 보면 보이거든./"
 voice cp1/xiayo_042.m4a
-x tameiki2 "啊啦.....全军覆没啦......"//夏悠无奈叹气
+x tameiki2 "/zhs 啊啦.....全军覆没啦....../ /zhc 啊啦.....全軍覆沒啦....../ /en Oh dear... Total defeat.../ /jp あらら……全滅しちゃった……。/ /ko 아이고..... 전멸이네....../"//夏悠无奈叹气
 scene grass with wipe
 play sound kusa
-"我和夏悠一起回到了草地。"
+"/zhs 我和夏悠一起回到了草地。/ /zhc 我和夏悠一起回到了草地。/ /en Xia You and I went back to the grass together./ /jp 夏悠と一緒に草地へ戻った。/ /ko 샤유와 함께 풀밭으로 돌아왔다./"
 stop sound
 voice cp1/gonna_003.m4a
-lg "林澄赢了，我们全军覆没了。"//宫娜立绘进入右边
+lg "/zhs 林澄赢了，我们全军覆没了。/ /zhc 林澄贏了，我們全軍覆沒了。/ /en Lin Cheng won. He got all of us./ /jp 林澄の勝ち。私たちは全滅だね。/ /ko 린청이 이겼어. 우린 전멸이야./"//宫娜立绘进入右边
 voice cp1/syozen_010.m4a
-ls "下次玩捉迷藏在教室附近吧，这个树林能躲的太少了。"//守真立绘进入左边
-l "确实是这样，这把我还是赢的很轻松的。"
+ls "/zhs 下次玩捉迷藏在教室附近吧，这个树林能躲的太少了。/ /zhc 下次玩捉迷藏在教室附近吧，這個樹林能躲的太少了。/ /en Next time, let's play near the classroom. There aren't enough hiding places in these woods./ /jp 次は教室の近くでかくれんぼしようよ。この林、隠れる場所が少なすぎる。/ /ko 다음엔 교실 근처에서 하자. 이 숲은 숨을 데가 너무 없어./"//守真立绘进入左边
+l "/zhs 确实是这样，这把我还是赢的很轻松的。/ /zhc 確實是這樣，這把我還是贏的很輕鬆的。/ /en True enough. I'd won this round pretty easily./ /jp 確かにな。今回はずいぶん楽に勝てた。/ /ko 맞는 말이다. 이번 판은 정말 쉽게 이겼다./"
 //上课铃声
 stop music
 play sound rin
-nan "当！当！当！当！"
-"刚好上课了。"
+nan "/zhs 当！当！当！当！/ /zhc 當！當！當！當！/ /en Clang! Clang! Clang! Clang!/ /jp カン！ カン！ カン！ カン！/ /ko 땡! 땡! 땡! 땡!/"
+"/zhs 刚好上课了。/ /zhc 剛好上課了。/ /en Just in time for class./ /jp ちょうど授業の時間になった。/ /ko 마침 수업 종이 울렸다./"
 voice cp1/xiayo_043.m4a
-x happy "没办法了，不过至少一局游戏正常打完了。"
+x happy "/zhs 没办法了，不过至少一局游戏正常打完了。/ /zhc 沒辦法了，不過至少一局遊戲正常打完了。/ /en Oh well. At least we'd managed to finish a whole game./ /jp 仕方ないね。でも、一回はちゃんと最後まで遊べたし。/ /ko 어쩔 수 없네. 그래도 한 판은 제대로 끝냈다./"
 voice cp1/xiayo_044.m4a
-x "下次一定不会再在树林玩捉迷藏了！"
+x "/zhs 下次一定不会再在树林玩捉迷藏了！/ /zhc 下次一定不會再在樹林玩捉迷藏了！/ /en Next time, we're definitely not playing hide-and-seek in the woods!/ /jp もう林でかくれんぼはしない！/ /ko 다음부터 숲에서 숨바꼭질은 절대 안 해!/"
 voice cp1/xiayo_045.m4a
-x pose4 wakuwaku3 an shake2 repeat 4 "树林明明适合玩更刺激的东西。"//夏悠 哇库哇库
+x pose4 wakuwaku3 an shake2 repeat 4 "/zhs 树林明明适合玩更刺激的东西。/ /zhc 樹林明明適合玩更刺激的東西。/ /en The woods were clearly better suited to something more exciting./ /jp 林なら、もっとドキドキする遊びができるはずだもん。/ /ko 숲에서는 더 신나는 놀이도 할 수 있잖아./"//夏悠 哇库哇库
 jump cp1_003
 label cp1_002_g
 scene grass
 show syozen1 moeru  an jump
-"我想了一会，出了布。"
-"刘守真也是出了布。"
+"/zhs 我想了一会，出了布。/ /zhc 我想了一會，出了布。/ /en After thinking it over, I threw paper./ /jp 少し考えて、パーを出した。/ /ko 잠깐 생각하다 보를 냈다./"
+"/zhs 刘守真也是出了布。/ /zhc 劉守真也是出了布。/ /en Liu Shouzhen threw paper too./ /jp 劉守真もパーだった。/ /ko 류서우전도 보를 냈다./"
 voice cp1/syozen_011.m4a
-ls odoroki "啊？平局？"//守真惊讶
-l "平局？"
+ls odoroki "/zhs 啊？平局？/ /zhc 啊？平局？/ /en Huh? A tie?/ /jp え？ あいこ？/ /ko 어? 비겼네?/"//守真惊讶
+l "/zhs 平局？/ /zhc 平局？/ /en A tie?/ /jp あいこ？/ /ko 비겼어?/"
 voice cp1/syozen_012.m4a
-ls konoyarou "再来！！"//对话框震动 守真愤怒
-l "必须的。"
-"我们重新开始了一把比赛。"
-"这次我出的是："
+ls konoyarou "/zhs 再来！！/ /zhc 再來！！/ /en Again!!/ /jp もう一回！！/ /ko 다시!!/"//对话框震动 守真愤怒
+l "/zhs 必须的。/ /zhc 必須的。/ /en Of course./ /jp もちろん。/ /ko 당연하지./"
+"/zhs 我们重新开始了一把比赛。/ /zhc 我們重新開始了一把比賽。/ /en We started another round./ /jp もう一度、勝負を始める。/ /ko 우리는 다시 한 판을 시작했다./"
+"/zhs 这次我出的是：/ /zhc 這次我出的是：/ /en This time, I threw:/ /jp 今度、俺が出すのは。/ /ko 이번에 내가 낼 건:/"
 menu
-"剪刀" cp1_002_b1
-"石头" cp1_002_p1
-"布" cp1_002_r1
+"/zhs 剪刀/ /zhc 剪刀/ /en Scissors/ /jp チョキ/ /ko 가위/" cp1_002_b1
+"/zhs 石头/ /zhc 石頭/ /en Rock/ /jp グー/ /ko 바위/" cp1_002_p1
+"/zhs 布/ /zhc 布/ /en Paper/ /jp パー/ /ko 보/" cp1_002_r1
 endmenu
 label cp1_002_b1
-"我决定出剪刀。"
-"刘守真则出的是——"
+"/zhs 我决定出剪刀。/ /zhc 我決定出剪刀。/ /en I decided on scissors./ /jp チョキを出すことにした。/ /ko 가위를 내기로 했다./"
+"/zhs 刘守真则出的是——/ /zhc 劉守真則出的是——/ /en And Liu Shouzhen threw—/ /jp 劉守真が出したのは――/ /ko 류서우전이 낸 건——/"
 show syozen1 moeru  an jump
 play sound haneru
-"石头！！"//对话框震动
+"/zhs 石头！！/ /zhc 石頭！！/ /en Rock!!/ /jp グー！！/ /ko 바위!!/"//对话框震动
 jump cp1_002_false
 label cp1_002_p1
-"我决定出石头。"
-"刘守真则出的是——"
+"/zhs 我决定出石头。/ /zhc 我決定出石頭。/ /en I decided on rock./ /jp グーを出すことにした。/ /ko 바위를 내기로 했다./"
+"/zhs 刘守真则出的是——/ /zhc 劉守真則出的是——/ /en And Liu Shouzhen threw—/ /jp 劉守真が出したのは――/ /ko 류서우전이 낸 건——/"
 show syozen1 moeru  an jump
 play sound haneru
-"剪刀！！"//对话框震动
+"/zhs 剪刀！！/ /zhc 剪刀！！/ /en Scissors!!/ /jp チョキ！！/ /ko 가위!!/"//对话框震动
 jump cp1_002_true
 label cp1_002_r1
-"我决定出布。"
-"刘守真则出的是——"
+"/zhs 我决定出布。/ /zhc 我決定出布。/ /en I decided on paper./ /jp パーを出すことにした。/ /ko 보를 내기로 했다./"
+"/zhs 刘守真则出的是——/ /zhc 劉守真則出的是——/ /en And Liu Shouzhen threw—/ /jp 劉守真が出したのは――/ /ko 류서우전이 낸 건——/"
 show syozen1 moeru  an jump
 play sound haneru
-"石头！！"//对话框震动
+"/zhs 石头！！/ /zhc 石頭！！/ /en Rock!!/ /jp グー！！/ /ko 바위!!/"//对话框震动
 jump cp1_002_true

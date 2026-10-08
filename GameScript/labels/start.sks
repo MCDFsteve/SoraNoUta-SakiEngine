@@ -7,19 +7,19 @@ scene bl with diss
 play sound kazekage loop
 nvlm
 // 旁白文本（移除了xp前缀）
-"风吹动着。"
-"什么东西嘈杂着。"
-"是什么？"
-"我缓缓睁开双眼，传入耳中的只有呼喊。"
-"我尝试着寻找着呼喊的源头。"
-"也尝试着理解呼喊的内容。"
-"但是所接触的事物，就像是从未学过的语言一样，无法理解。"
-"直到渐渐的，渐渐的。"
-"渐渐的理解了含义。"
-"这声音，原来是出自我那再熟悉不过的。"
+"/zhs 风吹动着。/ /zhc 風吹動著。/ /en The wind was blowing./ /jp 風が吹いている。/ /ko 바람이 분다./"
+"/zhs 什么东西嘈杂着。/ /zhc 什麼東西嘈雜著。/ /en Something was making a clamor./ /jp 何かが、騒がしく響いている。/ /ko 무언가 시끄럽다./"
+"/zhs 是什么？/ /zhc 是什麼？/ /en What was it?/ /jp 何だろう？/ /ko 뭐지?/"
+"/zhs 我缓缓睁开双眼，传入耳中的只有呼喊。/ /zhc 我緩緩睜開雙眼，傳入耳中的只有呼喊。/ /en I slowly opened my eyes. All I could hear was shouting./ /jp ゆっくり目を開ける。耳に届くのは、叫び声だけ。/ /ko 천천히 눈을 뜨자 귀에 들어오는 건 외침뿐이었다./"
+"/zhs 我尝试着寻找着呼喊的源头。/ /zhc 我嘗試著尋找著呼喊的源頭。/ /en I tried to find where the shouts were coming from./ /jp その声がどこから来るのか、探そうとする。/ /ko 외침이 들려오는 곳을 찾아보려 했다./"
+"/zhs 也尝试着理解呼喊的内容。/ /zhc 也嘗試著理解呼喊的內容。/ /en And tried to understand what they were saying./ /jp 何を叫んでいるのかも、理解しようとする。/ /ko 무슨 말인지 이해하려고도 했다./"
+"/zhs 但是所接触的事物，就像是从未学过的语言一样，无法理解。/ /zhc 但是所接觸的事物，就像是從未學過的語言一樣，無法理解。/ /en But everything I encountered was like a language I'd never learned. I couldn't understand it./ /jp けれど触れるものすべてが、学んだことのない言葉のようで、理解できない。/ /ko 하지만 모든 것이 한 번도 배운 적 없는 언어처럼 이해되지 않았다./"
+"/zhs 直到渐渐的，渐渐的。/ /zhc 直到漸漸的，漸漸的。/ /en Until slowly, little by little,/ /jp やがて、少しずつ、少しずつ。/ /ko 그러다 조금씩, 조금씩./"
+"/zhs 渐渐的理解了含义。/ /zhc 漸漸的理解了含義。/ /en The meaning began to come through./ /jp 意味が、わかり始めた。/ /ko 조금씩 그 뜻을 알게 되었다./"
+"/zhs 这声音，原来是出自我那再熟悉不过的。/ /zhc 這聲音，原來是出自我那再熟悉不過的。/ /en That voice. It belonged to someone I knew better than anyone./ /jp この声は、あの、よく知っている人の声だった。/ /ko 이 목소리는, 너무나도 익숙한 그 사람의 것이었다./"
 endnvlm
 nvlm
-"那是————"
+"/zhs 那是————/ /zhc 那是————/ /en It was—/ /jp それは――/ /ko 그건————/"
 endnvlm
 scene [chapter0,title:bottom=0.0 left=0.0 zoom=0.3] timer 5.0 fx blur
 jump cp0_001

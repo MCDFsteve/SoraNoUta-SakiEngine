@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+import 'package:sakiengine/src/localization/localization_manager.dart';
 
 import 'package:flutter/material.dart';
 import 'package:sakiengine/src/core/script_canvas.dart';
@@ -161,22 +162,34 @@ void _paintSentence(Canvas canvas, Size size, double progress, double unit) {
   final secondOpacity = _smoothStep(0.43, 0.57, progress);
   final departure = 1 - _smoothStep(0.82, 0.93, progress);
   final fracture = _smoothStep(0.52, 0.72, progress);
+  final lines = switch (LocalizationManager().currentLanguage) {
+    SupportedLanguage.zhHans => ('每当磁针再次振动，', '我便在此等待。'),
+    SupportedLanguage.zhHant => ('每當磁針再次振動，', '我便在此等待。'),
+    SupportedLanguage.en => (
+      'Whenever the compass needle trembles again,',
+      'I wait here.',
+    ),
+    SupportedLanguage.ja => ('磁針が再び震えるたび、', 'ここで待っている。'),
+    SupportedLanguage.ko => ('자침이 다시 떨릴 때마다,', '나는 이곳에서 기다린다.'),
+  };
 
   _paintFracturedText(
     canvas,
-    text: '每当磁针再次振动，',
+    text: lines.$1,
     origin: Offset(size.width * 0.205, size.height * 0.365),
     fontSize: unit * 0.057,
     opacity: firstOpacity * departure * 0.88,
     fracture: fracture,
+    maxWidth: size.width * 0.74,
   );
   _paintFracturedText(
     canvas,
-    text: '我便在此等待。',
+    text: lines.$2,
     origin: Offset(size.width * 0.465, size.height * 0.595),
     fontSize: unit * 0.062,
     opacity: secondOpacity * departure * 0.92,
     fracture: fracture,
+    maxWidth: size.width * 0.48,
   );
 }
 
@@ -187,6 +200,7 @@ void _paintFracturedText(
   required double fontSize,
   required double opacity,
   required double fracture,
+  required double maxWidth,
 }) {
   if (opacity <= 0) return;
 
@@ -204,6 +218,10 @@ void _paintFracturedText(
     ),
     textDirection: TextDirection.ltr,
   )..layout();
+  if (painter.width > maxWidth) {
+    painter.textScaler = TextScaler.linear(maxWidth / painter.width);
+    painter.layout();
+  }
 
   final shift = fontSize * 0.055 * fracture;
   final firstEnd = painter.height * 0.37;

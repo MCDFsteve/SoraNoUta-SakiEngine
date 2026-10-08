@@ -270,6 +270,8 @@ class SoranoutaMenuButtons {
         return 'Gallery';
       case SupportedLanguage.ja:
         return '鑑賞';
+      case SupportedLanguage.ko:
+        return '감상';
     }
   }
 }

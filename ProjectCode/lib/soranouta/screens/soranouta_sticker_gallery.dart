@@ -664,6 +664,21 @@ class _StickerGalleryCopy {
 
   factory _StickerGalleryCopy.forLanguage(SupportedLanguage language) {
     return switch (language) {
+      SupportedLanguage.ko => const _StickerGalleryCopy(
+        heading: '샤유 스티커',
+        subtitle: 'CoffeeBean V1.7  ·  GIF 애니메이션 미리 보기',
+        saveOne: 'GIF 저장',
+        saveAll: '모두 저장',
+        chooseFolder: '모두 저장',
+        desktopExportOnly: 'GIF 저장은 Windows, macOS, Linux에서 지원됩니다',
+        close: '닫기',
+        saveOneSuccessTemplate: '「{name}」 저장 완료',
+        saveOneFailed: 'GIF를 저장할 수 없습니다',
+        savingAllTemplate: '저장 중 {done} / {total}',
+        saveAllSuccessTemplate: '스티커 {count}개 모두 저장 완료',
+        saveAllPartialTemplate: '{saved}개 저장, {failed}개 실패',
+        saveAllFailed: '스티커를 저장할 수 없습니다',
+      ),
       SupportedLanguage.zhHant => const _StickerGalleryCopy(
         heading: '夏悠表情包',
         subtitle: 'CoffeeBean V1.7  ·  GIF 動態預覽',
@@ -680,7 +695,7 @@ class _StickerGalleryCopy {
         saveAllFailed: '表情包儲存失敗',
       ),
       SupportedLanguage.en => const _StickerGalleryCopy(
-        heading: 'Xiayou Sticker Pack',
+        heading: 'Xia You Sticker Pack',
         subtitle: 'CoffeeBean V1.7  ·  Animated GIF previews',
         saveOne: 'Save GIF',
         saveAll: 'Save all',

@@ -1,3 +1,4 @@
+import 'appreciation_catalog_localizations.dart';
 import '../release_config.dart';
 
 /// 《空之歌》鉴赏模式使用的项目级资源目录。
@@ -8,14 +9,16 @@ import '../release_config.dart';
 class AppreciationCharacter {
   const AppreciationCharacter({
     required this.id,
-    required this.name,
+    required String name,
     required this.poses,
     required this.expressions,
     required this.defaultExpression,
-  });
+  }) : _name = name;
 
   final String id;
-  final String name;
+  final String _name;
+
+  String get name => appreciationCatalogText(_name);
   final List<String> poses;
   final List<String> expressions;
   final String defaultExpression;
@@ -23,22 +26,26 @@ class AppreciationCharacter {
 
 class AppreciationCg {
   const AppreciationCg.composite({
-    required this.title,
+    required String title,
     required this.resourceId,
     required this.assetDirectory,
     required this.variants,
-  }) : standaloneAsset = null,
+  }) : _title = title,
+       standaloneAsset = null,
        animated = false;
 
   const AppreciationCg.standalone({
-    required this.title,
+    required String title,
     required this.standaloneAsset,
     this.animated = false,
-  }) : resourceId = null,
+  }) : _title = title,
+       resourceId = null,
        assetDirectory = null,
        variants = const <String>[''];
 
-  final String title;
+  final String _title;
+
+  String get title => appreciationCatalogText(_title);
   final String? resourceId;
   final String? assetDirectory;
   final List<String> variants;
@@ -54,10 +61,12 @@ class AppreciationCg {
 }
 
 class AppreciationBackground {
-  const AppreciationBackground(this.id, this.title);
+  const AppreciationBackground(this.id, String title) : _title = title;
 
   final String id;
-  final String title;
+  final String _title;
+
+  String get title => appreciationCatalogText(_title);
 
   String get assetName => 'backgrounds/$id.webp';
 }
@@ -65,14 +74,16 @@ class AppreciationBackground {
 class AppreciationMovie {
   const AppreciationMovie({
     required this.id,
-    required this.title,
+    required String title,
     required this.movieFile,
     required this.duration,
     required this.thumbnailBackgroundId,
-  });
+  }) : _title = title;
 
   final String id;
-  final String title;
+  final String _title;
+
+  String get title => appreciationCatalogText(_title);
   final String movieFile;
   final Duration duration;
   final String thumbnailBackgroundId;
@@ -81,10 +92,13 @@ class AppreciationMovie {
 }
 
 class AppreciationMusic {
-  const AppreciationMusic(this.id, this.title, this.backgroundId);
+  const AppreciationMusic(this.id, String title, this.backgroundId)
+    : _title = title;
 
   final String id;
-  final String title;
+  final String _title;
+
+  String get title => appreciationCatalogText(_title);
   final String backgroundId;
 
   String get assetPath => 'Assets/music/$id.mp3';
@@ -623,14 +637,14 @@ const appreciationMusic = <AppreciationMusic>[
 
 String appreciationPoseLabel(String pose) {
   final match = RegExp(r'(\d+)$').firstMatch(pose);
-  return '姿势 ${match?.group(1) ?? pose}';
+  return '${appreciationCatalogText('姿势')} ${match?.group(1) ?? pose}';
 }
 
 String appreciationExpressionLabel(String expression) {
   const exactLabels = <String, String>{'satoko': '调侃', 'satoko2': '盘算'};
   final exactLabel = exactLabels[expression];
   if (exactLabel != null) {
-    return exactLabel;
+    return appreciationCatalogText(exactLabel);
   }
 
   final match = RegExp(r'^(.*?)(\d+)?$').firstMatch(expression);
@@ -687,6 +701,6 @@ String appreciationExpressionLabel(String expression) {
     'what': '困惑',
     'youki': '狂气',
   };
-  final label = labels[base] ?? expression;
+  final label = appreciationCatalogText(labels[base] ?? expression);
   return variant == null ? label : '$label $variant';
 }

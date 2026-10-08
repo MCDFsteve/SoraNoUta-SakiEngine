@@ -4,34 +4,34 @@ scene [chapter1,title:top=0.0 left=0.0 zoom=0.3] timer 5.0 fx blur
 play sound kazekage loop
 scene bl
 nvl
-nan "呼～"
-nan "呼～呼～"
-"我缓缓睁开双眼。"
-"做了一个奇怪的梦。"
+nan "/zhs 呼～/ /zhc 呼～/ /en Hah.../ /jp はあ～。/ /ko 후우～/"
+nan "/zhs 呼～呼～/ /zhc 呼～呼～/ /en Hah... hah.../ /jp はあ～、はあ～。/ /ko 후우～ 후우～/"
+"/zhs 我缓缓睁开双眼。/ /zhc 我緩緩睜開雙眼。/ /en I slowly opened my eyes./ /jp ゆっくりと目を開けた。/ /ko 천천히 눈을 떴다./"
+"/zhs 做了一个奇怪的梦。/ /zhc 做了一個奇怪的夢。/ /en I'd had a strange dream./ /jp 妙な夢を見た。/ /ko 이상한 꿈을 꿨다./"
 endnvl
 scene tosi
 //半夜的高楼的房间内部，拍摄窗口，带窗帘的背景 fade 2秒
-"我慢慢起身，坐在床边上。"
-"时间应该还是半夜。"
+"/zhs 我慢慢起身，坐在床边上。/ /zhc 我慢慢起身，坐在床邊上。/ /en I slowly sat up on the edge of the bed./ /jp ゆっくり起き上がり、ベッドの縁に腰を下ろす。/ /ko 천천히 몸을 일으켜 침대 가장자리에 앉았다./"
+"/zhs 时间应该还是半夜。/ /zhc 時間應該還是半夜。/ /en It must still have been the middle of the night./ /jp まだ真夜中のはずだ。/ /ko 아직 한밤중일 것이다./"
 scene tosi2 with diss
 play sound katen
 //diss到窗帘被拉开的背景
 nvl
-"我拉开窗帘。"
-"这里是二十多层的位置，所以可以俯瞰到地表的景色。"
-"我会梦到这个，果然还是跟我白天做的事有关系吧。"
-"听说睡前最想的是什么，睡觉就会梦到什么。"
+"/zhs 我拉开窗帘。/ /zhc 我拉開窗簾。/ /en I drew back the curtains./ /jp カーテンを開けた。/ /ko 커튼을 열었다./"
+"/zhs 这里是二十多层的位置，所以可以俯瞰到地表的景色。/ /zhc 這裡是二十多層的位置，所以可以俯瞰到地表的景色。/ /en I was more than twenty floors up, looking down over the world below./ /jp ここは二十数階だから、地上の景色を見渡せる。/ /ko 여기는 20층이 넘는 높이라 지상의 풍경이 내려다보인다./"
+"/zhs 我会梦到这个，果然还是跟我白天做的事有关系吧。/ /zhc 我會夢到這個，果然還是跟我白天做的事有關係吧。/ /en Dreaming about that must have had something to do with what I'd done during the day./ /jp あんな夢を見たのは、やっぱり昼間やったことと関係があるんだろう。/ /ko 이런 꿈을 꾼 건 역시 낮에 한 일 때문이겠지./"
+"/zhs 听说睡前最想的是什么，睡觉就会梦到什么。/ /zhc 聽說睡前最想的是什麼，睡覺就會夢到什麼。/ /en They say whatever you think about most before bed is what you dream about./ /jp 眠る前に一番考えていたことが、夢に出るという。/ /ko 자기 전에 가장 많이 생각한 게 꿈에 나온다던데./"
 endnvl
 nvl
-"......."
-"距离那件事，已经过去几天了。"
-"我会成功的。"
+"/zhs ......./ /zhc ......./ /en ......./ /jp ......./ /ko ......./"
+"/zhs 距离那件事，已经过去几天了。/ /zhc 距離那件事，已經過去幾天了。/ /en It had been a few days since that happened./ /jp あのことから、もう数日が経った。/ /ko 그 일이 있은 지 벌써 며칠이 지났다./"
+"/zhs 我会成功的。/ /zhc 我會成功的。/ /en I'll succeed./ /jp 俺は、成功する。/ /ko 나는 성공할 거다./"
 endnvl
 scene bl
 nvlm
-"......"
-"......"
-"......"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
+"/zhs ....../ /zhc ....../ /en ....../ /jp ....../ /ko ....../"
 endnvlm
 stop sound
 scene sky an sky_anime timer 3.0
@@ -39,43 +39,43 @@ scene sky an sky_anime timer 3.0
 //教室背景
 scene classroom
 play sound rin
-"下午的第一节课下课了。"
-"离放学就只剩两节课的时间了。"
-"太阳也缓缓向着西边下落。"
-"关于中午的那件事，夏悠说她只是在开玩笑。"
+"/zhs 下午的第一节课下课了。/ /zhc 下午的第一節課下課了。/ /en The first afternoon lesson was over./ /jp 午後最初の授業が終わった。/ /ko 오후 첫 수업이 끝났다./"
+"/zhs 离放学就只剩两节课的时间了。/ /zhc 離放學就只剩兩節課的時間了。/ /en Only two classes left before school let out./ /jp あと二時間で、学校も終わる。/ /ko 하교까지는 이제 두 시간만 남았다./"
+"/zhs 太阳也缓缓向着西边下落。/ /zhc 太陽也緩緩向著西邊下落。/ /en The sun was slowly sinking toward the west./ /jp 太陽もゆっくりと西へ傾いていく。/ /ko 해도 서서히 서쪽으로 기울고 있었다./"
+"/zhs 关于中午的那件事，夏悠说她只是在开玩笑。/ /zhc 關於中午的那件事，夏悠說她只是在開玩笑。/ /en About what happened at noon, Xia You said she'd only been joking./ /jp 昼のことは、ただの冗談だったと夏悠は言った。/ /ko 점심때 한 말은 그냥 농담이었다고 샤유는 말했다./"
 //这里重播序章结束的那个场景，但是没有bgm
 stop music
 cg cgcp0_2 4
 voice cp1/xiayo_001.m4a
-x "[pass]你到底是谁？[/pass]"////闭嘴
+x "/zhs [pass]你到底是谁？[／pass]/ /zhc [pass]你到底是誰？[／pass]/ /en [pass]Who are you, really?[／pass]/ /jp [pass]あなたは、いったい誰？[／pass]/ /ko [pass]너, 대체 누구야?[／pass]/"////闭嘴
 scene bl
 play music think
 //回到教室背景 nvl模式 思考的bgm
 nvlm
-"果然还是我的举动太奇怪了，让她产生了这种想法。"
-"但是我就是我啊！"
-"我也知道我今天思绪有些混乱。"
-"但是我就是我，这一点是毋庸置疑的。"
-"我能感受到的实体，都在诉说着这个事实。"
+"/zhs 果然还是我的举动太奇怪了，让她产生了这种想法。/ /zhc 果然還是我的舉動太奇怪了，讓她產生了這種想法。/ /en I really must have been acting strangely for her to think of that./ /jp やっぱり俺の言動が変すぎて、そんなことを思わせたんだろう。/ /ko 역시 내 행동이 너무 이상해서 그런 생각을 했던 거다./"
+"/zhs 但是我就是我啊！/ /zhc 但是我就是我啊！/ /en But I was me!/ /jp でも、俺は俺だ！/ /ko 그래도 나는 나잖아!/"
+"/zhs 我也知道我今天思绪有些混乱。/ /zhc 我也知道我今天思緒有些混亂。/ /en I knew my thoughts were a little muddled today./ /jp 今日の自分が少し混乱していることは、俺だってわかっている。/ /ko 오늘 내 생각이 좀 뒤죽박죽인 건 나도 안다./"
+"/zhs 但是我就是我，这一点是毋庸置疑的。/ /zhc 但是我就是我，這一點是毋庸置疑的。/ /en But I was still myself. That much was beyond question./ /jp それでも、俺は俺。そのことだけは疑いようがない。/ /ko 하지만 나는 나다. 그건 의심할 여지가 없다./"
+"/zhs 我能感受到的实体，都在诉说着这个事实。/ /zhc 我能感受到的實體，都在訴說著這個事實。/ /en Everything tangible that I could feel told me so./ /jp 感じ取れる実体のすべてが、その事実を告げている。/ /ko 내가 느끼는 모든 실체가 그 사실을 말해 주고 있다./"
 endnvlm
 nvlm
-"以及我上课发呆的时候做的奇怪的梦。"
-"完全不理解含义。"
+"/zhs 以及我上课发呆的时候做的奇怪的梦。/ /zhc 以及我上課發呆的時候做的奇怪的夢。/ /en Then there was that strange dream I'd had while spacing out in class./ /jp それから、授業中ぼうっとしていたときに見た妙な夢。/ /ko 그리고 수업 중 멍하니 있다가 꾼 이상한 꿈./"
+"/zhs 完全不理解含义。/ /zhc 完全不理解含義。/ /en I couldn't make any sense of it./ /jp 意味がさっぱりわからない。/ /ko 무슨 의미인지 전혀 모르겠다./"
 endnvlm
 nvlm
-"不过我本来就是不相信周公解梦这种封建迷信的人。"
-"但是醒着都能做梦，这算一种特异体质吗？"
-"以后没活了能表演这个技能吗？"
-"或者在未来的公司面试的时候。"
-"老板问我，你有什么特长啊？"
-"我就回答，我的特长是，醒着也能做梦。"
-"然后就找不到工作了，幸终。"
-"可喜可贺可喜可贺。"
+"/zhs 不过我本来就是不相信周公解梦这种封建迷信的人。/ /zhc 不過我本來就是不相信周公解夢這種封建迷信的人。/ /en Though I'd never believed in superstitious dream interpretations anyway./ /jp もっとも俺は、『周公解夢』みたいな古い夢占いを信じる人間じゃない。/ /ko 물론 난 원래 주공해몽 같은 미신을 믿는 사람이 아니다./"
+"/zhs 但是醒着都能做梦，这算一种特异体质吗？/ /zhc 但是醒著都能做夢，這算一種特異體質嗎？/ /en But being able to dream while awake... Did that count as a special ability?/ /jp でも起きたまま夢が見られるのは、特殊体質ってやつか？/ /ko 그런데 깨어 있는데도 꿈을 꾸다니, 특이 체질인가?/"
+"/zhs 以后没活了能表演这个技能吗？/ /zhc 以後沒活了能表演這個技能嗎？/ /en Could I perform it for a living someday if I ran out of options?/ /jp 将来仕事に困ったら、この特技を披露して食っていけるかな。/ /ko 나중에 할 일이 없으면 이걸 장기로 보여 줄 수 있을까?/"
+"/zhs 或者在未来的公司面试的时候。/ /zhc 或者在未來的公司面試的時候。/ /en Or at some future job interview./ /jp あるいは、いつか会社の面接で。/ /ko 아니면 나중에 회사 면접을 볼 때./"
+"/zhs 老板问我，你有什么特长啊？/ /zhc 老闆問我，你有什麼特長啊？/ /en The boss would ask, ‘What special skills do you have?’/ /jp 社長に「君の特技は？」と聞かれたら、/ /ko 사장이 특기가 뭐냐고 물으면./"
+"/zhs 我就回答，我的特长是，醒着也能做梦。/ /zhc 我就回答，我的特長是，醒著也能做夢。/ /en And I'd say, ‘My special skill is dreaming while I'm awake.’/ /jp 「起きたまま夢を見られることです」と答える。/ /ko 깨어 있는데도 꿈을 꾸는 게 특기라고 대답하는 거다./"
+"/zhs 然后就找不到工作了，幸终。/ /zhc 然後就找不到工作了，幸終。/ /en And then I'd never get a job. Happy ending./ /jp そして仕事が見つからない。ハッピーエンド。/ /ko 그러고는 취직에 실패. 행복한 결말./"
+"/zhs 可喜可贺可喜可贺。/ /zhc 可喜可賀可喜可賀。/ /en Congratulations to me. Congratulations./ /jp めでたしめでたし。/ /ko 경사로다, 경사로다./"
 endnvlm
 nvlm
-"至于梦的内容，我长大了，住在高楼大厦里。"
-"梦中的我在抱怨我做了一个奇怪的梦。"
-"啊——————"
-"到底哪边才是在做梦啊！"
+"/zhs 至于梦的内容，我长大了，住在高楼大厦里。/ /zhc 至於夢的內容，我長大了，住在高樓大廈裡。/ /en As for the dream itself, I'd been grown up, living in a high-rise./ /jp 夢の中では大人になって、高層ビルに住んでいた。/ /ko 꿈속에서 나는 어른이 되어 높은 건물에 살고 있었다./"
+"/zhs 梦中的我在抱怨我做了一个奇怪的梦。/ /zhc 夢中的我在抱怨我做了一個奇怪的夢。/ /en And the me in the dream was complaining that I'd had a strange dream./ /jp その俺は、妙な夢を見たとぼやいていた。/ /ko 꿈속의 나는 이상한 꿈을 꿨다며 투덜거렸다./"
+"/zhs 啊——————/ /zhc 啊——————/ /en Aaaah——————/ /jp ああ――――。/ /ko 아——————/"
+"/zhs 到底哪边才是在做梦啊！/ /zhc 到底哪邊才是在做夢啊！/ /en Which side was the dream, anyway?!/ /jp いったい、どっちが夢を見てるんだよ！/ /ko 대체 어느 쪽이 꿈인 거야!/"
 endnvlm
 jump cp1_002

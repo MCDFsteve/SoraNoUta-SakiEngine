@@ -1,13 +1,18 @@
+import 'appreciation_catalog_localizations.dart';
+
 /// A downloadable animated sticker shown in the appreciation gallery.
 class AppreciationSticker {
-  const AppreciationSticker({required this.id, required this.title});
+  const AppreciationSticker({required this.id, required String title})
+    : _title = title;
 
   final String id;
-  final String title;
+  final String _title;
+
+  String get title => appreciationCatalogText(_title);
 
   String get assetPath => 'Assets/stickers/sticker_$id.gif';
 
-  String get exportFileName => 'CoffeeBean_V1_7_$title.gif';
+  String get exportFileName => 'CoffeeBean_V1_7_$_title.gif';
 }
 
 /// The source archive uses legacy GBK file names. Keeping the decoded titles

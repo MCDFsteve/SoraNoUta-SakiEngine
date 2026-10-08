@@ -248,6 +248,7 @@ class _SoraNoutaMainMenuScreenState extends State<SoraNoutaMainMenuScreen> {
         assetName = 'title_cht';
         break;
       case SupportedLanguage.en:
+      case SupportedLanguage.ko:
         assetName = 'title_en';
         break;
       case SupportedLanguage.ja:

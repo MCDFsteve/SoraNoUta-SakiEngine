@@ -211,6 +211,8 @@ class _SoranoutaChapterSelectorState extends State<SoranoutaChapterSelector> {
     switch (language) {
       case SupportedLanguage.en:
         return 'Chapter $chapter';
+      case SupportedLanguage.ko:
+        return '제$chapter장';
       case SupportedLanguage.ja:
         return chapter == 1 ? '第一章' : '第二章';
       case SupportedLanguage.zhHant:
@@ -224,6 +226,8 @@ class _SoranoutaChapterSelectorState extends State<SoranoutaChapterSelector> {
     switch (LocalizationManager().currentLanguage) {
       case SupportedLanguage.en:
         return 'Complete Chapter 1 to unlock';
+      case SupportedLanguage.ko:
+        return '제1장 완료 후 해금';
       case SupportedLanguage.ja:
         return '第一章クリア後に解放';
       case SupportedLanguage.zhHant:
