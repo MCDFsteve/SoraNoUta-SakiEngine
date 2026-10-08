@@ -14,6 +14,20 @@ flutter pub get
 flutter run -d macos --dart-define=SAKI_GAME_PATH="$(pwd)"
 ```
 
+## Windows 演出构建
+
+在 Windows 的 Git Bash 中运行：
+
+```bash
+./build.sh windows showcase
+```
+
+第二个参数默认为 `release`；`./build.sh windows` 继续使用原发布流程。`showcase` 目前仅支持 Windows，使用 Flutter Release 并启用 `SAKI_SHOW_MODE=true` 与 `SAKI_SHOWCASE_GAME_DIR=Game/<项目名>`，保留引擎编辑工具，不预编译 SKS。
+
+产物在 `build/windows/<架构>/runner/Release/`。程序旁的 `Game/SoraNoUta/` 包含可编辑的 `Assets/`、`GameScript*`、`game_config.txt`、`default_game.txt` 和 `icon.png`（如存在）；分发时保留整个 Release 目录。脚本或素材修改后可用 **Shift+R** 重载，Dart 代码修改仍须重新构建。
+
+演出构建会临时排除 Flutter 资源清单中的媒体、剧本和旧 `.sakipak`，保留字体与着色器声明，避免重复打包或依赖缺失的旧资源包；成功或失败后都会恢复原 `pubspec.yaml` 和引擎脚本编译入口。
+
 ## 多语言
 
 在「设置 → 画面设置 → 界面语言」切换简体中文、繁体中文、英语、日语或韩语。

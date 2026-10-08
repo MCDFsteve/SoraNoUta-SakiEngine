@@ -124,12 +124,27 @@ detect_engine_dir() {
 }
 
 PLATFORM="${1:-}"
+BUILD_MODE="${2:-release}"
 if [ -z "$PLATFORM" ]; then
   choose_platform
 elif ! is_supported_platform "$PLATFORM"; then
   echo -e "${RED}错误: 不支持的平台 '$PLATFORM'。${NC}"
   exit 1
 fi
+
+case "$BUILD_MODE" in
+  release) ;;
+  showcase)
+    if [ "$PLATFORM" != "windows" ]; then
+      echo -e "${RED}错误: showcase 目前仅支持 Windows 构建。${NC}"
+      exit 1
+    fi
+    ;;
+  *)
+    echo -e "${RED}错误: 不支持的构建模式 '$BUILD_MODE'，请选择 release 或 showcase。${NC}"
+    exit 1
+    ;;
+esac
 
 ENGINE_DIR=$(detect_engine_dir || true)
 if [ -z "$ENGINE_DIR" ]; then
@@ -148,8 +163,9 @@ GAME_SKS_BUNDLE_FILE="$GAME_SKS_CACHE_DIR/compiled_sks_bundle.g.dart"
 GAME_SKS_COMPILER_FILE="$GAME_SKS_CACHE_DIR/sks_compiler.dart"
 GAME_PUBSPEC_FILE="$PROJECT_DIR/pubspec.yaml"
 GAME_PUBSPEC_BACKUP_FILE="$GAME_SKS_CACHE_DIR/pubspec.yaml.backup"
+ENGINE_COMPILED_BACKUP_FILE="$GAME_SKS_CACHE_DIR/engine_compiled_loader.backup"
 
-restore_engine_compiled_loader() {
+write_empty_compiled_loader() {
   cat > "$ENGINE_COMPILED_LOADER" <<'LOADER_EOF'
 import 'package:sakiengine/src/sks_compiler/compiled_sks_bundle.dart';
 
@@ -157,6 +173,96 @@ CompiledSksBundle? loadGeneratedCompiledSksBundle() {
   return null;
 }
 LOADER_EOF
+}
+
+prepare_showcase_pubspec_assets() {
+  cp -f "$GAME_PUBSPEC_FILE" "$GAME_PUBSPEC_BACKUP_FILE"
+  # Match Launcher/lib/showcase_assets.dart: media/scripts live beside the exe;
+  # Flutter must still compile its declared fonts, shaders and bootstrap assets.
+  awk -v sq="'" '
+    function flush_assets() {
+      print has_entries ? assets_header : "  assets: []"
+      for (i = 1; i <= kept_count; i++) print kept[i]
+      in_assets = 0
+    }
+    {
+      sub(/\r$/, "")
+      if ($0 ~ /^  assets:[[:space:]]*$/) {
+        found_assets = 1
+        in_assets = 1
+        assets_header = $0
+        next
+      }
+      if (in_assets && ($0 ~ /^    / || $0 ~ /^[[:space:]]*$/)) {
+        if ($0 ~ /^    -[[:space:]]+/) {
+          path = $0
+          sub(/^    -[[:space:]]+/, "", path)
+          sub(/[[:space:]]+#.*$/, "", path)
+          sub(/[[:space:]]+$/, "", path)
+          first = substr(path, 1, 1)
+          if ((first == "\"" || first == sq) &&
+              substr(path, length(path), 1) == first) {
+            path = substr(path, 2, length(path) - 2)
+          }
+          gsub(/\\/, "/", path)
+          sub(/^\.\//, "", path)
+          path = tolower(path)
+          is_shader = path ~ /^assets\/shaders\//
+          if (path == "assets" || (path ~ /^assets\// && !is_shader) ||
+              path ~ /^gamescript(_|\/|$)/ || path ~ /^\.saki_cache\/?$/ ||
+              path ~ /\.sakipak$/) next
+          has_entries = 1
+        } else if ($0 !~ /^[[:space:]]*(#.*)?$/) {
+          print "演出资源清单仅支持字符串路径" > "/dev/stderr"
+          invalid = 1
+          exit 1
+        }
+        kept[++kept_count] = $0
+        next
+      }
+      if (in_assets) flush_assets()
+      print
+    }
+    END {
+      if (invalid) exit 1
+      if (!found_assets) {
+        print "pubspec.yaml 未找到 flutter/assets 段" > "/dev/stderr"
+        exit 1
+      }
+      if (in_assets) flush_assets()
+    }
+  ' "$GAME_PUBSPEC_BACKUP_FILE" > "$GAME_SKS_CACHE_DIR/pubspec.yaml.temp"
+  mv -f "$GAME_SKS_CACHE_DIR/pubspec.yaml.temp" "$GAME_PUBSPEC_FILE"
+}
+
+stage_showcase_game_directory() {
+  local output_dirs=()
+  local candidate
+  for candidate in "$PROJECT_DIR"/build/windows/*/runner/Release \
+                   "$PROJECT_DIR/build/windows/runner/Release"; do
+    [ -d "$candidate" ] && output_dirs+=("$candidate")
+  done
+  if [ "${#output_dirs[@]}" -ne 1 ]; then
+    echo -e "${RED}错误: 无法唯一确定 Windows Release 目录，请先清理旧 Windows 构建。${NC}"
+    return 1
+  fi
+  if [ ! -d "$PROJECT_DIR/Assets" ] || [ ! -d "$PROJECT_DIR/GameScript" ]; then
+    echo -e "${RED}错误: 演出构建需要 Assets 和 GameScript 目录。${NC}"
+    return 1
+  fi
+  local target="${output_dirs[0]}/Game/$GAME_NAME"
+  rm -rf "$target"
+  mkdir -p "$target"
+  cp -R "$PROJECT_DIR/Assets" "$target/Assets"
+  for candidate in "$PROJECT_DIR/GameScript" "$PROJECT_DIR"/GameScript_*; do
+    [ -d "$candidate" ] || continue
+    cp -R "$candidate" "$target/$(basename "$candidate")"
+  done
+  for candidate in game_config.txt default_game.txt icon.png; do
+    [ -f "$PROJECT_DIR/$candidate" ] || continue
+    cp -f "$PROJECT_DIR/$candidate" "$target/$candidate"
+  done
+  echo -e "${GREEN}演出资源已复制: $target${NC}"
 }
 
 prepare_release_pubspec_assets() {
@@ -264,17 +370,35 @@ restore_game_pubspec() {
 }
 
 cleanup_on_exit() {
-  restore_engine_compiled_loader
+  if [ -f "$ENGINE_COMPILED_BACKUP_FILE" ]; then
+    mv -f "$ENGINE_COMPILED_BACKUP_FILE" "$ENGINE_COMPILED_LOADER"
+  fi
   restore_game_pubspec
 }
 
+mkdir -p "$GAME_SKS_CACHE_DIR"
+cp -f "$ENGINE_COMPILED_LOADER" "$ENGINE_COMPILED_BACKUP_FILE"
 trap cleanup_on_exit EXIT
 
 echo -e "${GREEN}游戏项目: $GAME_NAME${NC}"
 echo -e "${GREEN}目标平台: $(platform_display_name "$PLATFORM")${NC}"
+echo -e "${GREEN}构建模式: $BUILD_MODE${NC}"
 echo -e "${BLUE}Engine目录: $ENGINE_DIR${NC}"
 
 cd "$PROJECT_DIR"
+
+if [ "$BUILD_MODE" = "showcase" ]; then
+  echo -e "${YELLOW}演出模式：保留原始 GameScript，媒体和剧本从外部 Game 目录读取。${NC}"
+  write_empty_compiled_loader
+  prepare_showcase_pubspec_assets
+  flutter pub get
+  flutter build windows --release \
+    --dart-define=SAKI_SHOW_MODE=true \
+    "--dart-define=SAKI_SHOWCASE_GAME_DIR=Game/$GAME_NAME"
+  stage_showcase_game_directory
+  echo -e "${GREEN}构建完成: $PLATFORM ($BUILD_MODE)${NC}"
+  exit 0
+fi
 
 echo -e "${YELLOW}准备脚本编译环境（首次依赖解析）...${NC}"
 flutter pub get

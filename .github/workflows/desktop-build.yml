@@ -13,6 +13,14 @@ on:
           - windows
           - macos
           - linux
+      windows_build_mode:
+        description: Windows build mode
+        required: true
+        default: release
+        type: choice
+        options:
+          - release
+          - showcase
 
 permissions:
   contents: read
@@ -26,6 +34,7 @@ jobs:
       flutter_version: '3.44.0'
       working_directory: '.'
       architecture: x64
+      build_mode: ${{ inputs.windows_build_mode }}
     secrets: inherit
 
   build-macos:

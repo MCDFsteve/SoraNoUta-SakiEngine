@@ -16,6 +16,11 @@ on:
         type: string
         default: 'x64'
         description: 'Target architecture: x64 or arm64'
+      build_mode:
+        required: false
+        type: string
+        default: 'release'
+        description: 'Build mode: release or showcase (editable scripts and assets)'
     outputs:
       version:
         description: "App version from pubspec.yaml"
@@ -87,6 +92,8 @@ jobs:
       
       - name: Build Windows App with retry
         shell: bash
+        env:
+          BUILD_MODE: ${{ inputs.build_mode }}
         run: |
           echo "🔨 使用build.sh构建Windows应用"
           chmod +x build.sh
@@ -97,7 +104,7 @@ jobs:
           fi
 
           # 第一次尝试
-          if ! ./build.sh windows; then
+          if ! ./build.sh windows "$BUILD_MODE"; then
             echo "⚠️ 第一次构建失败，清理后重试..."
 
             pushd "$APP_DIR" > /dev/null
@@ -107,12 +114,14 @@ jobs:
             popd > /dev/null
 
             # 第二次尝试
-            ./build.sh windows
+            ./build.sh windows "$BUILD_MODE"
           fi
       
       - name: Package Windows App
         id: build
         shell: pwsh
+        env:
+          BUILD_MODE: ${{ inputs.build_mode }}
         run: |
           $workDir = '${{ inputs.working_directory }}'
           if ([string]::IsNullOrWhiteSpace($workDir)) { $workDir = '.' }
@@ -129,15 +138,16 @@ jobs:
           if ([string]::IsNullOrWhiteSpace($gameName)) { $gameName = $repoName }
 
           $buildRoot = Join-Path $workDir 'build\windows'
+          $modeSuffix = if ($env:BUILD_MODE -eq 'showcase') { '-showcase' } else { '' }
           
           if ($arch -eq "arm64") {
-            $DestDir = Join-Path $buildRoot "${gameName}-${version}-Windows-arm64"
+            $DestDir = Join-Path $buildRoot "${gameName}-${version}-Windows-arm64${modeSuffix}"
             $SrcDir = Join-Path $buildRoot 'arm64\runner\Release'
-            $ZipName = "${gameName}-${version}-Windows-arm64.zip"
+            $ZipName = "${gameName}-${version}-Windows-arm64${modeSuffix}.zip"
           } else {
-            $DestDir = Join-Path $buildRoot "${gameName}-${version}-Windows-x64"
+            $DestDir = Join-Path $buildRoot "${gameName}-${version}-Windows-x64${modeSuffix}"
             $SrcDir = Join-Path $buildRoot 'x64\runner\Release'
-            $ZipName = "${gameName}-${version}-Windows-x64.zip"
+            $ZipName = "${gameName}-${version}-Windows-x64${modeSuffix}.zip"
           }
           
           # 创建目标目录
@@ -145,6 +155,25 @@ jobs:
           
           # 复制应用程序文件
           Copy-Item -Path "$SrcDir\*" -Destination $DestDir -Recurse -Force
+
+          if (-not (Test-Path (Join-Path $DestDir "${gameName}.exe"))) {
+            throw "Missing Windows executable: ${gameName}.exe"
+          }
+          if ($env:BUILD_MODE -eq 'showcase') {
+            $editableRoot = Join-Path $DestDir "Game\$gameName"
+            foreach ($requiredPath in @('Assets', 'GameScript\labels\start.sks', 'GameScript\configs\characters.sks', 'default_game.txt')) {
+              if (-not (Test-Path (Join-Path $editableRoot $requiredPath))) {
+                throw "Missing editable showcase resource: $requiredPath"
+              }
+            }
+          }
+          $engineCommit = git -C .saki-engine rev-parse HEAD
+          @(
+            "Build mode: $env:BUILD_MODE"
+            "Game commit: $env:GITHUB_SHA"
+            "Engine commit: $engineCommit"
+            "Workflow: https://github.com/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID"
+          ) | Set-Content -Path (Join-Path $DestDir 'BUILD-INFO.txt') -Encoding utf8
 
           # 创建ZIP档案
           Compress-Archive -Path $DestDir -DestinationPath (Join-Path $buildRoot $ZipName) -Force
